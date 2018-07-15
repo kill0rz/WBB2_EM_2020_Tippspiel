@@ -1,7 +1,7 @@
 <?php
 /***************************************************************************
  *
- *   MOD                  : WM-2006/2014/EM-2016/WM-2018 Tippspiel
+ *   MOD                  : WM-2006/2014/EM-2016/WM-2018/EM-2020 Tippspiel
  *   file                 : em2020_admin.php
  *   copyright            : WM2006-Tippspiel © 2006 @ batida444
  *   copyright            : WM2014-Tippspiel © 2014 @ Viktor
@@ -38,7 +38,7 @@ if ($action == "options") {
 
 	if (isset($_POST['send'])) {
 		$tipptime = $_POST['tipptime'] * 60;
-		$sql_query = "UPDATE bb" . $n . "_em2020_options SET em2020aktiv = '" . intval($_POST['em2020_aktiv_jn']) . "', showrssnews = '" . intval($_POST['showrssnews']) . "', rssnews = '" . intval($_POST['rssnews']) . "', rssnews_showfeed = '" . mysqli_escape_string($db->link_id, $_POST['rssnews_showfeed']) . "', wmticker_width = '" . intval($_POST['wmticker_width']) . "', nextxgames = '" . intval($_POST['nextxgames']) . "', topuser = '" . intval($_POST['topuser']) . "', tipptime = '" . intval($tipptime) . "', tendenz = '" . intval($_POST['tendenz']) . "', gk_jn = '" . intval($_POST['gk_jn']) . "', rk_jn = '" . intval($_POST['rk_jn']) . "', elfer_jn = '" . intval($_POST['elfer_jn']) . "', winnertipp_jn = '" . intval($_POST['winnertipp_jn']) . "', lastgame4wmtipp = '" . intval($_POST['lastgame4wmtipp']) . "', nonaddedgamescount = '" . intval($_POST['nonaddedgamescount']) . "', currentgamescount = '" . intval($_POST['currentgamescount']) . "', gh_aktiv = '" . intval($_POST['gh_aktiv']) . "', gh_infos = '" . intval($_POST['gh_infos']) . "', gh_ab_normtipp = '" . intval($_POST['gh_ab_normtipp']) . "', gh_ab_wmtipp = '" . intval($_POST['gh_ab_wmtipp']) . "', gh_gut_normtipp_richtig = '" . intval($_POST['gh_gut_normtipp_richtig']) . "', gh_gut_normtipp_tendenz = '" . intval($_POST['gh_gut_normtipp_tendenz']) . "', gh_gut_wmtipp_richtig = '" . intval($_POST['gh_gut_wmtipp_richtig']) . "', ebay_rel_aktiv = '" . intval($_POST['ebay_rel_aktiv']) . "', ebay_pub_id = '" . intval($_POST['ebay_pub_id']) . "', ebay_cat = '" . intval($_POST['ebay_cat']) . "', po_aktiv = '" . intval($_POST['po_aktiv']) . "', vgposttid = '" . intval($_POST['vgposttid']) . "', vgpostuid = '" . intval($_POST['vgpostuid']) . "', viconid = '" . intval($_POST['viconid']) . "', vgthema = '" . addslashes($_POST['vgthema']) . "', message = '" . addslashes($_POST['message']) . "', vboardid = '" . intval($_POST['vboardid']) . "', vprefix = '" . addslashes($_POST['vprefix']) . "', vgposthtml = '" . intval($_POST['vgposthtml']) . "', diskussionsthreadid = '" . intval($_POST['diskussionsthreadid']) . "', showrssnews_method = '" . intval($_POST['showrssnews_method']) . "', showtableonindex_nontippedgames = '" . intval($_POST['showtableonindex_nontippedgames']) . "', showtableonindex_donegames = '" . intval($_POST['showtableonindex_donegames']) . "', showtableonindex_donegamescount = '" . intval($_POST['showtableonindex_donegamescount']) . "';";
+		$sql_query = "UPDATE bb" . $n . "_em2020_options SET em2020aktiv = '" . intval($_POST['em2020_aktiv_jn']) . "', showrssnews = '" . intval($_POST['showrssnews']) . "', rssnews = '" . intval($_POST['rssnews']) . "', rssnews_showfeed = '" . mysqli_escape_string($db->link_id, $_POST['rssnews_showfeed']) . "', emticker_width = '" . intval($_POST['emticker_width']) . "', nextxgames = '" . intval($_POST['nextxgames']) . "', topuser = '" . intval($_POST['topuser']) . "', tipptime = '" . intval($tipptime) . "', tendenz = '" . intval($_POST['tendenz']) . "', gk_jn = '" . intval($_POST['gk_jn']) . "', rk_jn = '" . intval($_POST['rk_jn']) . "', elfer_jn = '" . intval($_POST['elfer_jn']) . "', winnertipp_jn = '" . intval($_POST['winnertipp_jn']) . "', lastgame4emtipp = '" . intval($_POST['lastgame4emtipp']) . "', nonaddedgamescount = '" . intval($_POST['nonaddedgamescount']) . "', currentgamescount = '" . intval($_POST['currentgamescount']) . "', gh_aktiv = '" . intval($_POST['gh_aktiv']) . "', gh_infos = '" . intval($_POST['gh_infos']) . "', gh_ab_normtipp = '" . intval($_POST['gh_ab_normtipp']) . "', gh_ab_emtipp = '" . intval($_POST['gh_ab_emtipp']) . "', gh_gut_normtipp_richtig = '" . intval($_POST['gh_gut_normtipp_richtig']) . "', gh_gut_normtipp_tendenz = '" . intval($_POST['gh_gut_normtipp_tendenz']) . "', gh_gut_emtipp_richtig = '" . intval($_POST['gh_gut_emtipp_richtig']) . "', ebay_rel_aktiv = '" . intval($_POST['ebay_rel_aktiv']) . "', ebay_pub_id = '" . intval($_POST['ebay_pub_id']) . "', ebay_cat = '" . intval($_POST['ebay_cat']) . "', po_aktiv = '" . intval($_POST['po_aktiv']) . "', vgposttid = '" . intval($_POST['vgposttid']) . "', vgpostuid = '" . intval($_POST['vgpostuid']) . "', viconid = '" . intval($_POST['viconid']) . "', vgthema = '" . addslashes($_POST['vgthema']) . "', message = '" . addslashes($_POST['message']) . "', vboardid = '" . intval($_POST['vboardid']) . "', vprefix = '" . addslashes($_POST['vprefix']) . "', vgposthtml = '" . intval($_POST['vgposthtml']) . "', diskussionsthreadid = '" . intval($_POST['diskussionsthreadid']) . "', showrssnews_method = '" . intval($_POST['showrssnews_method']) . "', showtableonindex_nontippedgames = '" . intval($_POST['showtableonindex_nontippedgames']) . "', showtableonindex_donegames = '" . intval($_POST['showtableonindex_donegames']) . "', showtableonindex_donegamescount = '" . intval($_POST['showtableonindex_donegamescount']) . "';";
 		$db->unbuffered_query($sql_query);
 		header("Location: em2020_admin.php?action=options&sid={$session['hash']}");
 		exit();
@@ -236,98 +236,92 @@ if ($action == "punkteedit") {
 	eval("\$tpl->output(\"" . $tpl->get('em2020_punkte_edit', 1) . "\");");
 }
 
-// //unnötig für WM 2018
-// //fuer eventuelle Korrekturen am Achtelfinale
-// if ($action == "correct8") {
-// 	$spiele_mit_dritten = array(38, 39, 40, 41);
+//für eventuelle Korrekturen am Achtelfinale
+if ($action == "correct8") {
+	$erfolgsmeldung = '';
+	$em2020_correct8_erfolgsmeldung = '';
 
-// 	$erfolgsmeldung = '';
-// 	$em2020_correct8_erfolgsmeldung = '';
+	if (isset($_POST['values_are_sent']) && trim($_POST['values_are_sent']) == "true") {
+		//da hat jemand im ACP eine Mannschaft geändert
+		foreach ($spiele_mit_dritten as $key => $spielid) {
+			if (isset($_POST['changeteam_' . $spielid]) && intval($_POST['changeteam_' . $spielid]) != null && intval($_POST['changeteam_' . $spielid]) != 0) {
+				$newteam_id = intval($_POST['changeteam_' . $spielid]);
+				$db->unbuffered_query("UPDATE bb" . $n . "_em2020_spiele SET team_2_id = " . $newteam_id . " WHERE gameid = '" . $spielid . "';");
+				$erfolgsmeldung .= "<font color='green'>{$lang->items['LANG_ACP_EM2020_CORRECT8_10']} " . $spielid . " {$lang->items['LANG_ACP_EM2020_CORRECT8_11']}</font><br>";
+			}
+		}
+	}
 
-// 	if (isset($_POST['values_are_sent']) && trim($_POST['values_are_sent']) == "true") {
-// 		//da hat jemand im ACP eine Mannschaft geändert
-// 		foreach ($spiele_mit_dritten as $key => $spielid) {
-// 			if (isset($_POST['changeteam_' . $spielid]) && intval($_POST['changeteam_' . $spielid]) != null && intval($_POST['changeteam_' . $spielid]) != 0) {
-// 				$newteam_id = intval($_POST['changeteam_' . $spielid]);
-// 				$db->unbuffered_query("UPDATE bb" . $n . "_em2020_spiele SET team_2_id = " . $newteam_id . " WHERE gameid = '" . $spielid . "';");
-// 				$erfolgsmeldung .= "<font color='green'>{$lang->items['LANG_ACP_EM2020_CORRECT8_10']} " . $spielid . " {$lang->items['LANG_ACP_EM2020_CORRECT8_11']}</font><br>";
-// 			}
-// 		}
-// 	}
+	if ($erfolgsmeldung != '') {
+		eval("\$em2020_correct8_erfolgsmeldung = \"" . $tpl->get('em2020_correct8_erfolgsmeldung', 1) . "\";");
+	}
 
-// 	if ($erfolgsmeldung != '') {
-// 		eval("\$em2020_correct8_erfolgsmeldung = \"" . $tpl->get('em2020_correct8_erfolgsmeldung', 1) . "\";");
-// 	}
+	function bestedritte_alle($groupids) {
+		global $db, $n, $em2020_correct8_bit_select_bit, $tpl, $lang;
 
-// 	function bestedritte_alle($groupids) {
-// 		global $db, $n, $em2020_correct8_bit_select_bit, $tpl, $lang;
+		$em2020_correct8_bit_select_bit = '';
 
-// 		$em2020_correct8_bit_select_bit = '';
+		$db->query("TRUNCATE TABLE bb" . $n . "_em2020_bestedrittetmp;");
+		foreach ($groupids as $groupid) {
+			$counter = 0;
+			$result = $db->query("SELECT teamid, td, punkte, g FROM bb" . $n . "_em2020_teams WHERE gruppe = '" . $groupid . "' ORDER BY punkte DESC, td DESC, g DESC LIMIT 3");
+			while ($row = $db->fetch_array($result)) {
+				if (++$counter > 2) {
+					$db->query("INSERT INTO bb" . $n . "_em2020_bestedrittetmp (`teamid`, `punkte`, `td`, `g`) VALUES ('" . $row['teamid'] . "', '" . $row['punkte'] . "', '" . $row['td'] . "', '" . $row['g'] . "');");
+				}
+			}
+		}
 
-// 		$db->query("TRUNCATE TABLE bb" . $n . "_em2020_bestedrittetmp;");
-// 		foreach ($groupids as $groupid) {
-// 			$counter = 0;
-// 			$result = $db->query("SELECT teamid, td, punkte, g FROM bb" . $n . "_em2020_teams WHERE gruppe = '" . $groupid . "' ORDER BY punkte DESC, td DESC, g DESC LIMIT 3");
-// 			while ($row = $db->fetch_array($result)) {
-// 				if (++$counter > 2) {
-// 					$db->query("INSERT INTO bb" . $n . "_em2020_bestedrittetmp (`teamid`, `punkte`, `td`, `g`) VALUES ('" . $row['teamid'] . "', '" . $row['punkte'] . "', '" . $row['td'] . "', '" . $row['g'] . "');");
-// 				}
-// 			}
-// 		}
+		$result = $db->query("SELECT teamid FROM bb" . $n . "_em2020_bestedrittetmp ORDER BY punkte DESC, td DESC, g DESC LIMIT 3;");
+		while ($row = $db->fetch_array($result)) {
+			$sql2 = "SELECT name FROM bb" . $n . "_em2020_teams WHERE teamid = '" . $row['teamid'] . "' LIMIT 1;";
+			$result2 = $db->query($sql2);
+			while ($row2 = $db->fetch_array($result2)) {
+				$mannschaft_id = $row['teamid'];
+				$mannschaft = $row2['name'];
+				eval("\$em2020_correct8_bit_select_bit .= \"" . $tpl->get('em2020_correct8_bit_select_bit', 1) . "\";");
+			}
+		}
+	}
 
-// 		$result = $db->query("SELECT teamid FROM bb" . $n . "_em2020_bestedrittetmp ORDER BY punkte DESC, td DESC, g DESC LIMIT 3;");
-// 		while ($row = $db->fetch_array($result)) {
-// 			$sql2 = "SELECT name FROM bb" . $n . "_em2020_teams WHERE teamid = '" . $row['teamid'] . "' LIMIT 1;";
-// 			$result2 = $db->query($sql2);
-// 			while ($row2 = $db->fetch_array($result2)) {
-// 				$mannschaft_id = $row['teamid'];
-// 				$mannschaft = $row2['name'];
-// 				eval("\$em2020_correct8_bit_select_bit .= \"" . $tpl->get('em2020_correct8_bit_select_bit', 1) . "\";");
-// 			}
+	$spiele_mit_dritten_team1 = getSpieleMitDrittenTeam1();
+	
+	foreach ($spiele_mit_dritten as $key => $spielid) {
+		$spiel_team_1 = $spiele_mit_dritten_team1[$key];
+		$spiel_team_2 = "Dritter " . $spiele_mit_dritten_team2[$key];
+		$result = $db->unbuffered_query("SELECT * FROM bb" . $n . "_em2020_spiele WHERE gameid='" . $spielid . "'");
+		while ($row = $db->fetch_array($result)) {
+			$em2020_correct8_bit_select = '';
+			$sql2 = "SELECT name, flagge FROM bb" . $n . "_em2020_teams WHERE teamid = '" . $row['team_1_id'] . "' LIMIT 1;";
+			$result2 = $db->unbuffered_query($sql2);
+			if ($db->num_rows($result2) == 0) {
+				// Spiel steht noch nicht fest
+				$spiel_team_1_name = "{$lang->items['LANG_ACP_EM2020_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" />";
+			} else {
+				while ($row2 = $db->fetch_array($result2)) {
+					$spiel_team_1_name = $row2['name'] . " <img src=\"../images/em2020/flaggen/{$row2['flagge']}\" border=\"0\" alt=\"{$row2['name']}\" title=\"{$row2['name']}\" />";
+				}
+			}
 
-// 		}
-// 	}
+			$sql2 = "SELECT name, flagge FROM bb" . $n . "_em2020_teams WHERE teamid = '" . $row['team_2_id'] . "' LIMIT 1;";
+			$result2 = $db->unbuffered_query($sql2);
+			if ($db->num_rows($result2) == 0) {
+				$spiel_team_2_name = "{$lang->items['LANG_ACP_EM2020_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" />";
+			} else {
+				while ($row2 = $db->fetch_array($result2)) {
+					$spiel_team_2_name = $row2['name'] . " <img src=\"../images/em2020/flaggen/{$row2['flagge']}\" border=\"0\" alt=\"{$row2['name']}\" title=\"{$row2['name']}\" />";
 
-// 	$spiele_mit_dritten_team1 = array("{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} B", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} D", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} A", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} C");
-// 	$spiele_mit_dritten_team2 = array("A/C/D", "B/E/F", "C/D/E", "A/B/F");
-// 	$spiele_mit_dritten_dritte_aus_gruppen = array(array("A", "C", "D"), array("B", "E", "F"), array("C", "D", "E"), array("A", "B", "F"));
+					bestedritte_alle($spiele_mit_dritten_dritte_aus_gruppen[$key]);
 
-// 	foreach ($spiele_mit_dritten as $key => $spielid) {
-// 		$spiel_team_1 = $spiele_mit_dritten_team1[$key];
-// 		$spiel_team_2 = "Dritter " . $spiele_mit_dritten_team2[$key];
-// 		$result = $db->unbuffered_query("SELECT * FROM bb" . $n . "_em2020_spiele WHERE gameid='" . $spielid . "'");
-// 		while ($row = $db->fetch_array($result)) {
-// 			$em2020_correct8_bit_select = '';
-// 			$sql2 = "SELECT name, flagge FROM bb" . $n . "_em2020_teams WHERE teamid = '" . $row['team_1_id'] . "' LIMIT 1;";
-// 			$result2 = $db->unbuffered_query($sql2);
-// 			if ($db->num_rows($result2) == 0) {
-// 				// Spiel steht noch nicht fest
-// 				$spiel_team_1_name = "{$lang->items['LANG_ACP_EM2020_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" />";
-// 			} else {
-// 				while ($row2 = $db->fetch_array($result2)) {
-// 					$spiel_team_1_name = $row2['name'] . " <img src=\"../images/em2020/flaggen/{$row2['flagge']}\" border=\"0\" alt=\"{$row2['name']}\" title=\"{$row2['name']}\" />";
-// 				}
-// 			}
-
-// 			$sql2 = "SELECT name, flagge FROM bb" . $n . "_em2020_teams WHERE teamid = '" . $row['team_2_id'] . "' LIMIT 1;";
-// 			$result2 = $db->unbuffered_query($sql2);
-// 			if ($db->num_rows($result2) == 0) {
-// 				$spiel_team_2_name = "{$lang->items['LANG_ACP_EM2020_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" />";
-// 			} else {
-// 				while ($row2 = $db->fetch_array($result2)) {
-// 					$spiel_team_2_name = $row2['name'] . " <img src=\"../images/em2020/flaggen/{$row2['flagge']}\" border=\"0\" alt=\"{$row2['name']}\" title=\"{$row2['name']}\" />";
-
-// 					bestedritte_alle($spiele_mit_dritten_dritte_aus_gruppen[$key]);
-
-// 					eval("\$em2020_correct8_bit_select .= \"" . $lang->items['LANG_ACP_EM2020_CORRECT8_3'] . " " . $tpl->get('em2020_correct8_bit_select', 1) . "\";");
-// 				}
-// 			}
-// 		}
-// 		eval("\$em2020_correct8_bit .= \"" . $tpl->get('em2020_correct8_bit', 1) . "\";");
-// 	}
-// 	$punkte = $db->query_first("SELECT * FROM bb" . $n . "_em2020_punkte WHERE punkteid = '" . intval($_REQUEST['punkteid']) . "'");
-// 	eval("\$tpl->output(\"" . $tpl->get('em2020_correct8', 1) . "\");");
-// }
+					eval("\$em2020_correct8_bit_select .= \"" . $lang->items['LANG_ACP_EM2020_CORRECT8_3'] . " " . $tpl->get('em2020_correct8_bit_select', 1) . "\";");
+				}
+			}
+		}
+		eval("\$em2020_correct8_bit .= \"" . $tpl->get('em2020_correct8_bit', 1) . "\";");
+	}
+	$punkte = $db->query_first("SELECT * FROM bb" . $n . "_em2020_punkte WHERE punkteid = '" . intval($_REQUEST['punkteid']) . "'");
+	eval("\$tpl->output(\"" . $tpl->get('em2020_correct8', 1) . "\");");
+}
 
 if ($action == "results") {
 	$allids2[] = array();
@@ -790,19 +784,19 @@ if ($action == "result_save") {
 				if ($em2020_options['winnertipp_jn'] == 1) {
 					$punkte4user_em = $db->query_first("SELECT wert FROM bb" . $n . "_em2020_punkte WHERE punkteid = '6'");
 					$punkte4user_vem = $db->query_first("SELECT wert FROM bb" . $n . "_em2020_punkte WHERE punkteid = '7'");
-					$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET punkte = punkte + {$punkte4user_em['wert']} WHERE tipp_wm = '{$team_g}'");
-					$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET punkte = punkte + {$punkte4user_vem['wert']} WHERE tipp_vwm = '{$team_v}'");
+					$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET punkte = punkte + {$punkte4user_em['wert']} WHERE tipp_em = '{$team_g}'");
+					$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET punkte = punkte + {$punkte4user_vem['wert']} WHERE tipp_vem = '{$team_v}'");
 					// Guthabenhack aktiv ?
 					if ($em2020_options['gh_aktiv'] == 1) {
-						$result = $db->query("SELECT * FROM bb" . $n . "_em2020_userpunkte WHERE tipp_wm = '{$team_g}'");
+						$result = $db->query("SELECT * FROM bb" . $n . "_em2020_userpunkte WHERE tipp_em = '{$team_g}'");
 						while ($row = $db->fetch_array($result)) {
-							$db->query("UPDATE bb" . $n . "_users SET guthaben = guthaben + {$em2020_options['gh_gut_wmtipp_richtig']} WHERE userid = '" . $row['userid'] . "'");
-							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_3'] . "','" . $em2020_options['gh_gut_wmtipp_richtig'] . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
+							$db->query("UPDATE bb" . $n . "_users SET guthaben = guthaben + {$em2020_options['gh_gut_emtipp_richtig']} WHERE userid = '" . $row['userid'] . "'");
+							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_3'] . "','" . $em2020_options['gh_gut_emtipp_richtig'] . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
 						}
-						$result = $db->query("SELECT * FROM bb" . $n . "_em2020_userpunkte WHERE tipp_vwm = '{$team_v}'");
+						$result = $db->query("SELECT * FROM bb" . $n . "_em2020_userpunkte WHERE tipp_vem = '{$team_v}'");
 						while ($row = $db->fetch_array($result)) {
-							$db->query("UPDATE bb" . $n . "_users SET guthaben = guthaben + {$em2020_options['gh_gut_wmtipp_richtig']} WHERE userid = '" . $row['userid'] . "'");
-							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_4'] . "','" . $em2020_options['gh_gut_wmtipp_richtig'] . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
+							$db->query("UPDATE bb" . $n . "_users SET guthaben = guthaben + {$em2020_options['gh_gut_emtipp_richtig']} WHERE userid = '" . $row['userid'] . "'");
+							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_4'] . "','" . $em2020_options['gh_gut_emtipp_richtig'] . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
 						}
 					}
 				}

@@ -30,6 +30,7 @@ ToDo für die EM 2020:
 + SQL: Datentypen von team_1_id und team_2_id in bb1_em2020_spiele in INT ändern (ggf. in SQL-Queries ebenfalls bearbeiten)
 + addslashes durch mysqli_real_escape_string ersetzen?
 + Autofocus in erstes Feld bei ?action=tippabgabe
-+ rm: Fix Gruppe B Sortierung in wm2018.php:292
-+ rm: Fix Falsche Spielreihenfolge in wm2018_admin.php:372
++ rm: Fix Gruppe B Sortierung in em2020.php:292
++ rm: Fix Falsche Spielreihenfolge in em2020_admin.php:372
 + Footer updaten: Unnötige Copyright-Verweise entfernen, das gehört ausführlich ins ACP und in die Readme, aber auf dem Tippspiel selber muss das nicht mehr sein, wird mit den Jahren einfach viel zu groß.
++ EM Endspiel Datum ändern

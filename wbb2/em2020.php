@@ -1,6 +1,6 @@
 <?php
 /**
- *    MOD                  : WM-2006/2014/EM-2016/WM-2018 Tippspiel
+ *    MOD                  : WM-2006/2014/EM-2016/WM-2018/EM-2020 Tippspiel
  *    file                 : em2020.php
  *    copyright            : WM2006-Tippspiel © 2006 batida444
  *    copyright            : WM2014-Tippspiel © 2014 Viktor
@@ -27,13 +27,13 @@ if ($em2020_options['em2020aktiv'] == 0 || !$wbbuserdata['can_em2020_see']) {
 	redirect($lang->get("LANG_EM2020_PHP_1"), $url = "index.php" . $SID_ARG_1ST);
 }
 
-$em2020userdata = $db->query_first("SELECT userid,tipp_wm,tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
-if ($em2020userdata['tipp_wm'] != 0) {
-	$userwmtipp = $em2020userdata['tipp_wm'];
+$em2020userdata = $db->query_first("SELECT userid,tipp_em,tipp_vem FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
+if ($em2020userdata['tipp_em'] != 0) {
+	$userwmtipp = $em2020userdata['tipp_em'];
 }
 
-if ($em2020userdata['tipp_vwm'] != 0) {
-	$uservwmtipp = $em2020userdata['tipp_vwm'];
+if ($em2020userdata['tipp_vem'] != 0) {
+	$uservwmtipp = $em2020userdata['tipp_vem'];
 }
 
 if (!empty($em2020userdata['userid'])) {
@@ -45,9 +45,9 @@ if ($em2020_options['gh_aktiv'] == 1) {
 	$waehrung = $waehrung['waehrung'];
 }
 
-$lastgame4wmtipp = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . intval($em2020_options['lastgame4wmtipp']) . "'");
-$lastgamedate = formatdate($wbbuserdata['dateformat'], $lastgame4wmtipp['datetime']);
-$lastgametime = formatdate($wbbuserdata['timeformat'], $lastgame4wmtipp['datetime']);
+$lastgame4emtipp = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . intval($em2020_options['lastgame4emtipp']) . "'");
+$lastgamedate = formatdate($wbbuserdata['dateformat'], $lastgame4emtipp['datetime']);
+$lastgametime = formatdate($wbbuserdata['timeformat'], $lastgame4emtipp['datetime']);
 // ++++++++++++++++++
 // +++ Startseite +++
 // ++++++++++++++++++
@@ -382,15 +382,15 @@ if ($action == "index") {
 	//** Weltmeisterquote Start **//
 	$em2020_meisterquote = '';
 	$wmtipp_tipps_gesamt = '';
-	list($wmtipp_tipps_gesamt) = $db->query_first("SELECT COUNT(tipp_wm) FROM bb" . $n . "_em2020_userpunkte WHERE tipp_wm > 0");
-	$result = $db->query("SELECT tipp_wm, COUNT(tipp_wm) AS anzahl FROM bb" . $n . "_em2020_userpunkte
-						WHERE tipp_wm > 0
-						GROUP BY tipp_wm
+	list($wmtipp_tipps_gesamt) = $db->query_first("SELECT COUNT(tipp_em) FROM bb" . $n . "_em2020_userpunkte WHERE tipp_em > 0");
+	$result = $db->query("SELECT tipp_em, COUNT(tipp_em) AS anzahl FROM bb" . $n . "_em2020_userpunkte
+						WHERE tipp_em > 0
+						GROUP BY tipp_em
 						ORDER BY anzahl DESC");
 	while ($quote_wmtipp = $db->fetch_array($result)) {
 		$rowclass = getone($count++, "tablea", "tableb");
 		for ($i = 0; $i < count($allids2); $i++, $count++) {
-			if ($quote_wmtipp['tipp_wm'] == $allids2[$i]) {
+			if ($quote_wmtipp['tipp_em'] == $allids2[$i]) {
 				$teamname1 = $allnames2[$i];
 				$name1 = $teamname1;
 				$flagge1 = $allflags2[$i];
@@ -826,7 +826,7 @@ if ($action == "maketipp") {
 	$result = $db->query("SELECT gameid FROM bb" . $n . "_em2020_spiele WHERE team_1_id AND team_2_id AND game_goals_1 != '' AND game_goals_2 != '' ORDER BY datetime ASC");
 	$lastgametipped = $db->num_rows($result);
 
-	if ($em2020_options['winnertipp_jn'] == 1 && $em2020_options['lastgame4wmtipp'] > $lastgametipped) {
+	if ($em2020_options['winnertipp_jn'] == 1 && $em2020_options['lastgame4emtipp'] > $lastgametipped) {
 		eval("\$em2020_maketipp_bit_bit .= \"" . $tpl->get("em2020_maketipp_bit_bit") . "\";");
 	}
 
@@ -897,7 +897,7 @@ if ($action == "tippabgabe") {
 				$db->unbuffered_query("UPDATE bb" . $n . "_em2020_userpunkte SET tipps_gesamt=tipps_gesamt+1 WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 			}
 			if ($userdatayes == 0) {
-				$db->unbuffered_query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_wm,tipp_vwm) VALUES ('" . intval($wbbuserdata['userid']) . "','0','1','0','0','0','0','0')");
+				$db->unbuffered_query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_em,tipp_vem) VALUES ('" . intval($wbbuserdata['userid']) . "','0','1','0','0','0','0','0')");
 			}
 			// Guthaben aktiv ? Dann speichern
 			if ($em2020_options['gh_aktiv'] == 1) {
@@ -991,29 +991,29 @@ if ($action == "tipok") {
 if ($action == "tippabgabe_wm") {
 	if (isset($_POST['send'])) {
 		// Erneute Prüfung der Tippabgabezeit
-		$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4wmtipp'] . "'");
+		$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4emtipp'] . "'");
 		$time2 = $result_time['datetime'] - $em2020_options['tipptime'];
 		if ($akttime > $time2) {
 			redirect($lang->get("LANG_EM2020_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 		}
 
 		// +++++++++++++++++++++++++++++++++++
-		if ($_POST['tipp_wm'] != -1) {
-			if ($em2020_options['winnertipp_jn'] == 1 && ($uservwmtipp != intval($_POST['tipp_wm'])) && $userdatayes == 0) {
-				$db->query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_wm,tipp_vwm) VALUES ('" . intval($wbbuserdata['userid']) . "','0','0','0','0','0','" . intval($_POST['tipp_wm']) . "','0')");
+		if ($_POST['tipp_em'] != -1) {
+			if ($em2020_options['winnertipp_jn'] == 1 && ($uservwmtipp != intval($_POST['tipp_em'])) && $userdatayes == 0) {
+				$db->query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_em,tipp_vem) VALUES ('" . intval($wbbuserdata['userid']) . "','0','0','0','0','0','" . intval($_POST['tipp_em']) . "','0')");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_25'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
-					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_25'] . "','" . $em2020_options['gh_ab_emtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
+					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_emtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
 				header("Location: em2020.php?action=tipok{$SID_ARG_2ND_UN}");
-			} elseif ($em2020_options['winnertipp_jn'] == 1 && ($uservwmtipp != intval($_POST['tipp_wm'])) && $userdatayes == 1) {
-				$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_wm = '" . intval($_POST['tipp_wm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
+			} elseif ($em2020_options['winnertipp_jn'] == 1 && ($uservwmtipp != intval($_POST['tipp_em'])) && $userdatayes == 1) {
+				$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_em = '" . intval($_POST['tipp_em']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_25'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
-					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_25'] . "','" . $em2020_options['gh_ab_emtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
+					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_emtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
 				header("Location: em2020.php?action=tipok{$SID_ARG_2ND_UN}");
@@ -1029,30 +1029,30 @@ if ($action == "tippabgabe_wm") {
 if ($action == "tippabgabe_vwm") {
 	if (isset($_POST['send'])) {
 		// Erneute Prüfung der Tippabgabezeit
-		$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4wmtipp'] . "'");
+		$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4emtipp'] . "'");
 		$time2 = $result_time['datetime'] - $em2020_options['tipptime'];
 		if ($akttime > $time2) {
 			redirect($lang->get("LANG_EM2020_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 		}
 
 		// +++++++++++++++++++++++++++++++++++
-		if ($_POST['tipp_vwm'] != -1) {
-			if ($em2020_options['winnertipp_jn'] == 1 && ($userwmtipp != $_POST['tipp_vwm']) && $userdatayes == 0) {
-				$db->query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_wm,tipp_vwm) VALUES ('" . intval($wbbuserdata['userid']) . "','0','0','0','0','0','0','" . intval($_POST['tipp_vwm']) . "')");
+		if ($_POST['tipp_vem'] != -1) {
+			if ($em2020_options['winnertipp_jn'] == 1 && ($userwmtipp != $_POST['tipp_vem']) && $userdatayes == 0) {
+				$db->query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_em,tipp_vem) VALUES ('" . intval($wbbuserdata['userid']) . "','0','0','0','0','0','0','" . intval($_POST['tipp_vem']) . "')");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_26'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
-					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_26'] . "','" . $em2020_options['gh_ab_emtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
+					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_emtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
 				header("Location: em2020.php?action=tipok{$SID_ARG_2ND_UN}");
 			}
-			if ($em2020_options['winnertipp_jn'] == 1 && ($userwmtipp != intval($_POST['tipp_vwm'])) && $userdatayes == 1) {
-				$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_vwm = '" . intval($_POST['tipp_vwm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
+			if ($em2020_options['winnertipp_jn'] == 1 && ($userwmtipp != intval($_POST['tipp_vem'])) && $userdatayes == 1) {
+				$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_vem = '" . intval($_POST['tipp_vem']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_26'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
-					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_26'] . "','" . $em2020_options['gh_ab_emtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
+					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_emtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
 				header("Location: em2020.php?action=tipok{$SID_ARG_2ND_UN}");
@@ -1072,17 +1072,17 @@ if ($action == "showusertipps") {
 	$result = $db->query("SELECT up.*,uu.username FROM bb" . $n . "_em2020_userpunkte up LEFT JOIN bb" . $n . "_users uu ON up.userid=uu.userid ORDER BY punkte DESC, tipps_gesamt DESC");
 	while ($row = $db->fetch_array($result)) {
 		$rowclass = getone($count++, "tablea", "tableb");
-		if ($row['tipp_wm'] == 0) {
+		if ($row['tipp_em'] == 0) {
 			$image_wmtipp = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_27']}\" title=\"{$lang->items['LANG_EM2020_PHP_27']}\" />";
 		} else {
 			for ($i = 0; $i < count($allids2); $i++) {
 				if ($wbbuserdata['userid'] == intval($row['userid'])) {
-					if ($row['tipp_wm'] == $allids2[$i]) {
+					if ($row['tipp_em'] == $allids2[$i]) {
 						$image_wmtipp = "<img src=\"images/em2020/flaggen/$allflags2[$i]\" border=\"0\" alt=\"$allnames2[$i]\" title=\"$allnames2[$i]\" />";
 					}
 				} else {
-					if ($akttime > $lastgame4wmtipp['datetime']) {
-						if ($row['tipp_wm'] == $allids2[$i]) {
+					if ($akttime > $lastgame4emtipp['datetime']) {
+						if ($row['tipp_em'] == $allids2[$i]) {
 							$image_wmtipp = "<img src=\"images/em2020/flaggen/$allflags2[$i]\" border=\"0\" alt=\"$allnames2[$i]\" title=\"$allnames2[$i]\" />";
 						}
 					} else {
@@ -1091,17 +1091,17 @@ if ($action == "showusertipps") {
 				}
 			}
 		}
-		if ($row['tipp_vwm'] == 0) {
+		if ($row['tipp_vem'] == 0) {
 			$image_vwmtipp = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_28']}\" title=\"{$lang->items['LANG_EM2020_PHP_28']}\" />";
 		} else {
 			for ($i = 0; $i < count($allids2); $i++) {
 				if ($wbbuserdata['userid'] == intval($row['userid'])) {
-					if ($row['tipp_vwm'] == $allids2[$i]) {
+					if ($row['tipp_vem'] == $allids2[$i]) {
 						$image_vwmtipp = "<img src=\"images/em2020/flaggen/$allflags2[$i]\" border=\"0\" alt=\"$allnames2[$i]\" title=\"$allnames2[$i]\" />";
 					}
 				} else {
-					if ($akttime > $lastgame4wmtipp['datetime']) {
-						if ($row['tipp_vwm'] == $allids2[$i]) {
+					if ($akttime > $lastgame4emtipp['datetime']) {
+						if ($row['tipp_vem'] == $allids2[$i]) {
 							$image_vwmtipp = "<img src=\"images/em2020/flaggen/$allflags2[$i]\" border=\"0\" alt=\"$allnames2[$i]\" title=\"$allnames2[$i]\" />";
 						}
 					} else {
@@ -1123,8 +1123,8 @@ if ($action == "showusertippsdetail") {
 		// Weltmeister und VizeWeltmeister auslesen und anzeigen
 		$wmtipp_done = '0';
 		$vwmtipp_done = '0';
-		$result_wmtipp = $db->query_first("SELECT tipp_wm,tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
-		if ($result_wmtipp['tipp_wm'] == '0') {
+		$result_wmtipp = $db->query_first("SELECT tipp_em,tipp_vem FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
+		if ($result_wmtipp['tipp_em'] == '0') {
 			if ($wbbuserdata['userid'] == intval($_REQUEST['userid'])) {
 				$wmtipp_name = "<a href=\"em2020.php?action=wmtipp_only" . $SID_ARG_2ND . "\">{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12']}</a>";
 			}
@@ -1136,7 +1136,7 @@ if ($action == "showusertippsdetail") {
 			$wmtipp_flagge = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16']}\" />";
 			$wmtipp_done = '1';
 		}
-		if ($result_wmtipp['tipp_vwm'] == '0') {
+		if ($result_wmtipp['tipp_vem'] == '0') {
 			if ($wbbuserdata['userid'] == intval($_REQUEST['userid'])) {
 				$vwmtipp_name = "<a href=\"em2020.php?action=wmtipp_only" . $SID_ARG_2ND . "\">{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12']}</a>";
 			}
@@ -1150,16 +1150,16 @@ if ($action == "showusertippsdetail") {
 		}
 		if ($wmtipp_done == '0' || $vwmtipp_done == '0') {
 			for ($ii = 0; $ii < count($allids2); $ii++) {
-				if ($result_wmtipp['tipp_wm'] != '0' && $result_wmtipp['tipp_wm'] == $allids2[$ii]) {
+				if ($result_wmtipp['tipp_em'] != '0' && $result_wmtipp['tipp_em'] == $allids2[$ii]) {
 					if ($wbbuserdata['userid'] == intval($_REQUEST['userid'])) {
 						$wmtipp_name = $allnames2[$ii];
 						$wmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$wmtipp_name\" title=\"$wmtipp_name\" />";
 						$wmtipp_edit = '';
-						if ($lastgame4wmtipp['datetime'] > $akttime) {
+						if ($lastgame4emtipp['datetime'] > $akttime) {
 							$wmtipp_edit = "&nbsp;<a href=\"em2020.php?action=editwmtipp&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
 						}
 					} else {
-						if ($akttime > $lastgame4wmtipp['datetime']) {
+						if ($akttime > $lastgame4emtipp['datetime']) {
 							$wmtipp_name = $allnames2[$ii];
 							$wmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$wmtipp_name\" title=\"$wmtipp_name\" />";
 							$wmtipp_edit = '';
@@ -1169,16 +1169,16 @@ if ($action == "showusertippsdetail") {
 						}
 					}
 				}
-				if ($result_wmtipp['tipp_vwm'] != '0' && $result_wmtipp['tipp_vwm'] == $allids2[$ii]) {
+				if ($result_wmtipp['tipp_vem'] != '0' && $result_wmtipp['tipp_vem'] == $allids2[$ii]) {
 					if ($wbbuserdata['userid'] == intval($_REQUEST['userid'])) {
 						$vwmtipp_name = $allnames2[$ii];
 						$vwmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$vwmtipp_name\" title=\"$vwmtipp_name\" />";
 						$vwmtipp_edit = '';
-						if ($lastgame4wmtipp['datetime'] > $akttime) {
+						if ($lastgame4emtipp['datetime'] > $akttime) {
 							$vwmtipp_edit = "&nbsp;<a href=\"em2020.php?action=editvwmtipp&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
 						}
 					} else {
-						if ($akttime > $lastgame4wmtipp['datetime']) {
+						if ($akttime > $lastgame4emtipp['datetime']) {
 							$vwmtipp_name = $allnames2[$ii];
 							$vwmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$vwmtipp_name\" title=\"$vwmtipp_name\" />";
 							$vwmtipp_edit = '';
@@ -1928,17 +1928,17 @@ if ($action == "edittipp") {
 // ++ WM-Tipp editieren +++
 // ++++++++++++++++++++++++
 if ($action == "editwmtipp") {
-	if ($lastgame4wmtipp['datetime'] < $akttime) {
+	if ($lastgame4emtipp['datetime'] < $akttime) {
 		redirect($lang->get("LANG_EM2020_PHP_50"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	// +++++++++++++++++++++++++++++++++++
 	if (isset($_POST['send'])) {
-		if ($_POST['tipp_wm'] == -1) {
+		if ($_POST['tipp_em'] == -1) {
 			redirect($lang->get("LANG_EM2020_PHP_51"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 		}
 
-		$db->unbuffered_query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_wm = '" . intval($_POST['tipp_wm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
+		$db->unbuffered_query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_em = '" . intval($_POST['tipp_em']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 		redirect($lang->get("LANG_EM2020_PHP_52"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 	// +++++++++++++++++++++++++++++++++++
@@ -1946,19 +1946,19 @@ if ($action == "editwmtipp") {
 		redirect($lang->get("LANG_EM2020_PHP_53"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
-	$result = $db->query_first("SELECT tipp_wm, tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
-	if (!$result['tipp_wm']) {
+	$result = $db->query_first("SELECT tipp_em, tipp_vem FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
+	if (!$result['tipp_em']) {
 		redirect($lang->get("LANG_EM2020_PHP_54"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	for ($j = 0; $j < count($allids2); $j++) {
-		if ($result['tipp_wm'] == $allids2[$j]) {
+		if ($result['tipp_em'] == $allids2[$j]) {
 			$wm_name = $allnames2[$j];
 			$wm_flagge = "<img src=\"images/em2020/flaggen/{$allflags2[$j]}\" alt=\"{$wm_name}\" title=\"{$wm_name}\" />";
 		}
 	}
 	for ($i = 0; $i < count($allids2); $i++) {
-		if ($result['tipp_wm'] != $allids2[$i] && $result['tipp_vwm'] != $allids2[$i]) {
+		if ($result['tipp_em'] != $allids2[$i] && $result['tipp_vem'] != $allids2[$i]) {
 			eval("\$em2020_auswahl_wmtipp .= \"" . $tpl->get("em2020_auswahl_wmtipp") . "\";");
 		}
 	}
@@ -1968,17 +1968,17 @@ if ($action == "editwmtipp") {
 // ++ Vize-WM-Tipp editieren +++
 // +++++++++++++++++++++++++++++
 if ($action == "editvwmtipp") {
-	if ($lastgame4wmtipp['datetime'] < $akttime) {
+	if ($lastgame4emtipp['datetime'] < $akttime) {
 		redirect($lang->get("LANG_EM2020_PHP_55"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	// +++++++++++++++++++++++++++++++++++
 	if (isset($_POST['send'])) {
-		if ($_POST['tipp_vwm'] == -1) {
+		if ($_POST['tipp_vem'] == -1) {
 			redirect($lang->get("LANG_EM2020_PHP_56"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 		}
 
-		$db->unbuffered_query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_vwm = '" . intval($_POST['tipp_vwm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
+		$db->unbuffered_query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_vem = '" . intval($_POST['tipp_vem']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 		redirect($lang->get("LANG_EM2020_PHP_57"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 	// +++++++++++++++++++++++++++++++++++
@@ -1986,19 +1986,19 @@ if ($action == "editvwmtipp") {
 		redirect($lang->get("LANG_EM2020_PHP_58"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
-	$result = $db->query_first("SELECT tipp_wm, tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
-	if (!$result['tipp_vwm']) {
+	$result = $db->query_first("SELECT tipp_em, tipp_vem FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
+	if (!$result['tipp_vem']) {
 		redirect($lang->get("LANG_EM2020_PHP_59"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	for ($j = 0; $j < count($allids2); $j++) {
-		if ($result['tipp_vwm'] == $allids2[$j]) {
+		if ($result['tipp_vem'] == $allids2[$j]) {
 			$vwm_name = $allnames2[$j];
 			$vwm_flagge = "<img src=\"images/em2020/flaggen/{$allflags2[$j]}\" alt=\"$vwm_name\" title=\"$vwm_name\" />";
 		}
 	}
 	for ($j = 0; $j < count($allids2); $j++) {
-		if ($result['tipp_vwm'] != $allids2[$j] && $result['tipp_wm'] != $allids2[$j]) {
+		if ($result['tipp_vem'] != $allids2[$j] && $result['tipp_em'] != $allids2[$j]) {
 			eval("\$em2020_auswahl_vwmtipp .= \"" . $tpl->get("em2020_auswahl_vwmtipp") . "\";");
 		} else {
 			eval("\$em2020_auswahl_vwmtipp .= \"" . $tpl->get("em2020_auswahl_vwmtipp_selected") . "\";");
@@ -2009,7 +2009,7 @@ if ($action == "editvwmtipp") {
 
 if ($action == "wmtipp_only") {
 	// Prüfen auf genug Tippzeit
-	$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4wmtipp'] . "'");
+	$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4emtipp'] . "'");
 	$time2 = $result_time['datetime'] - $em2020_options['tipptime'];
 	if ($akttime > $time2) {
 		redirect($lang->get("LANG_EM2020_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);

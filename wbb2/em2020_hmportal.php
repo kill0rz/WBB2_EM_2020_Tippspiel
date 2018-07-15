@@ -16,24 +16,24 @@ eval("print(\"" . $hm_boxhead_tpl . "\");");
 switch (trim($_GET['action'])) {
 	case 'meister':
 		// alle Tipps durchgehen
-		$result_m = $db->query("SELECT tipp_wm,tipp_vwm FROM bb" . $n . "_em2020_userpunkte");
+		$result_m = $db->query("SELECT tipp_em,tipp_vem FROM bb" . $n . "_em2020_userpunkte");
 
 		while ($row = $db->fetch_array($result_m)) {
-			if ($row['tipp_wm'] > 0) {
-				if (array_key_exists($row['tipp_wm'], $meister)) {
-					$meister[$row['tipp_wm']] += 1;
+			if ($row['tipp_em'] > 0) {
+				if (array_key_exists($row['tipp_em'], $meister)) {
+					$meister[$row['tipp_em']] += 1;
 				} else {
-					$meister[$row['tipp_wm']] = 1;
+					$meister[$row['tipp_em']] = 1;
 				}
 				$points += 1;
 			}
-			if ($row['tipp_vwm'] > 0) {
-				if (array_key_exists($row['tipp_vwm'], $meister)) {
-					$meister[$row['tipp_vwm']] += 0.5;
+			if ($row['tipp_vem'] > 0) {
+				if (array_key_exists($row['tipp_vem'], $meister)) {
+					$meister[$row['tipp_vem']] += 0.5;
 				} else {
-					$meister[$row['tipp_vwm']] = 0.5;
+					$meister[$row['tipp_vem']] = 0.5;
 				}
-				if ($row['tipp_wm'] == 0) {
+				if ($row['tipp_em'] == 0) {
 					$points += 0.5;
 				}
 			}

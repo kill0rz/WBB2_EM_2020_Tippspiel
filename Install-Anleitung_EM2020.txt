@@ -1,7 +1,7 @@
-Version: v1.2
+Version: v1ALPHA
 
 
-Installations-Anleitung für das WM2018-Tippspiel
+Installations-Anleitung für das EM2020-Tippspiel
 ************************************************
 
 Bitte vor der Installation einmal komplett lesen und falls dann schon Fragen aufkommen,
@@ -9,16 +9,16 @@ diese bitte im entsprechenden Supportthread stellen.
 
 1) Lade alle Dateien im Verzeichnis /wbb/ auf den Server.
 
-2) Rufe nun die Datei /acp/wm2018_setup.php auf und folge den Installationsschritten.
+2) Rufe nun die Datei /acp/em2020_setup.php auf und folge den Installationsschritten.
 
 Sollte es während der Installation zu Fehlermeldungen kommen, führe die Installation bis zum Ende aus
 und melde dich bei https://v-gn.de/wbb/ im entsprechenden Thread.
 
 Nach der Installation kannst du folgende Dateien wieder vom Server löschen:
-/acp/wm2018.sql
-/acp/wm2018.wbb
-/acp/wm2018_de.lng
-/acp/wm2018_setup.php
+/acp/em2020.sql
+/acp/em2020.wbb
+/acp/em2020_de.lng
+/acp/em2020_setup.php
 
 Gehe in das ACP, importiere und cache die neuen Templates.
 
@@ -30,12 +30,12 @@ $db->unbuffered_query("DELETE FROM bb" . $n . "_boardvisit WHERE userid IN ($use
 
 Füge darunter ein
 -----------------
-// WM 2018 Tippspiel
-$wm2018_options = $db->query_first("SELECT * FROM bb" . $n . "_wm2018_options");
-if ($wm2018_options['1st'] == 0) {
-	$db->unbuffered_query("DELETE FROM bb" . $n . "_wm2018_usertipps WHERE userid IN ($userids)", 1);
-	$db->unbuffered_query("DELETE FROM bb" . $n . "_wm2018_userpunkte WHERE userid IN ($userids)", 1);
-	$db->unbuffered_query("DELETE FROM bb" . $n . "_wm2018_vortag WHERE userid IN ($userids)", 1);
+// EM2020 Tippspiel
+$em2020_options = $db->query_first("SELECT * FROM bb" . $n . "_em2020_options");
+if ($em2020_options['1st'] == 0) {
+	$db->unbuffered_query("DELETE FROM bb" . $n . "_em2020_usertipps WHERE userid IN ($userids)", 1);
+	$db->unbuffered_query("DELETE FROM bb" . $n . "_em2020_userpunkte WHERE userid IN ($userids)", 1);
+	$db->unbuffered_query("DELETE FROM bb" . $n . "_em2020_vortag WHERE userid IN ($userids)", 1);
 }
 
 
@@ -47,7 +47,7 @@ Vorbereitung für den Betrieb
 
 Als nächstes musst du erstmal im ACP die Gruppenrechte für den Admin und die User einstellen.
 Vorher sind die neuen Menupunkte nicht im ACP-Menu zu sehen.
-Bei den Gruppenrechten für Gäste muss der Wert bei "Dürfen Mitglieder dieser Gruppe am WM2018-Tippspiel teilnehmen?"
+Bei den Gruppenrechten für Gäste muss der Wert bei "Dürfen Mitglieder dieser Gruppe am EM2020-Tippspiel teilnehmen?"
 auf NEIN stehen. Ansonsten kann es zu Fehlermeldungen kommen.
 
 Nachdem du die Gruppenrechte eingestellt hast, logge dich neu ins ACP ein. Jetzt solltest du die neuen ACP-Menüpunkte sehen.

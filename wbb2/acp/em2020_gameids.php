@@ -1,6 +1,6 @@
 <?php
 
-// Konfiguration für die WM 2018
+// Konfiguration für die EM2020
 
 $gameids = array(
 	'lastgroupgame_a' => 34,
@@ -60,5 +60,16 @@ $gameids_kette = array(
 );
 
 $gruppenids = array("A", "B", "C", "D", "E", "F", "G", "H");
+
+// Nur EM: Beste Dritte-Regelung
+$spiele_mit_dritten = array(38, 39, 40, 41);
+$spiele_mit_dritten_team2 = array("A/C/D", "B/E/F", "C/D/E", "A/B/F");
+$spiele_mit_dritten_dritte_aus_gruppen = array(array("A", "C", "D"), array("B", "E", "F"), array("C", "D", "E"), array("A", "B", "F"));
+
+function getSpieleMitDrittenTeam1() {
+	global $lang;
+	return array("{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} B", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} D", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} A", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} C");
+}
+// -
 
 // Konfiguration Ende

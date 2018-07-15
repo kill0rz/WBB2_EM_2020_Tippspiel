@@ -60,7 +60,7 @@
 					<span class="smallfont">{$lang->items['LANG_EM2020_TPL_EDITVWMTIPP_6']} </span>
 				</td>
 				<td class="tablea" align="center" width="50%">
-					<select name="tipp_vwm">
+					<select name="tipp_vem">
 						<option value="-1">{$lang->items['LANG_EM2020_GLOBAL_CHOICE']}</option>
 						$em2020_auswahl_vwmtipp
 					</select>&nbsp;

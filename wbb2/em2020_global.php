@@ -1,6 +1,6 @@
 <?php
 /**
- *    MOD                  : WM-2006/2014/EM-2016/WM-2018 Tippspiel
+ *    MOD                  : WM-2006/2014/EM-2016/WM-2018/EM-2020 Tippspiel
  *    file                 : em2020_global.php
  *    copyright            : WM2006-Tippspiel © 2006 batida444
  *    copyright            : WM2014-Tippspiel © 2014 Viktor

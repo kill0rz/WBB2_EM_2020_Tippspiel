@@ -1,77 +1,26 @@
-Änderungen zur WM 2018
+Änderungen zur EM 2020
 ----------------------
 
 Tippspiel
 ---------
-	+ Es werden Nummernfelder bei der Tippabgabe und dem Tipp editieren verwendet
-	+ Es wird eine Fehlerseite angezeigt, wenn Tipps noch nicht einsehbar sind
-	+ Man wird in der Ergebnisübersicht automatisch auf den entsprechenden Tab (Vorrunde, Achtelfinale, Viertelfinale, ...) geleitet, je nach dem was gerade aktiv ist
-	+ WM 2014-Headergrafik wieder eingespielt
-	+ WM 2018 Trophäenbildchen angepasst
-	+ Unterseiten "Tipps für das Spiel" und "Spieledetails" zu einer Seite zusammengefasst
-	+ Wenn das Endspiel vorbei ist, wird statt dem Countdown ein Hinweis auf das Endspiel angezeigt
-	+ Nach dem Editieren des Vize-/Weltmeisters wird man nun zurück auf die Tippabgabe geleitet, nicht mehr zur Startseite
-	+ Unterseite "Tipps für das Spiel" zeigt nun auch "Tendenzbildchen" an (Pfeil nach oben, unten wie bei den User-Tipps), aber erst, wenn das Spiel vorbei ist
-	+ Fehlerseite, wenn bei "Tipps von Nutzer anzeigen" keine UserID übergeben wurde
-	+ Tabelle auf Tippspiel-Startseite hinzugefügt, die die noch nicht eingetragenen Spiele anzeigt
-	+ Links hinter die SpieleID gelegt in Tabellen
-		+ aktuell laufende Spiele
-		+ noch nicht eingetragene Spiele
-		+ nächste Spiele
-	+ Liveticker entfernt, da dieser nur via http erreichbar ist und mit häufiger Downtime
-	+ Die Tageswertung wird nun nur noch maximal einmal pro Tag zurückgesetzt und zwar beim Eintragen des ersten Spiels am Tag
-	+ In das Posting, das nach dem Eintragen eines Spiels erstellt wird, wurde die Tageswertung implementiert.
-	+ Hat man bereits einen Vize-/Weltmeister getippt und kehrt zur Tippabgabe zurück, wird dieser vorausgewählt.
-	+ Der "Gleich"-Pfeil wurde ersetzt (Danke an seedstyLe.!)
 
 
 
 WBB-Forum
 ---------
-	+ Es wurde eine Integration geschaffen, die aus dem Forum gelöschte User aus dem Tippspiel entfernt, um die Statistiken nicht zu verfälschen und tote Links zu generieren (Hinweis in der Installationsanleitung beachten!)
-	+ Integration in die Startseite (Möglichkeit, diese im ACP auszuschalten, Anzahl einzustellen): Zeige zwei Tabellen
-		1) Spiele, die der User noch nicht getippt hat und die in den kommenden 24h stattfinden
-		2) Details zu den letzten X Spielen
 
 
 JGS-Portal
 ----------
-	+ Anpassungen an HTML5
-	+ Anpassungen an die WM 2018
-	+ Korrekturen in der Punkteberechnung
-	+ sauberere Implementierung in das Tippspiel
 
 
 ACP
 ---
-	+ Es werden Nummernfelder beim Ergebnisse eintragen verwendet
-	+ Hinter der SpielID beim Eintragen der Ergebnisse befindet sich nun ein Link ins Tippspiel zu den Spieldetails
-	+ Möglichkeit, einfach zwischen FIFA und UEFA-Feed wechseln zu können (Option hinzugefügt)
-	+ Beim Eintragen der Ergebnisse werden die Fahnen neben den Mannschaftsnamen angezeigt
-	+ Spiele können erst eingetragen werden, wenn das Spiel vorbei ist
-	+ Prüfen, ob cURL installiert ist. Wenn nicht, dann wird im ACP > Optionen einen Hinweis anzgezeigt, dass die Option nicht verfügbar ist
-	+ Menüpunkt "Achtelfinale korrigieren" entfernt (Sonderlocke EM 2016)
-	+ Es gibt eine Editierfunktion für die ACP-Ergebnisse.
-		+ Punkte werden für dieses Spiel für alle Nutzer neu berechnet
-		+ Wurde ein Posting zu diesem Spiel erstellt, so wird es editiert und die Daten nach dem Edit aktualisiert
-		+ Handelt es sich um ein kritisches Spiel (=ein letztes Spiel einer Gruppe, oder wenn dessen Gewinner eine Runde weiter kommt), so werden die nachfolgenden Spiele neu berechnet und aktualisiert.
 
 
 Technisches
 -----------
-	+ Sämtliches Javascript korrigiert, formatiert und gegen JSHint geprüft
-	+ Quelltext nach k&r formatiert
-	+ kritische Spielenummern in Variablen ausgelagert und diese im Quelltext verwendet (zukünftig nur noch eine Anpassung notwendig)
-	+ ACP -> Optionen -> Bis zu welchem Spiel kann der Vize-/Weltmeister getippt werden --> Sprachvariable für Beschreibung verwendet auch die Variablen
-	+ Kommaersetzung für gestern/heute/morgen Sprachvariablen überarbeitet; Sprachvariablen unabhängig von Fettschreibung und Textinhalt (funktioniert auch mit anderen Worten); hardgecodeten Text entfernt
-	+ Rücksetzung der Tageswertung aus dem ACP entfernt (bei Ergebnisse eintragen)
-	+ Quotenberechnung wurde in eine globale Funktion ausgelagert und kann nun von überall getriggert werden.
-	+ funktionslose is_integer-Funktion in SQL-Queries korrigiert
 
 
 Sonstiges
 ---------
-	+ Rechtschreibung und Grammatik korrigiert
-	+ "Beste Dritte" von der EM 2016 rückgebaut
-	+ Setup löscht nicht mehr benötigte Dateien bei der Installation von selbst
-	+ Deinstallation löscht alle nicht mehr benötigten Dateien selbstständig

@@ -19,10 +19,10 @@ Darin die richtige Zeile suchen (nach dem neuen Boxnamen) und auf "Ändern" gehen
 
 Folgende Spalteneinträge müssen geändert werden:
 
-h_boxincl: Hier muß der Name und relative Pfad zur wm2018_hmportal.php rein. Am Ende wird nur die action ausgetauscht, also z.B.
-	wm2018_hmportal.php?action=meister
-	wm2018_hmportal.php?action=quote
-	wm2018_hmportal.php?action=rangliste
+h_boxincl: Hier muß der Name und relative Pfad zur em2020_hmportal.php rein. Am Ende wird nur die action ausgetauscht, also z.B.
+	em2020_hmportal.php?action=meister
+	em2020_hmportal.php?action=quote
+	em2020_hmportal.php?action=rangliste
 
 - Jetzt noch die Box im Boxenkonfigurator an die richtige Stelle rücken und die gewünschten Einstellungen machen.
 

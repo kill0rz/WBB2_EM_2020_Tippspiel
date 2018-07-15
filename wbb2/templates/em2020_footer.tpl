@@ -11,7 +11,7 @@
 						<b>Viktor</b>
 					</a>
 					<br />
-					<b><a href="http://kill0rz.com" target="_blank" style="text-decoration: none">Angepasst f&uuml;r die EM 2016 und die WM 2018 kill0rz' Blog</a></b> &copy; 2018
+					<b><a href="http://kill0rz.com" target="_blank" style="text-decoration: none">Angepasst f&uuml;r die EM 2020 kill0rz</a></b> &copy; 2020
 					<a href="http://kill0rz.com" target="_blank" class="smallfont">
 						<b>kill0rz</b>
 					</a>

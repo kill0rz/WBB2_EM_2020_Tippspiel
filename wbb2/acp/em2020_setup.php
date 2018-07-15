@@ -1,7 +1,7 @@
 <?php
 /***************************************************************************
  *
- *   MOD                  : WM-2006/2014/EM-2016/WM-2018 Tippspiel
+ *   MOD                  : WM-2006/2014/EM-2016/WM-2018/EM-2020 Tippspiel
  *   file                 : em2020_setup.php
  *   copyright            : WM2006-Tippspiel © 2006 @ batida444
  *   copyright            : WM2014-Tippspiel © 2014 @ Viktor
@@ -9,7 +9,7 @@
  *   copyright            : EM2020-Tippspiel © 2018 @ kill0rz
  *   web                  : www.v-gn.de
  *   Boardversion         : Burning Board wBB 2.3
- *   Rev                  : v1.2
+ *   Rev                  : v1ALPHA
  ***************************************************************************/
 
 if (file_exists("./lib/em2020_install.lock")) {
@@ -18,7 +18,7 @@ if (file_exists("./lib/em2020_install.lock")) {
 
 $filename = "em2020_setup.php";
 
-$version = "v1.2";
+$version = "v1ALPHA";
 
 define('ENCODING', 'UTF-8');
 @error_reporting(7);

@@ -1,11 +1,11 @@
-Version: v1.2
+Version: v1ALPHA
 
 
-De-Installations-Anleitung für das WM2018-Tippspiel
+De-Installations-Anleitung für das EM2020-Tippspiel
 ***************************************************
 
-Um das WM2018-Tippspiel zu deinstallieren, lade einfach die Datei
-wm2018_uninstall.php
+Um das EM2020-Tippspiel zu deinstallieren, lade einfach die Datei
+em2020_uninstall.php
 ins ACP-Verzeichnis und führe sie aus.
 
 Damit werden folgende Dinge des WM-Tippspiels aus deinem Forum gelöscht:
@@ -15,13 +15,13 @@ Damit werden folgende Dinge des WM-Tippspiels aus deinem Forum gelöscht:
 - Tabellen in der Datenbank
 - Sprachvariablen
 
-Nach dem Ausführen der wm2018_uninstall.php musst du nun noch folgende Dinge von Hand machen:
+Nach dem Ausführen der em2020_uninstall.php musst du nun noch folgende Dinge von Hand machen:
 
-- Löschen des Verzeichnisses wm2018/ inklusive aller Dateien und Unterverzeichnisse im /images/-Ordner
-- Löschen aller ACP-Templates aus dem Verzeichnis /acp/templates/, die mit wm2018_ beginnen
-- Löschen der Dateien wm2018.php und wm2018_global.php aus dem Hauptverzeichnis
-- Löschen der Datei wm2018_admin.php aus dem ACP-Verzeichnis /acp/
-- Löschen der Datei wm2018_uninstall.php aus dem ACP-Verzeichnis /acp/
+- Löschen des Verzeichnisses em2020/ inklusive aller Dateien und Unterverzeichnisse im /images/-Ordner
+- Löschen aller ACP-Templates aus dem Verzeichnis /acp/templates/, die mit em2020_ beginnen
+- Löschen der Dateien em2020.php und em2020_global.php aus dem Hauptverzeichnis
+- Löschen der Datei em2020_admin.php aus dem ACP-Verzeichnis /acp/
+- Löschen der Datei em2020_uninstall.php aus dem ACP-Verzeichnis /acp/
 
 Dann ist das Tippspiel komplett deinstalliert.
 

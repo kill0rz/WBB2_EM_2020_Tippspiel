@@ -10,8 +10,8 @@
 <text:LANG_ACP_EM2020_CHOICE>Bitte w&auml;hlen</LANG_ACP_EM2020_CHOICE:text>
 <text:LANG_ACP_EM2020_PHP_1>Gutschrift EM2020-Tippspiel (SpielLANG_EM2020_TPL_INDEX_8LANG_EM2020_TPL_INDEX_8</LANG_ACP_EM2020_PHP_1:text>
 <text:LANG_ACP_EM2020_PHP_2>plus</LANG_ACP_EM2020_PHP_2:text>
-<text:LANG_ACP_EM2020_PHP_3>Gutschrift EM2020-Tippspiel (Weltmeister-Tipp)</LANG_ACP_EM2020_PHP_3:text>
-<text:LANG_ACP_EM2020_PHP_4>Gutschrift EM2020-Tippspiel (Vize-Weltmeister-Tipp)</LANG_ACP_EM2020_PHP_4:text>
+<text:LANG_ACP_EM2020_PHP_3>Gutschrift EM2020-Tippspiel (Europameister-Tipp)</LANG_ACP_EM2020_PHP_3:text>
+<text:LANG_ACP_EM2020_PHP_4>Gutschrift EM2020-Tippspiel (Vize-Europameister-Tipp)</LANG_ACP_EM2020_PHP_4:text>
 <text:LANG_ACP_EM2020_PHP_5><br />Es wurde mindestens ein Ergebnis vergessen</LANG_ACP_EM2020_PHP_5:text>
 <text:LANG_ACP_EM2020_PHP_6><br />Es wurde nicht ausgew&auml;hlt, ob es gelbe Karten im Spiel gab</LANG_ACP_EM2020_PHP_6:text>
 <text:LANG_ACP_EM2020_PHP_7><br />Es wurde nicht ausgew&auml;hlt, ob es gelb-rote/rote Karten im Spiel gab</LANG_ACP_EM2020_PHP_7:text>
@@ -31,7 +31,7 @@
 <text:LANG_ACP_EM2020_TPL_INFO_12>Spezieller Dank an</LANG_ACP_EM2020_TPL_INFO_12:text>
 <text:LANG_ACP_EM2020_TPL_INFO_13>Manuel "Hawk[eye]" Knietsch (<a href="http://www.kadett-forum.de" target="_blank">www.kadett-forum.de</a>)<br />Viktor Gertzen (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Jens (<a href="http://www.wbbcoderforum.de/" target="_blank">wBB Coderforum</a>)<br />kill0rz (<a href="http://kill0rz.com/" target="_blank">kill0rz' Blog</a>)<br /><br />F&uuml;r Plug-Ins und Erweiterungen:<br />Mr. Fish (<a href="http://cball.de" target="_blank">cball.de</a>)<br />Viktor (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Steinadler (<a href="http://www.steinadlers-forum.de/wbblite/index.php" target="_blank">Steinadlers Bastelst&uuml;bchen</a>)<br /></LANG_ACP_EM2020_TPL_INFO_13:text>
 <text:LANG_ACP_EM2020_TPL_INFO_2>WM2006-2014/EM2020-Tippspiel Version</LANG_ACP_EM2020_TPL_INFO_2:text>
-<text:LANG_ACP_EM2020_TPL_INFO_3>v1.2</LANG_ACP_EM2020_TPL_INFO_3:text>
+<text:LANG_ACP_EM2020_TPL_INFO_3>v1ALPHA</LANG_ACP_EM2020_TPL_INFO_3:text>
 <text:LANG_ACP_EM2020_TPL_INFO_4>Idee &amp; Programmierung</LANG_ACP_EM2020_TPL_INFO_4:text>
 <text:LANG_ACP_EM2020_TPL_INFO_5>Gunter "Batida444" Seroski</LANG_ACP_EM2020_TPL_INFO_5:text>
 <text:LANG_ACP_EM2020_TPL_INFO_6>Template &amp; Anpassung</LANG_ACP_EM2020_TPL_INFO_6:text>
@@ -59,17 +59,17 @@
 <text:LANG_ACP_EM2020_TPL_OPTIONS_15>Kann getippt werden, ob es gelbe Karten im Spiel gab?</LANG_ACP_EM2020_TPL_OPTIONS_15:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_16>Kann getippt werden, ob es gelb-rote/rote Karten im Spiel gab?</LANG_ACP_EM2020_TPL_OPTIONS_16:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_17>Kann getippt werden, ob es Elfmeter im Spiel gab?</LANG_ACP_EM2020_TPL_OPTIONS_17:text>
-<text:LANG_ACP_EM2020_TPL_OPTIONS_18>Kann der Weltmeister / Vize-Weltmeister getippt werden?</LANG_ACP_EM2020_TPL_OPTIONS_18:text>
-<text:LANG_ACP_EM2020_TPL_OPTIONS_19>Bis zu welchem Spiel kann der Weltmeister / Vizeweltmeister getippt werden?</LANG_ACP_EM2020_TPL_OPTIONS_19:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_18>Kann der Europameister / Vize-Europameister getippt werden?</LANG_ACP_EM2020_TPL_OPTIONS_18:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_19>Bis zu welchem Spiel kann der Europameister / Vizeweltmeister getippt werden?</LANG_ACP_EM2020_TPL_OPTIONS_19:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_20>(Gameid, Wert zwischen 1 und $gameids[finale]<br />Game $gameids[vorrundenspiel] = letztes Vorrundenspiel<br />Game $gameids[finale] = Finalspiel)</LANG_ACP_EM2020_TPL_OPTIONS_20:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_21>Einstellungen f&uuml;r den Guthabenhack (V1.9.5 von Lasall ben&ouml;tigt)</LANG_ACP_EM2020_TPL_OPTIONS_21:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_22>Soll der Guthabenhack f&uuml;r das EM2020-Tippspiel genutzt werden?</LANG_ACP_EM2020_TPL_OPTIONS_22:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_23>Sollen die Infos zu Kosten und Gewinnen auf der Startseite angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_23:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_24>Wieviel kostet ein normaler Spiel-Tipp?</LANG_ACP_EM2020_TPL_OPTIONS_24:text>
-<text:LANG_ACP_EM2020_TPL_OPTIONS_25>Wieviel kostet der Weltmeister / Vize-Weltmeister-Tipp?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_25:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_25>Wieviel kostet der Europameister / Vize-Europameister-Tipp?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_25:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_26>Wieviel Gewinn gibt es f&uuml;r einen exakten Spiel-Tipp?</LANG_ACP_EM2020_TPL_OPTIONS_26:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_27>Wieviel Gewinn gibt es f&uuml;r einen Tipp, bei dem die Tendenz richtig ist?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_27:text>
-<text:LANG_ACP_EM2020_TPL_OPTIONS_28>Wieviel Gewinn gibt es f&uuml;r das richtige Tippen des Weltmeisters / Vize-Weltmeisters?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_28:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_28>Wieviel Gewinn gibt es f&uuml;r das richtige Tippen des Europameisters / Vize-Europameisters?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_28:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_29>Einstellungen f&uuml;r die Ebay RelevanceAd-Anzeige</LANG_ACP_EM2020_TPL_OPTIONS_29:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_30>Soll der Ebay RelevanceAd-Banner angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_30:text>
 <text:LANG_ACP_EM2020_TPL_OPTIONS_31>Welcher affili.net-PublisherId ist der Banner zugeordnet?</LANG_ACP_EM2020_TPL_OPTIONS_31:text>
@@ -208,10 +208,10 @@
 <text:LANG_EM2020_PHP_22>minus</LANG_EM2020_PHP_22:text>
 <text:LANG_EM2020_PHP_23><font size=\"2\" color=\"FF0000\"><b>Bitte alle Felder ausf&uuml;llen!</b></font></LANG_EM2020_PHP_23:text>
 <text:LANG_EM2020_PHP_24>Du hast leider nicht genug Guthaben, um einen Tipp abgeben zu k&ouml;nnen.<br />Du wirst jetzt auf die Tipp&uuml;bersicht weitergeleitet.<br /><br /></LANG_EM2020_PHP_24:text>
-<text:LANG_EM2020_PHP_25>Tippabgabe EM2020-Tippspiel (Weltmeistertipp)</LANG_EM2020_PHP_25:text>
-<text:LANG_EM2020_PHP_26>Tippabgabe EM2020-Tippspiel (Vize-Weltmeistertipp)</LANG_EM2020_PHP_26:text>
-<text:LANG_EM2020_PHP_27>Noch keinen Weltmeistertipp abgegeben</LANG_EM2020_PHP_27:text>
-<text:LANG_EM2020_PHP_28>Noch keinen Vize-Weltmeistertipp abgegeben</LANG_EM2020_PHP_28:text>
+<text:LANG_EM2020_PHP_25>Tippabgabe EM2020-Tippspiel (Europameistertipp)</LANG_EM2020_PHP_25:text>
+<text:LANG_EM2020_PHP_26>Tippabgabe EM2020-Tippspiel (Vize-Europameistertipp)</LANG_EM2020_PHP_26:text>
+<text:LANG_EM2020_PHP_27>Noch keinen Europameistertipp abgegeben</LANG_EM2020_PHP_27:text>
+<text:LANG_EM2020_PHP_28>Noch keinen Vize-Europameistertipp abgegeben</LANG_EM2020_PHP_28:text>
 <text:LANG_EM2020_PHP_29>wird es geben</LANG_EM2020_PHP_29:text>
 <text:LANG_EM2020_PHP_3>Gruppenspiele der Gruppe </LANG_EM2020_PHP_3:text>
 <text:LANG_EM2020_PHP_30>wird es nicht geben</LANG_EM2020_PHP_30:text>
@@ -238,14 +238,14 @@
 <text:LANG_EM2020_PHP_5>Gruppe</LANG_EM2020_PHP_5:text>
 <text:LANG_EM2020_PHP_50>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_50:text>
 <text:LANG_EM2020_PHP_51>Du hast keine Mannschaft ausgew&auml;hlt.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_51:text>
-<text:LANG_EM2020_PHP_52>Dein Weltmeister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_52:text>
+<text:LANG_EM2020_PHP_52>Dein Europameister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_52:text>
 <text:LANG_EM2020_PHP_53>Du kannst nur eigene Tipps editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_53:text>
-<text:LANG_EM2020_PHP_54>Du hast noch keinen Weltmeister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_54:text>
+<text:LANG_EM2020_PHP_54>Du hast noch keinen Europameister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_54:text>
 <text:LANG_EM2020_PHP_55>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_55:text>
 <text:LANG_EM2020_PHP_56>Du hast keine Mannschaft ausgew&auml;hlt.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_56:text>
-<text:LANG_EM2020_PHP_57>Dein Vize-Weltmeister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_57:text>
+<text:LANG_EM2020_PHP_57>Dein Vize-Europameister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_57:text>
 <text:LANG_EM2020_PHP_58>Du kannst nur eigene Tipps editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_58:text>
-<text:LANG_EM2020_PHP_59>Du hast noch keinen Vize-Weltmeister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_59:text>
+<text:LANG_EM2020_PHP_59>Du hast noch keinen Vize-Europameister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_59:text>
 <text:LANG_EM2020_PHP_60>Du kannst Dir nur Spieltipps ansehen von Spielen, die schon vorbei sind.</LANG_EM2020_PHP_60:text>
 <text:LANG_EM2020_PHP_61>Der Nutzer existiert nicht.</LANG_EM2020_PHP_61:text>
 <text:LANG_EM2020_PHP_62>Die Ergenbnisse erscheinen, wenn das Spiel eingetragen wurde.</LANG_EM2020_PHP_62:text>
@@ -254,19 +254,19 @@
 <text:LANG_EM2020_PHP_8>Halbfinale</LANG_EM2020_PHP_8:text>
 <text:LANG_EM2020_PHP_9>Spiel um Platz 3</LANG_EM2020_PHP_9:text>
 <text:LANG_EM2020_TPL_EBAY_1>Ebay-Angebote zur EM2020</LANG_EM2020_TPL_EBAY_1:text>
-<text:LANG_EM2020_TPL_EDITVWMTIPP_1>Vize-Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_1:text>
-<text:LANG_EM2020_TPL_EDITVWMTIPP_2>Vize-Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_2:text>
-<text:LANG_EM2020_TPL_EDITVWMTIPP_3>Vize-Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_3:text>
-<text:LANG_EM2020_TPL_EDITVWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Vize-Weltmeister-Tipp editieren.</LANG_EM2020_TPL_EDITVWMTIPP_4:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_1>Vize-Europameister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_1:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_2>Vize-Europameister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_2:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_3>Vize-Europameister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_3:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Vize-Europameister-Tipp editieren.</LANG_EM2020_TPL_EDITVWMTIPP_4:text>
 <text:LANG_EM2020_TPL_EDITVWMTIPP_5>Dein bisheriger Tipp:</LANG_EM2020_TPL_EDITVWMTIPP_5:text>
 <text:LANG_EM2020_TPL_EDITVWMTIPP_6>Dein neuer Tipp:</LANG_EM2020_TPL_EDITVWMTIPP_6:text>
-<text:LANG_EM2020_TPL_EDITWMTIPP_1>Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_1:text>
-<text:LANG_EM2020_TPL_EDITWMTIPP_2>Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_2:text>
-<text:LANG_EM2020_TPL_EDITWMTIPP_3>Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_3:text>
-<text:LANG_EM2020_TPL_EDITWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Weltmeister-Tipp editieren.</LANG_EM2020_TPL_EDITWMTIPP_4:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_1>Europameister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_1:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_2>Europameister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_2:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_3>Europameister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_3:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Europameister-Tipp editieren.</LANG_EM2020_TPL_EDITWMTIPP_4:text>
 <text:LANG_EM2020_TPL_EDITWMTIPP_5>Dein bisheriger Tipp:</LANG_EM2020_TPL_EDITWMTIPP_5:text>
 <text:LANG_EM2020_TPL_EDITWMTIPP_6>Dein neuer Tipp:</LANG_EM2020_TPL_EDITWMTIPP_6:text>
-<text:LANG_EM2020_TPL_FOOTER_1>EM2020-Tippspiel &copy; 2018 kill0rz</LANG_EM2020_TPL_FOOTER_1:text>
+<text:LANG_EM2020_TPL_FOOTER_1>EM2020-Tippspiel &copy; 2020 kill0rz</LANG_EM2020_TPL_FOOTER_1:text>
 <text:LANG_EM2020_TPL_GAMEDETAILS_1>EM2020-Tippspiel | Spiel-Details</LANG_EM2020_TPL_GAMEDETAILS_1:text>
 <text:LANG_EM2020_TPL_GAMEDETAILS_10>Ergebnis</LANG_EM2020_TPL_GAMEDETAILS_10:text>
 <text:LANG_EM2020_TPL_GAMEDETAILS_11>Karten und Elfmeter</LANG_EM2020_TPL_GAMEDETAILS_11:text>
@@ -302,7 +302,7 @@
 <text:LANG_EM2020_TPL_INDEX_21>Pkt</LANG_EM2020_TPL_INDEX_21:text>
 <text:LANG_EM2020_TPL_INDEX_22>Ergebnis der EM2020</LANG_EM2020_TPL_INDEX_22:text>
 <text:LANG_EM2020_TPL_INDEX_23>EM-Trophy</LANG_EM2020_TPL_INDEX_23:text>
-<text:LANG_EM2020_TPL_INDEX_24>Vize-Weltmeister</LANG_EM2020_TPL_INDEX_24:text>
+<text:LANG_EM2020_TPL_INDEX_24>Vize-Europameister</LANG_EM2020_TPL_INDEX_24:text>
 <text:LANG_EM2020_TPL_INDEX_25>Punkteverteilung</LANG_EM2020_TPL_INDEX_25:text>
 <text:LANG_EM2020_TPL_INDEX_26>M&ouml;gliche Gewinne und Verluste</LANG_EM2020_TPL_INDEX_26:text>
 <text:LANG_EM2020_TPL_INDEX_27>Kosten f&uuml;r einen normalen Tipp</LANG_EM2020_TPL_INDEX_27:text>
@@ -310,14 +310,14 @@
 <text:LANG_EM2020_TPL_INDEX_29>Gewinn f&uuml;r einen exakten Tipp</LANG_EM2020_TPL_INDEX_29:text>
 <text:LANG_EM2020_TPL_INDEX_3>Hallo</LANG_EM2020_TPL_INDEX_3:text>
 <text:LANG_EM2020_TPL_INDEX_30>Gewinn f&uuml;r einen Tipp mit richtiger Tendenz</LANG_EM2020_TPL_INDEX_30:text>
-<text:LANG_EM2020_TPL_INDEX_31>Gewinn f&uuml;r einen richtigen Weltmeister/Vizeweltmeister-Tipp</LANG_EM2020_TPL_INDEX_31:text>
+<text:LANG_EM2020_TPL_INDEX_31>Gewinn f&uuml;r einen richtigen Europameister/Vizeweltmeister-Tipp</LANG_EM2020_TPL_INDEX_31:text>
 <text:LANG_EM2020_TPL_INDEX_32>Top $em2020_options[topuser] -User</LANG_EM2020_TPL_INDEX_32:text>
 <text:LANG_EM2020_TPL_INDEX_33>Hallo <b>Gast</b></LANG_EM2020_TPL_INDEX_33:text>
 <text:LANG_EM2020_TPL_INDEX_34>Noch nicht eingetragene Spiele</LANG_EM2020_TPL_INDEX_34:text>
 <text:LANG_EM2020_TPL_INDEX_35>Es spielt gerade:</LANG_EM2020_TPL_INDEX_35:text>
 <text:LANG_EM2020_TPL_INDEX_36>Neueste News der UEFA</LANG_EM2020_TPL_INDEX_36:text>
 <text:LANG_EM2020_TPL_INDEX_37>In den folgenden 24h finden diese Spiele statt, f&uuml;r die du noch keine Tipps abgegeben hast:</LANG_EM2020_TPL_INDEX_37:text>
-<text:LANG_EM2020_TPL_INDEX_38>Die letzten $em2020_showtableonindex_maxdonegames Spiele der WM 2018:</LANG_EM2020_TPL_INDEX_38:text>
+<text:LANG_EM2020_TPL_INDEX_38>Die letzten $em2020_showtableonindex_maxdonegames Spiele der EM2020:</LANG_EM2020_TPL_INDEX_38:text>
 <text:LANG_EM2020_TPL_INDEX_4>Du hast bis jetzt $tippsgesamt Tipps abgegeben.</LANG_EM2020_TPL_INDEX_4:text>
 <text:LANG_EM2020_TPL_INDEX_5>Dein verf&uuml;gbares Tippguthaben betr&auml;gt noch</LANG_EM2020_TPL_INDEX_5:text>
 <text:LANG_EM2020_TPL_INDEX_6>Du musst registriert sein, um selber Tipps abgeben zu k&ouml;nnen.<br />Als unregistrierter User kannst Du Dir aber alles ansehen.</LANG_EM2020_TPL_INDEX_6:text>
@@ -374,7 +374,7 @@
 <text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_1>EM2020-Tippspiel | Tipps von</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_1:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_10>Elfmeter</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_10:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_11>Ergebnis</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_11:text>
-<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12>Weltmeister-Tipp:</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12>Europameister-Tipp:</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_13>Vizeweltmeister-Tipp:</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_13:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_2:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_3>Tipps von</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_3:text>
@@ -397,8 +397,8 @@
 <text:LANG_EM2020_TPL_SHOWUSERTIPPS_6>Richtige Tipps</LANG_EM2020_TPL_SHOWUSERTIPPS_6:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPS_7>Falsche Tipps</LANG_EM2020_TPL_SHOWUSERTIPPS_7:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPS_8>Tendenz richtig</LANG_EM2020_TPL_SHOWUSERTIPPS_8:text>
-<text:LANG_EM2020_TPL_SHOWUSERTIPPS_9>Weltmeister-Tipp</LANG_EM2020_TPL_SHOWUSERTIPPS_9:text>
-<text:LANG_EM2020_TPL_SHOWUSERTIPPS_10>Vize-Weltmeister-Tipp</LANG_EM2020_TPL_SHOWUSERTIPPS_10:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_9>Europameister-Tipp</LANG_EM2020_TPL_SHOWUSERTIPPS_9:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_10>Vize-Europameister-Tipp</LANG_EM2020_TPL_SHOWUSERTIPPS_10:text>
 <text:LANG_EM2020_TPL_SHOWUSERTIPPS_11>Punkte</LANG_EM2020_TPL_SHOWUSERTIPPS_11:text>
 <text:LANG_EM2020_TPL_TIPOK_1>Erfolgreiche Tipabgabe</LANG_EM2020_TPL_TIPOK_1:text>
 <text:LANG_EM2020_TPL_TIPOK_2>Dein Tip wurde erfolgreich angenommen.</LANG_EM2020_TPL_TIPOK_2:text>
@@ -414,12 +414,12 @@
 <text:LANG_EM2020_TPL_TIPPABGABE_GK_2>Wird es gelbe Karten im Spiel geben?</LANG_EM2020_TPL_TIPPABGABE_GK_2:text>
 <text:LANG_EM2020_TPL_TIPPABGABE_RK_1>Rote Karten</LANG_EM2020_TPL_TIPPABGABE_RK_1:text>
 <text:LANG_EM2020_TPL_TIPPABGABE_RK_2>Wird es gelb-rote / rote Karten im Spiel geben?</LANG_EM2020_TPL_TIPPABGABE_RK_2:text>
-<text:LANG_EM2020_TPL_tippabgabe_vwm_1>Vize-Weltmeister</LANG_EM2020_TPL_tippabgabe_vwm_1:text>
+<text:LANG_EM2020_TPL_tippabgabe_vwm_1>Vize-Europameister</LANG_EM2020_TPL_tippabgabe_vwm_1:text>
 <text:LANG_EM2020_TPL_tippabgabe_vwm_2>(optionaler Tipp, tippbar bis $lastgamedate, $lastgametime Uhr)</LANG_EM2020_TPL_tippabgabe_vwm_2:text>
-<text:LANG_EM2020_TPL_tippabgabe_vwm_3>Welche Mannschaft wird Vize-Weltmeister 2018?</LANG_EM2020_TPL_tippabgabe_vwm_3:text>
-<text:LANG_EM2020_TPL_TIPPABGABE_WM_1>Weltmeister</LANG_EM2020_TPL_TIPPABGABE_WM_1:text>
+<text:LANG_EM2020_TPL_tippabgabe_vwm_3>Welche Mannschaft wird Vize-Europameister 2020?</LANG_EM2020_TPL_tippabgabe_vwm_3:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_WM_1>Europameister</LANG_EM2020_TPL_TIPPABGABE_WM_1:text>
 <text:LANG_EM2020_TPL_TIPPABGABE_WM_2>(optionaler Tipp, tippbar bis $lastgamedate, $lastgametime Uhr)</LANG_EM2020_TPL_TIPPABGABE_WM_2:text>
-<text:LANG_EM2020_TPL_TIPPABGABE_WM_3>Welche Mannschaft wird Weltmeister 2018?</LANG_EM2020_TPL_TIPPABGABE_WM_3:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_WM_3>Welche Mannschaft wird Europameister 2020?</LANG_EM2020_TPL_TIPPABGABE_WM_3:text>
 <text:LANG_EM2020_TPL_TIPPEDIT_1>Tipp editieren</LANG_EM2020_TPL_TIPPEDIT_1:text>
 <text:LANG_EM2020_TPL_TIPPEDIT_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_TIPPEDIT_2:text>
 <text:LANG_EM2020_TPL_TIPPEDIT_3>Tipp editieren</LANG_EM2020_TPL_TIPPEDIT_3:text>
@@ -437,14 +437,14 @@
 <text:LANG_EM2020_TPL_TIPPSPROGAME_8>Tipp Elfmeter</LANG_EM2020_TPL_TIPPSPROGAME_8:text>
 <text:LANG_EM2020_TPL_TOPUSER_1>Punkte</LANG_EM2020_TPL_TOPUSER_1:text>
 <text:LANG_EM2020_TPL_TOPUSER_2>Tipps</LANG_EM2020_TPL_TOPUSER_2:text>
-<text:LANG_EM2020_TPL_INDEX_40>Weltmeister Quote</LANG_EM2020_TPL_INDEX_40:text>
+<text:LANG_EM2020_TPL_INDEX_40>Europameister Quote</LANG_EM2020_TPL_INDEX_40:text>
 <text:LANG_EM2020_TPL_INDEX_41><b>Land</b></LANG_EM2020_TPL_INDEX_41:text>
 <text:LANG_EM2020_TPL_INDEX_42><b>Flagge</b></LANG_EM2020_TPL_INDEX_42:text>
 <text:LANG_EM2020_TPL_INDEX_43><b>Tipps</b></LANG_EM2020_TPL_INDEX_43:text>
 <text:LANG_EM2020_TPL_INDEX_44><b>Quote</b></LANG_EM2020_TPL_INDEX_44:text>
-<text:LANG_EM2020_TPL_WMTIPPONLY_1>Weltmeister / Vizeweltmeister tippen</LANG_EM2020_TPL_WMTIPPONLY_1:text>
-<text:LANG_EM2020_TPL_WMTIPPONLY_2>Hier kannst Du den Weltmeister / Vizeweltmeister tippen.</LANG_EM2020_TPL_WMTIPPONLY_2:text>
-<text:LANG_EM2020_TPL_WMTIPPONLY_3>Vize-/Weltmeister tippen</LANG_EM2020_TPL_WMTIPPONLY_3:text>
+<text:LANG_EM2020_TPL_WMTIPPONLY_1>Europameister / Vizeweltmeister tippen</LANG_EM2020_TPL_WMTIPPONLY_1:text>
+<text:LANG_EM2020_TPL_WMTIPPONLY_2>Hier kannst Du den Europameister / Vizeweltmeister tippen.</LANG_EM2020_TPL_WMTIPPONLY_2:text>
+<text:LANG_EM2020_TPL_WMTIPPONLY_3>Vize-/Europameister tippen</LANG_EM2020_TPL_WMTIPPONLY_3:text>
 <text:LANG_EM2020_TPL_WMTIPPONLY_4><span class="smallfont"><b><h2>Wichtig!</h2><br />Es z&auml;hlen immer alle Tore, auch die in der Verl&auml;ngerung und im Elfmeterschie&szlig;en!</b></span></LANG_EM2020_TPL_WMTIPPONLY_4:text>
 
 
@@ -459,4 +459,4 @@
 
 [thread]
 
-<text:LANG_THREAD_EM2020_ANZEIGE_1><br /><b>Teilnehmer des WM-Tippspiels 2018</b><br /><br />Tipps: $em2020_thread_tipps<br />Punkte: $em2020_thread_userpunkte<br />Tippspiel-Ranking: $em2020_userrank</LANG_THREAD_EM2020_ANZEIGE_1:text>
+<text:LANG_THREAD_EM2020_ANZEIGE_1><br /><b>Teilnehmer des EM-Tippspiels 2020</b><br /><br />Tipps: $em2020_thread_tipps<br />Punkte: $em2020_thread_userpunkte<br />Tippspiel-Ranking: $em2020_userrank</LANG_THREAD_EM2020_ANZEIGE_1:text>

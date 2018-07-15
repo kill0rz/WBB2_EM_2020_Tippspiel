@@ -10,7 +10,7 @@ CREATE TABLE `bb1_em2020_options` (
   `showrssnews` int(1) NOT NULL default '1',
   `rssnews` int(5) NOT NULL default '5',
   `rssnews_showfeed` varchar(10) NOT NULL default 'fifa',
-  `wmticker_width` int(5) NOT NULL default '800',
+  `emticker_width` int(5) NOT NULL default '800',
   `nextxgames` int(3) NOT NULL default '4',
   `nonaddedgamescount` int(3) NOT NULL default '4',
   `currentgamescount` int(3) NOT NULL default '4',
@@ -21,14 +21,14 @@ CREATE TABLE `bb1_em2020_options` (
   `rk_jn` int(1) NOT NULL default '1',
   `elfer_jn` int(1) NOT NULL default '1',
   `winnertipp_jn` int(1) NOT NULL default '1',
-  `lastgame4wmtipp` int(3) NOT NULL default '48',
+  `lastgame4emtipp` int(3) NOT NULL default '48',
   `gh_aktiv` int(1) NOT NULL default '0',
   `gh_infos` int(1) NOT NULL default '1',
   `gh_ab_normtipp` int(5) NOT NULL default '10',
-  `gh_ab_wmtipp` int(5) NOT NULL default '10',
+  `gh_ab_emtipp` int(5) NOT NULL default '10',
   `gh_gut_normtipp_richtig` int(5) NOT NULL default '25',
   `gh_gut_normtipp_tendenz` int(5) NOT NULL default '15',
-  `gh_gut_wmtipp_richtig` int(5) NOT NULL default '150',
+  `gh_gut_emtipp_richtig` int(5) NOT NULL default '150',
   `1st` int(3) NOT NULL default '0',
   `2nd` int(3) NOT NULL default '0',
   `3rd` int(3) NOT NULL default '0',
@@ -82,8 +82,8 @@ INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (2, 'Tendenz
 INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (3, 'Gelbe Karten', 3);
 INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (4, 'Rote Karten', 3);
 INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (5, 'Elfmeter', 3);
-INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (6, 'Weltmeister', 100);
-INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (7, 'Vize-Weltmeister', 100);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (6, 'Europameister', 150);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (7, 'Vize-Europameister', 100);
 
 -- --------------------------------------------------------
 
@@ -116,70 +116,70 @@ CREATE TABLE `bb1_em2020_spiele` (
 -- 
 
 INSERT INTO `bb1_em2020_spiele` (`gameid`, `gruppe`, `datetime`, `stadion`, `team_1_id`, `team_2_id`, `game_gk`, `game_rk`, `game_elfer`, `game_goals_1`, `game_goals_2`, `gamelink`, `gamecomment`, `tipps`) VALUES
-(1, 'A',  1528992000, 'Moskau',  '1',  '2',  0,  0,  0,  '', '', '', '', 0),
-(2, 'A',  1529067600, 'Jekaterinburg',  '3',  '4',  0,  0,  0,  '', '', '', '', 0),
-(3, 'B',  1529078400, 'Sotschi',  '7',  '8',  0,  0,  0,  '', '', '', '', 0),
-(4, 'B',  1529089200, 'Sankt Petersburg',  '5',  '6',  0,  0,  0,  '', '', '', '', 0),
-(5, 'C',  1529146800, 'Kasan',  '9',  '10',  0,  0,  0,  '', '', '', '', 0),
-(6, 'D',  1529157600, 'Moskau',  '13',  '14',  0,  0,  0,  '', '', '', '', 0),
-(7, 'C',  1529168400, 'Saransk',  '11',  '12',  0,  0,  0,  '', '', '', '', 0),
-(8, 'D',  1529179200, 'Kaliningrad',  '15',  '16',  0,  0,  0,  '', '', '', '', 0),
-(9, 'E',  1529240400, 'Rostow am Don',  '19',  '20',  0,  0,  0,  '', '', '', '', 0),
-(10, 'F',  1529251200, 'Moskau',  '21',  '22',  0,  0,  0,  '', '', '', '', 0),
-(11, 'E',  1529262000, 'Samara',  '17',  '18',  0,  0,  0,  '', '', '', '', 0),
-(12, 'F',  1529326800, 'Nischni Nowgorod',  '23',  '24',  0,  0,  0,  '', '', '', '', 0),
-(13,  'G',  1529337600, 'Sotschi',  '25',  '26',  0,  0,  0,  '', '', '', '', 0),
-(14,  'G',  1529348400, 'Wolgograd',  '27',  '28',  0,  0,  0,  '', '', '', '', 0),
-(15,  'H',  1529413200, 'Moskau',  '31',  '32',  0,  0,  0,  '', '', '', '', 0),
-(16,  'H',  1529424000, 'Saransk',  '29',  '30',  0,  0,  0,  '', '', '', '', 0),
-(17,  'A',  1529434800, 'Sankt Petersburg',  '1',  '3',  0,  0,  0,  '', '', '', '', 0),
-(18,  'B',  1529499600, 'Moskau',  '5',  '7',  0,  0,  0,  '', '', '', '', 0),
-(19,  'A',  1529510400, 'Rostow am Don',  '4',  '2',  0,  0,  0,  '', '', '', '', 0),
-(20,  'B',  1529521200, 'Kasan',  '8',  '6',  0,  0,  0,  '', '', '', '', 0),
-(21,  'C',  1529586000, 'Kaliningrad',  '12',  '10',  0,  0,  0,  '', '', '', '', 0),
-(22,  'C',  1529596800, 'Samara',  '9',  '11',  0,  0,  0,  '', '', '', '', 0),
-(23,  'D',  1529607600, 'Nischni Nowgorod',  '13',  '15',  0,  0,  0,  '', '', '', '', 0),
-(24,  'E',  1529672400, 'Sankt Petersburg',  '17',  '19',  0,  0,  0,  '', '', '', '', 0),
-(25,  'D',  1529683200, 'Wolgograd',  '16',  '14',  0,  0,  0,  '', '', '', '', 0),
-(26,  'E',  1529694000, 'Jekaterinburg',  '20',  '18',  0,  0,  0,  '', '', '', '', 0),
-(27,  'G',  1529758800, 'Moskau',  '25',  '27',  0,  0,  0,  '', '', '', '', 0),
-(28,  'F',  1529769600, 'Sotschi',  '24',  '22',  0,  0,  0,  '', '', '', '', 0),
-(29,  'F',  1529780400, 'Rostow am Don',  '21',  '23',  0,  0,  0,  '', '', '', '', 0),
-(30,  'G',  1529845200, 'Nischni Nowgorod',  '28',  '26',  0,  0,  0,  '', '', '', '', 0),
-(31,  'H',  1529856000, 'Kasan',  '32',  '30',  0,  0,  0,  '', '', '', '', 0),
-(32,  'H',  1529866800, 'Kaliningrad',  '29',  '31',  0,  0,  0,  '', '', '', '', 0),
-(33,  'A',  1529938800, 'Samara',  '4',  '1',  0,  0,  0,  '', '', '', '', 0),
-(34,  'A',  1529938800, 'Wolgograd',  '2',  '3',  0,  0,  0,  '', '', '', '', 0),
-(35,  'B',  1529953200, 'Saransk',  '6',  '7',  0,  0,  0,  '', '', '', '', 0),
-(36,  'B',  1529953200, 'Jekaterinburg',  '8',  '5',  0,  0,  0,  '', '', '', '', 0),
-(37,  'C',  1530025200, 'Moskau',  '12',  '9',  0,  0,  0,  '', '', '', '', 0),
-(38,  'C',  1530025200, 'Sotschi',  '10',  '11',  0,  0,  0,  '', '', '', '', 0),
-(39,  'D',  1530039600, 'Sankt Petersburg',  '14',  '15',  0,  0,  0,  '', '', '', '', 0),
-(40,  'D',  1530039600, 'Rostow am Don',  '16',  '13',  0,  0,  0,  '', '', '', '', 0),
-(41,  'F',  1530111600, 'Kasan',  '20',  '17',  0,  0,  0,  '', '', '', '', 0),
-(42,  'F',  1530111600, 'Kaliningrad',  '18',  '19',  0,  0,  0,  '', '', '', '', 0),
-(43,  'E',  1530126000, 'Moskau',  '24',  '21',  0,  0,  0,  '', '', '', '', 0),
-(44,  'E',  1530126000, 'Nischni Nowgorod',  '22',  '23',  0,  0,  0,  '', '', '', '', 0),
-(45,  'H',  1530198000, 'Wolgograd',  '28',  '25',  0,  0,  0,  '', '', '', '', 0),
-(46,  'H',  1530198000, 'Samara',  '26',  '27',  0,  0,  0,  '', '', '', '', 0),
-(47,  'G',  1530212400, 'Jekaterinburg',  '29',  '32',  0,  0,  0,  '', '', '', '', 0),
-(48,  'G',  1530212400, 'Saransk',  '30',  '31',  0,  0,  0,  '', '', '', '', 0),
-(49,  '8',  1530370800, 'Sotschi',  'W-C',  'S-D',  0,  0,  0,  '', '', '', '', 0),
-(50,  '8',  1530385200, 'Kasan',  'W-A',  'S-B',  0,  0,  0,  '', '', '', '', 0),
-(51,  '8',  1530457200, 'Moskau',  'W-B',  'S-A',  0,  0,  0,  '', '', '', '', 0),
-(52,  '8',  1530471600, 'Nischni Nowgorod',  'W-D',  'S-C',  0,  0,  0,  '', '', '', '', 0),
-(53,  '8',  1530543600, 'Samara',  'W-G',  'S-H',  0,  0,  0,  '', '', '', '', 0),
-(54,  '8',  1530558000, 'Rostow am Don',  'W-E',  'S-F',  0,  0,  0,  '', '', '', '', 0),
-(55,  '8',  1530630000, 'Sankt Petersburg',  'W-H',  'S-G',  0,  0,  0,  '', '', '', '', 0),
-(56,  '8',  1530644400, 'Moskau',  'W-F',  'S-E',  0,  0,  0,  '', '', '', '', 0),
-(57,  '4',  1530889200, 'Nischni Nowgorod',  'W-49', 'W-50', 0,  0,  0,  '', '', '', '', 0),
-(58,  '4',  1530903600, 'Kasan',  'W-54', 'W-53', 0,  0,  0,  '', '', '', '', 0),
-(59,  '4',  1530975600, 'Sotschi',  'W-56', 'W-55', 0,  0,  0,  '', '', '', '', 0),
-(60,  '4',  1530990000, 'Samara',  'W-51', 'W-52', 0,  0,  0,  '', '', '', '', 0),
-(61,  '2',  1531249200, 'Sankt Petersburg',  'W-58', 'W-57', 0,  0,  0,  '', '', '', '', 0),
-(62,  '2',  1531335600, 'Moskau',  'W-60', 'W-59', 0,  0,  0,  '', '', '', '', 0),
-(63,  '3',  1531580400, 'Sankt Petersburg',  'L-61', 'L-62', 0,  0,  0,  '', '', '', '', 0),
-(64,  '1',  1531670400, 'Moskau',  'W-61', 'W-62', 0,  0,  0,  '', '', '', '', 0);
+(1, 'A', 000000000, 'Moskau',  '1',  '2',  0,  0,  0,  '', '', '', '', 0),
+(2, 'A', 000000000, 'Jekaterinburg',  '3',  '4',  0,  0,  0,  '', '', '', '', 0),
+(3, 'B', 000000000, 'Sotschi',  '7',  '8',  0,  0,  0,  '', '', '', '', 0),
+(4, 'B', 000000000, 'Sankt Petersburg',  '5',  '6',  0,  0,  0,  '', '', '', '', 0),
+(5, 'C', 000000000, 'Kasan',  '9',  '10',  0,  0,  0,  '', '', '', '', 0),
+(6, 'D', 000000000, 'Moskau',  '13',  '14',  0,  0,  0,  '', '', '', '', 0),
+(7, 'C', 000000000, 'Saransk',  '11',  '12',  0,  0,  0,  '', '', '', '', 0),
+(8, 'D', 000000000, 'Kaliningrad',  '15',  '16',  0,  0,  0,  '', '', '', '', 0),
+(9, 'E', 000000000, 'Rostow am Don',  '19',  '20',  0,  0,  0,  '', '', '', '', 0),
+(10, 'F', 000000000, 'Moskau',  '21',  '22',  0,  0,  0,  '', '', '', '', 0),
+(11, 'E', 000000000, 'Samara',  '17',  '18',  0,  0,  0,  '', '', '', '', 0),
+(12, 'F', 000000000, 'Nischni Nowgorod',  '23',  '24',  0,  0,  0,  '', '', '', '', 0),
+(13,  'G', 000000000, 'Sotschi',  '25',  '26',  0,  0,  0,  '', '', '', '', 0),
+(14,  'G', 000000000, 'Wolgograd',  '27',  '28',  0,  0,  0,  '', '', '', '', 0),
+(15,  'H', 000000000, 'Moskau',  '31',  '32',  0,  0,  0,  '', '', '', '', 0),
+(16,  'H', 000000000, 'Saransk',  '29',  '30',  0,  0,  0,  '', '', '', '', 0),
+(17,  'A', 000000000, 'Sankt Petersburg',  '1',  '3',  0,  0,  0,  '', '', '', '', 0),
+(18,  'B', 000000000, 'Moskau',  '5',  '7',  0,  0,  0,  '', '', '', '', 0),
+(19,  'A', 000000000, 'Rostow am Don',  '4',  '2',  0,  0,  0,  '', '', '', '', 0),
+(20,  'B', 000000000, 'Kasan',  '8',  '6',  0,  0,  0,  '', '', '', '', 0),
+(21,  'C', 000000000, 'Kaliningrad',  '12',  '10',  0,  0,  0,  '', '', '', '', 0),
+(22,  'C', 000000000, 'Samara',  '9',  '11',  0,  0,  0,  '', '', '', '', 0),
+(23,  'D', 000000000, 'Nischni Nowgorod',  '13',  '15',  0,  0,  0,  '', '', '', '', 0),
+(24,  'E', 000000000, 'Sankt Petersburg',  '17',  '19',  0,  0,  0,  '', '', '', '', 0),
+(25,  'D', 000000000, 'Wolgograd',  '16',  '14',  0,  0,  0,  '', '', '', '', 0),
+(26,  'E', 000000000, 'Jekaterinburg',  '20',  '18',  0,  0,  0,  '', '', '', '', 0),
+(27,  'G', 000000000, 'Moskau',  '25',  '27',  0,  0,  0,  '', '', '', '', 0),
+(28,  'F', 000000000, 'Sotschi',  '24',  '22',  0,  0,  0,  '', '', '', '', 0),
+(29,  'F', 000000000, 'Rostow am Don',  '21',  '23',  0,  0,  0,  '', '', '', '', 0),
+(30,  'G', 000000000, 'Nischni Nowgorod',  '28',  '26',  0,  0,  0,  '', '', '', '', 0),
+(31,  'H', 000000000, 'Kasan',  '32',  '30',  0,  0,  0,  '', '', '', '', 0),
+(32,  'H', 000000000, 'Kaliningrad',  '29',  '31',  0,  0,  0,  '', '', '', '', 0),
+(33,  'A', 000000000, 'Samara',  '4',  '1',  0,  0,  0,  '', '', '', '', 0),
+(34,  'A', 000000000, 'Wolgograd',  '2',  '3',  0,  0,  0,  '', '', '', '', 0),
+(35,  'B', 000000000, 'Saransk',  '6',  '7',  0,  0,  0,  '', '', '', '', 0),
+(36,  'B', 000000000, 'Jekaterinburg',  '8',  '5',  0,  0,  0,  '', '', '', '', 0),
+(37,  'C', 000000000, 'Moskau',  '12',  '9',  0,  0,  0,  '', '', '', '', 0),
+(38,  'C', 000000000, 'Sotschi',  '10',  '11',  0,  0,  0,  '', '', '', '', 0),
+(39,  'D', 000000000, 'Sankt Petersburg',  '14',  '15',  0,  0,  0,  '', '', '', '', 0),
+(40,  'D', 000000000, 'Rostow am Don',  '16',  '13',  0,  0,  0,  '', '', '', '', 0),
+(41,  'F', 000000000, 'Kasan',  '20',  '17',  0,  0,  0,  '', '', '', '', 0),
+(42,  'F', 000000000, 'Kaliningrad',  '18',  '19',  0,  0,  0,  '', '', '', '', 0),
+(43,  'E', 000000000, 'Moskau',  '24',  '21',  0,  0,  0,  '', '', '', '', 0),
+(44,  'E', 000000000, 'Nischni Nowgorod',  '22',  '23',  0,  0,  0,  '', '', '', '', 0),
+(45,  'H', 000000000, 'Wolgograd',  '28',  '25',  0,  0,  0,  '', '', '', '', 0),
+(46,  'H', 000000000, 'Samara',  '26',  '27',  0,  0,  0,  '', '', '', '', 0),
+(47,  'G', 000000000, 'Jekaterinburg',  '29',  '32',  0,  0,  0,  '', '', '', '', 0),
+(48,  'G', 000000000, 'Saransk',  '30',  '31',  0,  0,  0,  '', '', '', '', 0),
+(49,  '8', 000000000, 'Sotschi',  'W-C',  'S-D',  0,  0,  0,  '', '', '', '', 0),
+(50,  '8', 000000000, 'Kasan',  'W-A',  'S-B',  0,  0,  0,  '', '', '', '', 0),
+(51,  '8', 000000000, 'Moskau',  'W-B',  'S-A',  0,  0,  0,  '', '', '', '', 0),
+(52,  '8', 000000000, 'Nischni Nowgorod',  'W-D',  'S-C',  0,  0,  0,  '', '', '', '', 0),
+(53,  '8', 000000000, 'Samara',  'W-G',  'S-H',  0,  0,  0,  '', '', '', '', 0),
+(54,  '8', 000000000, 'Rostow am Don',  'W-E',  'S-F',  0,  0,  0,  '', '', '', '', 0),
+(55,  '8', 000000000, 'Sankt Petersburg',  'W-H',  'S-G',  0,  0,  0,  '', '', '', '', 0),
+(56,  '8', 000000000, 'Moskau',  'W-F',  'S-E',  0,  0,  0,  '', '', '', '', 0),
+(57,  '4', 000000000, 'Nischni Nowgorod',  'W-49', 'W-50', 0,  0,  0,  '', '', '', '', 0),
+(58,  '4', 000000000, 'Kasan',  'W-54', 'W-53', 0,  0,  0,  '', '', '', '', 0),
+(59,  '4', 000000000, 'Sotschi',  'W-56', 'W-55', 0,  0,  0,  '', '', '', '', 0),
+(60,  '4', 000000000, 'Samara',  'W-51', 'W-52', 0,  0,  0,  '', '', '', '', 0),
+(61,  '2', 000000000, 'Sankt Petersburg',  'W-58', 'W-57', 0,  0,  0,  '', '', '', '', 0),
+(62,  '2', 000000000, 'Moskau',  'W-60', 'W-59', 0,  0,  0,  '', '', '', '', 0),
+(63,  '3', 000000000, 'Sankt Petersburg',  'L-61', 'L-62', 0,  0,  0,  '', '', '', '', 0),
+(64,  '1', 000000000, 'Moskau',  'W-61', 'W-62', 0,  0,  0,  '', '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -254,8 +254,8 @@ CREATE TABLE `bb1_em2020_userpunkte` (
   `tipps_richtig` int(5) NOT NULL default '0',
   `tipps_falsch` int(5) NOT NULL default '0',
   `tipps_tendenz` int(5) NOT NULL default '0',
-  `tipp_wm` int(5) NOT NULL default '0',
-  `tipp_vwm` int(5) NOT NULL default '0'
+  `tipp_em` int(5) NOT NULL default '0',
+  `tipp_vem` int(5) NOT NULL default '0'
 ) ENGINE=MyISAM;
 
 -- 
@@ -284,15 +284,15 @@ CREATE TABLE `bb1_em2020_usertipps` (
 -- Daten für Tabelle `bb1_em2020_usertipps`
 -- 
 
--- DROP TABLE IF EXISTS `bb1_em2020_bestedrittetmp`;
--- CREATE TABLE `bb1_em2020_bestedrittetmp` (
---  `ID` int(11) NOT NULL AUTO_INCREMENT,
---  `teamid` int(11) NOT NULL,
---  `punkte` int(11) NOT NULL,
---  `td` int(11) NOT NULL,
---  `g` int(11) NOT NULL,
---  PRIMARY KEY (`ID`)
--- ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `bb1_em2020_bestedrittetmp`;
+CREATE TABLE `bb1_em2020_bestedrittetmp` (
+ `ID` int(11) NOT NULL AUTO_INCREMENT,
+ `teamid` int(11) NOT NULL,
+ `punkte` int(11) NOT NULL,
+ `td` int(11) NOT NULL,
+ `g` int(11) NOT NULL,
+ PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS `bb1_em2020_vortag`;
 CREATE TABLE `bb1_em2020_vortag` (
@@ -310,33 +310,5 @@ ALTER TABLE `bb1_em2020_userpunkte` ADD UNIQUE(`userid`);
 ALTER TABLE `bb1_em2020_vortag` ADD `id` int(5) NULL AUTO_INCREMENT UNIQUE FIRST, CHANGE `userid` `userid` int(10) NULL AFTER `id`, CHANGE `pos` `pos` int(10) NOT NULL AFTER `punkte`;
 ALTER TABLE `bb1_em2020_vortag` ADD PRIMARY KEY `id` (`id`), DROP INDEX `PRIMARY`;
 
--- 03.06.2018: Fix falscher Spiele in Gruppen
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'E' WHERE `gameid` = '41';
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'E' WHERE `gameid` = '42';
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'F' WHERE `gameid` = '43';
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'F' WHERE `gameid` = '44';
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'G' WHERE `gameid` = '45';
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'G' WHERE `gameid` = '46';
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'H' WHERE `gameid` = '47';
-UPDATE `bb1_em2020_spiele` SET `gruppe` = 'H' WHERE `gameid` = '48';
-
--- 10.06.2018: Fix falsche Spielzeiten wegen Sommerzeit
+-- Fix falsche Spielzeiten wegen Sommerzeit
 UPDATE `bb1_em2020_spiele` SET `datetime` = `datetime`-3600;
-
--- 24.06.2018: Fix falsche eingetragene Spieldaten
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530108000' WHERE `gameid` = '43';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530108000' WHERE `gameid` = '44';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530122400' WHERE `gameid` = '41';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530122400' WHERE `gameid` = '42';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530194400' WHERE `gameid` = '48';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530194400', `team_1_id` = '32', `team_2_id` = '29' WHERE `gameid` = '47';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530208800' WHERE `gameid` = '45';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530208800' WHERE `gameid` = '46';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530540000' WHERE `gameid` = '54';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530554400' WHERE `gameid` = '53';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530626400' WHERE `gameid` = '56';
-UPDATE `bb1_em2020_spiele` SET `datetime` = '1530640800' WHERE `gameid` = '55';
-UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-53', `team_2_id` = 'W-54' WHERE `gameid` = '58';
-UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-55', `team_2_id` = 'W-56' WHERE `gameid` = '59';
-UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-59', `team_2_id` = 'W-60' WHERE `gameid` = '62';
-UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-57', `team_2_id` = 'W-58' WHERE `gameid` = '61';
