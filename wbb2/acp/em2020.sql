@@ -42,7 +42,7 @@ CREATE TABLE `bb1_em2020_options` (
   `vgthema` varchar(100) NOT NULL default 'Ergebnis: {vgp_name1} - {vgp_name2}',
   `message` text NOT NULL,
   `vboardid` int(11) NOT NULL default '0',
-  `vprefix` varchar(50) NOT NULL default 'WM2018',
+  `vprefix` varchar(50) NOT NULL default 'EM2020',
   `vgposthtml` int(11) NOT NULL default '0',
   `diskussionsthreadid` int(11) NOT NULL DEFAULT '0',
   `lasttageswertungreset` int(11) NOT NULL default '0',

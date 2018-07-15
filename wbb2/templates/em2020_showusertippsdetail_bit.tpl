@@ -1,9 +1,9 @@
 <tr>
 	<td class="$rowclass" align="center">
-		<span class="smallfont"><a href="./em2020.php?action=tippsprogame&amp;gameid=$row_game[gameid]" alt="{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_BIT_2']}">$row_game[gameid]</a> $edittipp</span>
+		<span class="smallfont"><a href="./em2020.php?action=tippsprogame&amp;gameid=$row_game[gameid]" alt="{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_BIT_2']}">$row_game[gameid]</a> $edittipp</span>
 	</td>
 	<td class="$rowclass" align="center">
-		<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_BIT_1']}</span>
+		<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_BIT_1']}</span>
 	</td>
 	<td class="$rowclass" align="center">
 		<span class="smallfont"><a href="em2020.php?action=showallgames&amp;teamid=$row_game[team_1_id]{$SID_ARG_2ND}">$name1</a></span>

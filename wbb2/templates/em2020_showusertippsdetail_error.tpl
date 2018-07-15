@@ -12,7 +12,7 @@
 <body>
 	<table cellpadding="4" cellspacing="1" width="100%" class="tblborder" align="center">
 		<tr class="secondrow">
-			<td>{$lang->items['LANG_ACP_WM2018_TPL_ERROR_4']}</td>
+			<td>{$lang->items['LANG_ACP_EM2020_TPL_ERROR_4']}</td>
 		</tr>
 	</table>
 </body>

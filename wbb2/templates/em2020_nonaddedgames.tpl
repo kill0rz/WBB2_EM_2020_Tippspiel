@@ -1,8 +1,8 @@
 <tr>
 	<td class="$rowclass" align="center" width="10%">
-		<a href="em2020.php?action=gamedetails&gameid={$row_nextgames['gameid']}" title="$lang->items['LANG_WM2018_TPL_NEXTGAMES_2']">
+		<a href="em2020.php?action=gamedetails&gameid={$row_nextgames['gameid']}" title="$lang->items['LANG_EM2020_TPL_NEXTGAMES_2']">
 			<span class="smallfont">$gamedate,
-				<br />$gametime {$lang->items['LANG_WM2018_TPL_NEXTGAMES_1']}</span>
+				<br />$gametime {$lang->items['LANG_EM2020_TPL_NEXTGAMES_1']}</span>
 		</a>
 	</td>
 	<td class="$rowclass" align="center" width="10%">

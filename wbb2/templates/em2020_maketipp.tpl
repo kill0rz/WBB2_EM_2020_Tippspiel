@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
 
 <head>
-	<title>$master_board_name | {$lang->items['LANG_WM2018_TPL_MAKETIPP_1']}</title>
+	<title>$master_board_name | {$lang->items['LANG_EM2020_TPL_MAKETIPP_1']}</title>
 	$headinclude
 	<script language="Javascript" type="text/javascript">
 	<!--
@@ -65,7 +65,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_MAKETIPP_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_MAKETIPP_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_EM2020_TPL_MAKETIPP_2']}</a> &raquo; {$lang->items['LANG_EM2020_TPL_MAKETIPP_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -87,7 +87,7 @@
 			<td class="tabletitle" align="center" colspan="2">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_MAKETIPP_4']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_MAKETIPP_4']}</u>
 					</b>
 				</span>
 			</td>
@@ -95,27 +95,27 @@
 		<tr>
 			<td class="tableb" align="left" width="60%">
 				<span class="smallfont">
-					<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_5']}</b>
+					<b>{$lang->items['LANG_EM2020_TPL_MAKETIPP_5']}</b>
 				</span>
 			</td>
 			<td class="tableb" align="center" width="40%">
 				<span class="smallfont">
-					<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_6']}</b>
+					<b>{$lang->items['LANG_EM2020_TPL_MAKETIPP_6']}</b>
 				</span>
 				<hr size="{$style['tableincellspacing']}" class="threadline" />
 				<span class="smallfont">
-					<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_7']}</span>
+					<b>{$lang->items['LANG_EM2020_TPL_MAKETIPP_7']}</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="tablea" align="center" colspan="2">
 				<span class="smallfont">
-					<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_8']}</b>
+					<b>{$lang->items['LANG_EM2020_TPL_MAKETIPP_8']}</b>
 					<a href="em2020.php?action=maketipp&amp;games_art=1{$SID_ARG_2ND}">
-						<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_9']}</b>
+						<b>{$lang->items['LANG_EM2020_TPL_MAKETIPP_9']}</b>
 					</a> |
 					<a href="em2020.php?action=maketipp&amp;games_art=2{$SID_ARG_2ND}">
-						<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_10']}</b>
+						<b>{$lang->items['LANG_EM2020_TPL_MAKETIPP_10']}</b>
 					</a>
 				</span>
 			</td>
@@ -127,35 +127,35 @@
 			<td class="tabletitle" align="center" width="10%">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_MAKETIPP_11']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_MAKETIPP_11']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center" width="20%">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_MAKETIPP_12']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_MAKETIPP_12']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center" width="20%">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_MAKETIPP_13']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_MAKETIPP_13']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center" colspan="2" width="20%">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_MAKETIPP_14']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_MAKETIPP_14']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center" colspan="2" width="20%">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_MAKETIPP_15']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_MAKETIPP_15']}</u>
 					</b>
 				</span>
 			</td>

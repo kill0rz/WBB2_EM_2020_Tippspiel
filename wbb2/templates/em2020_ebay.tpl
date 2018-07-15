@@ -3,7 +3,7 @@
 	<tr class="tabletitle_fc">
 		<td class="tabletitle" align="center">
 			<span class="smallfont">
-				<b>{$lang->items['LANG_WM2018_TPL_EBAY_1']}</b>
+				<b>{$lang->items['LANG_EM2020_TPL_EBAY_1']}</b>
 			</span>
 		</td>
 	</tr>

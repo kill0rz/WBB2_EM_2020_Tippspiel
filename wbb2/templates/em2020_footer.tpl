@@ -3,7 +3,7 @@
 	<tr>
 		<td class="tablea">
 			<div align="center">
-				<span class="smallfont">{$lang->items['LANG_WM2018_TPL_FOOTER_1']}</span>
+				<span class="smallfont">{$lang->items['LANG_EM2020_TPL_FOOTER_1']}</span>
 				<br />
 				<span class="smallfont">
 					<b> <a href="https://www.v-gn.de" target="_blank" style="text-decoration: none">Angepasst f&uuml;r die WM 2014 Viktor's Supportboard</a> </b> &copy; 2014

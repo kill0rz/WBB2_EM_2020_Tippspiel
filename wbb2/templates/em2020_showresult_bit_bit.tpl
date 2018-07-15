@@ -1,6 +1,6 @@
 <tr>
 	<td class="$rowclass" align="center" width="15%">
-		<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_WM2018_TPL_SHOWRESULT_BIT_BIT_1']}</span>
+		<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_EM2020_TPL_SHOWRESULT_BIT_BIT_1']}</span>
 	</td>
 	<td class="$rowclass" align="center" width="10%">
 		<span class="smallfont">$row[stadion]</span>

@@ -4,20 +4,20 @@
 		<td class="tabletitle" colspan="2" align="center">
 			<span class="smallfont">
 				<b>
-					<u>{$lang->items['LANG_WM2018_TPL_TIPPABGABE_ELFER_1']}</u>
+					<u>{$lang->items['LANG_EM2020_TPL_TIPPABGABE_ELFER_1']}</u>
 				</b>
 			</span>
 		</td>
 	</tr>
 	<tr>
 		<td class="tableb" align="center" width="70%">
-			<span class="smallfont">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_ELFER_2']}</span>
+			<span class="smallfont">{$lang->items['LANG_EM2020_TPL_TIPPABGABE_ELFER_2']}</span>
 		</td>
 		<td class="tableb" align="center" width="30%">
 			<select name="tipp_elfer">
-				<option value="-1">{$lang->items['LANG_WM2018_GLOBAL_CHOICE']}</option>
-				<option value="1">{$lang->items['LANG_WM2018_GLOBAL_YES']}</option>
-				<option value="0">{$lang->items['LANG_WM2018_GLOBAL_NO']}</option>
+				<option value="-1">{$lang->items['LANG_EM2020_GLOBAL_CHOICE']}</option>
+				<option value="1">{$lang->items['LANG_EM2020_GLOBAL_YES']}</option>
+				<option value="0">{$lang->items['LANG_EM2020_GLOBAL_NO']}</option>
 			</select>
 		</td>
 	</tr>

@@ -8,23 +8,23 @@
 			<td class="tabletitle" colspan="3" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_TIPPABGABE_WM_1']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_TIPPABGABE_WM_1']}</u>
 					</b>
-					<br />{$lang->items['LANG_WM2018_TPL_TIPPABGABE_WM_2']}</span>
+					<br />{$lang->items['LANG_EM2020_TPL_TIPPABGABE_WM_2']}</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="tableb" align="center" width="70%">
-				<span class="smallfont">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_WM_3']}</span>
+				<span class="smallfont">{$lang->items['LANG_EM2020_TPL_TIPPABGABE_WM_3']}</span>
 			</td>
 			<td class="tableb" align="center" width="30%">
 				<select name="tipp_wm">
-					<option value="-1">{$lang->items['LANG_WM2018_GLOBAL_CHOICE']}</option>
+					<option value="-1">{$lang->items['LANG_EM2020_GLOBAL_CHOICE']}</option>
 					$em2020_auswahl_wmtipp
 				</select>
 			</td>
 			<td align="center" class="tableb">
-				<input type="submit" value="{$lang->items['LANG_WM2018_GLOBAL_SAVE']}" />
+				<input type="submit" value="{$lang->items['LANG_EM2020_GLOBAL_SAVE']}" />
 			</td>
 		</tr>
 	</table>

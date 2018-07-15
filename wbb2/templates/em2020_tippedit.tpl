@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
 
 <head>
-	<title>$master_board_name | {$lang->items['LANG_WM2018_TPL_TIPPEDIT_1']}</title>
+	<title>$master_board_name | {$lang->items['LANG_EM2020_TPL_TIPPEDIT_1']}</title>
 	$headinclude
 </head>
 
@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPEDIT_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_TIPPEDIT_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_EM2020_TPL_TIPPEDIT_2']}</a> &raquo; {$lang->items['LANG_EM2020_TPL_TIPPEDIT_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -36,18 +36,18 @@
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_TIPPEDIT_4']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_TIPPEDIT_4']}</u>
 					</b>
 				</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="tableb" align="center">
-				<span class="smallfont">{$lang->items['LANG_WM2018_TPL_TIPPEDIT_5']}
+				<span class="smallfont">{$lang->items['LANG_EM2020_TPL_TIPPEDIT_5']}
 					<br />
-					<b>$name1</b> {$lang->items['LANG_WM2018_TPL_TIPPEDIT_6']}
+					<b>$name1</b> {$lang->items['LANG_EM2020_TPL_TIPPEDIT_6']}
 					<b>$name2</b>
-					<br />{$lang->items['LANG_WM2018_TPL_TIPPEDIT_7']}</span>
+					<br />{$lang->items['LANG_EM2020_TPL_TIPPEDIT_7']}</span>
 			</td>
 		</tr>
 	</table>
@@ -74,7 +74,7 @@
 		</table>
 		$em2020_tippedit_gk $em2020_tippedit_rk $em2020_tippedit_elfer
 		<p align="center">
-			<input class="input" type="submit" value="{$lang->items['LANG_WM2018_GLOBAL_SAVE']}" />
+			<input class="input" type="submit" value="{$lang->items['LANG_EM2020_GLOBAL_SAVE']}" />
 		</p>
 	</form>
 	<br /> $em2020_footer $footer

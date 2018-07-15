@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
 
 <head>
-	<title>$master_board_name | {$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_1']} $result_username[username]</title>
+	<title>$master_board_name | {$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_1']} $result_username[username]</title>
 	$headinclude
 </head>
 
@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_3']} $result_username[username]</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_2']}</a> &raquo; {$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_3']} $result_username[username]</b>
 							</span>
 						</td>
 						<td align="right">
@@ -35,11 +35,11 @@
 		<tr>
 			<td class="tableb" width="50%" align="center">
 				<span class="smallfont">
-					<b>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_12']}</b> $wmtipp_flagge $wmtipp_name$wmtipp_edit</span>
+					<b>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12']}</b> $wmtipp_flagge $wmtipp_name$wmtipp_edit</span>
 			</td>
 			<td class="tableb" width="50%" align="center">
 				<span class="smallfont">
-					<b>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_13']}</b> $vwmtipp_flagge $vwmtipp_name$vwmtipp_edit</span>
+					<b>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_13']}</b> $vwmtipp_flagge $vwmtipp_name$vwmtipp_edit</span>
 			</td>
 		</tr>
 	</table>
@@ -49,28 +49,28 @@
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_4']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_4']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_5']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_5']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" colspan="2" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_6']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_6']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" colspan="2" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_7']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_7']}</u>
 					</b>
 				</span>
 			</td>
@@ -79,7 +79,7 @@
 					<td class="tabletitle" colspan="2" align="center">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_8']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_8']}</u>
 							</b>
 						</span>
 					</td>
@@ -90,7 +90,7 @@
 					<td class="tabletitle" colspan="2" align="center">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_9']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_9']}</u>
 							</b>
 						</span>
 					</td>
@@ -101,7 +101,7 @@
 					<td class="tabletitle" colspan="2" align="center">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_10']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_10']}</u>
 							</b>
 						</span>
 					</td>
@@ -110,7 +110,7 @@
 			<td class="tabletitle" colspan="2" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_11']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_11']}</u>
 					</b>
 				</span>
 			</td>

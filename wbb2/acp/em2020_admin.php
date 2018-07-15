@@ -6,7 +6,7 @@
  *   copyright            : WM2006-Tippspiel © 2006 @ batida444
  *   copyright            : WM2014-Tippspiel © 2014 @ Viktor
  *   copyright            : EM2016-Tippspiel © 2016 @ kill0rz
- *   copyright            : WM2018-Tippspiel © 2018 @ kill0rz
+ *   copyright            : EM2020-Tippspiel © 2018 @ kill0rz
  *   web                  : kill0rz.com
  *   Boardversion         : Burning Board wBB 2.3
  ***************************************************************************/
@@ -20,7 +20,7 @@ if (!checkAdminPermissions("a_can_em2020_edit")) {
 	access_error(1);
 }
 
-$lang->load("ACP_WM2018,MISC,POSTINGS");
+$lang->load("ACP_EM2020,MISC,POSTINGS");
 
 if (isset($_REQUEST['action'])) {
 	$action = $_REQUEST['action'];
@@ -155,7 +155,7 @@ if ($action == "options") {
 	// Check if CURL exists
 	if (!function_exists('curl_version')) {
 		// does not exist
-		$curl_exists_lng = $lang->items['LANG_ACP_WM2018_TPL_OPTIONS_45'];
+		$curl_exists_lng = $lang->items['LANG_ACP_EM2020_TPL_OPTIONS_45'];
 	} else {
 		$curl_exists_lng = "";
 	}
@@ -213,7 +213,7 @@ if ($action == "options") {
 		$em2020_options['vgposttid'] = 0;
 	}
 
-	eval("\$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_20'] = \"" . $lang->get4eval("LANG_ACP_WM2018_TPL_OPTIONS_20") . "\";");
+	eval("\$lang->items['LANG_ACP_EM2020_TPL_OPTIONS_20'] = \"" . $lang->get4eval("LANG_ACP_EM2020_TPL_OPTIONS_20") . "\";");
 	eval("\$tpl->output(\"" . $tpl->get('em2020_options', 1) . "\");");
 }
 
@@ -250,7 +250,7 @@ if ($action == "punkteedit") {
 // 			if (isset($_POST['changeteam_' . $spielid]) && intval($_POST['changeteam_' . $spielid]) != null && intval($_POST['changeteam_' . $spielid]) != 0) {
 // 				$newteam_id = intval($_POST['changeteam_' . $spielid]);
 // 				$db->unbuffered_query("UPDATE bb" . $n . "_em2020_spiele SET team_2_id = " . $newteam_id . " WHERE gameid = '" . $spielid . "';");
-// 				$erfolgsmeldung .= "<font color='green'>{$lang->items['LANG_ACP_WM2018_CORRECT8_10']} " . $spielid . " {$lang->items['LANG_ACP_WM2018_CORRECT8_11']}</font><br>";
+// 				$erfolgsmeldung .= "<font color='green'>{$lang->items['LANG_ACP_EM2020_CORRECT8_10']} " . $spielid . " {$lang->items['LANG_ACP_EM2020_CORRECT8_11']}</font><br>";
 // 			}
 // 		}
 // 	}
@@ -288,7 +288,7 @@ if ($action == "punkteedit") {
 // 		}
 // 	}
 
-// 	$spiele_mit_dritten_team1 = array("{$lang->items['LANG_ACP_WM2018_CORRECT8_9']} B", "{$lang->items['LANG_ACP_WM2018_CORRECT8_9']} D", "{$lang->items['LANG_ACP_WM2018_CORRECT8_9']} A", "{$lang->items['LANG_ACP_WM2018_CORRECT8_9']} C");
+// 	$spiele_mit_dritten_team1 = array("{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} B", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} D", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} A", "{$lang->items['LANG_ACP_EM2020_CORRECT8_9']} C");
 // 	$spiele_mit_dritten_team2 = array("A/C/D", "B/E/F", "C/D/E", "A/B/F");
 // 	$spiele_mit_dritten_dritte_aus_gruppen = array(array("A", "C", "D"), array("B", "E", "F"), array("C", "D", "E"), array("A", "B", "F"));
 
@@ -302,7 +302,7 @@ if ($action == "punkteedit") {
 // 			$result2 = $db->unbuffered_query($sql2);
 // 			if ($db->num_rows($result2) == 0) {
 // 				// Spiel steht noch nicht fest
-// 				$spiel_team_1_name = "{$lang->items['LANG_ACP_WM2018_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_WM2018_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_WM2018_CORRECT8_8']}\" />";
+// 				$spiel_team_1_name = "{$lang->items['LANG_ACP_EM2020_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" />";
 // 			} else {
 // 				while ($row2 = $db->fetch_array($result2)) {
 // 					$spiel_team_1_name = $row2['name'] . " <img src=\"../images/em2020/flaggen/{$row2['flagge']}\" border=\"0\" alt=\"{$row2['name']}\" title=\"{$row2['name']}\" />";
@@ -312,14 +312,14 @@ if ($action == "punkteedit") {
 // 			$sql2 = "SELECT name, flagge FROM bb" . $n . "_em2020_teams WHERE teamid = '" . $row['team_2_id'] . "' LIMIT 1;";
 // 			$result2 = $db->unbuffered_query($sql2);
 // 			if ($db->num_rows($result2) == 0) {
-// 				$spiel_team_2_name = "{$lang->items['LANG_ACP_WM2018_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_WM2018_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_WM2018_CORRECT8_8']}\" />";
+// 				$spiel_team_2_name = "{$lang->items['LANG_ACP_EM2020_CORRECT8_8']} <img src=\"../images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" title=\"{$lang->items['LANG_ACP_EM2020_CORRECT8_8']}\" />";
 // 			} else {
 // 				while ($row2 = $db->fetch_array($result2)) {
 // 					$spiel_team_2_name = $row2['name'] . " <img src=\"../images/em2020/flaggen/{$row2['flagge']}\" border=\"0\" alt=\"{$row2['name']}\" title=\"{$row2['name']}\" />";
 
 // 					bestedritte_alle($spiele_mit_dritten_dritte_aus_gruppen[$key]);
 
-// 					eval("\$em2020_correct8_bit_select .= \"" . $lang->items['LANG_ACP_WM2018_CORRECT8_3'] . " " . $tpl->get('em2020_correct8_bit_select', 1) . "\";");
+// 					eval("\$em2020_correct8_bit_select .= \"" . $lang->items['LANG_ACP_EM2020_CORRECT8_3'] . " " . $tpl->get('em2020_correct8_bit_select', 1) . "\";");
 // 				}
 // 			}
 // 		}
@@ -547,7 +547,7 @@ if ($action == "result_save") {
 
 				if ($em2020_options['gh_aktiv'] == 1 && $ghplus > 0) {
 					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben+{$ghplus} WHERE userid = '" . $row_usertipps['userid'] . "'");
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row_usertipps['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_WM2018_PHP_1'] . " #" . intval($_POST['gameid']) . ")','" . $ghplus . "','" . $lang->items['LANG_ACP_WM2018_PHP_2'] . "')");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row_usertipps['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_1'] . " #" . intval($_POST['gameid']) . ")','" . $ghplus . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
 				}
 			}
 			// Link zum Spiel prüfen
@@ -797,12 +797,12 @@ if ($action == "result_save") {
 						$result = $db->query("SELECT * FROM bb" . $n . "_em2020_userpunkte WHERE tipp_wm = '{$team_g}'");
 						while ($row = $db->fetch_array($result)) {
 							$db->query("UPDATE bb" . $n . "_users SET guthaben = guthaben + {$em2020_options['gh_gut_wmtipp_richtig']} WHERE userid = '" . $row['userid'] . "'");
-							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_WM2018_PHP_3'] . "','" . $em2020_options['gh_gut_wmtipp_richtig'] . "','" . $lang->items['LANG_ACP_WM2018_PHP_2'] . "')");
+							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_3'] . "','" . $em2020_options['gh_gut_wmtipp_richtig'] . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
 						}
 						$result = $db->query("SELECT * FROM bb" . $n . "_em2020_userpunkte WHERE tipp_vwm = '{$team_v}'");
 						while ($row = $db->fetch_array($result)) {
 							$db->query("UPDATE bb" . $n . "_users SET guthaben = guthaben + {$em2020_options['gh_gut_wmtipp_richtig']} WHERE userid = '" . $row['userid'] . "'");
-							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_WM2018_PHP_4'] . "','" . $em2020_options['gh_gut_wmtipp_richtig'] . "','" . $lang->items['LANG_ACP_WM2018_PHP_2'] . "')");
+							$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_4'] . "','" . $em2020_options['gh_gut_wmtipp_richtig'] . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
 						}
 					}
 				}
@@ -951,7 +951,7 @@ if ($action == "result_save") {
 					if ($em2020_options['vgthema'] != '') {
 						$posting_thema = strtr($em2020_options['vgthema'], array('{vgp_name1}' => $vgp_name1, '{vgp_name2}' => $vgp_name2));
 					} else {
-						$posting_thema = 'WM2018 - Ergebnis';
+						$posting_thema = 'EM2020 - Ergebnis';
 					}
 
 					$posting_prefix = '';
@@ -1025,23 +1025,23 @@ if ($action == "result_save") {
 		$tore2 = intval($_POST['game_goals_2']);
 		$error = '';
 		if (!isset($tore1) || !isset($tore2)) {
-			$error .= $lang->get("LANG_ACP_WM2018_PHP_5");
+			$error .= $lang->get("LANG_ACP_EM2020_PHP_5");
 		}
 
 		if ($em2020_options['gk_jn'] == '1' && $_POST['game_gk_jn'] == '-1') {
-			$error .= $lang->get("LANG_ACP_WM2018_PHP_6");
+			$error .= $lang->get("LANG_ACP_EM2020_PHP_6");
 		}
 
 		if ($em2020_options['rk_jn'] == '1' && $_POST['game_rk_jn'] == '-1') {
-			$error .= $lang->get("LANG_ACP_WM2018_PHP_7");
+			$error .= $lang->get("LANG_ACP_EM2020_PHP_7");
 		}
 
 		if ($em2020_options['elfer_jn'] == '1' && $_POST['game_elfer_jn'] == '-1') {
-			$error .= $lang->get("LANG_ACP_WM2018_PHP_8");
+			$error .= $lang->get("LANG_ACP_EM2020_PHP_8");
 		}
 
 		if ($gameid > $gameids['vorrundenspiel'] && ($tore1 == $tore2)) {
-			$error .= $lang->get("LANG_ACP_WM2018_PHP_9");
+			$error .= $lang->get("LANG_ACP_EM2020_PHP_9");
 		}
 
 		if ($error) {
@@ -1049,27 +1049,27 @@ if ($action == "result_save") {
 			exit();
 		}
 		if ($em2020_options['gk_jn'] == '1' && intval($_POST['game_gk_jn']) == '1') {
-			$confirm_gk = $lang->get("LANG_ACP_WM2018_PHP_YES");
+			$confirm_gk = $lang->get("LANG_ACP_EM2020_PHP_YES");
 		}
 
 		if ($em2020_options['gk_jn'] == '1' && intval($_POST['game_gk_jn']) == '0') {
-			$confirm_gk = $lang->get("LANG_ACP_WM2018_PHP_NO");
+			$confirm_gk = $lang->get("LANG_ACP_EM2020_PHP_NO");
 		}
 
 		if ($em2020_options['rk_jn'] == '1' && intval($_POST['game_rk_jn']) == '1') {
-			$confirm_rk = $lang->get("LANG_ACP_WM2018_PHP_YES");
+			$confirm_rk = $lang->get("LANG_ACP_EM2020_PHP_YES");
 		}
 
 		if ($em2020_options['rk_jn'] == '1' && intval($_POST['game_rk_jn']) == '0') {
-			$confirm_rk = $lang->get("LANG_ACP_WM2018_PHP_NO");
+			$confirm_rk = $lang->get("LANG_ACP_EM2020_PHP_NO");
 		}
 
 		if ($em2020_options['elfer_jn'] == '1' && intval($_POST['game_elfer_jn']) == '1') {
-			$confirm_elfer = $lang->get("LANG_ACP_WM2018_PHP_YES");
+			$confirm_elfer = $lang->get("LANG_ACP_EM2020_PHP_YES");
 		}
 
 		if ($em2020_options['elfer_jn'] == '1' && intval($_POST['game_elfer_jn']) == '0') {
-			$confirm_elfer = $lang->get("LANG_ACP_WM2018_PHP_NO");
+			$confirm_elfer = $lang->get("LANG_ACP_EM2020_PHP_NO");
 		}
 
 		if (isset($_POST['gamelink'])) {
@@ -1273,7 +1273,7 @@ if ($action == "result_edit") {
 
 				if ($em2020_options['gh_aktiv'] == 1 && $ghminus > 0) {
 					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-{$ghminus} WHERE userid = '" . $row_usertipps['userid'] . "'");
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row_usertipps['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_WM2018_PHP_9'] . " #" . intval($_POST['gameid']) . ")','" . $ghminus . "','" . $lang->items['LANG_ACP_WM2018_PHP_10'] . "')");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row_usertipps['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_9'] . " #" . intval($_POST['gameid']) . ")','" . $ghminus . "','" . $lang->items['LANG_ACP_EM2020_PHP_10'] . "')");
 				}
 			}
 
@@ -1433,7 +1433,7 @@ if ($action == "result_edit") {
 
 				if ($em2020_options['gh_aktiv'] == 1 && $ghplus > 0) {
 					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben+{$ghplus} WHERE userid = '" . $row_usertipps['userid'] . "'");
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row_usertipps['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_WM2018_PHP_1'] . " #" . intval($_POST['gameid']) . ")','" . $ghplus . "','" . $lang->items['LANG_ACP_WM2018_PHP_2'] . "')");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . $row_usertipps['userid'] . "','" . time() . "','" . $lang->items['LANG_ACP_EM2020_PHP_1'] . " #" . intval($_POST['gameid']) . ")','" . $ghplus . "','" . $lang->items['LANG_ACP_EM2020_PHP_2'] . "')");
 				}
 			}
 
@@ -1582,7 +1582,7 @@ if ($action == "result_edit") {
 					if ($em2020_options['vgthema'] != '') {
 						$posting_thema = strtr($em2020_options['vgthema'], array('{vgp_name1}' => $vgp_name1, '{vgp_name2}' => $vgp_name2));
 					} else {
-						$posting_thema = 'WM2018 - Ergebnis';
+						$posting_thema = 'EM2020 - Ergebnis';
 					}
 
 					$posting_prefix = '';
@@ -1708,7 +1708,7 @@ if ($action == "result_edit") {
 			}
 		} else {
 			// error, weil Finale nicht editiert werden kann
-			$error = $lang->get("LANG_ACP_WM2018_TPL_ERROR_5");
+			$error = $lang->get("LANG_ACP_EM2020_TPL_ERROR_5");
 			eval("\$tpl->output(\"" . $tpl->get('em2020_error', 1) . "\");");
 		}
 

@@ -1,7 +1,7 @@
 <tr>
 	<td class="$rowclass" align="center" width="10%">
 		<span class="smallfont">$gamedate
-			<br />$gametime {$lang->items['LANG_WM2018_TPL_NEXTGAMES_1']}</span>
+			<br />$gametime {$lang->items['LANG_EM2020_TPL_NEXTGAMES_1']}</span>
 	</td>
 	<td class="$rowclass" align="center" valign="top" width="40%">
 		<span class="defaultfont">$name1&nbsp;</span>

@@ -6,7 +6,7 @@
 		<span class="smallfont">$type</span>
 	</td>
 	<td class="$rowclass" align="center">
-		<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_WM2018_TPL_SHOWALLGAMES_BIT_1']}</span>
+		<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_EM2020_TPL_SHOWALLGAMES_BIT_1']}</span>
 	</td>
 	<td class="$rowclass" align="center">
 		<span class="smallfont">$row[stadion]</span>
@@ -29,7 +29,7 @@
 	<td class="$rowclass" align="center">
 		<if($row['tipps']!=0)>
 			<then>
-				<a href="em2020.php?action=tippsprogame&amp;gameid=$row[gameid]{$SID_ARG_2ND}"><img src="images/em2020/info.gif" border="0"alt="{$lang->items['LANG_WM2018_PHP_42']}" title="{$lang->items['LANG_WM2018_PHP_42']}"></a>&nbsp;
+				<a href="em2020.php?action=tippsprogame&amp;gameid=$row[gameid]{$SID_ARG_2ND}"><img src="images/em2020/info.gif" border="0"alt="{$lang->items['LANG_EM2020_PHP_42']}" title="{$lang->items['LANG_EM2020_PHP_42']}"></a>&nbsp;
 			</then>
 		</if>
 		$gamedetails

@@ -5,7 +5,7 @@
  *    copyright            : WM2006-Tippspiel © 2006 batida444
  *    copyright            : WM2014-Tippspiel © 2014 Viktor
  *    copyright            : EM2016-Tippspiel © 2016 @ kill0rz
- *    copyright            : WM2018-Tippspiel © 2018 @ kill0rz
+ *    copyright            : EM2020-Tippspiel © 2018 @ kill0rz
  *    web                  : www.v-gn.de
  *    Boardversion         : Burning Board wBB 2.3
  */
@@ -15,7 +15,7 @@ $filename = "em2020.php";
 require "./global.php";
 include "./em2020_global.php";
 include "./acp/em2020_gameids.php";
-$lang->load("WM2018");
+$lang->load("EM2020");
 
 if (isset($_REQUEST['action'])) {
 	$action = trim($_REQUEST['action']);
@@ -24,7 +24,7 @@ if (isset($_REQUEST['action'])) {
 }
 
 if ($em2020_options['em2020aktiv'] == 0 || !$wbbuserdata['can_em2020_see']) {
-	redirect($lang->get("LANG_WM2018_PHP_1"), $url = "index.php" . $SID_ARG_1ST);
+	redirect($lang->get("LANG_EM2020_PHP_1"), $url = "index.php" . $SID_ARG_1ST);
 }
 
 $em2020userdata = $db->query_first("SELECT userid,tipp_wm,tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
@@ -184,11 +184,11 @@ if ($action == "index") {
 	if ($wbbuserdata['userid']) {
 		$result_userdata = $db->query_first("SELECT * FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 		if (!$result_userdata['tipps_gesamt']) {
-			$tippsgesamt = $lang->items['LANG_WM2018_PHP_2'];
+			$tippsgesamt = $lang->items['LANG_EM2020_PHP_2'];
 		} else {
 			$tippsgesamt = "<b><a href=\"em2020.php?action=showusertippsdetail&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\">{$result_userdata['tipps_gesamt']}</a></b>";
 		}
-		eval("\$lang->items['LANG_WM2018_TPL_INDEX_4'] = \"" . $lang->get4eval("LANG_WM2018_TPL_INDEX_4") . "\";");
+		eval("\$lang->items['LANG_EM2020_TPL_INDEX_4'] = \"" . $lang->get4eval("LANG_EM2020_TPL_INDEX_4") . "\";");
 	}
 	// Persönliche Box Ende
 
@@ -207,21 +207,21 @@ if ($action == "index") {
 		if ($checkgame1 == "W" || $checkgame1 == "S" || $checkgame1 == "L") {
 			$check1 = explode('-', $row_nextgames['team_1_id']);
 			if ($check1[1] == "A" || $check1[1] == "B" || $check1[1] == "C" || $check1[1] == "D" || $check1[1] == "E" || $check1[1] == "F" || $check1[1] == "G" || $check1[1] == "H") {
-				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 			} else {
-				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 			}
 
 			if ($check1[0] == "W") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_11'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_11'];
 			}
 
 			if ($check1[0] == "S") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_12'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_12'];
 			}
 
 			if ($check1[0] == "L") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_13'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_13'];
 			}
 
 			$teamname1 .= "&nbsp;{$tabelle}&nbsp;{$check1[1]}";
@@ -231,21 +231,21 @@ if ($action == "index") {
 		if ($checkgame2 == "W" || $checkgame2 == "S" || $checkgame2 == "L") {
 			$check2 = explode('-', $row_nextgames['team_2_id']);
 			if ($check2[1] == "A" || $check2[1] == "B" || $check2[1] == "C" || $check2[1] == "D" || $check2[1] == "E" || $check2[1] == "F" || $check2[1] == "G" || $check2[1] == "H") {
-				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 			} else {
-				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 			}
 
 			if ($check2[0] == "W") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_11'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_11'];
 			}
 
 			if ($check2[0] == "S") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_12'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_12'];
 			}
 
 			if ($check2[0] == "L") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_13'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_13'];
 			}
 
 			$teamname2 .= "&nbsp;{$tabelle}&nbsp;$check2[1]";
@@ -422,21 +422,21 @@ if ($action == "index") {
 		if ($checkgame1 == "W" || $checkgame1 == "S" || $checkgame1 == "L") {
 			$check1 = explode('-', $row_nextgames['team_1_id']);
 			if ($check1[1] == "A" || $check1[1] == "B" || $check1[1] == "C" || $check1[1] == "D" || $check1[1] == "E" || $check1[1] == "F" || $check1[1] == "G" || $check1[1] == "H") {
-				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 			} else {
-				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 			}
 
 			if ($check1[0] == "W") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_11'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_11'];
 			}
 
 			if ($check1[0] == "S") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_12'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_12'];
 			}
 
 			if ($check1[0] == "L") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_13'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_13'];
 			}
 
 			$teamname1 .= "&nbsp;{$tabelle}&nbsp;{$check1[1]}";
@@ -446,21 +446,21 @@ if ($action == "index") {
 		if ($checkgame2 == "W" || $checkgame2 == "S" || $checkgame2 == "L") {
 			$check2 = explode('-', $row_nextgames['team_2_id']);
 			if ($check2[1] == "A" || $check2[1] == "B" || $check2[1] == "C" || $check2[1] == "D" || $check2[1] == "E" || $check2[1] == "F" || $check2[1] == "G" || $check2[1] == "H") {
-				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 			} else {
-				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 			}
 
 			if ($check2[0] == "W") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_11'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_11'];
 			}
 
 			if ($check2[0] == "S") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_12'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_12'];
 			}
 
 			if ($check2[0] == "L") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_13'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_13'];
 			}
 
 			$teamname2 .= "&nbsp;{$tabelle}&nbsp;$check2[1]";
@@ -506,21 +506,21 @@ if ($action == "index") {
 		if ($checkgame1 == "W" || $checkgame1 == "S" || $checkgame1 == "L") {
 			$check1 = explode('-', $row_nextgames['team_1_id']);
 			if ($check1[1] == "A" || $check1[1] == "B" || $check1[1] == "C" || $check1[1] == "D" || $check1[1] == "E" || $check1[1] == "F" || $check1[1] == "G" || $check1[1] == "H") {
-				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 			} else {
-				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 			}
 
 			if ($check1[0] == "W") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_11'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_11'];
 			}
 
 			if ($check1[0] == "S") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_12'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_12'];
 			}
 
 			if ($check1[0] == "L") {
-				$teamname1 = $lang->items['LANG_WM2018_PHP_13'];
+				$teamname1 = $lang->items['LANG_EM2020_PHP_13'];
 			}
 
 			$teamname1 .= "&nbsp;{$tabelle}&nbsp;{$check1[1]}";
@@ -530,21 +530,21 @@ if ($action == "index") {
 		if ($checkgame2 == "W" || $checkgame2 == "S" || $checkgame2 == "L") {
 			$check2 = explode('-', $row_nextgames['team_2_id']);
 			if ($check2[1] == "A" || $check2[1] == "B" || $check2[1] == "C" || $check2[1] == "D" || $check2[1] == "E" || $check2[1] == "F" || $check2[1] == "G" || $check2[1] == "H") {
-				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 			} else {
-				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+				$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 			}
 
 			if ($check2[0] == "W") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_11'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_11'];
 			}
 
 			if ($check2[0] == "S") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_12'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_12'];
 			}
 
 			if ($check2[0] == "L") {
-				$teamname2 = $lang->items['LANG_WM2018_PHP_13'];
+				$teamname2 = $lang->items['LANG_EM2020_PHP_13'];
 			}
 
 			$teamname2 .= "&nbsp;{$tabelle}&nbsp;$check2[1]";
@@ -574,8 +574,8 @@ if ($action == "index") {
 	// Next X Games Ende
 	// Aktuell laufende Spiele Ende
 
-	eval("\$lang->items['LANG_WM2018_TPL_INDEX_8'] = \"" . $lang->get4eval("LANG_WM2018_TPL_INDEX_8") . "\";");
-	eval("\$lang->items['LANG_WM2018_TPL_INDEX_32'] = \"" . $lang->get4eval("LANG_WM2018_TPL_INDEX_32") . "\";");
+	eval("\$lang->items['LANG_EM2020_TPL_INDEX_8'] = \"" . $lang->get4eval("LANG_EM2020_TPL_INDEX_8") . "\";");
+	eval("\$lang->items['LANG_EM2020_TPL_INDEX_32'] = \"" . $lang->get4eval("LANG_EM2020_TPL_INDEX_32") . "\";");
 	eval("\$tpl->output(\"" . $tpl->get("em2020_index") . "\");");
 }
 
@@ -628,32 +628,32 @@ if ($action == "showresults") {
 
 	if ($auswahl == 1) {
 		$gruppen = implode($gruppenids, ",");
-		$type = $lang->items['LANG_WM2018_PHP_3'];
+		$type = $lang->items['LANG_EM2020_PHP_3'];
 	}
 	if ($auswahl == 2) {
 		$gruppen = "8";
-		$type = $lang->items['LANG_WM2018_PHP_4'];
-		$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+		$type = $lang->items['LANG_EM2020_PHP_4'];
+		$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 	}
 	if ($auswahl == 3) {
 		$gruppen = "4";
-		$type = $lang->items['LANG_WM2018_PHP_6'];
-		$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+		$type = $lang->items['LANG_EM2020_PHP_6'];
+		$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 	}
 	if ($auswahl == 4) {
 		$gruppen = "2";
-		$type = $lang->items['LANG_WM2018_PHP_8'];
-		$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+		$type = $lang->items['LANG_EM2020_PHP_8'];
+		$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 	}
 	if ($auswahl == 5) {
 		$gruppen = "3";
-		$type = $lang->items['LANG_WM2018_PHP_9'];
-		$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+		$type = $lang->items['LANG_EM2020_PHP_9'];
+		$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 	}
 	if ($auswahl == 6) {
 		$gruppen = "1";
-		$type = $lang->items['LANG_WM2018_PHP_10'];
-		$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+		$type = $lang->items['LANG_EM2020_PHP_10'];
+		$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 	}
 	$result_gruppen = explode(',', $gruppen);
 	for ($rg = 0; $rg < count($result_gruppen); $rg++) {
@@ -684,15 +684,15 @@ if ($action == "showresults") {
 			if ($done1 == 0) {
 				$result_vorrunde = explode('-', $row['team_1_id']);
 				if ($result_vorrunde[0] == "W") {
-					$name1 = $lang->items['LANG_WM2018_PHP_11'];
+					$name1 = $lang->items['LANG_EM2020_PHP_11'];
 				}
 
 				if ($result_vorrunde[0] == "S") {
-					$name1 = $lang->items['LANG_WM2018_PHP_12'];
+					$name1 = $lang->items['LANG_EM2020_PHP_12'];
 				}
 
 				if ($result_vorrunde[0] == "V") {
-					$name1 = $lang->items['LANG_WM2018_PHP_13'];
+					$name1 = $lang->items['LANG_EM2020_PHP_13'];
 				}
 
 				$name1 .= "&nbsp;{$tabelle}&nbsp;{$result_vorrunde[1]}";
@@ -700,22 +700,22 @@ if ($action == "showresults") {
 			if ($done2 == 0) {
 				$result_vorrunde = explode('-', $row['team_2_id']);
 				if ($result_vorrunde[0] == "W") {
-					$name2 = $lang->items['LANG_WM2018_PHP_11'];
+					$name2 = $lang->items['LANG_EM2020_PHP_11'];
 				}
 
 				if ($result_vorrunde[0] == "S") {
-					$name2 = $lang->items['LANG_WM2018_PHP_12'];
+					$name2 = $lang->items['LANG_EM2020_PHP_12'];
 				}
 
 				if ($result_vorrunde[0] == "V") {
-					$name2 = $lang->items['LANG_WM2018_PHP_13'];
+					$name2 = $lang->items['LANG_EM2020_PHP_13'];
 				}
 
 				$name2 .= "&nbsp;{$tabelle}&nbsp;{$result_vorrunde[1]}";
 			}
 			$gamedetails = '';
 			if ($row['game_goals_1'] != '' && $row['game_goals_2'] != '') {
-				$gamedetails = "<a href=\"em2020.php?action=gamedetails&amp;gameid={$row['gameid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/details.gif\" border=\"0\"alt=\"{$lang->items['LANG_WM2018_PHP_14']}\" title=\"{$lang->items['LANG_WM2018_PHP_14']}\"></a>";
+				$gamedetails = "<a href=\"em2020.php?action=gamedetails&amp;gameid={$row['gameid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/details.gif\" border=\"0\"alt=\"{$lang->items['LANG_EM2020_PHP_14']}\" title=\"{$lang->items['LANG_EM2020_PHP_14']}\"></a>";
 			}
 
 			if ($row['tipps'] > 0) {
@@ -746,7 +746,7 @@ if ($action == "showresults") {
 // +++++++++++++++++++++
 if ($action == "maketipp") {
 	if (!$wbbuserdata['can_em2020_use']) {
-		redirect($lang->get("LANG_WM2018_PHP_15"), $url = "index.php" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_15"), $url = "index.php" . $SID_ARG_1ST);
 	}
 
 	if (isset($_REQUEST['games_art'])) {
@@ -756,11 +756,11 @@ if ($action == "maketipp") {
 	}
 
 	if ($games_art == 1) {
-		$gamesart = $lang->items['LANG_WM2018_PHP_16'];
+		$gamesart = $lang->items['LANG_EM2020_PHP_16'];
 	}
 
 	if ($games_art == 2) {
-		$gamesart = $lang->items['LANG_WM2018_PHP_17'];
+		$gamesart = $lang->items['LANG_EM2020_PHP_17'];
 	}
 
 	$serverdate = formatdate($wbbuserdata['dateformat'], $akttime);
@@ -781,27 +781,27 @@ if ($action == "maketipp") {
 		$date2 = formatdate($wbbuserdata['dateformat'], $timetipp, 1);
 		$time2 = formatdate($wbbuserdata['timeformat'], $timetipp);
 		if ($row['gruppe'] == 'A' || 'B' || 'C' || 'D' || 'E' || 'F' || 'G' || 'H') {
-			$type = $lang->items['LANG_WM2018_PHP_18'];
+			$type = $lang->items['LANG_EM2020_PHP_18'];
 		}
 
 		if ($row['gruppe'] == '8') {
-			$type = $lang->items['LANG_WM2018_PHP_4'];
+			$type = $lang->items['LANG_EM2020_PHP_4'];
 		}
 
 		if ($row['gruppe'] == '4') {
-			$type = $lang->items['LANG_WM2018_PHP_6'];
+			$type = $lang->items['LANG_EM2020_PHP_6'];
 		}
 
 		if ($row['gruppe'] == '2') {
-			$type = $lang->items['LANG_WM2018_PHP_8'];
+			$type = $lang->items['LANG_EM2020_PHP_8'];
 		}
 
 		if ($row['gruppe'] == '3') {
-			$type = $lang->items['LANG_WM2018_PHP_9'];
+			$type = $lang->items['LANG_EM2020_PHP_9'];
 		}
 
 		if ($row['gruppe'] == '1') {
-			$type = $lang->items['LANG_WM2018_PHP_10'];
+			$type = $lang->items['LANG_EM2020_PHP_10'];
 		}
 
 		for ($i = 0; $i < count($allids2); $i++) {
@@ -832,8 +832,8 @@ if ($action == "maketipp") {
 
 	eval("\$em2020_maketipp_bit_bit_bit .= \"" . $tpl->get("em2020_maketipp_bit_bit_bit") . "\";");
 
-	eval("\$lang->items['LANG_WM2018_TPL_MAKETIPP_5'] = \"" . $lang->get4eval("LANG_WM2018_TPL_MAKETIPP_5") . "\";");
-	eval("\$lang->items['LANG_WM2018_TPL_MAKETIPP_7'] = \"" . $lang->get4eval("LANG_WM2018_TPL_MAKETIPP_7") . "\";");
+	eval("\$lang->items['LANG_EM2020_TPL_MAKETIPP_5'] = \"" . $lang->get4eval("LANG_EM2020_TPL_MAKETIPP_5") . "\";");
+	eval("\$lang->items['LANG_EM2020_TPL_MAKETIPP_7'] = \"" . $lang->get4eval("LANG_EM2020_TPL_MAKETIPP_7") . "\";");
 	eval("\$tpl->output(\"" . $tpl->get("em2020_maketipp") . "\");");
 }
 // +++++++++++++++++++
@@ -841,7 +841,7 @@ if ($action == "maketipp") {
 // +++++++++++++++++++
 if ($action == "tippabgabe") {
 	if (!$wbbuserdata['can_em2020_use']) {
-		redirect($lang->get("LANG_WM2018_PHP_15"), $url = "index.php" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_15"), $url = "index.php" . $SID_ARG_1ST);
 	}
 
 	if (isset($_POST['send'])) {
@@ -849,18 +849,18 @@ if ($action == "tippabgabe") {
 		$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . intval($_POST['gameid']) . "'");
 		$time2 = $result_time['datetime'] - $em2020_options['tipptime'];
 		if ($akttime > $time2) {
-			redirect($lang->get("LANG_WM2018_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 		}
 
 		// Prüfen, ob User schon dieses Spiel getippt hat
 		$tipp_exist = $db->query_first("SELECT gameid FROM bb" . $n . "_em2020_usertipps WHERE userid = '" . intval($wbbuserdata['userid']) . "' AND gameid = '" . intval($_POST['gameid']) . "'");
 		if ($tipp_exist['gameid']) {
-			redirect($lang->get("LANG_WM2018_PHP_43"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_43"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 		}
 
 		// Prüfen ob Achtelfinale, Viertelfinale, Halbfinale oder Finale und Tipp unentschieden
 		if (intval($_POST['gameid']) > $gameids['vorrundenspiel'] && intval($_POST['tipp_1']) == intval($_POST['tipp_2'])) {
-			redirect($lang->get("LANG_WM2018_PHP_41"), $url = "em2020.php?action=tippabgabe&amp;gameid={$_POST['gameid']}" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_41"), $url = "em2020.php?action=tippabgabe&amp;gameid={$_POST['gameid']}" . $SID_ARG_2ND);
 		}
 
 		// +++++++++++++++++++++++++++++++++++
@@ -901,20 +901,20 @@ if ($action == "tippabgabe") {
 			}
 			// Guthaben aktiv ? Dann speichern
 			if ($em2020_options['gh_aktiv'] == 1) {
-				$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_WM2018_PHP_21'] . "#" . intval($_POST['gameid']) . ")','" . $em2020_options['gh_ab_normtipp'] . "','" . $lang->items['LANG_WM2018_PHP_22'] . "')");
+				$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_21'] . "#" . intval($_POST['gameid']) . ")','" . $em2020_options['gh_ab_normtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
 				$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_normtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 			}
 			// +++++++++++++++++++++++++++++++
 			$db->unbuffered_query("UPDATE bb" . $n . "_em2020_spiele SET tipps=tipps+1 WHERE gameid = '" . intval($_POST['gameid']) . "'");
 			header("Location: em2020.php?action=tipok{$SID_ARG_2ND_UN}");
 		} else {
-			$error = $lang->items['LANG_WM2018_PHP_23'];
+			$error = $lang->items['LANG_EM2020_PHP_23'];
 		}
 	}
 	// Prüfen ob Guthaben aktiv und noch genug Guthaben vorhanden
 	if ($em2020_options['gh_aktiv'] == 1) {
 		if ($wbbuserdata['guthaben'] < $em2020_options['gh_ab_normtipp']) {
-			redirect($lang->get("LANG_WM2018_PHP_24"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_24"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 		}
 
 	}
@@ -924,7 +924,7 @@ if ($action == "tippabgabe") {
 	// Prüfen, ob User schon dieses Spiel getippt hat
 	$tipp_exist = $db->query_first("SELECT gameid FROM bb" . $n . "_em2020_usertipps WHERE userid = '" . intval($wbbuserdata['userid']) . "' AND gameid = '" . intval($_REQUEST['gameid']) . "'");
 	if ($tipp_exist['gameid']) {
-		redirect($lang->get("LANG_WM2018_PHP_43"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
+		redirect($lang->get("LANG_EM2020_PHP_43"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 	}
 
 	$result_game = $db->query_first("SELECT * FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . intval($_REQUEST['gameid']) . "'");
@@ -947,7 +947,7 @@ if ($action == "tippabgabe") {
 					eval("\$em2020_auswahl_wmtipp .= \"" . $tpl->get("em2020_auswahl_wmtipp") . "\";");
 				}
 			}
-			eval("\$lang->items['LANG_WM2018_TPL_TIPPABGABE_WM_2'] = \"" . $lang->get4eval("LANG_WM2018_TPL_TIPPABGABE_WM_2") . "\";");
+			eval("\$lang->items['LANG_EM2020_TPL_TIPPABGABE_WM_2'] = \"" . $lang->get4eval("LANG_EM2020_TPL_TIPPABGABE_WM_2") . "\";");
 			eval("\$em2020_tippabgabe_wm .= \"" . $tpl->get("em2020_tippabgabe_wm") . "\";");
 		}
 	}
@@ -960,7 +960,7 @@ if ($action == "tippabgabe") {
 					eval("\$em2020_auswahl_vwmtipp .= \"" . $tpl->get("em2020_auswahl_vwmtipp_selected") . "\";");
 				}
 			}
-			eval("\$lang->items['LANG_WM2018_TPL_tippabgabe_vwm_2'] = \"" . $lang->get4eval("LANG_WM2018_TPL_tippabgabe_vwm_2") . "\";");
+			eval("\$lang->items['LANG_EM2020_TPL_tippabgabe_vwm_2'] = \"" . $lang->get4eval("LANG_EM2020_TPL_tippabgabe_vwm_2") . "\";");
 			eval("\$em2020_tippabgabe_vwm .= \"" . $tpl->get("em2020_tippabgabe_vwm") . "\";");
 		}
 	}
@@ -976,7 +976,7 @@ if ($action == "tippabgabe") {
 		eval("\$em2020_tippabgabe_elfer .= \"" . $tpl->get("em2020_tippabgabe_elfer") . "\";");
 	}
 
-	eval("\$lang->items['LANG_WM2018_TPL_TIPPABGABE_5'] = \"" . $lang->get4eval("LANG_WM2018_TPL_TIPPABGABE_5") . "\";");
+	eval("\$lang->items['LANG_EM2020_TPL_TIPPABGABE_5'] = \"" . $lang->get4eval("LANG_EM2020_TPL_TIPPABGABE_5") . "\";");
 	eval("\$tpl->output(\"" . $tpl->get("em2020_tippabgabe") . "\");");
 }
 // ++++++++++++++++++
@@ -994,7 +994,7 @@ if ($action == "tippabgabe_wm") {
 		$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4wmtipp'] . "'");
 		$time2 = $result_time['datetime'] - $em2020_options['tipptime'];
 		if ($akttime > $time2) {
-			redirect($lang->get("LANG_WM2018_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 		}
 
 		// +++++++++++++++++++++++++++++++++++
@@ -1003,7 +1003,7 @@ if ($action == "tippabgabe_wm") {
 				$db->query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_wm,tipp_vwm) VALUES ('" . intval($wbbuserdata['userid']) . "','0','0','0','0','0','" . intval($_POST['tipp_wm']) . "','0')");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_WM2018_PHP_25'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_WM2018_PHP_22'] . "')");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_25'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
 					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
@@ -1012,7 +1012,7 @@ if ($action == "tippabgabe_wm") {
 				$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_wm = '" . intval($_POST['tipp_wm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_WM2018_PHP_25'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_WM2018_PHP_22'] . "')");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_25'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
 					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
@@ -1032,7 +1032,7 @@ if ($action == "tippabgabe_vwm") {
 		$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4wmtipp'] . "'");
 		$time2 = $result_time['datetime'] - $em2020_options['tipptime'];
 		if ($akttime > $time2) {
-			redirect($lang->get("LANG_WM2018_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 		}
 
 		// +++++++++++++++++++++++++++++++++++
@@ -1041,7 +1041,7 @@ if ($action == "tippabgabe_vwm") {
 				$db->query("INSERT INTO bb" . $n . "_em2020_userpunkte (userid,punkte,tipps_gesamt,tipps_richtig,tipps_falsch,tipps_tendenz,tipp_wm,tipp_vwm) VALUES ('" . intval($wbbuserdata['userid']) . "','0','0','0','0','0','0','" . intval($_POST['tipp_vwm']) . "')");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_WM2018_PHP_26'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_WM2018_PHP_22'] . "')");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_26'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
 					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
@@ -1051,7 +1051,7 @@ if ($action == "tippabgabe_vwm") {
 				$db->query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_vwm = '" . intval($_POST['tipp_vwm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
 				// Guthaben aktiv ? Dann speichern
 				if ($em2020_options['gh_aktiv'] == 1) {
-					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_WM2018_PHP_26'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_WM2018_PHP_22'] . "')");
+					$db->query("INSERT INTO bb" . $n . "_kontoauszug VALUES ('','" . intval($wbbuserdata['userid']) . "','" . time() . "','" . $lang->items['LANG_EM2020_PHP_26'] . "','" . $em2020_options['gh_ab_wmtipp'] . "','" . $lang->items['LANG_EM2020_PHP_22'] . "')");
 					$db->query("UPDATE bb" . $n . "_users SET guthaben=guthaben-'" . $em2020_options['gh_ab_wmtipp'] . "' WHERE userid='" . intval($wbbuserdata['userid']) . "'");
 				}
 				// +++++++++++++++++++++++++++++++
@@ -1073,7 +1073,7 @@ if ($action == "showusertipps") {
 	while ($row = $db->fetch_array($result)) {
 		$rowclass = getone($count++, "tablea", "tableb");
 		if ($row['tipp_wm'] == 0) {
-			$image_wmtipp = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_27']}\" title=\"{$lang->items['LANG_WM2018_PHP_27']}\" />";
+			$image_wmtipp = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_27']}\" title=\"{$lang->items['LANG_EM2020_PHP_27']}\" />";
 		} else {
 			for ($i = 0; $i < count($allids2); $i++) {
 				if ($wbbuserdata['userid'] == intval($row['userid'])) {
@@ -1086,13 +1086,13 @@ if ($action == "showusertipps") {
 							$image_wmtipp = "<img src=\"images/em2020/flaggen/$allflags2[$i]\" border=\"0\" alt=\"$allnames2[$i]\" title=\"$allnames2[$i]\" />";
 						}
 					} else {
-						$image_wmtipp = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
+						$image_wmtipp = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
 					}
 				}
 			}
 		}
 		if ($row['tipp_vwm'] == 0) {
-			$image_vwmtipp = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_28']}\" title=\"{$lang->items['LANG_WM2018_PHP_28']}\" />";
+			$image_vwmtipp = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_28']}\" title=\"{$lang->items['LANG_EM2020_PHP_28']}\" />";
 		} else {
 			for ($i = 0; $i < count($allids2); $i++) {
 				if ($wbbuserdata['userid'] == intval($row['userid'])) {
@@ -1105,7 +1105,7 @@ if ($action == "showusertipps") {
 							$image_vwmtipp = "<img src=\"images/em2020/flaggen/$allflags2[$i]\" border=\"0\" alt=\"$allnames2[$i]\" title=\"$allnames2[$i]\" />";
 						}
 					} else {
-						$image_vwmtipp = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
+						$image_vwmtipp = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
 					}
 				}
 			}
@@ -1126,26 +1126,26 @@ if ($action == "showusertippsdetail") {
 		$result_wmtipp = $db->query_first("SELECT tipp_wm,tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
 		if ($result_wmtipp['tipp_wm'] == '0') {
 			if ($wbbuserdata['userid'] == intval($_REQUEST['userid'])) {
-				$wmtipp_name = "<a href=\"em2020.php?action=wmtipp_only" . $SID_ARG_2ND . "\">{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_12']}</a>";
+				$wmtipp_name = "<a href=\"em2020.php?action=wmtipp_only" . $SID_ARG_2ND . "\">{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12']}</a>";
 			}
 
 			if ($wbbuserdata['userid'] != intval($_REQUEST['userid'])) {
-				$wmtipp_name = "{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_12']}";
+				$wmtipp_name = "{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12']}";
 			}
 
-			$wmtipp_flagge = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_16']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_16']}\" />";
+			$wmtipp_flagge = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16']}\" />";
 			$wmtipp_done = '1';
 		}
 		if ($result_wmtipp['tipp_vwm'] == '0') {
 			if ($wbbuserdata['userid'] == intval($_REQUEST['userid'])) {
-				$vwmtipp_name = "<a href=\"em2020.php?action=wmtipp_only" . $SID_ARG_2ND . "\">{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_12']}</a>";
+				$vwmtipp_name = "<a href=\"em2020.php?action=wmtipp_only" . $SID_ARG_2ND . "\">{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12']}</a>";
 			}
 
 			if ($wbbuserdata['userid'] != intval($_REQUEST['userid'])) {
-				$vwmtipp_name = "{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_12']}";
+				$vwmtipp_name = "{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12']}";
 			}
 
-			$vwmtipp_flagge = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_16']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_16']}\" />";
+			$vwmtipp_flagge = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16']}\" />";
 			$vwmtipp_done = '1';
 		}
 		if ($wmtipp_done == '0' || $vwmtipp_done == '0') {
@@ -1156,7 +1156,7 @@ if ($action == "showusertippsdetail") {
 						$wmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$wmtipp_name\" title=\"$wmtipp_name\" />";
 						$wmtipp_edit = '';
 						if ($lastgame4wmtipp['datetime'] > $akttime) {
-							$wmtipp_edit = "&nbsp;<a href=\"em2020.php?action=editwmtipp&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
+							$wmtipp_edit = "&nbsp;<a href=\"em2020.php?action=editwmtipp&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
 						}
 					} else {
 						if ($akttime > $lastgame4wmtipp['datetime']) {
@@ -1164,8 +1164,8 @@ if ($action == "showusertippsdetail") {
 							$wmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$wmtipp_name\" title=\"$wmtipp_name\" />";
 							$wmtipp_edit = '';
 						} else {
-							$wmtipp_name = "<b>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}</b>";
-							$wmtipp_flagge = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
+							$wmtipp_name = "<b>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}</b>";
+							$wmtipp_flagge = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
 						}
 					}
 				}
@@ -1175,7 +1175,7 @@ if ($action == "showusertippsdetail") {
 						$vwmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$vwmtipp_name\" title=\"$vwmtipp_name\" />";
 						$vwmtipp_edit = '';
 						if ($lastgame4wmtipp['datetime'] > $akttime) {
-							$vwmtipp_edit = "&nbsp;<a href=\"em2020.php?action=editvwmtipp&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
+							$vwmtipp_edit = "&nbsp;<a href=\"em2020.php?action=editvwmtipp&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
 						}
 					} else {
 						if ($akttime > $lastgame4wmtipp['datetime']) {
@@ -1183,8 +1183,8 @@ if ($action == "showusertippsdetail") {
 							$vwmtipp_flagge = "<img src=\"images/em2020/flaggen/$allflags2[$ii]\" border=\"0\" alt=\"$vwmtipp_name\" title=\"$vwmtipp_name\" />";
 							$vwmtipp_edit = '';
 						} else {
-							$vwmtipp_name = "<b>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}</b>";
-							$vwmtipp_flagge = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
+							$vwmtipp_name = "<b>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}</b>";
+							$vwmtipp_flagge = "<img src=\"images/em2020/flaggen/unknown.png\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15']}\" />";
 						}
 					}
 				}
@@ -1198,7 +1198,7 @@ if ($action == "showusertippsdetail") {
 			$edittipp = '';
 			if (intval($_REQUEST['userid']) == $wbbuserdata['userid']) {
 				if (($row_game['datetime'] - $akttime) > $em2020_options['tipptime']) {
-					$edittipp = "&nbsp;<a href=\"em2020.php?action=edittipp&amp;gameid={$row_game['gameid']}&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
+					$edittipp = "&nbsp;<a href=\"em2020.php?action=edittipp&amp;gameid={$row_game['gameid']}&amp;userid={$wbbuserdata['userid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/edit.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" title=\"{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14']}\" /></a>";
 				}
 			}
 			for ($i = 0; $i < count($allids2); $i++) {
@@ -1216,11 +1216,11 @@ if ($action == "showusertippsdetail") {
 			$gametime = formatdate($wbbuserdata['timeformat'], $row_game['datetime']);
 
 			if ($row_game['gk'] == 1) {
-				$image_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$image_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 
 			if ($row_game['gk'] == 0) {
-				$image_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$image_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 
 			if ($row_game['gk'] == -1) {
@@ -1228,11 +1228,11 @@ if ($action == "showusertippsdetail") {
 			}
 
 			if ($row_game['rk'] == 1) {
-				$image_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$image_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 
 			if ($row_game['rk'] == 0) {
-				$image_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$image_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 
 			if ($row_game['rk'] == -1) {
@@ -1240,11 +1240,11 @@ if ($action == "showusertippsdetail") {
 			}
 
 			if ($row_game['elfer'] == 1) {
-				$image_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$image_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 
 			if ($row_game['elfer'] == 0) {
-				$image_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$image_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 
 			if ($row_game['elfer'] == -1) {
@@ -1253,34 +1253,34 @@ if ($action == "showusertippsdetail") {
 
 			if ($row_game['game_goals_1'] != '' && $row_game['game_goals_2'] != '') {
 				if ($row_game['game_gk'] == $row_game['gk']) {
-					$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+					$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 				}
 
 				if ($row_game['game_gk'] != $row_game['gk'] && $row_game['gk'] != -1) {
-					$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+					$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 				}
 
 				if ($row_game['game_rk'] == $row_game['rk']) {
-					$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+					$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 				}
 
 				if ($row_game['game_rk'] != $row_game['rk'] && $row_game['rk'] != -1) {
-					$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+					$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 				}
 
 				if ($row_game['game_elfer'] == $row_game['elfer']) {
-					$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+					$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 				}
 
 				if ($row_game['game_elfer'] != $row_game['elfer'] && $row_game['elfer'] != -1) {
-					$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+					$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 				}
 
 				$ende = 0;
 				// +++++++++++++++++++ 1. Prüfung
 				// Tipp exakt richtig ?
 				if ($row_game['game_goals_1'] == $row_game['goals_1'] && $row_game['game_goals_2'] == $row_game['goals_2']) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 					$ende = 1;
 				}
 				// +++++++++++++++++++
@@ -1289,13 +1289,13 @@ if ($action == "showusertippsdetail") {
 				if ($ende == 0) {
 					if ($em2020_options['tendenz'] == 1) {
 						if (($row_game['game_goals_1'] == $row_game['game_goals_2']) && ($row_game['goals_1'] == $row_game['goals_2'])) {
-							$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_33']}\" title=\"{$lang->items['LANG_WM2018_PHP_33']}\" />";
+							$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_33']}\" title=\"{$lang->items['LANG_EM2020_PHP_33']}\" />";
 							$ende = 1;
 						}
 					}
 					if ($em2020_options['tendenz'] == 0) {
 						if (($row_game['game_goals_1'] == $row_game['game_goals_2']) && ($row_game['goals_1'] == $row_game['goals_2'])) {
-							$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+							$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 							$ende = 1;
 						}
 					}
@@ -1305,7 +1305,7 @@ if ($action == "showusertippsdetail") {
 				// Spiel unentschieden, Tipp Sieg
 				if ($ende == 0) {
 					if (($row_game['game_goals_1'] == $row_game['game_goals_2']) && ($row_game['goals_1'] != $row_game['goals_2'])) {
-						$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+						$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 						$ende = 1;
 					}
 				}
@@ -1315,13 +1315,13 @@ if ($action == "showusertippsdetail") {
 				if ($ende == 0) {
 					if ($em2020_options['tendenz'] == 1) {
 						if (($row_game['game_goals_1'] < $row_game['game_goals_2']) && ($row_game['goals_1'] < $row_game['goals_2']) || ($row_game['game_goals_1'] > $row_game['game_goals_2']) && ($row_game['goals_1'] > $row_game['goals_2'])) {
-							$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_33']}\" title=\"{$lang->items['LANG_WM2018_PHP_33']}\" />";
+							$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_33']}\" title=\"{$lang->items['LANG_EM2020_PHP_33']}\" />";
 							$ende = 1;
 						}
 					}
 					if ($em2020_options['tendenz'] == 0) {
 						if (($row_game['game_goals_1'] < $row_game['game_goals_2']) && ($row_game['goals_1'] < $row_game['goals_2']) || ($row_game['game_goals_1'] > $row_game['game_goals_2']) && ($row_game['goals_1'] > $row_game['goals_2'])) {
-							$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+							$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 							$ende = 1;
 						}
 					}
@@ -1333,7 +1333,7 @@ if ($action == "showusertippsdetail") {
 				// Spiel Sieg, Tipp unentschieden
 				if ($ende == 0) {
 					if (($row_game['game_goals_1'] < $row_game['game_goals_2']) && ($row_game['goals_1'] > $row_game['goals_2']) || ($row_game['game_goals_1'] > $row_game['game_goals_2']) && ($row_game['goals_1'] < $row_game['goals_2']) || ($row_game['game_goals_1'] != $row_game['game_goals_2']) && ($row_game['goals_1'] == $row_game['goals_2'])) {
-						$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+						$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 						$ende = 1;
 					}
 				}
@@ -1356,7 +1356,7 @@ if ($action == "showusertippsdetail") {
 		}
 		eval("\$tpl->output(\"" . $tpl->get("em2020_showusertippsdetail") . "\");");
 	} else {
-		redirect($lang->get("LANG_WM2018_PHP_61"), $url = "em2020.php?action=showusertipps" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_61"), $url = "em2020.php?action=showusertipps" . $SID_ARG_1ST);
 	}
 }
 // +++++++++++++++++++++++++++++++++++++++++++
@@ -1370,27 +1370,27 @@ if ($action == "showallgames") {
 		$gamedate = preg_replace("/((<b>)?[a-zA-Z]*(<\/b>)?),/", "$1", $gamedate);
 		$gametime = formatdate($wbbuserdata['timeformat'], $row['datetime']);
 		if ($row['gruppe'] == 'A' || 'B' || 'C' || 'D' || 'E' || 'F' || 'G' || 'H') {
-			$type = $lang->items['LANG_WM2018_PHP_18'];
+			$type = $lang->items['LANG_EM2020_PHP_18'];
 		}
 
 		if ($row['gruppe'] == '8') {
-			$type = $lang->items['LANG_WM2018_PHP_4'];
+			$type = $lang->items['LANG_EM2020_PHP_4'];
 		}
 
 		if ($row['gruppe'] == '4') {
-			$type = $lang->items['LANG_WM2018_PHP_6'];
+			$type = $lang->items['LANG_EM2020_PHP_6'];
 		}
 
 		if ($row['gruppe'] == '2') {
-			$type = $lang->items['LANG_WM2018_PHP_8'];
+			$type = $lang->items['LANG_EM2020_PHP_8'];
 		}
 
 		if ($row['gruppe'] == '3') {
-			$type = $lang->items['LANG_WM2018_PHP_9'];
+			$type = $lang->items['LANG_EM2020_PHP_9'];
 		}
 
 		if ($row['gruppe'] == '1') {
-			$type = $lang->items['LANG_WM2018_PHP_10'];
+			$type = $lang->items['LANG_EM2020_PHP_10'];
 		}
 
 		for ($i = 0; $i < count($allids2); $i++) {
@@ -1425,7 +1425,7 @@ if ($action == "showallgames") {
 		//!mf Quote
 
 		if ($row['game_goals_1'] != '' && $row['game_goals_2'] != '') {
-			$gamedetails = "<a href=\"em2020.php?action=gamedetails&amp;gameid={$row['gameid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/details.gif\" border=\"0\"alt=\"{$lang->items['LANG_WM2018_PHP_14']}\" title=\"{$lang->items['LANG_WM2018_PHP_14']}\"></a>";
+			$gamedetails = "<a href=\"em2020.php?action=gamedetails&amp;gameid={$row['gameid']}{$SID_ARG_2ND}\"><img src=\"images/em2020/details.gif\" border=\"0\"alt=\"{$lang->items['LANG_EM2020_PHP_14']}\" title=\"{$lang->items['LANG_EM2020_PHP_14']}\"></a>";
 		}
 
 		eval("\$em2020_showallgames_bit .= \"" . $tpl->get("em2020_showallgames_bit") . "\";");
@@ -1447,27 +1447,27 @@ if ($action == "gamedetails") {
 	$gamedate = preg_replace("/((<b>)?[a-zA-Z]*(<\/b>)?),/", "$1", $gamedate);
 	$gametime = formatdate($wbbuserdata['timeformat'], $result['datetime']);
 	if ($result['gruppe'] == 'A' || 'B' || 'C' || 'D' || 'E' || 'F' || 'G' || 'H') {
-		$type = $lang->items['LANG_WM2018_PHP_18'];
+		$type = $lang->items['LANG_EM2020_PHP_18'];
 	}
 
 	if ($result['gruppe'] == '8') {
-		$type = $lang->items['LANG_WM2018_PHP_4'];
+		$type = $lang->items['LANG_EM2020_PHP_4'];
 	}
 
 	if ($result['gruppe'] == '4') {
-		$type = $lang->items['LANG_WM2018_PHP_6'];
+		$type = $lang->items['LANG_EM2020_PHP_6'];
 	}
 
 	if ($result['gruppe'] == '2') {
-		$type = $lang->items['LANG_WM2018_PHP_8'];
+		$type = $lang->items['LANG_EM2020_PHP_8'];
 	}
 
 	if ($result['gruppe'] == '3') {
-		$type = $lang->items['LANG_WM2018_PHP_9'];
+		$type = $lang->items['LANG_EM2020_PHP_9'];
 	}
 
 	if ($result['gruppe'] == '1') {
-		$type = $lang->items['LANG_WM2018_PHP_10'];
+		$type = $lang->items['LANG_EM2020_PHP_10'];
 	}
 
 	for ($i = 0; $i < count($allids2); $i++) {
@@ -1483,41 +1483,41 @@ if ($action == "gamedetails") {
 	if (!empty($result['game_goals_1']) || $result['game_goals_1'] == '0') {
 		if ($em2020_options['gk_jn'] == 1) {
 			if ($result['game_gk'] == 1) {
-				$gamed_gk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_34']}</span></td></tr>";
+				$gamed_gk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_34']}</span></td></tr>";
 			}
 			if ($result['game_gk'] == 0) {
-				$gamed_gk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_35']}</span></td></tr>";
+				$gamed_gk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_35']}</span></td></tr>";
 			}
 		}
 		if ($em2020_options['rk_jn'] == 1) {
 			if ($result['game_rk'] == 1) {
-				$gamed_rk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_36']}</span></td></tr>";
+				$gamed_rk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_36']}</span></td></tr>";
 			}
 
 			if ($result['game_rk'] == 0) {
-				$gamed_rk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_37']}</span></td></tr>";
-				$gamed_rk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_37']}</span></td></tr>";
+				$gamed_rk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_37']}</span></td></tr>";
+				$gamed_rk = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_37']}</span></td></tr>";
 			}
 		}
 		if ($em2020_options['elfer_jn'] == 1) {
 			if ($result['game_elfer'] == 1) {
-				$gamed_elfer = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_38']}</span></td></tr>";
+				$gamed_elfer = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_38']}</span></td></tr>";
 			}
 			if ($result['game_elfer'] == 0) {
-				$gamed_elfer = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_39']}</span></td></tr>";
+				$gamed_elfer = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_39']}</span></td></tr>";
 			}
 		}
 	} else {
 		$gamed_gk = '';
 		$gamed_rk = '';
 		$gamed_elfer = '';
-		$gamed_stillrunning = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_WM2018_PHP_62']}</span></td></tr>";
+		$gamed_stillrunning = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\">{$lang->items['LANG_EM2020_PHP_62']}</span></td></tr>";
 	}
 
 	$linkjn = 0;
 	if (!empty($result['gamelink'])) {
 		$linkjn = 1;
-		$link = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\"><a href=\"{$result['gamelink']}\" target=\"_blank\">{$lang->items['LANG_WM2018_PHP_40']}</a></span></td></tr>";
+		$link = "<tr><td class=\"tablea\" align=\"center\"><span class=\"normalfont\"><a href=\"{$result['gamelink']}\" target=\"_blank\">{$lang->items['LANG_EM2020_PHP_40']}</a></span></td></tr>";
 	}
 	$commentjn = 0;
 	if (!empty($result['gamecomment'])) {
@@ -1531,7 +1531,7 @@ if ($action == "gamedetails") {
 	// Tipps nur anzeigen, wenn Spiel schon gespielt
 	$result_gamedetails = $db->query_first("SELECT * FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . intval($_REQUEST['gameid']) . "'");
 	if ($result_gamedetails['datetime'] > $akttime) {
-		redirect($lang->get("LANG_WM2018_PHP_60"), $url = "em2020.php?action=showresults" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_60"), $url = "em2020.php?action=showresults" . $SID_ARG_1ST);
 	}
 
 	$result_tippsprograme_include = $db->query("SELECT ut.*,u.username FROM bb" . $n . "_em2020_usertipps ut LEFT JOIN bb" . $n . "_users u ON ut.userid=u.userid WHERE gameid = '" . intval($_REQUEST['gameid']) . "' ORDER BY userid ASC");
@@ -1539,29 +1539,29 @@ if ($action == "gamedetails") {
 		$rowclass = getone($count++, "tablea", "tableb");
 		if ($em2020_options['gk_jn'] == 1) {
 			if ($row['gk'] == 0) {
-				$game_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 
 			if ($row['gk'] == 1) {
-				$game_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 		}
 		if ($em2020_options['rk_jn'] == 1) {
 			if ($row['rk'] == 0) {
-				$game_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 
 			if ($row['rk'] == 1) {
-				$game_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 		}
 		if ($em2020_options['elfer_jn'] == 1) {
 			if ($row['elfer'] == 0) {
-				$game_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 
 			if ($row['elfer'] == 1) {
-				$game_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 		}
 
@@ -1572,7 +1572,7 @@ if ($action == "gamedetails") {
 		// +++++++++++++++++++ 1. Prüfung
 		// Tipp exakt richtig ?
 		if ($result_gamedetails['game_goals_1'] == $row['goals_1'] && $result_gamedetails['game_goals_2'] == $row['goals_2']) {
-			$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+			$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			$ende = 1;
 		}
 		// +++++++++++++++++++
@@ -1581,13 +1581,13 @@ if ($action == "gamedetails") {
 		if ($ende == 0) {
 			if ($em2020_options['tendenz'] == 1) {
 				if (($result_gamedetails['game_goals_1'] == $result_gamedetails['game_goals_2']) && ($row['goals_1'] == $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_33']}\" title=\"{$lang->items['LANG_WM2018_PHP_33']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_33']}\" title=\"{$lang->items['LANG_EM2020_PHP_33']}\" />";
 					$ende = 1;
 				}
 			}
 			if ($em2020_options['tendenz'] == 0) {
 				if (($result_gamedetails['game_goals_1'] == $result_gamedetails['game_goals_2']) && ($row['goals_1'] == $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 					$ende = 1;
 				}
 			}
@@ -1597,7 +1597,7 @@ if ($action == "gamedetails") {
 		// Spiel unentschieden, Tipp Sieg
 		if ($ende == 0) {
 			if (($result_gamedetails['game_goals_1'] == $result_gamedetails['game_goals_2']) && ($row['goals_1'] != $row['goals_2'])) {
-				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 				$ende = 1;
 			}
 		}
@@ -1607,13 +1607,13 @@ if ($action == "gamedetails") {
 		if ($ende == 0) {
 			if ($em2020_options['tendenz'] == 1) {
 				if (($result_gamedetails['game_goals_1'] < $result_gamedetails['game_goals_2']) && ($row['goals_1'] < $row['goals_2']) || ($result_gamedetails['game_goals_1'] > $result_gamedetails['game_goals_2']) && ($row['goals_1'] > $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_33']}\" title=\"{$lang->items['LANG_WM2018_PHP_33']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_33']}\" title=\"{$lang->items['LANG_EM2020_PHP_33']}\" />";
 					$ende = 1;
 				}
 			}
 			if ($em2020_options['tendenz'] == 0) {
 				if (($result_gamedetails['game_goals_1'] < $result_gamedetails['game_goals_2']) && ($row['goals_1'] < $row['goals_2']) || ($result_gamedetails['game_goals_1'] > $result_gamedetails['game_goals_2']) && ($row['goals_1'] > $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 					$ende = 1;
 				}
 			}
@@ -1625,7 +1625,7 @@ if ($action == "gamedetails") {
 		// Spiel Sieg, Tipp unentschieden
 		if ($ende == 0) {
 			if (($result_gamedetails['game_goals_1'] < $result_gamedetails['game_goals_2']) && ($row['goals_1'] > $row['goals_2']) || ($result_gamedetails['game_goals_1'] > $result_gamedetails['game_goals_2']) && ($row['goals_1'] < $row['goals_2']) || ($result_gamedetails['game_goals_1'] != $result_gamedetails['game_goals_2']) && ($row['goals_1'] == $row['goals_2'])) {
-				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 				$ende = 1;
 			}
 		}
@@ -1634,46 +1634,46 @@ if ($action == "gamedetails") {
 
 		if ($em2020_options['gk_jn'] == 1) {
 			if ($row['gk'] == 0) {
-				$game_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 
 			}
 			if ($row['gk'] == 1) {
-				$game_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 			// Prüfung, ob User richtig lag
 			if ($row['gk'] == $result_gamedetails['game_gk']) {
-				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			} else {
-				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 			}
 
 		}
 		if ($em2020_options['rk_jn'] == 1) {
 			if ($row['rk'] == 0) {
-				$game_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 			if ($row['rk'] == 1) {
-				$game_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 			// Prüfung, ob User richtig lag
 			if ($row['rk'] == $result_gamedetails['game_rk']) {
-				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			} else {
-				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 			}
 		}
 		if ($em2020_options['elfer_jn'] == 1) {
 			if ($row['elfer'] == 0) {
-				$game_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 			if ($row['elfer'] == 1) {
-				$game_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 			// Prüfung, ob User richtig lag
 			if ($row['elfer'] == $result_gamedetails['game_elfer']) {
-				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			} else {
-				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 			}
 		}
 
@@ -1693,7 +1693,7 @@ if ($action == "tippsprogame") {
 	// Tipps nur anzeigen, wenn Spiel schon gespielt
 	$result_gamedetails = $db->query_first("SELECT * FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . intval($_REQUEST['gameid']) . "'");
 	if ($result_gamedetails['datetime'] > $akttime) {
-		redirect($lang->get("LANG_WM2018_PHP_60"), $url = "em2020.php?action=showresults" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_60"), $url = "em2020.php?action=showresults" . $SID_ARG_1ST);
 	}
 
 	$result = $db->query("SELECT ut.*,u.username FROM bb" . $n . "_em2020_usertipps ut LEFT JOIN bb" . $n . "_users u ON ut.userid=u.userid WHERE gameid = '" . intval($_REQUEST['gameid']) . "' ORDER BY userid ASC");
@@ -1707,7 +1707,7 @@ if ($action == "tippsprogame") {
 		// +++++++++++++++++++ 1. Prüfung
 		// Tipp exakt richtig ?
 		if ($result_gamedetails['game_goals_1'] == $row['goals_1'] && $result_gamedetails['game_goals_2'] == $row['goals_2']) {
-			$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+			$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			$ende = 1;
 		}
 		// +++++++++++++++++++
@@ -1716,13 +1716,13 @@ if ($action == "tippsprogame") {
 		if ($ende == 0) {
 			if ($em2020_options['tendenz'] == 1) {
 				if (($result_gamedetails['game_goals_1'] == $result_gamedetails['game_goals_2']) && ($row['goals_1'] == $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_33']}\" title=\"{$lang->items['LANG_WM2018_PHP_33']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_33']}\" title=\"{$lang->items['LANG_EM2020_PHP_33']}\" />";
 					$ende = 1;
 				}
 			}
 			if ($em2020_options['tendenz'] == 0) {
 				if (($result_gamedetails['game_goals_1'] == $result_gamedetails['game_goals_2']) && ($row['goals_1'] == $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 					$ende = 1;
 				}
 			}
@@ -1732,7 +1732,7 @@ if ($action == "tippsprogame") {
 		// Spiel unentschieden, Tipp Sieg
 		if ($ende == 0) {
 			if (($result_gamedetails['game_goals_1'] == $result_gamedetails['game_goals_2']) && ($row['goals_1'] != $row['goals_2'])) {
-				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 				$ende = 1;
 			}
 		}
@@ -1742,13 +1742,13 @@ if ($action == "tippsprogame") {
 		if ($ende == 0) {
 			if ($em2020_options['tendenz'] == 1) {
 				if (($result_gamedetails['game_goals_1'] < $result_gamedetails['game_goals_2']) && ($row['goals_1'] < $row['goals_2']) || ($result_gamedetails['game_goals_1'] > $result_gamedetails['game_goals_2']) && ($row['goals_1'] > $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_33']}\" title=\"{$lang->items['LANG_WM2018_PHP_33']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/tendenz.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_33']}\" title=\"{$lang->items['LANG_EM2020_PHP_33']}\" />";
 					$ende = 1;
 				}
 			}
 			if ($em2020_options['tendenz'] == 0) {
 				if (($result_gamedetails['game_goals_1'] < $result_gamedetails['game_goals_2']) && ($row['goals_1'] < $row['goals_2']) || ($result_gamedetails['game_goals_1'] > $result_gamedetails['game_goals_2']) && ($row['goals_1'] > $row['goals_2'])) {
-					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+					$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 					$ende = 1;
 				}
 			}
@@ -1760,7 +1760,7 @@ if ($action == "tippsprogame") {
 		// Spiel Sieg, Tipp unentschieden
 		if ($ende == 0) {
 			if (($result_gamedetails['game_goals_1'] < $result_gamedetails['game_goals_2']) && ($row['goals_1'] > $row['goals_2']) || ($result_gamedetails['game_goals_1'] > $result_gamedetails['game_goals_2']) && ($row['goals_1'] < $row['goals_2']) || ($result_gamedetails['game_goals_1'] != $result_gamedetails['game_goals_2']) && ($row['goals_1'] == $row['goals_2'])) {
-				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_result = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 				$ende = 1;
 			}
 		}
@@ -1768,46 +1768,46 @@ if ($action == "tippsprogame") {
 
 		if ($em2020_options['gk_jn'] == 1) {
 			if ($row['gk'] == 0) {
-				$game_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_gk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 
 			}
 			if ($row['gk'] == 1) {
-				$game_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_gk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 			// Prüfung, ob User richtig lag
 			if ($row['gk'] == $result_gamedetails['game_gk']) {
-				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			} else {
-				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_gk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 			}
 
 		}
 		if ($em2020_options['rk_jn'] == 1) {
 			if ($row['rk'] == 0) {
-				$game_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_rk = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 			if ($row['rk'] == 1) {
-				$game_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_rk = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 			// Prüfung, ob User richtig lag
 			if ($row['rk'] == $result_gamedetails['game_rk']) {
-				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			} else {
-				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_rk = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 			}
 		}
 		if ($em2020_options['elfer_jn'] == 1) {
 			if ($row['elfer'] == 0) {
-				$game_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_30']}\" title=\"{$lang->items['LANG_WM2018_PHP_30']}\" />";
+				$game_elfer = "<img src=\"images/em2020/notok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_30']}\" title=\"{$lang->items['LANG_EM2020_PHP_30']}\" />";
 			}
 			if ($row['elfer'] == 1) {
-				$game_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_29']}\" title=\"{$lang->items['LANG_WM2018_PHP_29']}\" />";
+				$game_elfer = "<img src=\"images/em2020/ok.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_29']}\" title=\"{$lang->items['LANG_EM2020_PHP_29']}\" />";
 			}
 			// Prüfung, ob User richtig lag
 			if ($row['elfer'] == $result_gamedetails['game_elfer']) {
-				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_31']}\" title=\"{$lang->items['LANG_WM2018_PHP_31']}\" />";
+				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_up.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_31']}\" title=\"{$lang->items['LANG_EM2020_PHP_31']}\" />";
 			} else {
-				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_WM2018_PHP_32']}\" title=\"{$lang->items['LANG_WM2018_PHP_32']}\" />";
+				$tippright_elfer = "&nbsp;<img src=\"images/em2020/thumbs_down.gif\" border=\"0\" alt=\"{$lang->items['LANG_EM2020_PHP_32']}\" title=\"{$lang->items['LANG_EM2020_PHP_32']}\" />";
 			}
 		}
 		if (!empty($result_gamedetails['game_goals_1']) || $result_gamedetails['game_goals_1'] == '0') {
@@ -1826,12 +1826,12 @@ if ($action == "edittipp") {
 	if (isset($_POST['send'])) {
 		// Erneute Prüfung der Mindesttippabgabezeit
 		if ((intval($_POST['datetime']) - $akttime) < $em2020_options['tipptime']) {
-			redirect($lang->get("LANG_WM2018_PHP_44"), $url = "em2020.php" . $SID_ARG_1ST);
+			redirect($lang->get("LANG_EM2020_PHP_44"), $url = "em2020.php" . $SID_ARG_1ST);
 		}
 
 		// Prüfen ob Achtelfinale, Viertelfinale, Halbfinale, Spiel um Platz 3 oder Finale und Tipp unentschieden
 		if (intval($_POST['gameid']) > $gameids['vorrundenspiel'] && intval($_POST['tipp_1']) == intval($_POST['tipp_2'])) {
-			redirect($lang->get("LANG_WM2018_PHP_41"), $url = "em2020.php?action=edittipp&amp;gameid={$_POST['gameid']}&amp;userid={$wbbuserdata['userid']}" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_41"), $url = "em2020.php?action=edittipp&amp;gameid={$_POST['gameid']}&amp;userid={$wbbuserdata['userid']}" . $SID_ARG_2ND);
 		}
 
 		$tippok = 1;
@@ -1863,28 +1863,28 @@ if ($action == "edittipp") {
 		}
 		if ($tippok == 1) {
 			$db->unbuffered_query("UPDATE bb" . $n . "_em2020_usertipps SET goals_1 = '" . intval($_POST['tipp_1']) . "', goals_2 = '" . intval($_POST['tipp_2']) . "', gk = '$gk', rk = '$rk', elfer = '$elfer' WHERE gameid = '" . intval($_POST['gameid']) . "' AND userid = '" . intval($wbbuserdata['userid']) . "'");
-			redirect($lang->get("LANG_WM2018_PHP_45"), $url = "em2020.php?action=showusertippsdetail&amp;userid={$wbbuserdata['userid']}" . $SID_ARG_1ST);
+			redirect($lang->get("LANG_EM2020_PHP_45"), $url = "em2020.php?action=showusertippsdetail&amp;userid={$wbbuserdata['userid']}" . $SID_ARG_1ST);
 		} elseif ($tippok == 0) {
-			redirect($lang->get("LANG_WM2018_PHP_46"), $url = "em2020.php?action=edittipp&amp;gameid=" . intval($_POST['gameid']) . "&amp;userid={$wbbuserdata['userid']}" . $SID_ARG_2ND);
+			redirect($lang->get("LANG_EM2020_PHP_46"), $url = "em2020.php?action=edittipp&amp;gameid=" . intval($_POST['gameid']) . "&amp;userid={$wbbuserdata['userid']}" . $SID_ARG_2ND);
 		}
 	}
 	// Anzeigen des zu ändernden Tipps
 	// User ist auch der, der er zu sein scheint ?
 	if (intval($_REQUEST['userid']) != $wbbuserdata['userid']) {
-		redirect($lang->get("LANG_WM2018_PHP_47"), $url = "em2020.php" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_47"), $url = "em2020.php" . $SID_ARG_1ST);
 	}
 
 	// Tipp von diesem User existiert auch ?
 	$checktipp = $db->query_first("SELECT gameid FROM bb" . $n . "_em2020_usertipps WHERE gameid = '" . intval($_REQUEST['gameid']) . "' AND userid = '" . intval($_REQUEST['userid']) . "'");
 	if (!$checktipp['gameid']) {
-		redirect($lang->get("LANG_WM2018_PHP_48"), $url = "em2020.php" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_48"), $url = "em2020.php" . $SID_ARG_1ST);
 	}
 
 	$result_game = $db->query("SELECT ut.*,g.* FROM bb" . $n . "_em2020_usertipps ut LEFT JOIN bb" . $n . "_em2020_spiele g ON ut.gameid=g.gameid WHERE ut.gameid = '" . intval($_REQUEST['gameid']) . "' AND ut.userid = '" . intval($_REQUEST['userid']) . "'");
 	while ($row_game = $db->fetch_array($result_game)) {
 		// Mindesttippabgabezeit noch nicht erreicht ?
 		if (($row_game['datetime'] - $akttime) < $em2020_options['tipptime']) {
-			redirect($lang->get("LANG_WM2018_PHP_49"), $url = "em2020.php" . $SID_ARG_1ST);
+			redirect($lang->get("LANG_EM2020_PHP_49"), $url = "em2020.php" . $SID_ARG_1ST);
 		}
 
 		for ($i = 0; $i < count($allids2); $i++) {
@@ -1929,26 +1929,26 @@ if ($action == "edittipp") {
 // ++++++++++++++++++++++++
 if ($action == "editwmtipp") {
 	if ($lastgame4wmtipp['datetime'] < $akttime) {
-		redirect($lang->get("LANG_WM2018_PHP_50"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_50"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	// +++++++++++++++++++++++++++++++++++
 	if (isset($_POST['send'])) {
 		if ($_POST['tipp_wm'] == -1) {
-			redirect($lang->get("LANG_WM2018_PHP_51"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+			redirect($lang->get("LANG_EM2020_PHP_51"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 		}
 
 		$db->unbuffered_query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_wm = '" . intval($_POST['tipp_wm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
-		redirect($lang->get("LANG_WM2018_PHP_52"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_52"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 	// +++++++++++++++++++++++++++++++++++
 	if ($_REQUEST['userid'] != $wbbuserdata['userid']) {
-		redirect($lang->get("LANG_WM2018_PHP_53"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_53"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	$result = $db->query_first("SELECT tipp_wm, tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
 	if (!$result['tipp_wm']) {
-		redirect($lang->get("LANG_WM2018_PHP_54"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_54"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	for ($j = 0; $j < count($allids2); $j++) {
@@ -1969,26 +1969,26 @@ if ($action == "editwmtipp") {
 // +++++++++++++++++++++++++++++
 if ($action == "editvwmtipp") {
 	if ($lastgame4wmtipp['datetime'] < $akttime) {
-		redirect($lang->get("LANG_WM2018_PHP_55"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_55"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	// +++++++++++++++++++++++++++++++++++
 	if (isset($_POST['send'])) {
 		if ($_POST['tipp_vwm'] == -1) {
-			redirect($lang->get("LANG_WM2018_PHP_56"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+			redirect($lang->get("LANG_EM2020_PHP_56"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 		}
 
 		$db->unbuffered_query("UPDATE bb" . $n . "_em2020_userpunkte SET tipp_vwm = '" . intval($_POST['tipp_vwm']) . "' WHERE userid = '" . intval($wbbuserdata['userid']) . "'");
-		redirect($lang->get("LANG_WM2018_PHP_57"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_57"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 	// +++++++++++++++++++++++++++++++++++
 	if ($_REQUEST['userid'] != $wbbuserdata['userid']) {
-		redirect($lang->get("LANG_WM2018_PHP_58"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_58"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	$result = $db->query_first("SELECT tipp_wm, tipp_vwm FROM bb" . $n . "_em2020_userpunkte WHERE userid = '" . intval($_REQUEST['userid']) . "'");
 	if (!$result['tipp_vwm']) {
-		redirect($lang->get("LANG_WM2018_PHP_59"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
+		redirect($lang->get("LANG_EM2020_PHP_59"), $url = "em2020.php?action=maketipp" . $SID_ARG_1ST);
 	}
 
 	for ($j = 0; $j < count($allids2); $j++) {
@@ -2012,7 +2012,7 @@ if ($action == "wmtipp_only") {
 	$result_time = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . $em2020_options['lastgame4wmtipp'] . "'");
 	$time2 = $result_time['datetime'] - $em2020_options['tipptime'];
 	if ($akttime > $time2) {
-		redirect($lang->get("LANG_WM2018_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
+		redirect($lang->get("LANG_EM2020_PHP_20"), $url = "em2020.php?action=maketipp" . $SID_ARG_2ND);
 	}
 
 	if ($em2020_options['winnertipp_jn'] == 1) {
@@ -2024,7 +2024,7 @@ if ($action == "wmtipp_only") {
 				eval("\$em2020_auswahl_wmtipp .= \"" . $tpl->get("em2020_auswahl_wmtipp_selected") . "\";");
 			}
 		}
-		eval("\$lang->items['LANG_WM2018_TPL_TIPPABGABE_WM_2'] = \"" . $lang->get4eval("LANG_WM2018_TPL_TIPPABGABE_WM_2") . "\";");
+		eval("\$lang->items['LANG_EM2020_TPL_TIPPABGABE_WM_2'] = \"" . $lang->get4eval("LANG_EM2020_TPL_TIPPABGABE_WM_2") . "\";");
 		eval("\$em2020_tippabgabe_wm.= \"" . $tpl->get("em2020_tippabgabe_wm") . "\";");
 	}
 	if ($em2020_options['winnertipp_jn'] == 1) {
@@ -2036,7 +2036,7 @@ if ($action == "wmtipp_only") {
 				eval("\$em2020_auswahl_vwmtipp .= \"" . $tpl->get("em2020_auswahl_vwmtipp_selected") . "\";");
 			}
 		}
-		eval("\$lang->items['LANG_WM2018_TPL_tippabgabe_vwm_2'] = \"" . $lang->get4eval("LANG_WM2018_TPL_tippabgabe_vwm_2") . "\";");
+		eval("\$lang->items['LANG_EM2020_TPL_tippabgabe_vwm_2'] = \"" . $lang->get4eval("LANG_EM2020_TPL_tippabgabe_vwm_2") . "\";");
 		eval("\$em2020_tippabgabe_vwm .= \"" . $tpl->get("em2020_tippabgabe_vwm") . "\";");
 	}
 	eval("\$tpl->output(\"" . $tpl->get("em2020_wmtipp_only") . "\");");

@@ -4,14 +4,14 @@
 		<td class="tabletitle" align="center">
 			<span class="smallfont">
 				<b>
-					<u>{$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_4']}</u>
+					<u>{$lang->items['LANG_EM2020_TPL_TIPPSPROGAME_4']}</u>
 				</b>
 			</span>
 		</td>
 		<td class="tabletitle" align="center">
 			<span class="smallfont">
 				<b>
-					<u>{$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_5']}</u>
+					<u>{$lang->items['LANG_EM2020_TPL_TIPPSPROGAME_5']}</u>
 				</b>
 			</span>
 		</td>
@@ -20,7 +20,7 @@
 				<td class="tabletitle" align="center">
 					<span class="smallfont">
 						<b>
-							<u>{$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_6']}</u>
+							<u>{$lang->items['LANG_EM2020_TPL_TIPPSPROGAME_6']}</u>
 						</b>
 					</span>
 				</td>
@@ -31,7 +31,7 @@
 				<td class="tabletitle" align="center">
 					<span class="smallfont">
 						<b>
-							<u>{$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_7']}</u>
+							<u>{$lang->items['LANG_EM2020_TPL_TIPPSPROGAME_7']}</u>
 						</b>
 					</span>
 				</td>
@@ -42,7 +42,7 @@
 				<td class="tabletitle" align="center">
 					<span class="smallfont">
 						<b>
-							<u>{$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_8']}</u>
+							<u>{$lang->items['LANG_EM2020_TPL_TIPPSPROGAME_8']}</u>
 						</b>
 					</span>
 				</td>

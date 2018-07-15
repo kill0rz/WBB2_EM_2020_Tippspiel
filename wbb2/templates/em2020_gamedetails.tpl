@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
 
 <head>
-	<title>$master_board_name | {$lang->items['LANG_WM2018_TPL_GAMEDETAILS_1']}</title>
+	<title>$master_board_name | {$lang->items['LANG_EM2020_TPL_GAMEDETAILS_1']}</title>
 	$headinclude
 </head>
 
@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_GAMEDETAILS_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_2']}</a> &raquo; {$lang->items['LANG_EM2020_TPL_GAMEDETAILS_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -36,7 +36,7 @@
 			<td class="tabletitle" align="center" colspan="2">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_4']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_4']}</u>
 					</b>
 				</span>
 			</td>
@@ -45,7 +45,7 @@
 			<td class="tableb" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_5']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_5']}</u>
 					</b>
 				</span>
 			</td>
@@ -57,19 +57,19 @@
 			<td class="tableb" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_6']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_6']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tablea" align="center">
-				<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_WM2018_TPL_GAMEDETAILS_7']}</span>
+				<span class="smallfont">$gamedate, $gametime {$lang->items['LANG_EM2020_TPL_GAMEDETAILS_7']}</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="tableb" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_8']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_8']}</u>
 					</b>
 				</span>
 			</td>
@@ -81,7 +81,7 @@
 			<td class="tableb" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_9']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_9']}</u>
 					</b>
 				</span>
 			</td>
@@ -96,7 +96,7 @@
 			<td class="tabletitle" align="center" colspan="4">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_10']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_10']}</u>
 					</b>
 				</span>
 			</td>
@@ -126,7 +126,7 @@
 					<td class="tabletitle" align="center" colspan="4">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_11']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_11']}</u>
 							</b>
 						</span>
 					</td>
@@ -146,7 +146,7 @@
 					<td class="tabletitle" align="center" colspan="4">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_12']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_12']}</u>
 							</b>
 						</span>
 					</td>
@@ -163,7 +163,7 @@
 					<td class="tabletitle" align="center" colspan="4">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_13']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_GAMEDETAILS_13']}</u>
 							</b>
 						</span>
 					</td>

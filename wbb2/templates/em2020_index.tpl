@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
 
 <head>
-	<title>$master_board_name | {$lang->items['LANG_WM2018_TPL_INDEX_1']}</title>
+	<title>$master_board_name | {$lang->items['LANG_EM2020_TPL_INDEX_1']}</title>
 	$headinclude
 </head>
 
@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; {$lang->items['LANG_WM2018_TPL_INDEX_1']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; {$lang->items['LANG_EM2020_TPL_INDEX_1']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -39,7 +39,7 @@
 				<tr>
 					<td class="tabletitle" align="center" colspan="5">
 						<span class="smallfont">
-							<b><u>{$lang->items['LANG_WM2018_TPL_INDEX_34']}</u></b>
+							<b><u>{$lang->items['LANG_EM2020_TPL_INDEX_34']}</u></b>
 						</span>
 					</td>
 				</tr>
@@ -58,7 +58,7 @@
 				<tr>
 					<td class="tabletitle" align="center" colspan="5">
 						<span class="smallfont">
-							<b><u>{$lang->items['LANG_WM2018_TPL_INDEX_35']}</u></b>
+							<b><u>{$lang->items['LANG_EM2020_TPL_INDEX_35']}</u></b>
 						</span>
 					</td>
 				</tr>
@@ -78,7 +78,7 @@
 						<td class="tabletitle" align="center">
 							<span class="smallfont">
 								<b>
-									<u>{$lang->items['LANG_WM2018_TPL_INDEX_2']}</u>
+									<u>{$lang->items['LANG_EM2020_TPL_INDEX_2']}</u>
 								</b>
 							</span>
 						</td>
@@ -88,13 +88,13 @@
 							<then>
 								<td class="tableb" align="left">
 									<span class="smallfont">
-										{$lang->items['LANG_WM2018_TPL_INDEX_3']}
+										{$lang->items['LANG_EM2020_TPL_INDEX_3']}
 										<b>$wbbuserdata[username]</b>,
 										<br />
-										<br /> {$lang->items['LANG_WM2018_TPL_INDEX_4']}
+										<br /> {$lang->items['LANG_EM2020_TPL_INDEX_4']}
 										<br />
 										<if($em2020_options['gh_aktiv']==1)>
-											<then>{$lang->items['LANG_WM2018_TPL_INDEX_5']}
+											<then>{$lang->items['LANG_EM2020_TPL_INDEX_5']}
 												<b>$wbbuserdata[guthaben]</b> $waehrung
 												<br />
 												<br />
@@ -113,8 +113,8 @@
 						<if(!$wbbuserdata['userid'])>
 							<then>
 								<td class="tableb" align="left">
-									<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_33']},
-										<br /> {$lang->items['LANG_WM2018_TPL_INDEX_6']}
+									<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_33']},
+										<br /> {$lang->items['LANG_EM2020_TPL_INDEX_6']}
 										<br />
 										<br />
 										<br />
@@ -135,10 +135,10 @@
 										<b>
 											<if($em2020_options['rssnews_showfeed']=="fifa")>
 												<then>
-													<u>{$lang->items['LANG_WM2018_TPL_INDEX_7']}</u>
+													<u>{$lang->items['LANG_EM2020_TPL_INDEX_7']}</u>
 												</then>
 												<else>
-													<u>{$lang->items['LANG_WM2018_TPL_INDEX_36']}</u>
+													<u>{$lang->items['LANG_EM2020_TPL_INDEX_36']}</u>
 												</else>
 											</if>
 										</b>
@@ -169,7 +169,7 @@
 								<td class="tabletitle" align="center" colspan="5">
 									<span class="smallfont">
 										<b>
-											<u>{$lang->items['LANG_WM2018_TPL_INDEX_8']}</u>
+											<u>{$lang->items['LANG_EM2020_TPL_INDEX_8']}</u>
 										</b>
 									</span>
 								</td>
@@ -213,7 +213,7 @@
 							<tr>
 								<td class="tablea" align="center" colspan="8">
 									<span class="smallfont">
-										<b>{$lang->items['LANG_WM2018_TPL_INDEX_9']} $gruppensort</b>
+										<b>{$lang->items['LANG_EM2020_TPL_INDEX_9']} $gruppensort</b>
 									</span>
 								</td>
 							</tr>
@@ -230,43 +230,43 @@
 								</td>
 								<td class="tabletitle" align="center">
 									<span class="smallfont">
-										<a title="{$lang->items['LANG_WM2018_TPL_INDEX_10']}">
-											<b>{$lang->items['LANG_WM2018_TPL_INDEX_11']}</b>
+										<a title="{$lang->items['LANG_EM2020_TPL_INDEX_10']}">
+											<b>{$lang->items['LANG_EM2020_TPL_INDEX_11']}</b>
 										</a>
 									</span>
 								</td>
 								<td class="tabletitle" align="center">
 									<span class="smallfont">
-										<a title="{$lang->items['LANG_WM2018_TPL_INDEX_12']}">
-											<b>{$lang->items['LANG_WM2018_TPL_INDEX_13']}</b>
+										<a title="{$lang->items['LANG_EM2020_TPL_INDEX_12']}">
+											<b>{$lang->items['LANG_EM2020_TPL_INDEX_13']}</b>
 										</a>
 									</span>
 								</td>
 								<td class="tabletitle" align="center">
 									<span class="smallfont">
-										<a title="{$lang->items['LANG_WM2018_TPL_INDEX_14']}">
-											<b>{$lang->items['LANG_WM2018_TPL_INDEX_15']}</b>
+										<a title="{$lang->items['LANG_EM2020_TPL_INDEX_14']}">
+											<b>{$lang->items['LANG_EM2020_TPL_INDEX_15']}</b>
 										</a>
 									</span>
 								</td>
 								<td class="tabletitle" align="center">
 									<span class="smallfont">
-										<a title="{$lang->items['LANG_WM2018_TPL_INDEX_16']}">
-											<b>{$lang->items['LANG_WM2018_TPL_INDEX_17']}</b>
+										<a title="{$lang->items['LANG_EM2020_TPL_INDEX_16']}">
+											<b>{$lang->items['LANG_EM2020_TPL_INDEX_17']}</b>
 										</a>
 									</span>
 								</td>
 								<td class="tabletitle" align="center">
 									<span class="smallfont">
-										<a title="{$lang->items['LANG_WM2018_TPL_INDEX_18']}">
-											<b>{$lang->items['LANG_WM2018_TPL_INDEX_19']}</b>
+										<a title="{$lang->items['LANG_EM2020_TPL_INDEX_18']}">
+											<b>{$lang->items['LANG_EM2020_TPL_INDEX_19']}</b>
 										</a>
 									</span>
 								</td>
 								<td class="tabletitle" align="center">
 									<span class="smallfont">
-										<a title="{$lang->items['LANG_WM2018_TPL_INDEX_20']}">
-											<b>{$lang->items['LANG_WM2018_TPL_INDEX_21']}</b>
+										<a title="{$lang->items['LANG_EM2020_TPL_INDEX_20']}">
+											<b>{$lang->items['LANG_EM2020_TPL_INDEX_21']}</b>
 										</a>
 									</span>
 								</td>
@@ -283,13 +283,13 @@
 					<td class="tabletitle" align="center" colspan="2">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_INDEX_22']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_INDEX_22']}</u>
 							</b>
 						</span>
 					</td>
 				</tr>
 				<tr>
-					<td class="tablea" align="center" width="25%"><img src="images/em2020/trophy.png" alt="{$lang->items['LANG_WM2018_TPL_INDEX_23']}" title="{$lang->items['LANG_WM2018_TPL_INDEX_23']}" /></td>
+					<td class="tablea" align="center" width="25%"><img src="images/em2020/trophy.png" alt="{$lang->items['LANG_EM2020_TPL_INDEX_23']}" title="{$lang->items['LANG_EM2020_TPL_INDEX_23']}" /></td>
 					<td class="tablea" align="center" width="75%">
 						<span class="normalfont">
 							<b><img src="images/em2020/flaggen/$result_1st[flagge]" alt="$result_1st[name]" title="$result_1st[name]" />&nbsp;$result_1st[name]&nbsp;<img src="images/em2020/flaggen/$result_1st[flagge]" alt="$result_1st[name]" title="$result_1st[name]" /></b>
@@ -298,7 +298,7 @@
 				</tr>
 				<tr>
 					<td class="tablea" align="center" width="25%">
-						<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_24']}</span>
+						<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_24']}</span>
 					</td>
 					<td class="tablea" align="center" width="75%">
 						<span class="smallfont">$result_2nd[name]&nbsp;<img src="images/em2020/flaggen/$result_2nd[flagge]" alt="$result_2nd[name]" title="$result_2nd[name]" /></span>
@@ -316,7 +316,7 @@
 						<td class="tabletitle" align="center" colspan="2">
 							<span class="smallfont">
 								<b>
-									<u>{$lang->items['LANG_WM2018_TPL_INDEX_25']}</u>
+									<u>{$lang->items['LANG_EM2020_TPL_INDEX_25']}</u>
 								</b>
 							</span>
 						</td>
@@ -331,7 +331,7 @@
 						<td class="tabletitle" align="center" colspan="7">
 							<span class="smallfont">
 								<b>
-									<u>{$lang->items['LANG_WM2018_TPL_INDEX_32']}</u>
+									<u>{$lang->items['LANG_EM2020_TPL_INDEX_32']}</u>
 								</b>
 							</span>
 						</td>
@@ -345,23 +345,23 @@
 						<td class="tabletitle" align="center" colspan="4">
 							<span class="smallfont">
 								<b>
-									<u>{$lang->items['LANG_WM2018_TPL_INDEX_40']}</u>
+									<u>{$lang->items['LANG_EM2020_TPL_INDEX_40']}</u>
 								</b>
 							</span>
 						</td>
 					</tr>
 					<tr class="tablea_fc">
 						<td class="tablea" align="center">
-							<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_41']}</span>
+							<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_41']}</span>
 						</td>
 						<td class="tablea" align="center">
-							<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_42']}</span>
+							<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_42']}</span>
 						</td>
 						<td class="tablea" align="center">
-							<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_43']}</span>
+							<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_43']}</span>
 						</td>
 						<td class="tablea" align="center">
-							<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_44']}</span>
+							<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_44']}</span>
 						</td>
 					</tr>
 					$em2020_meisterquote
@@ -376,14 +376,14 @@
 								<td class="tabletitle" align="center" colspan="2">
 									<span class="smallfont">
 										<b>
-											<u>{$lang->items['LANG_WM2018_TPL_INDEX_26']}</u>
+											<u>{$lang->items['LANG_EM2020_TPL_INDEX_26']}</u>
 										</b>
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td class="tableb" align="center">
-									<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_27']}</span>
+									<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_27']}</span>
 								</td>
 								<td class="tableb" align="center">
 									<span class="smallfont">$em2020_options[gh_ab_normtipp] $waehrung</span>
@@ -391,7 +391,7 @@
 							</tr>
 							<tr>
 								<td class="tableb" align="center">
-									<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_28']}</span>
+									<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_28']}</span>
 								</td>
 								<td class="tableb" align="center">
 									<span class="smallfont">$em2020_options[gh_ab_wmtipp] $waehrung</span>
@@ -399,7 +399,7 @@
 							</tr>
 							<tr>
 								<td class="tablea" align="center">
-									<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_29']}</span>
+									<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_29']}</span>
 								</td>
 								<td class="tablea" align="center">
 									<span class="smallfont">$em2020_options[gh_gut_normtipp_richtig] $waehrung</span>
@@ -409,7 +409,7 @@
 								<then>
 									<tr>
 										<td class="tablea" align="center">
-											<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_30']}</span>
+											<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_30']}</span>
 										</td>
 										<td class="tablea" align="center">
 											<span class="smallfont">$em2020_options[gh_gut_normtipp_tendenz] $waehrung</span>
@@ -421,7 +421,7 @@
 									<then>
 										<tr>
 											<td class="tablea" align="center">
-												<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_31']}</span>
+												<span class="smallfont">{$lang->items['LANG_EM2020_TPL_INDEX_31']}</span>
 											</td>
 											<td class="tablea" align="center">
 												<span class="smallfont">$em2020_options[gh_gut_wmtipp_richtig] $waehrung</span>

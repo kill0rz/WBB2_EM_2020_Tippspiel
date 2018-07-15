@@ -1,6 +1,6 @@
 <wBBgroupvariablegroup>
-	<name>USER_WM2018</name>
-	<title>WM2018-Tippspiel</title>
+	<name>USER_EM2020</name>
+	<title>EM2020-Tippspiel</title>
 	<parent>USER</parent>
 	<securitylevel>1</securitylevel>
 	<acpmode>2</acpmode>
@@ -10,9 +10,9 @@
 	<name>can_em2020_see</name>
 	<type>truefalse</type>
 	<defaultvalue>0</defaultvalue>
-	<title>D&uuml;rfen Mitglieder dieser Gruppe das WM2018-Tippspiel sehen?</title>
+	<title>D&uuml;rfen Mitglieder dieser Gruppe das EM2020-Tippspiel sehen?</title>
 	<desc></desc>
-	<group>USER_WM2018</group>
+	<group>USER_EM2020</group>
 	<acpmode>2</acpmode>
 </wBBgroupvariable>
 
@@ -20,15 +20,15 @@
 	<name>can_em2020_use</name>
 	<type>truefalse</type>
 	<defaultvalue>0</defaultvalue>
-	<title>D&uuml;rfen Mitglieder dieser Gruppe am WM2018-Tippspiel teilnehmen?</title>
+	<title>D&uuml;rfen Mitglieder dieser Gruppe am EM2020-Tippspiel teilnehmen?</title>
 	<desc></desc>
-	<group>USER_WM2018</group>
+	<group>USER_EM2020</group>
 	<acpmode>2</acpmode>
 </wBBgroupvariable>
 
 <wBBgroupvariablegroup>
-	<name>ADMIN_WM2018</name>
-	<title>Adminoptionen WM2018</title>
+	<name>ADMIN_EM2020</name>
+	<title>Adminoptionen EM2020</title>
 	<parent>ADMIN</parent>
 	<securitylevel>2</securitylevel>
 	<acpmode>2</acpmode>
@@ -38,23 +38,23 @@
 	<name>a_can_em2020_edit</name>
 	<type>truefalse</type>
 	<defaultvalue>0</defaultvalue>
-	<title>WM2018-Tippspiel</title>
-	<desc>Benutzer dieser Gruppe k&ouml;nnen die Optionen des WM2018-Tippspiels bearbeiten?</desc>
-	<group>ADMIN_WM2018</group>
+	<title>EM2020-Tippspiel</title>
+	<desc>Benutzer dieser Gruppe k&ouml;nnen die Optionen des EM2020-Tippspiels bearbeiten?</desc>
+	<group>ADMIN_EM2020</group>
 	<acpmode>2</acpmode>
 </wBBgroupvariable>
 
 <wBBacpmenuitemgroup>
-	<name>WM2018</name>
+	<name>EM2020</name>
 	<condition></condition>
 	<conditiontype>OR</conditiontype>
 	<acpmode>2</acpmode>
 </wBBacpmenuitemgroup>
 
 <wBBacpmenuitem>
-	<name>WM2018_INDEX</name>
-	<title>WM2018-Tippspiel</title>
-	<group>WM2018</group>
+	<name>EM2020_INDEX</name>
+	<title>EM2020-Tippspiel</title>
+	<group>EM2020</group>
 	<link>em2020_admin.php?action=info</link>
 	<linkformat>
 		<b>%s</b>
@@ -65,9 +65,9 @@
 </wBBacpmenuitem>
 
 <wBBacpmenuitem>
-	<name>WM2018_OPTIONS</name>
+	<name>EM2020_OPTIONS</name>
 	<title>Optionen</title>
-	<group>WM2018</group>
+	<group>EM2020</group>
 	<link>em2020_admin.php?action=options</link>
 	<linkformat></linkformat>
 	<condition>a_can_em2020_edit</condition>
@@ -76,9 +76,9 @@
 </wBBacpmenuitem>
 
 <wBBacpmenuitem>
-	<name>WM2018_PUNKTE</name>
+	<name>EM2020_PUNKTE</name>
 	<title>Punkte bearbeiten</title>
-	<group>WM2018</group>
+	<group>EM2020</group>
 	<link>em2020_admin.php?action=punkte</link>
 	<linkformat></linkformat>
 	<condition>a_can_em2020_edit</condition>
@@ -87,9 +87,9 @@
 </wBBacpmenuitem>
 
 <wBBacpmenuitem>
-	<name>WM2018_RESULTS</name>
+	<name>EM2020_RESULTS</name>
 	<title>Spielergebnisse eintragen</title>
-	<group>WM2018</group>
+	<group>EM2020</group>
 	<link>em2020_admin.php?action=results</link>
 	<linkformat></linkformat>
 	<condition>a_can_em2020_edit</condition>

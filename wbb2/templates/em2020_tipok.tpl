@@ -25,12 +25,12 @@
 		<tr>
 			<td class="tablea" align="center">
 				<span class="normalfont">
-					<b>{$lang->items['LANG_WM2018_TPL_TIPOK_1']}</b>
+					<b>{$lang->items['LANG_EM2020_TPL_TIPOK_1']}</b>
 				</span>
 				<br />
-				<span class="smallfont">{$lang->items['LANG_WM2018_TPL_TIPOK_2']}
+				<span class="smallfont">{$lang->items['LANG_EM2020_TPL_TIPOK_2']}
 					<br />
-					<br /><a href="em2020.php?action=maketipp{$SID_ARG_2ND}#maketipptabelle" autofocus>{$lang->items['LANG_WM2018_TPL_TIPOK_3']}</a></span>
+					<br /><a href="em2020.php?action=maketipp{$SID_ARG_2ND}#maketipptabelle" autofocus>{$lang->items['LANG_EM2020_TPL_TIPOK_3']}</a></span>
 			</td>
 		</tr>
 	</table>

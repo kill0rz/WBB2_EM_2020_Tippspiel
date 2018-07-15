@@ -6,7 +6,7 @@
  *   copyright            : WM2006-Tippspiel © 2006 @ batida444
  *   copyright            : WM2014-Tippspiel © 2014 @ Viktor
  *   copyright            : EM2016-Tippspiel © 2016 @ kill0rz
- *   copyright            : WM2018-Tippspiel © 2018 @ kill0rz
+ *   copyright            : EM2020-Tippspiel © 2018 @ kill0rz
  *   web                  : www.v-gn.de
  *   Boardversion         : Burning Board wBB 2.3
  *   Rev                  : v1.2
@@ -73,11 +73,11 @@ if (isset($_REQUEST['step'])) {
 print("<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=iso-8859-1\">\n");
 print "<link rel=\"stylesheet\" href=\"css/other.css\"></head><body align=\"center\">\n";
 print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"600\" align=\"center\"><tr><td width=\"100%\" align=\"left\">\n";
-print "<h2><center>WM2018-Tippspiel $version Installation</center></h2>\n<br />\n";
+print "<h2><center>EM2020-Tippspiel $version Installation</center></h2>\n<br />\n";
 
 if (!$step) {
 
-	informationPage('<b>Herzlich Willkommen bei der Einrichtung des WM2018-Tippspiels f&uuml;r das WBB 2.3.x</b><br /><br />
+	informationPage('<b>Herzlich Willkommen bei der Einrichtung des EM2020-Tippspiels f&uuml;r das WBB 2.3.x</b><br /><br />
   <table>
   <tr>
    <td colspan="3">Systemvoraussetzungen:</td>
@@ -128,7 +128,7 @@ if (!$step) {
    <td><span style="color: ' . ((!is_file("../acp/templates/em2020_info.htm")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/templates/em2020_info.htm")) ? ('Ja') : ('Nein')) . '</span></td>
   </tr>
 </table>
- <p><i>Sollten eine oder mehrere Voraussetzungen nicht erf&uuml;llt sein, kann ein einwandfreier Betrieb des WM2018-Tippspiels nicht gew&auml;hrleistet werden.</i></p>
+ <p><i>Sollten eine oder mehrere Voraussetzungen nicht erf&uuml;llt sein, kann ein einwandfreier Betrieb des EM2020-Tippspiels nicht gew&auml;hrleistet werden.</i></p>
  <br />
  ');
 
@@ -173,7 +173,7 @@ if (!$step) {
 		print "ABBRUCH.<br />\n";
 		print "Die ben&ouml;tigten Dateien wurden nicht gefunden.<br />\n";
 		print $filefehlta . "<br />\n";
-		print "Bitte laden Sie erst alle Dateien des WM2018-Tippspiels $version in die entsprechenden Verzeichnisse \n";
+		print "Bitte laden Sie erst alle Dateien des EM2020-Tippspiels $version in die entsprechenden Verzeichnisse \n";
 		print "und starten Sie dieses Installationsskript neu!<br /><br />\n\n";
 		print "Lesen Sie dazu ggf. auch die Installationsanleitung.<br />\n";
 		print "<br />\n";
@@ -195,28 +195,28 @@ if ($step == "acptemplates") {
 
 // # L&ouml;schen der alten Eintr&auml;ge
 
-	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='USER_WM2018'");
-	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='ADMIN_WM2018'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='USER_EM2020'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='ADMIN_EM2020'");
 
 	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_em2020_see'");
 	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_em2020_use'");
 	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='a_can_em2020_edit'");
 
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitemgroups WHERE title='WM2018'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitemgroups WHERE title='EM2020'");
 
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_INDEX'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_OPTIONS'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_PUNKTE'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_RESULTS'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_INDEX'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_OPTIONS'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_PUNKTE'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_RESULTS'");
 
-	@$db->query("DELETE FROM bb" . $n . "_languages WHERE itemname like '%_WM2018_%'");
+	@$db->query("DELETE FROM bb" . $n . "_languages WHERE itemname like '%_EM2020_%'");
 
 	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020'");
 	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'acp_em2020'");
 	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020_de'");
 	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020_en'");
 
-	informationPage('<b>Die ACP-Templates des WM2018-Tippspiels werden nun vorbereitet.</b>');
+	informationPage('<b>Die ACP-Templates des EM2020-Tippspiels werden nun vorbereitet.</b>');
 
 	require "./lib/class_templateparser.php";
 
@@ -283,7 +283,7 @@ templatename: " . $templatename . "
 
 if ($step == "langask") {
 
-	informationPage('<b>Das Sprachpaket des WM2018-Tippspiels installieren.</b>');
+	informationPage('<b>Das Sprachpaket des EM2020-Tippspiels installieren.</b>');
 
 	$langplist_de = "";
 
@@ -296,13 +296,13 @@ if ($step == "langask") {
 
 	}
 
-	print "Das WM2018-Tippspiel $version kann auf deutsch dargestellt werden.<p />";
+	print "Das EM2020-Tippspiel $version kann auf deutsch dargestellt werden.<p />";
 	print "Wenn Sie in Ihrem Forum mehrere Sprachpakete installiert haben, k&ouml;nnen Sie ";
-	print "hier bestimmen, in welchen Sprachpaketen das WM2018-Tippspiel $version dargestellt werden soll.<p />";
+	print "hier bestimmen, in welchen Sprachpaketen das EM2020-Tippspiel $version dargestellt werden soll.<p />";
 
 	print "Normalerweise erkennt das Programm das selbst und Sie brauchen hier nichts zu &auml;ndern.<p />";
 
-	print "In welchen Ihrer Sprachpakete soll das WM2018-Tippspiel auf  <b>deutsch</b> erscheinen?<br />";
+	print "In welchen Ihrer Sprachpakete soll das EM2020-Tippspiel auf  <b>deutsch</b> erscheinen?<br />";
 	print "(Mit der [Strg]-Taste k&ouml;nnen mehrere Sprachpakete ausgew&auml;hlt werden)<br />";
 
 	print "<form name=\"languagepacks\" method=\"post\" action=\"$filename?step=langinst\">\n";
@@ -326,8 +326,8 @@ if ($step == "langinst") {
 
 	if (empty($languagepackids_de)) {
 		print "<br /><b>Sie haben kein Sprachpaket f&uuml;r die Installation der Sprachvariablen ausgew&auml;hlt!</b><p />\n";
-		print "Ohne Sprachvariablen kann das WM2018-Tippspiel nicht benutzt werden. Sie k&ouml;nnen die<br />\n";
-		print "Sprachvariablen des WM2018-Tippspiels entweder sp&auml;ter von Hand im ACP importieren, oder<br />\n";
+		print "Ohne Sprachvariablen kann das EM2020-Tippspiel nicht benutzt werden. Sie k&ouml;nnen die<br />\n";
+		print "Sprachvariablen des EM2020-Tippspiels entweder sp&auml;ter von Hand im ACP importieren, oder<br />\n";
 		print "jetzt zur&uuml;ck zu den Auswahlseiten gehen:<p />\n";
 		print "<a href=\"./$filename?step=langask\">Zur&uuml;ck zur Auswahl der Sprachpakete (empfohlen)</a><p />\n";
 		print "<a href=\"./$filename?step=groups\">Weiter, keine Sprachvariablen installieren</a><p />\n";
@@ -479,7 +479,7 @@ if ($step == "database") {
 	print " ";
 	print "<b>Fertig!</b><p>";
 	print "Die Installation wurde erfolgreich abgeschlossen.<br />";
-	print "Sie k&ouml;nnen das WM2018-Tippspiel {$version} jetzt benutzen.<p>";
+	print "Sie k&ouml;nnen das EM2020-Tippspiel {$version} jetzt benutzen.<p>";
 	print "Bitte richten Sie es noch im <a href=\"./index.php\">ACP</a> ein.<br />";
 
 	if (@unlink("./em2020_setup.php")) {

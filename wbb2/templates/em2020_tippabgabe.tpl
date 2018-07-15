@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
 
 <head>
-	<title>$master_board_name | {$lang->items['LANG_WM2018_TPL_TIPPABGABE_1']}</title>
+	<title>$master_board_name | {$lang->items['LANG_EM2020_TPL_TIPPABGABE_1']}</title>
 	$headinclude
 </head>
 
@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_TIPPABGABE_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_EM2020_TPL_TIPPABGABE_2']}</a> &raquo; {$lang->items['LANG_EM2020_TPL_TIPPABGABE_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -36,14 +36,14 @@
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_TIPPABGABE_4']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_TIPPABGABE_4']}</u>
 					</b>
 				</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="tableb" align="center">
-				<span class="smallfont">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_5']}</span>
+				<span class="smallfont">{$lang->items['LANG_EM2020_TPL_TIPPABGABE_5']}</span>
 			</td>
 		</tr>
 	</table>
@@ -73,8 +73,8 @@
 		</table>
 		$em2020_tippabgabe_gk $em2020_tippabgabe_rk $em2020_tippabgabe_elfer
 		<p align="center">
-			<input class="input" type="submit" value="{$lang->items['LANG_WM2018_GLOBAL_SAVE']}" />
-			<input class="input" type="reset" value="{$lang->items['LANG_WM2018_GLOBAL_RESET']}" />
+			<input class="input" type="submit" value="{$lang->items['LANG_EM2020_GLOBAL_SAVE']}" />
+			<input class="input" type="reset" value="{$lang->items['LANG_EM2020_GLOBAL_RESET']}" />
 		</p>
 	</form>
 	<br /> $em2020_footer $footer

@@ -6,7 +6,7 @@
 		$krone
 		<span class="smallfont"><a href="em2020.php?action=showusertippsdetail&amp;userid=$row_topuser[userid]{$SID_ARG_2ND} ">$row_topuser[username]</a></span>$tagtendenz</td>
 	<td class="$rowclass" align="center">
-		<span class="smallfont ">$row_topuser[punkte] {$lang->items['LANG_WM2018_TPL_TOPUSER_1']}</span>
+		<span class="smallfont ">$row_topuser[punkte] {$lang->items['LANG_EM2020_TPL_TOPUSER_1']}</span>
 	</td>
 	<td class="$rowclass" align="center">
 		<span class="smallfont ">$tagerg</span>
@@ -15,7 +15,7 @@
 		<span class="smallfont ">$quote %</span>
 	</td>
 	<td class="$rowclass" align="center">
-		<span class="smallfont ">$row_topuser[tipps_gesamt] {$lang->items['LANG_WM2018_TPL_TOPUSER_2']}</span>
+		<span class="smallfont ">$row_topuser[tipps_gesamt] {$lang->items['LANG_EM2020_TPL_TOPUSER_2']}</span>
 	</td>
 	<td class="$rowclass" align="center">
 		<span class="smallfont ">$em2020_userrank</span>

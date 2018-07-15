@@ -3,7 +3,7 @@
 		<b><a href="../em2020.php?action=gamedetails&amp;gameid=$row_games[gameid]" target="_blank">$row_games[gameid]</a></b>
 	</td>
 	<td align="center">
-		<b>$date, $time {$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_1']}</b>
+		<b>$date, $time {$lang->items['LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_1']}</b>
 	</td>
 	<td>
 		<table width="100%">
@@ -33,8 +33,8 @@
 	</td>
 	<td align="center">
 		<if($row_games['game_goals_1']=='' && $row_games['game_goals_2']=='' )>
-			<then><a href="em2020_admin.php?action=result_add&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_2']}</a></then>
-			<else><a href="em2020_admin.php?action=result_edit&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_3']}</a></else>
+			<then><a href="em2020_admin.php?action=result_add&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_2']}</a></then>
+			<else><a href="em2020_admin.php?action=result_edit&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_3']}</a></else>
 			</if>
 	</td>
 </tr>

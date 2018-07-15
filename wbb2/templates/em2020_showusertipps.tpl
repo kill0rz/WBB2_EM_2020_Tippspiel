@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
 
 <head>
-	<title>$master_board_name | {$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_1']}</title>
+	<title>$master_board_name | {$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_1']}</title>
 	$headinclude
 </head>
 
@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_2']}</a> &raquo; {$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -36,28 +36,28 @@
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_4']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_4']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_5']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_5']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_6']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_6']}</u>
 					</b>
 				</span>
 			</td>
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
 					<b>
-						<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_7']}</u>
+						<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_7']}</u>
 					</b>
 				</span>
 			</td>
@@ -66,7 +66,7 @@
 					<td class="tabletitle" align="center">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_8']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_8']}</u>
 							</b>
 						</span>
 					</td>
@@ -77,14 +77,14 @@
 						<td class="tabletitle" align="center">
 							<span class="smallfont">
 								<b>
-									<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_9']}</u>
+									<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_9']}</u>
 								</b>
 							</span>
 						</td>
 						<td class="tabletitle" align="center">
 							<span class="smallfont">
 								<b>
-									<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_10']}</u>
+									<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_10']}</u>
 								</b>
 							</span>
 						</td>
@@ -93,7 +93,7 @@
 					<td class="tabletitle" align="center">
 						<span class="smallfont">
 							<b>
-								<u>{$lang->items['LANG_WM2018_TPL_SHOWUSERTIPPS_11']}</u>
+								<u>{$lang->items['LANG_EM2020_TPL_SHOWUSERTIPPS_11']}</u>
 							</b>
 						</span>
 					</td>

@@ -1,7 +1,7 @@
 <?php
 
 include "./em2020_global.php";
-$lang->load("WM2018");
+$lang->load("EM2020");
 
 $akttime = time();
 $em2020_meister = "";
@@ -99,21 +99,21 @@ switch (trim($_GET['action'])) {
 			if ($checkgame1 == "W" || $checkgame1 == "S" || $checkgame1 == "L") {
 				$check1 = explode('-', $row_nextgames['team_1_id']);
 				if ($check1[1] == "A" || $check1[1] == "B" || $check1[1] == "C" || $check1[1] == "D" || $check1[1] == "E" || $check1[1] == "F" || $check1[1] == "G" || $check1[1] == "H") {
-					$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+					$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 				} else {
-					$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+					$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 				}
 
 				if ($check1[0] == "W") {
-					$teamname1 = $lang->items['LANG_WM2018_PHP_11'];
+					$teamname1 = $lang->items['LANG_EM2020_PHP_11'];
 				}
 
 				if ($check1[0] == "S") {
-					$teamname1 = $lang->items['LANG_WM2018_PHP_12'];
+					$teamname1 = $lang->items['LANG_EM2020_PHP_12'];
 				}
 
 				if ($check1[0] == "L") {
-					$teamname1 = $lang->items['LANG_WM2018_PHP_13'];
+					$teamname1 = $lang->items['LANG_EM2020_PHP_13'];
 				}
 
 				$teamname1 .= "&nbsp;$tabelle&nbsp;{$check1[1]}";
@@ -123,21 +123,21 @@ switch (trim($_GET['action'])) {
 			if ($checkgame2 == "W" || $checkgame2 == "S" || $checkgame2 == "L") {
 				$check2 = explode('-', $row_nextgames['team_2_id']);
 				if ($check2[1] == "A" || $check2[1] == "B" || $check2[1] == "C" || $check2[1] == "D" || $check2[1] == "E" || $check2[1] == "F" || $check1[1] == "G" || $check1[1] == "H") {
-					$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+					$tabelle = $lang->items['LANG_EM2020_PHP_5'];
 				} else {
-					$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+					$tabelle = $lang->items['LANG_EM2020_PHP_7'];
 				}
 
 				if ($check2[0] == "W") {
-					$teamname2 = $lang->items['LANG_WM2018_PHP_11'];
+					$teamname2 = $lang->items['LANG_EM2020_PHP_11'];
 				}
 
 				if ($check2[0] == "S") {
-					$teamname2 = $lang->items['LANG_WM2018_PHP_12'];
+					$teamname2 = $lang->items['LANG_EM2020_PHP_12'];
 				}
 
 				if ($check2[0] == "L") {
-					$teamname2 = $lang->items['LANG_WM2018_PHP_13'];
+					$teamname2 = $lang->items['LANG_EM2020_PHP_13'];
 				}
 
 				$teamname2 .= "&nbsp;$tabelle&nbsp;{$check2[1]}";

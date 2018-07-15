@@ -6,7 +6,7 @@
  *   copyright            : WM2006-Tippspiel © 2006 @ batida444
  *   copyright            : WM2014-Tippspiel © 2014 @ Viktor
  *   copyright            : EM2016-Tippspiel © 2016 @ kill0rz
- *   copyright            : WM2018-Tippspiel © 2018 @ kill0rz
+ *   copyright            : EM2020-Tippspiel © 2018 @ kill0rz
  *   web                  : www.v-gn.de
  *   Boardversion         : Burning Board wBB 2.3
  ***************************************************************************/
@@ -61,14 +61,14 @@ if (isset($_REQUEST['step'])) {
 print("<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=iso-8859-1\">\n");
 print "<link rel=\"stylesheet\" href=\"css/other.css\"></head><body align=\"center\">\n";
 print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"600\" align=\"center\"><tr><td width=\"100%\" align=\"left\">\n";
-print "<h2><center>WM2018-Tippspiel De-Installation</center></h2>\n<br />\n";
+print "<h2><center>EM2020-Tippspiel De-Installation</center></h2>\n<br />\n";
 
 if (!$step) {
 
-	informationPage('<b>Herzlich Willkommen bei der De-Installation des WM2018-Tippspiels f&uuml;r das wBB2.3</b><br /><br />
+	informationPage('<b>Herzlich Willkommen bei der De-Installation des EM2020-Tippspiels f&uuml;r das wBB2.3</b><br /><br />
   <table>
   <tr>
-  <td>Mit diesem Script kannst Du das WM2018-Tippspiel wieder sauber aus Deinem Forum entfernen.</td>
+  <td>Mit diesem Script kannst Du das EM2020-Tippspiel wieder sauber aus Deinem Forum entfernen.</td>
   </tr>
   <tr>
   <td>Folgende Dinge f&uuml;hrt dieses Script aus:</td>
@@ -109,8 +109,8 @@ if ($step == "delete") {
 
 	print "<br />Board-Templates erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>Gruppenrechte werden gel&ouml;scht...</b>";
-	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='USER_WM2018'");
-	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='ADMIN_WM2018'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='USER_EM2020'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='ADMIN_EM2020'");
 	print "<br/ >Gruppenrechte erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>Gruppenvariablen werden gel&ouml;scht...</b>";
 	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_em2020_see'");
@@ -118,16 +118,16 @@ if ($step == "delete") {
 	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='a_can_em2020_edit'");
 	print "<br/ >Gruppenvariablen erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>ACP-Menueintr&auml;ge werden gel&ouml;scht...</b>";
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitemgroups WHERE title='WM2018'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_INDEX'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_OPTIONS'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_PUNKTE'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_RESULTS'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_RESULTS'");
-	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='WM2018_CORRECT8'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitemgroups WHERE title='EM2020'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_INDEX'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_OPTIONS'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_PUNKTE'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_RESULTS'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_RESULTS'");
+	@$db->query("DELETE FROM bb" . $n . "_acpmenuitems WHERE languageitem='EM2020_CORRECT8'");
 	print "<br/ >ACP-Menueintr&auml;ge erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>Sprachvariablen werden gel&ouml;scht...</b>";
-	@$db->query("DELETE FROM bb" . $n . "_languages WHERE itemname like '%_WM2018_%'");
+	@$db->query("DELETE FROM bb" . $n . "_languages WHERE itemname like '%_EM2020_%'");
 	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020'");
 	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'acp_em2020'");
 	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020_de'");
@@ -144,7 +144,7 @@ if ($step == "delete") {
 	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_vortag");
 	print "<br />Tabellen erfolgreich aus der Datenbank entfernt...";
 
-	print "<br /><br />Wenn auf dieser Seite keine Fehlermeldungen erschienen sind, wurde das WM2018-Tippspiel ";
+	print "<br /><br />Wenn auf dieser Seite keine Fehlermeldungen erschienen sind, wurde das EM2020-Tippspiel ";
 	print "erfolgreich de-installiert.<br />\n";
 	print "<br /><b>WICHTIG: Falls Fehlermeldungen erschienen sind, gab es Probleme</b> - in diesem Fall wende Dich bitte an ";
 	print "<b>kill0rz</b> im Supportthread f&uuml;r das Tippspiel auf <a href=\"http://www.v-gn.de/wbb\" target=\"_blank\">www.v-gn.de/wbb</a>";
@@ -211,7 +211,7 @@ if ($step == "delete2") {
 		print "<font color='lightred'>Bilderordner konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/images/em2020/)</font><br />";
 	}
 
-	print "<br /><br />Jetzt ist das WM2018-Tippspiel komplett und sauber aus Deinem Forum entfernt.";
+	print "<br /><br />Jetzt ist das EM2020-Tippspiel komplett und sauber aus Deinem Forum entfernt.";
 	print "<br /><br />Ich hoffe, das Tippspiel hat Dir und Deinen Usern viel Spa&szlig; gemacht.";
 	print "<br />Greetz<br />G&uuml;nni, Viktor und kill0rz";
 	print "</td></tr></table></body></html>";

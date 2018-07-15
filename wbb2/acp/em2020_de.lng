@@ -7,147 +7,147 @@
 
 [acp_em2020]
 
-<text:LANG_ACP_WM2018_CHOICE>Bitte w&auml;hlen</LANG_ACP_WM2018_CHOICE:text>
-<text:LANG_ACP_WM2018_PHP_1>Gutschrift WM2018-Tippspiel (SpielLANG_WM2018_TPL_INDEX_8LANG_WM2018_TPL_INDEX_8</LANG_ACP_WM2018_PHP_1:text>
-<text:LANG_ACP_WM2018_PHP_2>plus</LANG_ACP_WM2018_PHP_2:text>
-<text:LANG_ACP_WM2018_PHP_3>Gutschrift WM2018-Tippspiel (Weltmeister-Tipp)</LANG_ACP_WM2018_PHP_3:text>
-<text:LANG_ACP_WM2018_PHP_4>Gutschrift WM2018-Tippspiel (Vize-Weltmeister-Tipp)</LANG_ACP_WM2018_PHP_4:text>
-<text:LANG_ACP_WM2018_PHP_5><br />Es wurde mindestens ein Ergebnis vergessen</LANG_ACP_WM2018_PHP_5:text>
-<text:LANG_ACP_WM2018_PHP_6><br />Es wurde nicht ausgew&auml;hlt, ob es gelbe Karten im Spiel gab</LANG_ACP_WM2018_PHP_6:text>
-<text:LANG_ACP_WM2018_PHP_7><br />Es wurde nicht ausgew&auml;hlt, ob es gelb-rote/rote Karten im Spiel gab</LANG_ACP_WM2018_PHP_7:text>
-<text:LANG_ACP_WM2018_PHP_8><br />Es wurde nicht ausgew&auml;hlt, ob es Elfmeter im Spiel gab</LANG_ACP_WM2018_PHP_8:text>
-<text:LANG_ACP_WM2018_PHP_9>Abzug f&uuml;r Punktekorrektur: WM2018-Tippspiel (SpielLANG_WM2018_TPL_INDEX_8LANG_WM2018_TPL_INDEX_8</LANG_ACP_WM2018_PHP_9:text>
-<text:LANG_ACP_WM2018_PHP_10>minus</LANG_ACP_WM2018_PHP_10:text>
-<text:LANG_ACP_WM2018_PHP_NO>Nein</LANG_ACP_WM2018_PHP_NO:text>
-<text:LANG_ACP_WM2018_PHP_YES>Ja</LANG_ACP_WM2018_PHP_YES:text>
-<text:LANG_ACP_WM2018_TPL_ERROR_1>WM2018-Tippspiel Fehler!</LANG_ACP_WM2018_TPL_ERROR_1:text>
-<text:LANG_ACP_WM2018_TPL_ERROR_2>Folgende Fehler traten auf:</LANG_ACP_WM2018_TPL_ERROR_2:text>
-<text:LANG_ACP_WM2018_TPL_ERROR_3>Bitte gehe zur&uuml;ck und f&uuml;lle alle Felder ordnungsgem&auml;&szlig; aus.</LANG_ACP_WM2018_TPL_ERROR_3:text>
-<text:LANG_ACP_WM2018_TPL_ERROR_4>Du kannst dieses Spiel noch nicht sehen.</LANG_ACP_WM2018_TPL_ERROR_4:text>
-<text:LANG_ACP_WM2018_TPL_ERROR_5>Das Finale kann nicht editiert werden.</LANG_ACP_WM2018_TPL_ERROR_5:text>
-<text:LANG_ACP_WM2018_TPL_INFO_1>WM2006-2014/WM2018-Tippspiel Informationen</LANG_ACP_WM2018_TPL_INFO_1:text>
-<text:LANG_ACP_WM2018_TPL_INFO_10>nur auf <a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de</a> im entsprechenden Supportthread</LANG_ACP_WM2018_TPL_INFO_10:text>
-<text:LANG_ACP_WM2018_TPL_INFO_11><strong>KEIN</strong> Support per PN, Email, ICQ, MSN, AIM, Skype o.&auml;.</LANG_ACP_WM2018_TPL_INFO_11:text>
-<text:LANG_ACP_WM2018_TPL_INFO_12>Spezieller Dank an</LANG_ACP_WM2018_TPL_INFO_12:text>
-<text:LANG_ACP_WM2018_TPL_INFO_13>Manuel "Hawk[eye]" Knietsch (<a href="http://www.kadett-forum.de" target="_blank">www.kadett-forum.de</a>)<br />Viktor Gertzen (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Jens (<a href="http://www.wbbcoderforum.de/" target="_blank">wBB Coderforum</a>)<br />kill0rz (<a href="http://kill0rz.com/" target="_blank">kill0rz' Blog</a>)<br /><br />F&uuml;r Plug-Ins und Erweiterungen:<br />Mr. Fish (<a href="http://cball.de" target="_blank">cball.de</a>)<br />Viktor (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Steinadler (<a href="http://www.steinadlers-forum.de/wbblite/index.php" target="_blank">Steinadlers Bastelst&uuml;bchen</a>)<br /></LANG_ACP_WM2018_TPL_INFO_13:text>
-<text:LANG_ACP_WM2018_TPL_INFO_2>WM2006-2014/WM2018-Tippspiel Version</LANG_ACP_WM2018_TPL_INFO_2:text>
-<text:LANG_ACP_WM2018_TPL_INFO_3>v1.2</LANG_ACP_WM2018_TPL_INFO_3:text>
-<text:LANG_ACP_WM2018_TPL_INFO_4>Idee &amp; Programmierung</LANG_ACP_WM2018_TPL_INFO_4:text>
-<text:LANG_ACP_WM2018_TPL_INFO_5>Gunter "Batida444" Seroski</LANG_ACP_WM2018_TPL_INFO_5:text>
-<text:LANG_ACP_WM2018_TPL_INFO_6>Template &amp; Anpassung</LANG_ACP_WM2018_TPL_INFO_6:text>
-<text:LANG_ACP_WM2018_TPL_INFO_7>Copyright</LANG_ACP_WM2018_TPL_INFO_7:text>
-<text:LANG_ACP_WM2018_TPL_INFO_8>liegt bei Gunter "Batida444" Seroski (<a href="http://ascona-board.de" target="_blank">www.ascona-board.de</a>), Viktor (<a href="http://v-gn.de/wbb">v-gn.de</a>) und kill0rz (<a href="http://kill0rz.com">kill0rz.com</a>)</LANG_ACP_WM2018_TPL_INFO_8:text>
-<text:LANG_ACP_WM2018_TPL_INFO_9>Support</LANG_ACP_WM2018_TPL_INFO_9:text>
-<text:LANG_ACP_WM2018_TPL_INFO_14>Angepasst f&uuml;r die WM2014</LANG_ACP_WM2018_TPL_INFO_14:text>
-<text:LANG_ACP_WM2018_TPL_INFO_15>Viktor (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Viktor's Supportboard</LANG_ACP_WM2018_TPL_INFO_15:text>
-<text:LANG_ACP_WM2018_TPL_INFO_16>Angepasst f&uuml;r die EM2016/WM2018</LANG_ACP_WM2018_TPL_INFO_16:text>
-<text:LANG_ACP_WM2018_TPL_INFO_17>kill0rz (<a href="http://kill0rz.com/" target="_blank">kill0rz' Blog</a>)</LANG_ACP_WM2018_TPL_INFO_17:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_1>WM2018-Tippspiel Optionen</LANG_ACP_WM2018_TPL_OPTIONS_1:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_2>Allgemeine Einstellungen</LANG_ACP_WM2018_TPL_OPTIONS_2:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_3>Ist das WM2018-Tippspiel aktiv?</LANG_ACP_WM2018_TPL_OPTIONS_3:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_4>Sind die RSS-News aktiv?</LANG_ACP_WM2018_TPL_OPTIONS_4:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_5>Wie viele RSS-News sollen angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_5:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_6>Ist der WM-Ticker aktiv?</LANG_ACP_WM2018_TPL_OPTIONS_6:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_7>Wie breit soll der Ticker angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_7:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_8>Pixel</LANG_ACP_WM2018_TPL_OPTIONS_8:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_9>Wie viele n&auml;chste Spiele sollen auf der Startseite angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_9:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_10>Wie viele User sollen auf der Startseite angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_10:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_11>Bis wieviel Minuten vor Anpfiff eines Spiels kann ein Tipp abgegeben werden?</LANG_ACP_WM2018_TPL_OPTIONS_11:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_12>Minuten</LANG_ACP_WM2018_TPL_OPTIONS_12:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_13>Einstellungen f&uuml;r die Zusatztipps</LANG_ACP_WM2018_TPL_OPTIONS_13:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_14>Soll bei der Auswertung der Tipps die Tendenz ber&uuml;cksichtigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_14:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_15>Kann getippt werden, ob es gelbe Karten im Spiel gab?</LANG_ACP_WM2018_TPL_OPTIONS_15:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_16>Kann getippt werden, ob es gelb-rote/rote Karten im Spiel gab?</LANG_ACP_WM2018_TPL_OPTIONS_16:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_17>Kann getippt werden, ob es Elfmeter im Spiel gab?</LANG_ACP_WM2018_TPL_OPTIONS_17:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_18>Kann der Weltmeister / Vize-Weltmeister getippt werden?</LANG_ACP_WM2018_TPL_OPTIONS_18:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_19>Bis zu welchem Spiel kann der Weltmeister / Vizeweltmeister getippt werden?</LANG_ACP_WM2018_TPL_OPTIONS_19:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_20>(Gameid, Wert zwischen 1 und $gameids[finale]<br />Game $gameids[vorrundenspiel] = letztes Vorrundenspiel<br />Game $gameids[finale] = Finalspiel)</LANG_ACP_WM2018_TPL_OPTIONS_20:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_21>Einstellungen f&uuml;r den Guthabenhack (V1.9.5 von Lasall ben&ouml;tigt)</LANG_ACP_WM2018_TPL_OPTIONS_21:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_22>Soll der Guthabenhack f&uuml;r das WM2018-Tippspiel genutzt werden?</LANG_ACP_WM2018_TPL_OPTIONS_22:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_23>Sollen die Infos zu Kosten und Gewinnen auf der Startseite angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_23:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_24>Wieviel kostet ein normaler Spiel-Tipp?</LANG_ACP_WM2018_TPL_OPTIONS_24:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_25>Wieviel kostet der Weltmeister / Vize-Weltmeister-Tipp?</b> (Zusatztipp)</LANG_ACP_WM2018_TPL_OPTIONS_25:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_26>Wieviel Gewinn gibt es f&uuml;r einen exakten Spiel-Tipp?</LANG_ACP_WM2018_TPL_OPTIONS_26:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_27>Wieviel Gewinn gibt es f&uuml;r einen Tipp, bei dem die Tendenz richtig ist?</b> (Zusatztipp)</LANG_ACP_WM2018_TPL_OPTIONS_27:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_28>Wieviel Gewinn gibt es f&uuml;r das richtige Tippen des Weltmeisters / Vize-Weltmeisters?</b> (Zusatztipp)</LANG_ACP_WM2018_TPL_OPTIONS_28:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_29>Einstellungen f&uuml;r die Ebay RelevanceAd-Anzeige</LANG_ACP_WM2018_TPL_OPTIONS_29:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_30>Soll der Ebay RelevanceAd-Banner angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_30:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_31>Welcher affili.net-PublisherId ist der Banner zugeordnet?</LANG_ACP_WM2018_TPL_OPTIONS_31:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_32>(Voreinstellung ist die Publisher-ID von Batida444 *zwinker*)</LANG_ACP_WM2018_TPL_OPTIONS_32:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_33>Welche Kategorie soll bei Ebay ausgelesen werden?</b> (optionale Angabe)</LANG_ACP_WM2018_TPL_OPTIONS_33:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_34>Sollte zur WM bei Ebay eine extra Kategorie erstellt werden, kannst Du die ID hier eintragen</LANG_ACP_WM2018_TPL_OPTIONS_34:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_35>Board, in dem die Diskussion zur WM stattfindet</LANG_ACP_WM2018_TPL_OPTIONS_35:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_36><b>Wie soll der Feed geladen werden?</b><br /><br />file_get_contents: Ben&ouml;tigt die php-Einstellung <i>allow_url_fopen</i> auf 1<br />cURL: Ben&ouml;tigt die php-Erweiterung cURL<br /><br />Wenn du dir nicht sicher bist, nimm <i>file_get_contents</i>, wenn das Probleme macht, nimm <i>cURL</i>.</LANG_ACP_WM2018_TPL_OPTIONS_36:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_37>Wie viele noch nicht eingetragene Spiele sollen auf der Startseite angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_37:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_38>Wie viele aktuell laufende Spiele sollen auf der Startseite angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_38:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_39><b>Welcher Feed soll verwendet werden?</b><br /><br />FIFA = Weltfu&szlig;ballnachrichten<br />UEFA = Europafu&szlig;ballnachrichten</b></LANG_ACP_WM2018_TPL_OPTIONS_39:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_40>Einstellungen f&uuml;r die Tabelle auf dem Forenindex</LANG_ACP_WM2018_TPL_OPTIONS_40:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_41>Soll die Tabelle f&uuml;r noch nicht getippte Spiele angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_41:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_42>Diese Optionen kannst du nur nutzen, wenn du den Mod "Spieletabelle auf Forenindex" installiert hast.</LANG_ACP_WM2018_TPL_OPTIONS_42:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_43>Soll die Tabelle f&uuml;r die letzten Spiele angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_43:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_44>Wie viele letzte Spiele sollen angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_44:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_45><font color='red'>Du hast cURL nicht installiert, der Feed wird automatisch &uumlber <i>file_get_contents</i> geladen.</font></LANG_ACP_WM2018_TPL_OPTIONS_45:text>
-<text:LANG_ACP_WM2018_TPL_PUNKTE_EDIT_1>Punkte bearbeiten</LANG_ACP_WM2018_TPL_PUNKTE_EDIT_1:text>
-<text:LANG_ACP_WM2018_TPL_PUNKTE_EDIT_2>Beschreibung</LANG_ACP_WM2018_TPL_PUNKTE_EDIT_2:text>
-<text:LANG_ACP_WM2018_TPL_PUNKTE_EDIT_3>Punkte</LANG_ACP_WM2018_TPL_PUNKTE_EDIT_3:text>
-<text:LANG_ACP_WM2018_TPL_PUNKTE_VIEW_1>Punkte&uuml;bersicht</LANG_ACP_WM2018_TPL_PUNKTE_VIEW_1:text>
-<text:LANG_ACP_WM2018_TPL_PUNKTE_VIEW_2>Punkte-ID</LANG_ACP_WM2018_TPL_PUNKTE_VIEW_2:text>
-<text:LANG_ACP_WM2018_TPL_PUNKTE_VIEW_3>Beschreibung</LANG_ACP_WM2018_TPL_PUNKTE_VIEW_3:text>
-<text:LANG_ACP_WM2018_TPL_PUNKTE_VIEW_4>Punkte</LANG_ACP_WM2018_TPL_PUNKTE_VIEW_4:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_1>Uhr</LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_1:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_2>eintragen</LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_2:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_3>editieren</LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_3:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_1>Ergebnis&uuml;bersicht</LANG_ACP_WM2018_TPL_RESULTS_VIEW_1:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_2>Es werden hier alle Spiele angezeigt, von denen die Spielpaarungen schon feststehen.</LANG_ACP_WM2018_TPL_RESULTS_VIEW_2:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_4>Spiel-ID</LANG_ACP_WM2018_TPL_RESULTS_VIEW_4:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_5>Datum</LANG_ACP_WM2018_TPL_RESULTS_VIEW_5:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_6>Mannschaft 1</LANG_ACP_WM2018_TPL_RESULTS_VIEW_6:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_7>Mannschaft 2</LANG_ACP_WM2018_TPL_RESULTS_VIEW_7:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_8>Ergebnis</LANG_ACP_WM2018_TPL_RESULTS_VIEW_8:text>
-<text:LANG_ACP_WM2018_TPL_RESULTS_VIEW_9>eintragen</LANG_ACP_WM2018_TPL_RESULTS_VIEW_9:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_1>Ergebnis eintragen</LANG_ACP_WM2018_TPL_RESULT_ADD_1:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_2>Erziele Tore von</LANG_ACP_WM2018_TPL_RESULT_ADD_2:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_3>Gab es gelbe Karten im Spiel?</LANG_ACP_WM2018_TPL_RESULT_ADD_3:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_4>Gab es gelb-rote/rote Karten im Spiel?</LANG_ACP_WM2018_TPL_RESULT_ADD_4:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_5>Gab es Elfmeter im Spiel?</LANG_ACP_WM2018_TPL_RESULT_ADD_5:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_6>Externer Link zum Spiel</b> (optionale Eingabe)</LANG_ACP_WM2018_TPL_RESULT_ADD_6:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_7>Kommentar zum Spiel</b> (optionale Eingabe)</LANG_ACP_WM2018_TPL_RESULT_ADD_7:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_1>Fehler!</LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_1:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_2>Du kannst dieses Spiel noch nicht eintragen, weil du vorher noch andere eintragen musst. <br /> Es ist wichtig, dass du die Spiele in der richtigen Reihenfolge eintr&auml;gst. <br /><br /> <b>Bitte trage zun&auml;chst alle Spiele bis zum Spiel </LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_2:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_3> ein.</b></LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_3:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_4>&larr; zur&uuml;ck</LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_4:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_5>Das Spiel hat noch nicht angefangen oder l&auml;uft noch. Bitte warte, bis es zu Ende ist!</LANG_ACP_WM2018_TPL_RESULT_ADD_ERROR_5:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_1>Ergebnis best&auml;tigen</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_1:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_2>Bisher wurde noch nichts in die Datenbank eingetragen.<br />Bitte &uuml;berpr&uuml;fe die von Dir eingetragenen Werte und best&auml;tige dann.</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_2:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_3>Erzielte Tore von</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_3:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_4>Gab es gelbe Karten im Spiel?</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_4:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_5>Gab es gelb-rote/rote Karten im Spiel?</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_5:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_6>Gab es Elfmeter im Spiel?</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_6:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_7>Eingetragener Link zum Spiel:</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_7:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_8>Eingetragener Kommentar zum Spiel:</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_8:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_CONFIRM_9>Ja, die eingetragenen Werte stimmen so</LANG_ACP_WM2018_TPL_RESULT_CONFIRM_9:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_1>Ergebnis editieren</LANG_ACP_WM2018_TPL_RESULT_EDIT_1:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_2><b>Hinweis:</b> Es kann nur der externe Link zum Spiel oder der Kommentar zum Spiel ge&auml;ndert werden.</LANG_ACP_WM2018_TPL_RESULT_EDIT_2:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_3>Erzielte Tore von</LANG_ACP_WM2018_TPL_RESULT_EDIT_3:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_4>Gab es gelbe Karten im Spiel?</LANG_ACP_WM2018_TPL_RESULT_EDIT_4:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_5>Gab es gelb-rote/rote Karten im Spiel?</LANG_ACP_WM2018_TPL_RESULT_EDIT_5:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_6>Gab es Elfmeter im Spiel?</LANG_ACP_WM2018_TPL_RESULT_EDIT_6:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_7>Eingetragener Link zum Spiel:</LANG_ACP_WM2018_TPL_RESULT_EDIT_7:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_8>Eingetragener Kommentar zum Spiel:</LANG_ACP_WM2018_TPL_RESULT_EDIT_8:text>
-<text:LANG_ACP_WM2018_TPL_RESULT_EDIT_9>&Auml;nderungen speichern</LANG_ACP_WM2018_TPL_RESULT_EDIT_9:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V50>Posting - Einstellung</LANG_ACP_WM2018_TPL_OPTIONS_V50:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V51>Soll ein Posting vom Spielergebnis gemacht werden?</LANG_ACP_WM2018_TPL_OPTIONS_V51:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V52>Thread-ID f&uuml;r das Posting:</LANG_ACP_WM2018_TPL_OPTIONS_V52:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V53>User-ID als Posting-Verfasser:</LANG_ACP_WM2018_TPL_OPTIONS_V53:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V54>Welches Icon soll zum Posting angezeigt werden?</LANG_ACP_WM2018_TPL_OPTIONS_V54:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V55>(0 = kein Icon)</LANG_ACP_WM2018_TPL_OPTIONS_V55:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V56>
+<text:LANG_ACP_EM2020_CHOICE>Bitte w&auml;hlen</LANG_ACP_EM2020_CHOICE:text>
+<text:LANG_ACP_EM2020_PHP_1>Gutschrift EM2020-Tippspiel (SpielLANG_EM2020_TPL_INDEX_8LANG_EM2020_TPL_INDEX_8</LANG_ACP_EM2020_PHP_1:text>
+<text:LANG_ACP_EM2020_PHP_2>plus</LANG_ACP_EM2020_PHP_2:text>
+<text:LANG_ACP_EM2020_PHP_3>Gutschrift EM2020-Tippspiel (Weltmeister-Tipp)</LANG_ACP_EM2020_PHP_3:text>
+<text:LANG_ACP_EM2020_PHP_4>Gutschrift EM2020-Tippspiel (Vize-Weltmeister-Tipp)</LANG_ACP_EM2020_PHP_4:text>
+<text:LANG_ACP_EM2020_PHP_5><br />Es wurde mindestens ein Ergebnis vergessen</LANG_ACP_EM2020_PHP_5:text>
+<text:LANG_ACP_EM2020_PHP_6><br />Es wurde nicht ausgew&auml;hlt, ob es gelbe Karten im Spiel gab</LANG_ACP_EM2020_PHP_6:text>
+<text:LANG_ACP_EM2020_PHP_7><br />Es wurde nicht ausgew&auml;hlt, ob es gelb-rote/rote Karten im Spiel gab</LANG_ACP_EM2020_PHP_7:text>
+<text:LANG_ACP_EM2020_PHP_8><br />Es wurde nicht ausgew&auml;hlt, ob es Elfmeter im Spiel gab</LANG_ACP_EM2020_PHP_8:text>
+<text:LANG_ACP_EM2020_PHP_9>Abzug f&uuml;r Punktekorrektur: EM2020-Tippspiel (SpielLANG_EM2020_TPL_INDEX_8LANG_EM2020_TPL_INDEX_8</LANG_ACP_EM2020_PHP_9:text>
+<text:LANG_ACP_EM2020_PHP_10>minus</LANG_ACP_EM2020_PHP_10:text>
+<text:LANG_ACP_EM2020_PHP_NO>Nein</LANG_ACP_EM2020_PHP_NO:text>
+<text:LANG_ACP_EM2020_PHP_YES>Ja</LANG_ACP_EM2020_PHP_YES:text>
+<text:LANG_ACP_EM2020_TPL_ERROR_1>EM2020-Tippspiel Fehler!</LANG_ACP_EM2020_TPL_ERROR_1:text>
+<text:LANG_ACP_EM2020_TPL_ERROR_2>Folgende Fehler traten auf:</LANG_ACP_EM2020_TPL_ERROR_2:text>
+<text:LANG_ACP_EM2020_TPL_ERROR_3>Bitte gehe zur&uuml;ck und f&uuml;lle alle Felder ordnungsgem&auml;&szlig; aus.</LANG_ACP_EM2020_TPL_ERROR_3:text>
+<text:LANG_ACP_EM2020_TPL_ERROR_4>Du kannst dieses Spiel noch nicht sehen.</LANG_ACP_EM2020_TPL_ERROR_4:text>
+<text:LANG_ACP_EM2020_TPL_ERROR_5>Das Finale kann nicht editiert werden.</LANG_ACP_EM2020_TPL_ERROR_5:text>
+<text:LANG_ACP_EM2020_TPL_INFO_1>WM2006-2014/EM2020-Tippspiel Informationen</LANG_ACP_EM2020_TPL_INFO_1:text>
+<text:LANG_ACP_EM2020_TPL_INFO_10>nur auf <a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de</a> im entsprechenden Supportthread</LANG_ACP_EM2020_TPL_INFO_10:text>
+<text:LANG_ACP_EM2020_TPL_INFO_11><strong>KEIN</strong> Support per PN, Email, ICQ, MSN, AIM, Skype o.&auml;.</LANG_ACP_EM2020_TPL_INFO_11:text>
+<text:LANG_ACP_EM2020_TPL_INFO_12>Spezieller Dank an</LANG_ACP_EM2020_TPL_INFO_12:text>
+<text:LANG_ACP_EM2020_TPL_INFO_13>Manuel "Hawk[eye]" Knietsch (<a href="http://www.kadett-forum.de" target="_blank">www.kadett-forum.de</a>)<br />Viktor Gertzen (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Jens (<a href="http://www.wbbcoderforum.de/" target="_blank">wBB Coderforum</a>)<br />kill0rz (<a href="http://kill0rz.com/" target="_blank">kill0rz' Blog</a>)<br /><br />F&uuml;r Plug-Ins und Erweiterungen:<br />Mr. Fish (<a href="http://cball.de" target="_blank">cball.de</a>)<br />Viktor (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Steinadler (<a href="http://www.steinadlers-forum.de/wbblite/index.php" target="_blank">Steinadlers Bastelst&uuml;bchen</a>)<br /></LANG_ACP_EM2020_TPL_INFO_13:text>
+<text:LANG_ACP_EM2020_TPL_INFO_2>WM2006-2014/EM2020-Tippspiel Version</LANG_ACP_EM2020_TPL_INFO_2:text>
+<text:LANG_ACP_EM2020_TPL_INFO_3>v1.2</LANG_ACP_EM2020_TPL_INFO_3:text>
+<text:LANG_ACP_EM2020_TPL_INFO_4>Idee &amp; Programmierung</LANG_ACP_EM2020_TPL_INFO_4:text>
+<text:LANG_ACP_EM2020_TPL_INFO_5>Gunter "Batida444" Seroski</LANG_ACP_EM2020_TPL_INFO_5:text>
+<text:LANG_ACP_EM2020_TPL_INFO_6>Template &amp; Anpassung</LANG_ACP_EM2020_TPL_INFO_6:text>
+<text:LANG_ACP_EM2020_TPL_INFO_7>Copyright</LANG_ACP_EM2020_TPL_INFO_7:text>
+<text:LANG_ACP_EM2020_TPL_INFO_8>liegt bei Gunter "Batida444" Seroski (<a href="http://ascona-board.de" target="_blank">www.ascona-board.de</a>), Viktor (<a href="http://v-gn.de/wbb">v-gn.de</a>) und kill0rz (<a href="http://kill0rz.com">kill0rz.com</a>)</LANG_ACP_EM2020_TPL_INFO_8:text>
+<text:LANG_ACP_EM2020_TPL_INFO_9>Support</LANG_ACP_EM2020_TPL_INFO_9:text>
+<text:LANG_ACP_EM2020_TPL_INFO_14>Angepasst f&uuml;r die WM2014</LANG_ACP_EM2020_TPL_INFO_14:text>
+<text:LANG_ACP_EM2020_TPL_INFO_15>Viktor (<a href="http://www.v-gn.de/wbb" target="_blank">www.v-gn.de/wbb</a>)<br />Viktor's Supportboard</LANG_ACP_EM2020_TPL_INFO_15:text>
+<text:LANG_ACP_EM2020_TPL_INFO_16>Angepasst f&uuml;r die EM2016/EM2020</LANG_ACP_EM2020_TPL_INFO_16:text>
+<text:LANG_ACP_EM2020_TPL_INFO_17>kill0rz (<a href="http://kill0rz.com/" target="_blank">kill0rz' Blog</a>)</LANG_ACP_EM2020_TPL_INFO_17:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_1>EM2020-Tippspiel Optionen</LANG_ACP_EM2020_TPL_OPTIONS_1:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_2>Allgemeine Einstellungen</LANG_ACP_EM2020_TPL_OPTIONS_2:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_3>Ist das EM2020-Tippspiel aktiv?</LANG_ACP_EM2020_TPL_OPTIONS_3:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_4>Sind die RSS-News aktiv?</LANG_ACP_EM2020_TPL_OPTIONS_4:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_5>Wie viele RSS-News sollen angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_5:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_6>Ist der WM-Ticker aktiv?</LANG_ACP_EM2020_TPL_OPTIONS_6:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_7>Wie breit soll der Ticker angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_7:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_8>Pixel</LANG_ACP_EM2020_TPL_OPTIONS_8:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_9>Wie viele n&auml;chste Spiele sollen auf der Startseite angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_9:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_10>Wie viele User sollen auf der Startseite angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_10:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_11>Bis wieviel Minuten vor Anpfiff eines Spiels kann ein Tipp abgegeben werden?</LANG_ACP_EM2020_TPL_OPTIONS_11:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_12>Minuten</LANG_ACP_EM2020_TPL_OPTIONS_12:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_13>Einstellungen f&uuml;r die Zusatztipps</LANG_ACP_EM2020_TPL_OPTIONS_13:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_14>Soll bei der Auswertung der Tipps die Tendenz ber&uuml;cksichtigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_14:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_15>Kann getippt werden, ob es gelbe Karten im Spiel gab?</LANG_ACP_EM2020_TPL_OPTIONS_15:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_16>Kann getippt werden, ob es gelb-rote/rote Karten im Spiel gab?</LANG_ACP_EM2020_TPL_OPTIONS_16:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_17>Kann getippt werden, ob es Elfmeter im Spiel gab?</LANG_ACP_EM2020_TPL_OPTIONS_17:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_18>Kann der Weltmeister / Vize-Weltmeister getippt werden?</LANG_ACP_EM2020_TPL_OPTIONS_18:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_19>Bis zu welchem Spiel kann der Weltmeister / Vizeweltmeister getippt werden?</LANG_ACP_EM2020_TPL_OPTIONS_19:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_20>(Gameid, Wert zwischen 1 und $gameids[finale]<br />Game $gameids[vorrundenspiel] = letztes Vorrundenspiel<br />Game $gameids[finale] = Finalspiel)</LANG_ACP_EM2020_TPL_OPTIONS_20:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_21>Einstellungen f&uuml;r den Guthabenhack (V1.9.5 von Lasall ben&ouml;tigt)</LANG_ACP_EM2020_TPL_OPTIONS_21:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_22>Soll der Guthabenhack f&uuml;r das EM2020-Tippspiel genutzt werden?</LANG_ACP_EM2020_TPL_OPTIONS_22:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_23>Sollen die Infos zu Kosten und Gewinnen auf der Startseite angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_23:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_24>Wieviel kostet ein normaler Spiel-Tipp?</LANG_ACP_EM2020_TPL_OPTIONS_24:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_25>Wieviel kostet der Weltmeister / Vize-Weltmeister-Tipp?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_25:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_26>Wieviel Gewinn gibt es f&uuml;r einen exakten Spiel-Tipp?</LANG_ACP_EM2020_TPL_OPTIONS_26:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_27>Wieviel Gewinn gibt es f&uuml;r einen Tipp, bei dem die Tendenz richtig ist?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_27:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_28>Wieviel Gewinn gibt es f&uuml;r das richtige Tippen des Weltmeisters / Vize-Weltmeisters?</b> (Zusatztipp)</LANG_ACP_EM2020_TPL_OPTIONS_28:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_29>Einstellungen f&uuml;r die Ebay RelevanceAd-Anzeige</LANG_ACP_EM2020_TPL_OPTIONS_29:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_30>Soll der Ebay RelevanceAd-Banner angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_30:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_31>Welcher affili.net-PublisherId ist der Banner zugeordnet?</LANG_ACP_EM2020_TPL_OPTIONS_31:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_32>(Voreinstellung ist die Publisher-ID von Batida444 *zwinker*)</LANG_ACP_EM2020_TPL_OPTIONS_32:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_33>Welche Kategorie soll bei Ebay ausgelesen werden?</b> (optionale Angabe)</LANG_ACP_EM2020_TPL_OPTIONS_33:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_34>Sollte zur WM bei Ebay eine extra Kategorie erstellt werden, kannst Du die ID hier eintragen</LANG_ACP_EM2020_TPL_OPTIONS_34:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_35>Board, in dem die Diskussion zur WM stattfindet</LANG_ACP_EM2020_TPL_OPTIONS_35:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_36><b>Wie soll der Feed geladen werden?</b><br /><br />file_get_contents: Ben&ouml;tigt die php-Einstellung <i>allow_url_fopen</i> auf 1<br />cURL: Ben&ouml;tigt die php-Erweiterung cURL<br /><br />Wenn du dir nicht sicher bist, nimm <i>file_get_contents</i>, wenn das Probleme macht, nimm <i>cURL</i>.</LANG_ACP_EM2020_TPL_OPTIONS_36:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_37>Wie viele noch nicht eingetragene Spiele sollen auf der Startseite angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_37:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_38>Wie viele aktuell laufende Spiele sollen auf der Startseite angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_38:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_39><b>Welcher Feed soll verwendet werden?</b><br /><br />FIFA = Weltfu&szlig;ballnachrichten<br />UEFA = Europafu&szlig;ballnachrichten</b></LANG_ACP_EM2020_TPL_OPTIONS_39:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_40>Einstellungen f&uuml;r die Tabelle auf dem Forenindex</LANG_ACP_EM2020_TPL_OPTIONS_40:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_41>Soll die Tabelle f&uuml;r noch nicht getippte Spiele angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_41:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_42>Diese Optionen kannst du nur nutzen, wenn du den Mod "Spieletabelle auf Forenindex" installiert hast.</LANG_ACP_EM2020_TPL_OPTIONS_42:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_43>Soll die Tabelle f&uuml;r die letzten Spiele angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_43:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_44>Wie viele letzte Spiele sollen angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_44:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_45><font color='red'>Du hast cURL nicht installiert, der Feed wird automatisch &uumlber <i>file_get_contents</i> geladen.</font></LANG_ACP_EM2020_TPL_OPTIONS_45:text>
+<text:LANG_ACP_EM2020_TPL_PUNKTE_EDIT_1>Punkte bearbeiten</LANG_ACP_EM2020_TPL_PUNKTE_EDIT_1:text>
+<text:LANG_ACP_EM2020_TPL_PUNKTE_EDIT_2>Beschreibung</LANG_ACP_EM2020_TPL_PUNKTE_EDIT_2:text>
+<text:LANG_ACP_EM2020_TPL_PUNKTE_EDIT_3>Punkte</LANG_ACP_EM2020_TPL_PUNKTE_EDIT_3:text>
+<text:LANG_ACP_EM2020_TPL_PUNKTE_VIEW_1>Punkte&uuml;bersicht</LANG_ACP_EM2020_TPL_PUNKTE_VIEW_1:text>
+<text:LANG_ACP_EM2020_TPL_PUNKTE_VIEW_2>Punkte-ID</LANG_ACP_EM2020_TPL_PUNKTE_VIEW_2:text>
+<text:LANG_ACP_EM2020_TPL_PUNKTE_VIEW_3>Beschreibung</LANG_ACP_EM2020_TPL_PUNKTE_VIEW_3:text>
+<text:LANG_ACP_EM2020_TPL_PUNKTE_VIEW_4>Punkte</LANG_ACP_EM2020_TPL_PUNKTE_VIEW_4:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_1>Uhr</LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_1:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_2>eintragen</LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_2:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_3>editieren</LANG_ACP_EM2020_TPL_RESULTS_VIEWBIT_3:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_1>Ergebnis&uuml;bersicht</LANG_ACP_EM2020_TPL_RESULTS_VIEW_1:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_2>Es werden hier alle Spiele angezeigt, von denen die Spielpaarungen schon feststehen.</LANG_ACP_EM2020_TPL_RESULTS_VIEW_2:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_4>Spiel-ID</LANG_ACP_EM2020_TPL_RESULTS_VIEW_4:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_5>Datum</LANG_ACP_EM2020_TPL_RESULTS_VIEW_5:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_6>Mannschaft 1</LANG_ACP_EM2020_TPL_RESULTS_VIEW_6:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_7>Mannschaft 2</LANG_ACP_EM2020_TPL_RESULTS_VIEW_7:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_8>Ergebnis</LANG_ACP_EM2020_TPL_RESULTS_VIEW_8:text>
+<text:LANG_ACP_EM2020_TPL_RESULTS_VIEW_9>eintragen</LANG_ACP_EM2020_TPL_RESULTS_VIEW_9:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_1>Ergebnis eintragen</LANG_ACP_EM2020_TPL_RESULT_ADD_1:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_2>Erziele Tore von</LANG_ACP_EM2020_TPL_RESULT_ADD_2:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_3>Gab es gelbe Karten im Spiel?</LANG_ACP_EM2020_TPL_RESULT_ADD_3:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_4>Gab es gelb-rote/rote Karten im Spiel?</LANG_ACP_EM2020_TPL_RESULT_ADD_4:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_5>Gab es Elfmeter im Spiel?</LANG_ACP_EM2020_TPL_RESULT_ADD_5:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_6>Externer Link zum Spiel</b> (optionale Eingabe)</LANG_ACP_EM2020_TPL_RESULT_ADD_6:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_7>Kommentar zum Spiel</b> (optionale Eingabe)</LANG_ACP_EM2020_TPL_RESULT_ADD_7:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_1>Fehler!</LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_1:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_2>Du kannst dieses Spiel noch nicht eintragen, weil du vorher noch andere eintragen musst. <br /> Es ist wichtig, dass du die Spiele in der richtigen Reihenfolge eintr&auml;gst. <br /><br /> <b>Bitte trage zun&auml;chst alle Spiele bis zum Spiel </LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_2:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_3> ein.</b></LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_3:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_4>&larr; zur&uuml;ck</LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_4:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_5>Das Spiel hat noch nicht angefangen oder l&auml;uft noch. Bitte warte, bis es zu Ende ist!</LANG_ACP_EM2020_TPL_RESULT_ADD_ERROR_5:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_1>Ergebnis best&auml;tigen</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_1:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_2>Bisher wurde noch nichts in die Datenbank eingetragen.<br />Bitte &uuml;berpr&uuml;fe die von Dir eingetragenen Werte und best&auml;tige dann.</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_2:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_3>Erzielte Tore von</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_3:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_4>Gab es gelbe Karten im Spiel?</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_4:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_5>Gab es gelb-rote/rote Karten im Spiel?</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_5:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_6>Gab es Elfmeter im Spiel?</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_6:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_7>Eingetragener Link zum Spiel:</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_7:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_8>Eingetragener Kommentar zum Spiel:</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_8:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_CONFIRM_9>Ja, die eingetragenen Werte stimmen so</LANG_ACP_EM2020_TPL_RESULT_CONFIRM_9:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_1>Ergebnis editieren</LANG_ACP_EM2020_TPL_RESULT_EDIT_1:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_2><b>Hinweis:</b> Es kann nur der externe Link zum Spiel oder der Kommentar zum Spiel ge&auml;ndert werden.</LANG_ACP_EM2020_TPL_RESULT_EDIT_2:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_3>Erzielte Tore von</LANG_ACP_EM2020_TPL_RESULT_EDIT_3:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_4>Gab es gelbe Karten im Spiel?</LANG_ACP_EM2020_TPL_RESULT_EDIT_4:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_5>Gab es gelb-rote/rote Karten im Spiel?</LANG_ACP_EM2020_TPL_RESULT_EDIT_5:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_6>Gab es Elfmeter im Spiel?</LANG_ACP_EM2020_TPL_RESULT_EDIT_6:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_7>Eingetragener Link zum Spiel:</LANG_ACP_EM2020_TPL_RESULT_EDIT_7:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_8>Eingetragener Kommentar zum Spiel:</LANG_ACP_EM2020_TPL_RESULT_EDIT_8:text>
+<text:LANG_ACP_EM2020_TPL_RESULT_EDIT_9>&Auml;nderungen speichern</LANG_ACP_EM2020_TPL_RESULT_EDIT_9:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V50>Posting - Einstellung</LANG_ACP_EM2020_TPL_OPTIONS_V50:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V51>Soll ein Posting vom Spielergebnis gemacht werden?</LANG_ACP_EM2020_TPL_OPTIONS_V51:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V52>Thread-ID f&uuml;r das Posting:</LANG_ACP_EM2020_TPL_OPTIONS_V52:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V53>User-ID als Posting-Verfasser:</LANG_ACP_EM2020_TPL_OPTIONS_V53:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V54>Welches Icon soll zum Posting angezeigt werden?</LANG_ACP_EM2020_TPL_OPTIONS_V54:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V55>(0 = kein Icon)</LANG_ACP_EM2020_TPL_OPTIONS_V55:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V56>
 <b>&raquo;{vgp_name1}&laquo;</b> setzt den Namen der Heimmannschaft im Text ein.
 <br /><b>&raquo;{vgp_name2}&laquo;</b> setzt den Namen der Ausw&auml;rtsmannschaft im Text ein.
-</LANG_ACP_WM2018_TPL_OPTIONS_V56:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V57>Thema:</LANG_ACP_WM2018_TPL_OPTIONS_V57:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V58>Beitrag:</LANG_ACP_WM2018_TPL_OPTIONS_V58:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V59>
+</LANG_ACP_EM2020_TPL_OPTIONS_V56:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V57>Thema:</LANG_ACP_EM2020_TPL_OPTIONS_V57:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V58>Beitrag:</LANG_ACP_EM2020_TPL_OPTIONS_V58:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V59>
 <b>&raquo;{vgp_gameid}&laquo;</b> setzt die <b>Spielnummer</b> im Text ein.
 <br /><b>&raquo;{vgp_gruppe}&laquo;</b> setzt die <b>Gruppe</b> im Text ein.
 <br /><b>&raquo;{vgp_stadion}&laquo;</b> setzt das <b>Stadion</b> im Text ein.
@@ -167,296 +167,296 @@
 <br /><b>&raquo;{vgp_flagge2}&laquo;</b> setzt die <b>Flagge der Ausw&auml;rtsmannschaft</b> im Text ein.
 <br /><b>&raquo;{vgp_username}&laquo;</b> um den <b>Username vom Poster</b> einzuf&uuml;gen.
 <br /><b>&raquo;{vgp_user_ranking_01} bis {vgp_user_ranking_10}&laquo;</b> setzt den <b>Top-User</b> im Text ein.
-</LANG_ACP_WM2018_TPL_OPTIONS_V59:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V60>Board-ID:</b><br />In welchem Board soll der Thread erstellt werden?</LANG_ACP_WM2018_TPL_OPTIONS_V60:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V61>Wenn Thread-ID angegeben wir das Posting angeh&auml;ngt sonst ein neues erstellt.</LANG_ACP_WM2018_TPL_OPTIONS_V61:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V62><b>Prefix:</b><br />Hier bitte den Prefix eingeben!</LANG_ACP_WM2018_TPL_OPTIONS_V62:text>
-<text:LANG_ACP_WM2018_TPL_OPTIONS_V63>Posting als HTML?</LANG_ACP_WM2018_TPL_OPTIONS_V63:text>
-<text:LANG_ACP_WM2018_CORRECT8_1>Speichern!</LANG_ACP_WM2018_CORRECT8_1:text>
-<text:LANG_ACP_WM2018_CORRECT8_2>Hinweis</LANG_ACP_WM2018_CORRECT8_2:text>
-<text:LANG_ACP_WM2018_CORRECT8_3>&Auml;ndern:</LANG_ACP_WM2018_CORRECT8_3:text>
-<text:LANG_ACP_WM2018_CORRECT8_4>Spiel</LANG_ACP_WM2018_CORRECT8_4:text>
-<text:LANG_ACP_WM2018_CORRECT8_5>Hintergrund</LANG_ACP_WM2018_CORRECT8_5:text>
-<text:LANG_ACP_WM2018_CORRECT8_6>Durch eine Neuregelung bei der EM 2016 werden erstmals auch Drittplatzierte ins Achtenfinale gelassen. Dadurch kann das Tippspiel diese Spiele nicht mehr genau vorherberechnen.<br/> Sollte eine falsche Mannschaft in den n&auml;chsten Spielen stehen, so kannst du auf dieser Seite einfach die Mannschaften korrigieren.</LANG_ACP_WM2018_CORRECT8_6:text>
-<text:LANG_ACP_WM2018_CORRECT8_7>Spiele</LANG_ACP_WM2018_CORRECT8_7:text>
-<text:LANG_ACP_WM2018_CORRECT8_8>noch nicht bekannt</LANG_ACP_WM2018_CORRECT8_8:text>
-<text:LANG_ACP_WM2018_CORRECT8_9>Sieger</LANG_ACP_WM2018_CORRECT8_9:text>
-<text:LANG_ACP_WM2018_CORRECT8_10>Spiel</LANG_ACP_WM2018_CORRECT8_10:text>
-<text:LANG_ACP_WM2018_CORRECT8_11>erfolgreich geupdated!</LANG_ACP_WM2018_CORRECT8_11:text>
+</LANG_ACP_EM2020_TPL_OPTIONS_V59:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V60>Board-ID:</b><br />In welchem Board soll der Thread erstellt werden?</LANG_ACP_EM2020_TPL_OPTIONS_V60:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V61>Wenn Thread-ID angegeben wir das Posting angeh&auml;ngt sonst ein neues erstellt.</LANG_ACP_EM2020_TPL_OPTIONS_V61:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V62><b>Prefix:</b><br />Hier bitte den Prefix eingeben!</LANG_ACP_EM2020_TPL_OPTIONS_V62:text>
+<text:LANG_ACP_EM2020_TPL_OPTIONS_V63>Posting als HTML?</LANG_ACP_EM2020_TPL_OPTIONS_V63:text>
+<text:LANG_ACP_EM2020_CORRECT8_1>Speichern!</LANG_ACP_EM2020_CORRECT8_1:text>
+<text:LANG_ACP_EM2020_CORRECT8_2>Hinweis</LANG_ACP_EM2020_CORRECT8_2:text>
+<text:LANG_ACP_EM2020_CORRECT8_3>&Auml;ndern:</LANG_ACP_EM2020_CORRECT8_3:text>
+<text:LANG_ACP_EM2020_CORRECT8_4>Spiel</LANG_ACP_EM2020_CORRECT8_4:text>
+<text:LANG_ACP_EM2020_CORRECT8_5>Hintergrund</LANG_ACP_EM2020_CORRECT8_5:text>
+<text:LANG_ACP_EM2020_CORRECT8_6>Durch eine Neuregelung bei der EM 2016 werden erstmals auch Drittplatzierte ins Achtenfinale gelassen. Dadurch kann das Tippspiel diese Spiele nicht mehr genau vorherberechnen.<br/> Sollte eine falsche Mannschaft in den n&auml;chsten Spielen stehen, so kannst du auf dieser Seite einfach die Mannschaften korrigieren.</LANG_ACP_EM2020_CORRECT8_6:text>
+<text:LANG_ACP_EM2020_CORRECT8_7>Spiele</LANG_ACP_EM2020_CORRECT8_7:text>
+<text:LANG_ACP_EM2020_CORRECT8_8>noch nicht bekannt</LANG_ACP_EM2020_CORRECT8_8:text>
+<text:LANG_ACP_EM2020_CORRECT8_9>Sieger</LANG_ACP_EM2020_CORRECT8_9:text>
+<text:LANG_ACP_EM2020_CORRECT8_10>Spiel</LANG_ACP_EM2020_CORRECT8_10:text>
+<text:LANG_ACP_EM2020_CORRECT8_11>erfolgreich geupdated!</LANG_ACP_EM2020_CORRECT8_11:text>
 
 
 [em2020]
 
-<text:LANG_WM2018_GLOBAL_CHOICE>- Bitte w&auml;hlen -</LANG_WM2018_GLOBAL_CHOICE:text>
-<text:LANG_WM2018_GLOBAL_NO>Nein</LANG_WM2018_GLOBAL_NO:text>
-<text:LANG_WM2018_GLOBAL_RESET>Reset</LANG_WM2018_GLOBAL_RESET:text>
-<text:LANG_WM2018_GLOBAL_SAVE>Speichern</LANG_WM2018_GLOBAL_SAVE:text>
-<text:LANG_WM2018_GLOBAL_YES>Ja</LANG_WM2018_GLOBAL_YES:text>
-<text:LANG_WM2018_PHP_1>Das WM2018-Tippspiel ist momentan deaktiviert oder f&uuml;r Deine Nutzergruppe nicht verf&uuml;gbar.<br />Du wirst jetzt ins Board weitergeleitet.<br /><br /></LANG_WM2018_PHP_1:text>
-<text:LANG_WM2018_PHP_10>Finale</LANG_WM2018_PHP_10:text>
-<text:LANG_WM2018_PHP_11>Sieger</LANG_WM2018_PHP_11:text>
-<text:LANG_WM2018_PHP_12>Zweiter</LANG_WM2018_PHP_12:text>
-<text:LANG_WM2018_PHP_13>Verlierer</LANG_WM2018_PHP_13:text>
-<text:LANG_WM2018_PHP_14>Details zum Spiel</LANG_WM2018_PHP_14:text>
-<text:LANG_WM2018_PHP_15>Deine Benutzergruppe ist leider nicht f&uuml;r das Abgeben eines Tipps zugelassen.<br />Du wirst jetzt ins Board weitergeleitet.<br /><br /></LANG_WM2018_PHP_15:text>
-<text:LANG_WM2018_PHP_16>die n&auml;chsten 10 Spiele</LANG_WM2018_PHP_16:text>
-<text:LANG_WM2018_PHP_17>alle Spiele</LANG_WM2018_PHP_17:text>
-<text:LANG_WM2018_PHP_18>Vorrunde</LANG_WM2018_PHP_18:text>
-<text:LANG_WM2018_PHP_2><b>keine</b></LANG_WM2018_PHP_2:text>
-<text:LANG_WM2018_PHP_20>Du hast leider zu lange gewartet mit Deinem Tipp.<br />Die Abgabezeit f&uuml;r diesen Tipp ist vorbei.<br />Du wirst jetzt auf die Tipp&uuml;bersicht weitergeleitet.<br /><br /></LANG_WM2018_PHP_20:text>
-<text:LANG_WM2018_PHP_21>Tippabgabe WM2018-Tippspiel (Spiel </LANG_WM2018_PHP_21:text>
-<text:LANG_WM2018_PHP_22>minus</LANG_WM2018_PHP_22:text>
-<text:LANG_WM2018_PHP_23><font size=\"2\" color=\"FF0000\"><b>Bitte alle Felder ausf&uuml;llen!</b></font></LANG_WM2018_PHP_23:text>
-<text:LANG_WM2018_PHP_24>Du hast leider nicht genug Guthaben, um einen Tipp abgeben zu k&ouml;nnen.<br />Du wirst jetzt auf die Tipp&uuml;bersicht weitergeleitet.<br /><br /></LANG_WM2018_PHP_24:text>
-<text:LANG_WM2018_PHP_25>Tippabgabe WM2018-Tippspiel (Weltmeistertipp)</LANG_WM2018_PHP_25:text>
-<text:LANG_WM2018_PHP_26>Tippabgabe WM2018-Tippspiel (Vize-Weltmeistertipp)</LANG_WM2018_PHP_26:text>
-<text:LANG_WM2018_PHP_27>Noch keinen Weltmeistertipp abgegeben</LANG_WM2018_PHP_27:text>
-<text:LANG_WM2018_PHP_28>Noch keinen Vize-Weltmeistertipp abgegeben</LANG_WM2018_PHP_28:text>
-<text:LANG_WM2018_PHP_29>wird es geben</LANG_WM2018_PHP_29:text>
-<text:LANG_WM2018_PHP_3>Gruppenspiele der Gruppe </LANG_WM2018_PHP_3:text>
-<text:LANG_WM2018_PHP_30>wird es nicht geben</LANG_WM2018_PHP_30:text>
-<text:LANG_WM2018_PHP_31>Tipp war richtig</LANG_WM2018_PHP_31:text>
-<text:LANG_WM2018_PHP_32>Tipp war nicht richtig</LANG_WM2018_PHP_32:text>
-<text:LANG_WM2018_PHP_33>Tendenz war richtig</LANG_WM2018_PHP_33:text>
-<text:LANG_WM2018_PHP_34>Es gab gelbe Karten im Spiel</LANG_WM2018_PHP_34:text>
-<text:LANG_WM2018_PHP_35>Es gab keine gelben Karten im Spiel.</LANG_WM2018_PHP_35:text>
-<text:LANG_WM2018_PHP_36>Es gab gelb-rote/rote Karten im Spiel.</LANG_WM2018_PHP_36:text>
-<text:LANG_WM2018_PHP_37>Es gab keine gelb-roten/roten Karten im Spiel.</LANG_WM2018_PHP_37:text>
-<text:LANG_WM2018_PHP_38>Es gab Elfmeter im Spiel</LANG_WM2018_PHP_38:text>
-<text:LANG_WM2018_PHP_39>Es gab keine Elfmeter im Spiel</LANG_WM2018_PHP_39:text>
-<text:LANG_WM2018_PHP_4>Achtelfinale</LANG_WM2018_PHP_4:text>
-<text:LANG_WM2018_PHP_40>Externer Link zum Spiel</LANG_WM2018_PHP_40:text>
-<text:LANG_WM2018_PHP_41>In Spielen, die nach dem K.O.-System gewertet werden, kann es kein Unentschieden geben...</LANG_WM2018_PHP_41:text>
-<text:LANG_WM2018_PHP_42>Alle Tipps zum Spiel</LANG_WM2018_PHP_42:text>
-<text:LANG_WM2018_PHP_43>Du hast f&uuml;r dieses Spiel schon einen Tipp abgegeben.<br />Du wirst jetzt auf die Tippabgabe-Seite weitergeleitet.</LANG_WM2018_PHP_43:text>
-<text:LANG_WM2018_PHP_44>Du hast f&uuml;r das Editieren des Tipps zu lange gebraucht.<br />Die Abgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du wirst jetzt auf die Tippspiel-Startseite weitergeleitet.</LANG_WM2018_PHP_44:text>
-<text:LANG_WM2018_PHP_45>Dein Tipp wurde erfolgreich ge&auml;ndert !<br />Du wirst jetzt auf die Tipp&uuml;bersicht weitergeleitet.</LANG_WM2018_PHP_45:text>
-<text:LANG_WM2018_PHP_46>Du hast einen Fehler bei der Eingabe gemacht !<br />Du wirst jetzt erneut auf die Editierseite des Tipps weitergeleitet.</LANG_WM2018_PHP_46:text>
-<text:LANG_WM2018_PHP_47>Du kannst nicht Tipps von anderen Usern editieren !<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_47:text>
-<text:LANG_WM2018_PHP_48>Du hast f&uuml;r dieses Spiel noch keinen Tipp abgegeben !<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_48:text>
-<text:LANG_WM2018_PHP_49>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_49:text>
-<text:LANG_WM2018_PHP_5>Gruppe</LANG_WM2018_PHP_5:text>
-<text:LANG_WM2018_PHP_50>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_50:text>
-<text:LANG_WM2018_PHP_51>Du hast keine Mannschaft ausgew&auml;hlt.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_51:text>
-<text:LANG_WM2018_PHP_52>Dein Weltmeister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_52:text>
-<text:LANG_WM2018_PHP_53>Du kannst nur eigene Tipps editieren.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_53:text>
-<text:LANG_WM2018_PHP_54>Du hast noch keinen Weltmeister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_54:text>
-<text:LANG_WM2018_PHP_55>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_55:text>
-<text:LANG_WM2018_PHP_56>Du hast keine Mannschaft ausgew&auml;hlt.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_56:text>
-<text:LANG_WM2018_PHP_57>Dein Vize-Weltmeister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_57:text>
-<text:LANG_WM2018_PHP_58>Du kannst nur eigene Tipps editieren.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_58:text>
-<text:LANG_WM2018_PHP_59>Du hast noch keinen Vize-Weltmeister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die WM2018-Startseite weitergeleitet.</LANG_WM2018_PHP_59:text>
-<text:LANG_WM2018_PHP_60>Du kannst Dir nur Spieltipps ansehen von Spielen, die schon vorbei sind.</LANG_WM2018_PHP_60:text>
-<text:LANG_WM2018_PHP_61>Der Nutzer existiert nicht.</LANG_WM2018_PHP_61:text>
-<text:LANG_WM2018_PHP_62>Die Ergenbnisse erscheinen, wenn das Spiel eingetragen wurde.</LANG_WM2018_PHP_62:text>
-<text:LANG_WM2018_PHP_6>Viertelfinale</LANG_WM2018_PHP_6:text>
-<text:LANG_WM2018_PHP_7>Spiel</LANG_WM2018_PHP_7:text>
-<text:LANG_WM2018_PHP_8>Halbfinale</LANG_WM2018_PHP_8:text>
-<text:LANG_WM2018_PHP_9>Spiel um Platz 3</LANG_WM2018_PHP_9:text>
-<text:LANG_WM2018_TPL_EBAY_1>Ebay-Angebote zur WM2018</LANG_WM2018_TPL_EBAY_1:text>
-<text:LANG_WM2018_TPL_EDITVWMTIPP_1>Vize-Weltmeister-Tipp editieren</LANG_WM2018_TPL_EDITVWMTIPP_1:text>
-<text:LANG_WM2018_TPL_EDITVWMTIPP_2>Vize-Weltmeister-Tipp editieren</LANG_WM2018_TPL_EDITVWMTIPP_2:text>
-<text:LANG_WM2018_TPL_EDITVWMTIPP_3>Vize-Weltmeister-Tipp editieren</LANG_WM2018_TPL_EDITVWMTIPP_3:text>
-<text:LANG_WM2018_TPL_EDITVWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Vize-Weltmeister-Tipp editieren.</LANG_WM2018_TPL_EDITVWMTIPP_4:text>
-<text:LANG_WM2018_TPL_EDITVWMTIPP_5>Dein bisheriger Tipp:</LANG_WM2018_TPL_EDITVWMTIPP_5:text>
-<text:LANG_WM2018_TPL_EDITVWMTIPP_6>Dein neuer Tipp:</LANG_WM2018_TPL_EDITVWMTIPP_6:text>
-<text:LANG_WM2018_TPL_EDITWMTIPP_1>Weltmeister-Tipp editieren</LANG_WM2018_TPL_EDITWMTIPP_1:text>
-<text:LANG_WM2018_TPL_EDITWMTIPP_2>Weltmeister-Tipp editieren</LANG_WM2018_TPL_EDITWMTIPP_2:text>
-<text:LANG_WM2018_TPL_EDITWMTIPP_3>Weltmeister-Tipp editieren</LANG_WM2018_TPL_EDITWMTIPP_3:text>
-<text:LANG_WM2018_TPL_EDITWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Weltmeister-Tipp editieren.</LANG_WM2018_TPL_EDITWMTIPP_4:text>
-<text:LANG_WM2018_TPL_EDITWMTIPP_5>Dein bisheriger Tipp:</LANG_WM2018_TPL_EDITWMTIPP_5:text>
-<text:LANG_WM2018_TPL_EDITWMTIPP_6>Dein neuer Tipp:</LANG_WM2018_TPL_EDITWMTIPP_6:text>
-<text:LANG_WM2018_TPL_FOOTER_1>WM2018-Tippspiel &copy; 2018 kill0rz</LANG_WM2018_TPL_FOOTER_1:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_1>WM2018-Tippspiel | Spiel-Details</LANG_WM2018_TPL_GAMEDETAILS_1:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_10>Ergebnis</LANG_WM2018_TPL_GAMEDETAILS_10:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_11>Karten und Elfmeter</LANG_WM2018_TPL_GAMEDETAILS_11:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_12>Link zum Spiel</LANG_WM2018_TPL_GAMEDETAILS_12:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_13>Kommentar zum Spiel</LANG_WM2018_TPL_GAMEDETAILS_13:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_GAMEDETAILS_2:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_3>Spiel-Details</LANG_WM2018_TPL_GAMEDETAILS_3:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_4>Spiel-Infos</LANG_WM2018_TPL_GAMEDETAILS_4:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_5>Spiel-Nr.</LANG_WM2018_TPL_GAMEDETAILS_5:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_6>Datum</LANG_WM2018_TPL_GAMEDETAILS_6:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_7>Uhr</LANG_WM2018_TPL_GAMEDETAILS_7:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_8>Spielart</LANG_WM2018_TPL_GAMEDETAILS_8:text>
-<text:LANG_WM2018_TPL_GAMEDETAILS_9>Ort</LANG_WM2018_TPL_GAMEDETAILS_9:text>
-<text:LANG_WM2018_TPL_HEADER_1>Startseite</LANG_WM2018_TPL_HEADER_1:text>
-<text:LANG_WM2018_TPL_HEADER_2>Tipp abgeben</LANG_WM2018_TPL_HEADER_2:text>
-<text:LANG_WM2018_TPL_HEADER_3>Ergebnisse</LANG_WM2018_TPL_HEADER_3:text>
-<text:LANG_WM2018_TPL_HEADER_4>User-Tipps</LANG_WM2018_TPL_HEADER_4:text>
-<text:LANG_WM2018_TPL_HEADER_5>Fragen&amp;Talk zum Spiel</LANG_WM2018_TPL_HEADER_5:text>
-<text:LANG_WM2018_TPL_HEADER_6>Meine Tipps</LANG_WM2018_TPL_HEADER_6:text>
-<text:LANG_WM2018_TPL_INDEX_1>WM2018-Tippspiel Startseite</LANG_WM2018_TPL_INDEX_1:text>
-<text:LANG_WM2018_TPL_INDEX_10>Spiele</LANG_WM2018_TPL_INDEX_10:text>
-<text:LANG_WM2018_TPL_INDEX_11>Sp.</LANG_WM2018_TPL_INDEX_11:text>
-<text:LANG_WM2018_TPL_INDEX_12>gewonnen</LANG_WM2018_TPL_INDEX_12:text>
-<text:LANG_WM2018_TPL_INDEX_13>g.</LANG_WM2018_TPL_INDEX_13:text>
-<text:LANG_WM2018_TPL_INDEX_14>unentschieden</LANG_WM2018_TPL_INDEX_14:text>
-<text:LANG_WM2018_TPL_INDEX_15>u.</LANG_WM2018_TPL_INDEX_15:text>
-<text:LANG_WM2018_TPL_INDEX_16>verloren</LANG_WM2018_TPL_INDEX_16:text>
-<text:LANG_WM2018_TPL_INDEX_17>v.</LANG_WM2018_TPL_INDEX_17:text>
-<text:LANG_WM2018_TPL_INDEX_18>Tordifferenz</LANG_WM2018_TPL_INDEX_18:text>
-<text:LANG_WM2018_TPL_INDEX_19>Td.</LANG_WM2018_TPL_INDEX_19:text>
-<text:LANG_WM2018_TPL_INDEX_2>Pers&ouml;nliche Infos</LANG_WM2018_TPL_INDEX_2:text>
-<text:LANG_WM2018_TPL_INDEX_20>Punkte</LANG_WM2018_TPL_INDEX_20:text>
-<text:LANG_WM2018_TPL_INDEX_21>Pkt</LANG_WM2018_TPL_INDEX_21:text>
-<text:LANG_WM2018_TPL_INDEX_22>Ergebnis der WM2018</LANG_WM2018_TPL_INDEX_22:text>
-<text:LANG_WM2018_TPL_INDEX_23>EM-Trophy</LANG_WM2018_TPL_INDEX_23:text>
-<text:LANG_WM2018_TPL_INDEX_24>Vize-Weltmeister</LANG_WM2018_TPL_INDEX_24:text>
-<text:LANG_WM2018_TPL_INDEX_25>Punkteverteilung</LANG_WM2018_TPL_INDEX_25:text>
-<text:LANG_WM2018_TPL_INDEX_26>M&ouml;gliche Gewinne und Verluste</LANG_WM2018_TPL_INDEX_26:text>
-<text:LANG_WM2018_TPL_INDEX_27>Kosten f&uuml;r einen normalen Tipp</LANG_WM2018_TPL_INDEX_27:text>
-<text:LANG_WM2018_TPL_INDEX_28>Kosten f&uuml;r einen EM-Tipp</LANG_WM2018_TPL_INDEX_28:text>
-<text:LANG_WM2018_TPL_INDEX_29>Gewinn f&uuml;r einen exakten Tipp</LANG_WM2018_TPL_INDEX_29:text>
-<text:LANG_WM2018_TPL_INDEX_3>Hallo</LANG_WM2018_TPL_INDEX_3:text>
-<text:LANG_WM2018_TPL_INDEX_30>Gewinn f&uuml;r einen Tipp mit richtiger Tendenz</LANG_WM2018_TPL_INDEX_30:text>
-<text:LANG_WM2018_TPL_INDEX_31>Gewinn f&uuml;r einen richtigen Weltmeister/Vizeweltmeister-Tipp</LANG_WM2018_TPL_INDEX_31:text>
-<text:LANG_WM2018_TPL_INDEX_32>Top $em2020_options[topuser] -User</LANG_WM2018_TPL_INDEX_32:text>
-<text:LANG_WM2018_TPL_INDEX_33>Hallo <b>Gast</b></LANG_WM2018_TPL_INDEX_33:text>
-<text:LANG_WM2018_TPL_INDEX_34>Noch nicht eingetragene Spiele</LANG_WM2018_TPL_INDEX_34:text>
-<text:LANG_WM2018_TPL_INDEX_35>Es spielt gerade:</LANG_WM2018_TPL_INDEX_35:text>
-<text:LANG_WM2018_TPL_INDEX_36>Neueste News der UEFA</LANG_WM2018_TPL_INDEX_36:text>
-<text:LANG_WM2018_TPL_INDEX_37>In den folgenden 24h finden diese Spiele statt, f&uuml;r die du noch keine Tipps abgegeben hast:</LANG_WM2018_TPL_INDEX_37:text>
-<text:LANG_WM2018_TPL_INDEX_38>Die letzten $em2020_showtableonindex_maxdonegames Spiele der WM 2018:</LANG_WM2018_TPL_INDEX_38:text>
-<text:LANG_WM2018_TPL_INDEX_4>Du hast bis jetzt $tippsgesamt Tipps abgegeben.</LANG_WM2018_TPL_INDEX_4:text>
-<text:LANG_WM2018_TPL_INDEX_5>Dein verf&uuml;gbares Tippguthaben betr&auml;gt noch</LANG_WM2018_TPL_INDEX_5:text>
-<text:LANG_WM2018_TPL_INDEX_6>Du musst registriert sein, um selber Tipps abgeben zu k&ouml;nnen.<br />Als unregistrierter User kannst Du Dir aber alles ansehen.</LANG_WM2018_TPL_INDEX_6:text>
-<text:LANG_WM2018_TPL_INDEX_7>Neueste News der FIFA</LANG_WM2018_TPL_INDEX_7:text>
-<text:LANG_WM2018_TPL_INDEX_8>Die n&auml;chsten $em2020_options[nextxgames] Spiele</LANG_WM2018_TPL_INDEX_8:text>
-<text:LANG_WM2018_TPL_INDEX_9>Gruppe</LANG_WM2018_TPL_INDEX_9:text>
-<text:LANG_WM2018_TPL_MAKETIPP_1>WM2018-Tippspiel-Tippabgabe</LANG_WM2018_TPL_MAKETIPP_1:text>
-<text:LANG_WM2018_TPL_MAKETIPP_10>alle m&ouml;glichen Spiele</LANG_WM2018_TPL_MAKETIPP_10:text>
-<text:LANG_WM2018_TPL_MAKETIPP_11>Spielart</LANG_WM2018_TPL_MAKETIPP_11:text>
-<text:LANG_WM2018_TPL_MAKETIPP_12>Anpfiff</LANG_WM2018_TPL_MAKETIPP_12:text>
-<text:LANG_WM2018_TPL_MAKETIPP_13>tippbar bis</LANG_WM2018_TPL_MAKETIPP_13:text>
-<text:LANG_WM2018_TPL_MAKETIPP_14>Heimmannschaft</LANG_WM2018_TPL_MAKETIPP_14:text>
-<text:LANG_WM2018_TPL_MAKETIPP_15>Ausw&auml;rtsmannschaft</LANG_WM2018_TPL_MAKETIPP_15:text>
-<text:LANG_WM2018_TPL_MAKETIPP_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_MAKETIPP_2:text>
-<text:LANG_WM2018_TPL_MAKETIPP_3>Tippabgabe</LANG_WM2018_TPL_MAKETIPP_3:text>
-<text:LANG_WM2018_TPL_MAKETIPP_4>Tippabgabe</LANG_WM2018_TPL_MAKETIPP_4:text>
-<text:LANG_WM2018_TPL_MAKETIPP_5>Hier kannst Du nun Deine Tipps abgeben.<br />Es sind $gamesart aufgelistet, die<br />- spielbar sind<br />- fr&uuml;hestens in $templatetime Minuten anfangen<br />- von Dir noch nicht getippt wurden<br /><br /><b>Achtung:</b><br />Warte mit dem Abgeben Deiner Tipps nicht zu lange, es erfolgt eine erneute &Uuml;berpr&uuml;fung der Tippabgabezeit beim Speichern !<br />Ein einmal abgegebener Tipp kann bis zum Einsendeschluss ge&auml;ndert werden!</LANG_WM2018_TPL_MAKETIPP_5:text>
-<text:LANG_WM2018_TPL_MAKETIPP_6>F&uuml;r die Berechnung der Tippabgabezeiten wird die Serverzeit verwendet.<br />Es kann also durchaus vorkommen, dass die Serverzeit von Deiner Rechnerzeit abweicht.</LANG_WM2018_TPL_MAKETIPP_6:text>
-<text:LANG_WM2018_TPL_MAKETIPP_7>Zur Kontrolle:<br /><br />Serverdatum: $serverdate<br />Serverzeit: <span style="font-size: 16px;"><script language="Javascript" type="text/javascript">writeclock();</script></span></b> Uhr</LANG_WM2018_TPL_MAKETIPP_7:text>
-<text:LANG_WM2018_TPL_MAKETIPP_8>Zeige:</LANG_WM2018_TPL_MAKETIPP_8:text>
-<text:LANG_WM2018_TPL_MAKETIPP_9>die n&auml;chsten 10 m&ouml;glichen Spiele</LANG_WM2018_TPL_MAKETIPP_9:text>
-<text:LANG_WM2018_TPL_MAKETIPP_BIT_1>Uhr</LANG_WM2018_TPL_MAKETIPP_BIT_1:text>
-<text:LANG_WM2018_TPL_MAKETIPP_BIT_2>tippen</LANG_WM2018_TPL_MAKETIPP_BIT_2:text>
-<text:LANG_WM2018_TPL_NEXTGAMES_1>Uhr</LANG_WM2018_TPL_NEXTGAMES_1:text>
-<text:LANG_WM2018_TPL_NEXTGAMES_2>zum Spiel</LANG_WM2018_TPL_NEXTGAMES_2:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_1>WM2018-Tippspiel | Alle Spiele von</LANG_WM2018_TPL_SHOWALLGAMES_1:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_10>Ergebnis</LANG_WM2018_TPL_SHOWALLGAMES_10:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_SHOWALLGAMES_2:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_3>Alle Spiele von</LANG_WM2018_TPL_SHOWALLGAMES_3:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_4>Spiel-Nr.</LANG_WM2018_TPL_SHOWALLGAMES_4:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_5>Spiel-Art</LANG_WM2018_TPL_SHOWALLGAMES_5:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_6>Datum</LANG_WM2018_TPL_SHOWALLGAMES_6:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_7>Ort</LANG_WM2018_TPL_SHOWALLGAMES_7:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_8>Heimmannschaft</LANG_WM2018_TPL_SHOWALLGAMES_8:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_9>Ausw&auml;rtsmannschaft</LANG_WM2018_TPL_SHOWALLGAMES_9:text>
-<text:LANG_WM2018_TPL_SHOWALLGAMES_BIT_1>Uhr</LANG_WM2018_TPL_SHOWALLGAMES_BIT_1:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_1>WM2018-Tippspiel-Ergebnisse</LANG_WM2018_TPL_SHOWRESULTS_1:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_SHOWRESULTS_2:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_3>Ergebnisse</LANG_WM2018_TPL_SHOWRESULTS_3:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_4>Vorrunde</LANG_WM2018_TPL_SHOWRESULTS_4:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_5>Achtelfinale</LANG_WM2018_TPL_SHOWRESULTS_5:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_6>Viertelfinale</LANG_WM2018_TPL_SHOWRESULTS_6:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_7>Halbfinale</LANG_WM2018_TPL_SHOWRESULTS_7:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_8>Platz 3</LANG_WM2018_TPL_SHOWRESULTS_8:text>
-<text:LANG_WM2018_TPL_SHOWRESULTS_9>Finale</LANG_WM2018_TPL_SHOWRESULTS_9:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_1>Datum</LANG_WM2018_TPL_SHOWRESULT_BIT_1:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_2>Stadion</LANG_WM2018_TPL_SHOWRESULT_BIT_2:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_3>Heimmannschaft</LANG_WM2018_TPL_SHOWRESULT_BIT_3:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_4>Ausw&auml;rtsmannschaft</LANG_WM2018_TPL_SHOWRESULT_BIT_4:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_5>Ergebnis</LANG_WM2018_TPL_SHOWRESULT_BIT_5:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_6>Details</LANG_WM2018_TPL_SHOWRESULT_BIT_6:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_7>Tipps</LANG_WM2018_TPL_SHOWRESULT_BIT_7:text>
-<text:LANG_WM2018_TPL_SHOWRESULT_BIT_BIT_1>Uhr</LANG_WM2018_TPL_SHOWRESULT_BIT_BIT_1:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_1>WM2018-Tippspiel | Tipps von</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_1:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_10>Elfmeter</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_10:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_11>Ergebnis</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_11:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_12>Weltmeister-Tipp:</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_12:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_13>Vizeweltmeister-Tipp:</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_13:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_2:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_3>Tipps von</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_3:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_4>Spiel-Nr.</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_4:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_5>Datum</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_5:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_6>Heimmannschaft</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_6:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_7>Ausw&auml;rtsmannschaft</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_7:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_8>Gelbe Karten</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_8:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_9>Rote Karten</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_9:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14>Diesen Tipp editieren</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_14:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15>Verrate ich nicht/LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_15:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_16>Noch nicht getippt/LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_16:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_BIT_1>Uhr</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_BIT_1:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_BIT_2>Link zum Spiel</LANG_WM2018_TPL_SHOWUSERTIPPSDETAIL_BIT_2:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_1>WM2018-Tippspiel | Usertipps-&Uuml;bersicht</LANG_WM2018_TPL_SHOWUSERTIPPS_1:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_2>WM2018-Tippspiel</LANG_WM2018_TPL_SHOWUSERTIPPS_2:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_3>Usertipps-&Uuml;bersicht</LANG_WM2018_TPL_SHOWUSERTIPPS_3:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_4>Username</LANG_WM2018_TPL_SHOWUSERTIPPS_4:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_5>Abgegebene Tipps</LANG_WM2018_TPL_SHOWUSERTIPPS_5:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_6>Richtige Tipps</LANG_WM2018_TPL_SHOWUSERTIPPS_6:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_7>Falsche Tipps</LANG_WM2018_TPL_SHOWUSERTIPPS_7:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_8>Tendenz richtig</LANG_WM2018_TPL_SHOWUSERTIPPS_8:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_9>Weltmeister-Tipp</LANG_WM2018_TPL_SHOWUSERTIPPS_9:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_10>Vize-Weltmeister-Tipp</LANG_WM2018_TPL_SHOWUSERTIPPS_10:text>
-<text:LANG_WM2018_TPL_SHOWUSERTIPPS_11>Punkte</LANG_WM2018_TPL_SHOWUSERTIPPS_11:text>
-<text:LANG_WM2018_TPL_TIPOK_1>Erfolgreiche Tipabgabe</LANG_WM2018_TPL_TIPOK_1:text>
-<text:LANG_WM2018_TPL_TIPOK_2>Dein Tip wurde erfolgreich angenommen.</LANG_WM2018_TPL_TIPOK_2:text>
-<text:LANG_WM2018_TPL_TIPOK_3>Klicke hier, um zum Tipspiel zur&uuml;ckzukehren.</LANG_WM2018_TPL_TIPOK_3:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_1>WM2018-Tippspiel-Tippabgabe</LANG_WM2018_TPL_TIPPABGABE_1:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_TIPPABGABE_2:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_3>Tippabgabe</LANG_WM2018_TPL_TIPPABGABE_3:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_4>Tippabgabe</LANG_WM2018_TPL_TIPPABGABE_4:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_5>Hier kannst Du nun Deinen Tipp f&uuml;r das Spiel<br /><b>$name1</b> gegen <b>$name2</b> am <b>$date</b> um <b>$time</b> Uhr in <b>$result_game[stadion]</b><br />abgeben.</LANG_WM2018_TPL_TIPPABGABE_5:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_ELFER_1>Elfmeter</LANG_WM2018_TPL_TIPPABGABE_ELFER_1:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_ELFER_2>Wird es Elfmeter im Spiel geben?</LANG_WM2018_TPL_TIPPABGABE_ELFER_2:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_GK_1>Gelbe Karten</LANG_WM2018_TPL_TIPPABGABE_GK_1:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_GK_2>Wird es gelbe Karten im Spiel geben?</LANG_WM2018_TPL_TIPPABGABE_GK_2:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_RK_1>Rote Karten</LANG_WM2018_TPL_TIPPABGABE_RK_1:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_RK_2>Wird es gelb-rote / rote Karten im Spiel geben?</LANG_WM2018_TPL_TIPPABGABE_RK_2:text>
-<text:LANG_WM2018_TPL_tippabgabe_vwm_1>Vize-Weltmeister</LANG_WM2018_TPL_tippabgabe_vwm_1:text>
-<text:LANG_WM2018_TPL_tippabgabe_vwm_2>(optionaler Tipp, tippbar bis $lastgamedate, $lastgametime Uhr)</LANG_WM2018_TPL_tippabgabe_vwm_2:text>
-<text:LANG_WM2018_TPL_tippabgabe_vwm_3>Welche Mannschaft wird Vize-Weltmeister 2018?</LANG_WM2018_TPL_tippabgabe_vwm_3:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_WM_1>Weltmeister</LANG_WM2018_TPL_TIPPABGABE_WM_1:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_WM_2>(optionaler Tipp, tippbar bis $lastgamedate, $lastgametime Uhr)</LANG_WM2018_TPL_TIPPABGABE_WM_2:text>
-<text:LANG_WM2018_TPL_TIPPABGABE_WM_3>Welche Mannschaft wird Weltmeister 2018?</LANG_WM2018_TPL_TIPPABGABE_WM_3:text>
-<text:LANG_WM2018_TPL_TIPPEDIT_1>Tipp editieren</LANG_WM2018_TPL_TIPPEDIT_1:text>
-<text:LANG_WM2018_TPL_TIPPEDIT_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_TIPPEDIT_2:text>
-<text:LANG_WM2018_TPL_TIPPEDIT_3>Tipp editieren</LANG_WM2018_TPL_TIPPEDIT_3:text>
-<text:LANG_WM2018_TPL_TIPPEDIT_4>Tipp editieren</LANG_WM2018_TPL_TIPPEDIT_4:text>
-<text:LANG_WM2018_TPL_TIPPEDIT_5>Hier kannst Du Deinen Tipp f&uuml;r das Spiel</LANG_WM2018_TPL_TIPPEDIT_5:text>
-<text:LANG_WM2018_TPL_TIPPEDIT_6>gegen</LANG_WM2018_TPL_TIPPEDIT_6:text>
-<text:LANG_WM2018_TPL_TIPPEDIT_7>editieren.</LANG_WM2018_TPL_TIPPEDIT_7:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_1>WM2018-Tippspiel | Tipps pro Spiel</LANG_WM2018_TPL_TIPPSPROGAME_1:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_2>WM2018-Tippspiel-Startseite</LANG_WM2018_TPL_TIPPSPROGAME_2:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_3>Tipps pro Spiel</LANG_WM2018_TPL_TIPPSPROGAME_3:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_4>Username</LANG_WM2018_TPL_TIPPSPROGAME_4:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_5>Getipptes Ergebnis</LANG_WM2018_TPL_TIPPSPROGAME_5:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_6>Tipp Gelbe Karten</LANG_WM2018_TPL_TIPPSPROGAME_6:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_7>Tipp Rote Karten</LANG_WM2018_TPL_TIPPSPROGAME_7:text>
-<text:LANG_WM2018_TPL_TIPPSPROGAME_8>Tipp Elfmeter</LANG_WM2018_TPL_TIPPSPROGAME_8:text>
-<text:LANG_WM2018_TPL_TOPUSER_1>Punkte</LANG_WM2018_TPL_TOPUSER_1:text>
-<text:LANG_WM2018_TPL_TOPUSER_2>Tipps</LANG_WM2018_TPL_TOPUSER_2:text>
-<text:LANG_WM2018_TPL_INDEX_40>Weltmeister Quote</LANG_WM2018_TPL_INDEX_40:text>
-<text:LANG_WM2018_TPL_INDEX_41><b>Land</b></LANG_WM2018_TPL_INDEX_41:text>
-<text:LANG_WM2018_TPL_INDEX_42><b>Flagge</b></LANG_WM2018_TPL_INDEX_42:text>
-<text:LANG_WM2018_TPL_INDEX_43><b>Tipps</b></LANG_WM2018_TPL_INDEX_43:text>
-<text:LANG_WM2018_TPL_INDEX_44><b>Quote</b></LANG_WM2018_TPL_INDEX_44:text>
-<text:LANG_WM2018_TPL_WMTIPPONLY_1>Weltmeister / Vizeweltmeister tippen</LANG_WM2018_TPL_WMTIPPONLY_1:text>
-<text:LANG_WM2018_TPL_WMTIPPONLY_2>Hier kannst Du den Weltmeister / Vizeweltmeister tippen.</LANG_WM2018_TPL_WMTIPPONLY_2:text>
-<text:LANG_WM2018_TPL_WMTIPPONLY_3>Vize-/Weltmeister tippen</LANG_WM2018_TPL_WMTIPPONLY_3:text>
-<text:LANG_WM2018_TPL_WMTIPPONLY_4><span class="smallfont"><b><h2>Wichtig!</h2><br />Es z&auml;hlen immer alle Tore, auch die in der Verl&auml;ngerung und im Elfmeterschie&szlig;en!</b></span></LANG_WM2018_TPL_WMTIPPONLY_4:text>
+<text:LANG_EM2020_GLOBAL_CHOICE>- Bitte w&auml;hlen -</LANG_EM2020_GLOBAL_CHOICE:text>
+<text:LANG_EM2020_GLOBAL_NO>Nein</LANG_EM2020_GLOBAL_NO:text>
+<text:LANG_EM2020_GLOBAL_RESET>Reset</LANG_EM2020_GLOBAL_RESET:text>
+<text:LANG_EM2020_GLOBAL_SAVE>Speichern</LANG_EM2020_GLOBAL_SAVE:text>
+<text:LANG_EM2020_GLOBAL_YES>Ja</LANG_EM2020_GLOBAL_YES:text>
+<text:LANG_EM2020_PHP_1>Das EM2020-Tippspiel ist momentan deaktiviert oder f&uuml;r Deine Nutzergruppe nicht verf&uuml;gbar.<br />Du wirst jetzt ins Board weitergeleitet.<br /><br /></LANG_EM2020_PHP_1:text>
+<text:LANG_EM2020_PHP_10>Finale</LANG_EM2020_PHP_10:text>
+<text:LANG_EM2020_PHP_11>Sieger</LANG_EM2020_PHP_11:text>
+<text:LANG_EM2020_PHP_12>Zweiter</LANG_EM2020_PHP_12:text>
+<text:LANG_EM2020_PHP_13>Verlierer</LANG_EM2020_PHP_13:text>
+<text:LANG_EM2020_PHP_14>Details zum Spiel</LANG_EM2020_PHP_14:text>
+<text:LANG_EM2020_PHP_15>Deine Benutzergruppe ist leider nicht f&uuml;r das Abgeben eines Tipps zugelassen.<br />Du wirst jetzt ins Board weitergeleitet.<br /><br /></LANG_EM2020_PHP_15:text>
+<text:LANG_EM2020_PHP_16>die n&auml;chsten 10 Spiele</LANG_EM2020_PHP_16:text>
+<text:LANG_EM2020_PHP_17>alle Spiele</LANG_EM2020_PHP_17:text>
+<text:LANG_EM2020_PHP_18>Vorrunde</LANG_EM2020_PHP_18:text>
+<text:LANG_EM2020_PHP_2><b>keine</b></LANG_EM2020_PHP_2:text>
+<text:LANG_EM2020_PHP_20>Du hast leider zu lange gewartet mit Deinem Tipp.<br />Die Abgabezeit f&uuml;r diesen Tipp ist vorbei.<br />Du wirst jetzt auf die Tipp&uuml;bersicht weitergeleitet.<br /><br /></LANG_EM2020_PHP_20:text>
+<text:LANG_EM2020_PHP_21>Tippabgabe EM2020-Tippspiel (Spiel </LANG_EM2020_PHP_21:text>
+<text:LANG_EM2020_PHP_22>minus</LANG_EM2020_PHP_22:text>
+<text:LANG_EM2020_PHP_23><font size=\"2\" color=\"FF0000\"><b>Bitte alle Felder ausf&uuml;llen!</b></font></LANG_EM2020_PHP_23:text>
+<text:LANG_EM2020_PHP_24>Du hast leider nicht genug Guthaben, um einen Tipp abgeben zu k&ouml;nnen.<br />Du wirst jetzt auf die Tipp&uuml;bersicht weitergeleitet.<br /><br /></LANG_EM2020_PHP_24:text>
+<text:LANG_EM2020_PHP_25>Tippabgabe EM2020-Tippspiel (Weltmeistertipp)</LANG_EM2020_PHP_25:text>
+<text:LANG_EM2020_PHP_26>Tippabgabe EM2020-Tippspiel (Vize-Weltmeistertipp)</LANG_EM2020_PHP_26:text>
+<text:LANG_EM2020_PHP_27>Noch keinen Weltmeistertipp abgegeben</LANG_EM2020_PHP_27:text>
+<text:LANG_EM2020_PHP_28>Noch keinen Vize-Weltmeistertipp abgegeben</LANG_EM2020_PHP_28:text>
+<text:LANG_EM2020_PHP_29>wird es geben</LANG_EM2020_PHP_29:text>
+<text:LANG_EM2020_PHP_3>Gruppenspiele der Gruppe </LANG_EM2020_PHP_3:text>
+<text:LANG_EM2020_PHP_30>wird es nicht geben</LANG_EM2020_PHP_30:text>
+<text:LANG_EM2020_PHP_31>Tipp war richtig</LANG_EM2020_PHP_31:text>
+<text:LANG_EM2020_PHP_32>Tipp war nicht richtig</LANG_EM2020_PHP_32:text>
+<text:LANG_EM2020_PHP_33>Tendenz war richtig</LANG_EM2020_PHP_33:text>
+<text:LANG_EM2020_PHP_34>Es gab gelbe Karten im Spiel</LANG_EM2020_PHP_34:text>
+<text:LANG_EM2020_PHP_35>Es gab keine gelben Karten im Spiel.</LANG_EM2020_PHP_35:text>
+<text:LANG_EM2020_PHP_36>Es gab gelb-rote/rote Karten im Spiel.</LANG_EM2020_PHP_36:text>
+<text:LANG_EM2020_PHP_37>Es gab keine gelb-roten/roten Karten im Spiel.</LANG_EM2020_PHP_37:text>
+<text:LANG_EM2020_PHP_38>Es gab Elfmeter im Spiel</LANG_EM2020_PHP_38:text>
+<text:LANG_EM2020_PHP_39>Es gab keine Elfmeter im Spiel</LANG_EM2020_PHP_39:text>
+<text:LANG_EM2020_PHP_4>Achtelfinale</LANG_EM2020_PHP_4:text>
+<text:LANG_EM2020_PHP_40>Externer Link zum Spiel</LANG_EM2020_PHP_40:text>
+<text:LANG_EM2020_PHP_41>In Spielen, die nach dem K.O.-System gewertet werden, kann es kein Unentschieden geben...</LANG_EM2020_PHP_41:text>
+<text:LANG_EM2020_PHP_42>Alle Tipps zum Spiel</LANG_EM2020_PHP_42:text>
+<text:LANG_EM2020_PHP_43>Du hast f&uuml;r dieses Spiel schon einen Tipp abgegeben.<br />Du wirst jetzt auf die Tippabgabe-Seite weitergeleitet.</LANG_EM2020_PHP_43:text>
+<text:LANG_EM2020_PHP_44>Du hast f&uuml;r das Editieren des Tipps zu lange gebraucht.<br />Die Abgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du wirst jetzt auf die Tippspiel-Startseite weitergeleitet.</LANG_EM2020_PHP_44:text>
+<text:LANG_EM2020_PHP_45>Dein Tipp wurde erfolgreich ge&auml;ndert !<br />Du wirst jetzt auf die Tipp&uuml;bersicht weitergeleitet.</LANG_EM2020_PHP_45:text>
+<text:LANG_EM2020_PHP_46>Du hast einen Fehler bei der Eingabe gemacht !<br />Du wirst jetzt erneut auf die Editierseite des Tipps weitergeleitet.</LANG_EM2020_PHP_46:text>
+<text:LANG_EM2020_PHP_47>Du kannst nicht Tipps von anderen Usern editieren !<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_47:text>
+<text:LANG_EM2020_PHP_48>Du hast f&uuml;r dieses Spiel noch keinen Tipp abgegeben !<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_48:text>
+<text:LANG_EM2020_PHP_49>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_49:text>
+<text:LANG_EM2020_PHP_5>Gruppe</LANG_EM2020_PHP_5:text>
+<text:LANG_EM2020_PHP_50>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_50:text>
+<text:LANG_EM2020_PHP_51>Du hast keine Mannschaft ausgew&auml;hlt.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_51:text>
+<text:LANG_EM2020_PHP_52>Dein Weltmeister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_52:text>
+<text:LANG_EM2020_PHP_53>Du kannst nur eigene Tipps editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_53:text>
+<text:LANG_EM2020_PHP_54>Du hast noch keinen Weltmeister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_54:text>
+<text:LANG_EM2020_PHP_55>Die Mindestabgabezeit f&uuml;r diesen Tipp ist schon erreicht.<br />Du kannst diesen Tipp nicht mehr editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_55:text>
+<text:LANG_EM2020_PHP_56>Du hast keine Mannschaft ausgew&auml;hlt.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_56:text>
+<text:LANG_EM2020_PHP_57>Dein Vize-Weltmeister-Tipp wurde erfolgreich ge&auml;ndert.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_57:text>
+<text:LANG_EM2020_PHP_58>Du kannst nur eigene Tipps editieren.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_58:text>
+<text:LANG_EM2020_PHP_59>Du hast noch keinen Vize-Weltmeister-Tipp abgegeben, den Du editieren k&ouml;nntest.<br />Du wirst jetzt auf die EM2020-Startseite weitergeleitet.</LANG_EM2020_PHP_59:text>
+<text:LANG_EM2020_PHP_60>Du kannst Dir nur Spieltipps ansehen von Spielen, die schon vorbei sind.</LANG_EM2020_PHP_60:text>
+<text:LANG_EM2020_PHP_61>Der Nutzer existiert nicht.</LANG_EM2020_PHP_61:text>
+<text:LANG_EM2020_PHP_62>Die Ergenbnisse erscheinen, wenn das Spiel eingetragen wurde.</LANG_EM2020_PHP_62:text>
+<text:LANG_EM2020_PHP_6>Viertelfinale</LANG_EM2020_PHP_6:text>
+<text:LANG_EM2020_PHP_7>Spiel</LANG_EM2020_PHP_7:text>
+<text:LANG_EM2020_PHP_8>Halbfinale</LANG_EM2020_PHP_8:text>
+<text:LANG_EM2020_PHP_9>Spiel um Platz 3</LANG_EM2020_PHP_9:text>
+<text:LANG_EM2020_TPL_EBAY_1>Ebay-Angebote zur EM2020</LANG_EM2020_TPL_EBAY_1:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_1>Vize-Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_1:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_2>Vize-Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_2:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_3>Vize-Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITVWMTIPP_3:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Vize-Weltmeister-Tipp editieren.</LANG_EM2020_TPL_EDITVWMTIPP_4:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_5>Dein bisheriger Tipp:</LANG_EM2020_TPL_EDITVWMTIPP_5:text>
+<text:LANG_EM2020_TPL_EDITVWMTIPP_6>Dein neuer Tipp:</LANG_EM2020_TPL_EDITVWMTIPP_6:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_1>Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_1:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_2>Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_2:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_3>Weltmeister-Tipp editieren</LANG_EM2020_TPL_EDITWMTIPP_3:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_4>Hier kannst Du Deinen bisher abgegebenen Weltmeister-Tipp editieren.</LANG_EM2020_TPL_EDITWMTIPP_4:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_5>Dein bisheriger Tipp:</LANG_EM2020_TPL_EDITWMTIPP_5:text>
+<text:LANG_EM2020_TPL_EDITWMTIPP_6>Dein neuer Tipp:</LANG_EM2020_TPL_EDITWMTIPP_6:text>
+<text:LANG_EM2020_TPL_FOOTER_1>EM2020-Tippspiel &copy; 2018 kill0rz</LANG_EM2020_TPL_FOOTER_1:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_1>EM2020-Tippspiel | Spiel-Details</LANG_EM2020_TPL_GAMEDETAILS_1:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_10>Ergebnis</LANG_EM2020_TPL_GAMEDETAILS_10:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_11>Karten und Elfmeter</LANG_EM2020_TPL_GAMEDETAILS_11:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_12>Link zum Spiel</LANG_EM2020_TPL_GAMEDETAILS_12:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_13>Kommentar zum Spiel</LANG_EM2020_TPL_GAMEDETAILS_13:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_GAMEDETAILS_2:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_3>Spiel-Details</LANG_EM2020_TPL_GAMEDETAILS_3:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_4>Spiel-Infos</LANG_EM2020_TPL_GAMEDETAILS_4:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_5>Spiel-Nr.</LANG_EM2020_TPL_GAMEDETAILS_5:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_6>Datum</LANG_EM2020_TPL_GAMEDETAILS_6:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_7>Uhr</LANG_EM2020_TPL_GAMEDETAILS_7:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_8>Spielart</LANG_EM2020_TPL_GAMEDETAILS_8:text>
+<text:LANG_EM2020_TPL_GAMEDETAILS_9>Ort</LANG_EM2020_TPL_GAMEDETAILS_9:text>
+<text:LANG_EM2020_TPL_HEADER_1>Startseite</LANG_EM2020_TPL_HEADER_1:text>
+<text:LANG_EM2020_TPL_HEADER_2>Tipp abgeben</LANG_EM2020_TPL_HEADER_2:text>
+<text:LANG_EM2020_TPL_HEADER_3>Ergebnisse</LANG_EM2020_TPL_HEADER_3:text>
+<text:LANG_EM2020_TPL_HEADER_4>User-Tipps</LANG_EM2020_TPL_HEADER_4:text>
+<text:LANG_EM2020_TPL_HEADER_5>Fragen&amp;Talk zum Spiel</LANG_EM2020_TPL_HEADER_5:text>
+<text:LANG_EM2020_TPL_HEADER_6>Meine Tipps</LANG_EM2020_TPL_HEADER_6:text>
+<text:LANG_EM2020_TPL_INDEX_1>EM2020-Tippspiel Startseite</LANG_EM2020_TPL_INDEX_1:text>
+<text:LANG_EM2020_TPL_INDEX_10>Spiele</LANG_EM2020_TPL_INDEX_10:text>
+<text:LANG_EM2020_TPL_INDEX_11>Sp.</LANG_EM2020_TPL_INDEX_11:text>
+<text:LANG_EM2020_TPL_INDEX_12>gewonnen</LANG_EM2020_TPL_INDEX_12:text>
+<text:LANG_EM2020_TPL_INDEX_13>g.</LANG_EM2020_TPL_INDEX_13:text>
+<text:LANG_EM2020_TPL_INDEX_14>unentschieden</LANG_EM2020_TPL_INDEX_14:text>
+<text:LANG_EM2020_TPL_INDEX_15>u.</LANG_EM2020_TPL_INDEX_15:text>
+<text:LANG_EM2020_TPL_INDEX_16>verloren</LANG_EM2020_TPL_INDEX_16:text>
+<text:LANG_EM2020_TPL_INDEX_17>v.</LANG_EM2020_TPL_INDEX_17:text>
+<text:LANG_EM2020_TPL_INDEX_18>Tordifferenz</LANG_EM2020_TPL_INDEX_18:text>
+<text:LANG_EM2020_TPL_INDEX_19>Td.</LANG_EM2020_TPL_INDEX_19:text>
+<text:LANG_EM2020_TPL_INDEX_2>Pers&ouml;nliche Infos</LANG_EM2020_TPL_INDEX_2:text>
+<text:LANG_EM2020_TPL_INDEX_20>Punkte</LANG_EM2020_TPL_INDEX_20:text>
+<text:LANG_EM2020_TPL_INDEX_21>Pkt</LANG_EM2020_TPL_INDEX_21:text>
+<text:LANG_EM2020_TPL_INDEX_22>Ergebnis der EM2020</LANG_EM2020_TPL_INDEX_22:text>
+<text:LANG_EM2020_TPL_INDEX_23>EM-Trophy</LANG_EM2020_TPL_INDEX_23:text>
+<text:LANG_EM2020_TPL_INDEX_24>Vize-Weltmeister</LANG_EM2020_TPL_INDEX_24:text>
+<text:LANG_EM2020_TPL_INDEX_25>Punkteverteilung</LANG_EM2020_TPL_INDEX_25:text>
+<text:LANG_EM2020_TPL_INDEX_26>M&ouml;gliche Gewinne und Verluste</LANG_EM2020_TPL_INDEX_26:text>
+<text:LANG_EM2020_TPL_INDEX_27>Kosten f&uuml;r einen normalen Tipp</LANG_EM2020_TPL_INDEX_27:text>
+<text:LANG_EM2020_TPL_INDEX_28>Kosten f&uuml;r einen EM-Tipp</LANG_EM2020_TPL_INDEX_28:text>
+<text:LANG_EM2020_TPL_INDEX_29>Gewinn f&uuml;r einen exakten Tipp</LANG_EM2020_TPL_INDEX_29:text>
+<text:LANG_EM2020_TPL_INDEX_3>Hallo</LANG_EM2020_TPL_INDEX_3:text>
+<text:LANG_EM2020_TPL_INDEX_30>Gewinn f&uuml;r einen Tipp mit richtiger Tendenz</LANG_EM2020_TPL_INDEX_30:text>
+<text:LANG_EM2020_TPL_INDEX_31>Gewinn f&uuml;r einen richtigen Weltmeister/Vizeweltmeister-Tipp</LANG_EM2020_TPL_INDEX_31:text>
+<text:LANG_EM2020_TPL_INDEX_32>Top $em2020_options[topuser] -User</LANG_EM2020_TPL_INDEX_32:text>
+<text:LANG_EM2020_TPL_INDEX_33>Hallo <b>Gast</b></LANG_EM2020_TPL_INDEX_33:text>
+<text:LANG_EM2020_TPL_INDEX_34>Noch nicht eingetragene Spiele</LANG_EM2020_TPL_INDEX_34:text>
+<text:LANG_EM2020_TPL_INDEX_35>Es spielt gerade:</LANG_EM2020_TPL_INDEX_35:text>
+<text:LANG_EM2020_TPL_INDEX_36>Neueste News der UEFA</LANG_EM2020_TPL_INDEX_36:text>
+<text:LANG_EM2020_TPL_INDEX_37>In den folgenden 24h finden diese Spiele statt, f&uuml;r die du noch keine Tipps abgegeben hast:</LANG_EM2020_TPL_INDEX_37:text>
+<text:LANG_EM2020_TPL_INDEX_38>Die letzten $em2020_showtableonindex_maxdonegames Spiele der WM 2018:</LANG_EM2020_TPL_INDEX_38:text>
+<text:LANG_EM2020_TPL_INDEX_4>Du hast bis jetzt $tippsgesamt Tipps abgegeben.</LANG_EM2020_TPL_INDEX_4:text>
+<text:LANG_EM2020_TPL_INDEX_5>Dein verf&uuml;gbares Tippguthaben betr&auml;gt noch</LANG_EM2020_TPL_INDEX_5:text>
+<text:LANG_EM2020_TPL_INDEX_6>Du musst registriert sein, um selber Tipps abgeben zu k&ouml;nnen.<br />Als unregistrierter User kannst Du Dir aber alles ansehen.</LANG_EM2020_TPL_INDEX_6:text>
+<text:LANG_EM2020_TPL_INDEX_7>Neueste News der FIFA</LANG_EM2020_TPL_INDEX_7:text>
+<text:LANG_EM2020_TPL_INDEX_8>Die n&auml;chsten $em2020_options[nextxgames] Spiele</LANG_EM2020_TPL_INDEX_8:text>
+<text:LANG_EM2020_TPL_INDEX_9>Gruppe</LANG_EM2020_TPL_INDEX_9:text>
+<text:LANG_EM2020_TPL_MAKETIPP_1>EM2020-Tippspiel-Tippabgabe</LANG_EM2020_TPL_MAKETIPP_1:text>
+<text:LANG_EM2020_TPL_MAKETIPP_10>alle m&ouml;glichen Spiele</LANG_EM2020_TPL_MAKETIPP_10:text>
+<text:LANG_EM2020_TPL_MAKETIPP_11>Spielart</LANG_EM2020_TPL_MAKETIPP_11:text>
+<text:LANG_EM2020_TPL_MAKETIPP_12>Anpfiff</LANG_EM2020_TPL_MAKETIPP_12:text>
+<text:LANG_EM2020_TPL_MAKETIPP_13>tippbar bis</LANG_EM2020_TPL_MAKETIPP_13:text>
+<text:LANG_EM2020_TPL_MAKETIPP_14>Heimmannschaft</LANG_EM2020_TPL_MAKETIPP_14:text>
+<text:LANG_EM2020_TPL_MAKETIPP_15>Ausw&auml;rtsmannschaft</LANG_EM2020_TPL_MAKETIPP_15:text>
+<text:LANG_EM2020_TPL_MAKETIPP_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_MAKETIPP_2:text>
+<text:LANG_EM2020_TPL_MAKETIPP_3>Tippabgabe</LANG_EM2020_TPL_MAKETIPP_3:text>
+<text:LANG_EM2020_TPL_MAKETIPP_4>Tippabgabe</LANG_EM2020_TPL_MAKETIPP_4:text>
+<text:LANG_EM2020_TPL_MAKETIPP_5>Hier kannst Du nun Deine Tipps abgeben.<br />Es sind $gamesart aufgelistet, die<br />- spielbar sind<br />- fr&uuml;hestens in $templatetime Minuten anfangen<br />- von Dir noch nicht getippt wurden<br /><br /><b>Achtung:</b><br />Warte mit dem Abgeben Deiner Tipps nicht zu lange, es erfolgt eine erneute &Uuml;berpr&uuml;fung der Tippabgabezeit beim Speichern !<br />Ein einmal abgegebener Tipp kann bis zum Einsendeschluss ge&auml;ndert werden!</LANG_EM2020_TPL_MAKETIPP_5:text>
+<text:LANG_EM2020_TPL_MAKETIPP_6>F&uuml;r die Berechnung der Tippabgabezeiten wird die Serverzeit verwendet.<br />Es kann also durchaus vorkommen, dass die Serverzeit von Deiner Rechnerzeit abweicht.</LANG_EM2020_TPL_MAKETIPP_6:text>
+<text:LANG_EM2020_TPL_MAKETIPP_7>Zur Kontrolle:<br /><br />Serverdatum: $serverdate<br />Serverzeit: <span style="font-size: 16px;"><script language="Javascript" type="text/javascript">writeclock();</script></span></b> Uhr</LANG_EM2020_TPL_MAKETIPP_7:text>
+<text:LANG_EM2020_TPL_MAKETIPP_8>Zeige:</LANG_EM2020_TPL_MAKETIPP_8:text>
+<text:LANG_EM2020_TPL_MAKETIPP_9>die n&auml;chsten 10 m&ouml;glichen Spiele</LANG_EM2020_TPL_MAKETIPP_9:text>
+<text:LANG_EM2020_TPL_MAKETIPP_BIT_1>Uhr</LANG_EM2020_TPL_MAKETIPP_BIT_1:text>
+<text:LANG_EM2020_TPL_MAKETIPP_BIT_2>tippen</LANG_EM2020_TPL_MAKETIPP_BIT_2:text>
+<text:LANG_EM2020_TPL_NEXTGAMES_1>Uhr</LANG_EM2020_TPL_NEXTGAMES_1:text>
+<text:LANG_EM2020_TPL_NEXTGAMES_2>zum Spiel</LANG_EM2020_TPL_NEXTGAMES_2:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_1>EM2020-Tippspiel | Alle Spiele von</LANG_EM2020_TPL_SHOWALLGAMES_1:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_10>Ergebnis</LANG_EM2020_TPL_SHOWALLGAMES_10:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_SHOWALLGAMES_2:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_3>Alle Spiele von</LANG_EM2020_TPL_SHOWALLGAMES_3:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_4>Spiel-Nr.</LANG_EM2020_TPL_SHOWALLGAMES_4:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_5>Spiel-Art</LANG_EM2020_TPL_SHOWALLGAMES_5:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_6>Datum</LANG_EM2020_TPL_SHOWALLGAMES_6:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_7>Ort</LANG_EM2020_TPL_SHOWALLGAMES_7:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_8>Heimmannschaft</LANG_EM2020_TPL_SHOWALLGAMES_8:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_9>Ausw&auml;rtsmannschaft</LANG_EM2020_TPL_SHOWALLGAMES_9:text>
+<text:LANG_EM2020_TPL_SHOWALLGAMES_BIT_1>Uhr</LANG_EM2020_TPL_SHOWALLGAMES_BIT_1:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_1>EM2020-Tippspiel-Ergebnisse</LANG_EM2020_TPL_SHOWRESULTS_1:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_SHOWRESULTS_2:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_3>Ergebnisse</LANG_EM2020_TPL_SHOWRESULTS_3:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_4>Vorrunde</LANG_EM2020_TPL_SHOWRESULTS_4:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_5>Achtelfinale</LANG_EM2020_TPL_SHOWRESULTS_5:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_6>Viertelfinale</LANG_EM2020_TPL_SHOWRESULTS_6:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_7>Halbfinale</LANG_EM2020_TPL_SHOWRESULTS_7:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_8>Platz 3</LANG_EM2020_TPL_SHOWRESULTS_8:text>
+<text:LANG_EM2020_TPL_SHOWRESULTS_9>Finale</LANG_EM2020_TPL_SHOWRESULTS_9:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_1>Datum</LANG_EM2020_TPL_SHOWRESULT_BIT_1:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_2>Stadion</LANG_EM2020_TPL_SHOWRESULT_BIT_2:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_3>Heimmannschaft</LANG_EM2020_TPL_SHOWRESULT_BIT_3:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_4>Ausw&auml;rtsmannschaft</LANG_EM2020_TPL_SHOWRESULT_BIT_4:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_5>Ergebnis</LANG_EM2020_TPL_SHOWRESULT_BIT_5:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_6>Details</LANG_EM2020_TPL_SHOWRESULT_BIT_6:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_7>Tipps</LANG_EM2020_TPL_SHOWRESULT_BIT_7:text>
+<text:LANG_EM2020_TPL_SHOWRESULT_BIT_BIT_1>Uhr</LANG_EM2020_TPL_SHOWRESULT_BIT_BIT_1:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_1>EM2020-Tippspiel | Tipps von</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_1:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_10>Elfmeter</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_10:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_11>Ergebnis</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_11:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12>Weltmeister-Tipp:</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_12:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_13>Vizeweltmeister-Tipp:</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_13:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_2:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_3>Tipps von</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_3:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_4>Spiel-Nr.</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_4:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_5>Datum</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_5:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_6>Heimmannschaft</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_6:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_7>Ausw&auml;rtsmannschaft</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_7:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_8>Gelbe Karten</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_8:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_9>Rote Karten</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_9:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14>Diesen Tipp editieren</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_14:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15>Verrate ich nicht/LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_15:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16>Noch nicht getippt/LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_16:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_BIT_1>Uhr</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_BIT_1:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_BIT_2>Link zum Spiel</LANG_EM2020_TPL_SHOWUSERTIPPSDETAIL_BIT_2:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_1>EM2020-Tippspiel | Usertipps-&Uuml;bersicht</LANG_EM2020_TPL_SHOWUSERTIPPS_1:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_2>EM2020-Tippspiel</LANG_EM2020_TPL_SHOWUSERTIPPS_2:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_3>Usertipps-&Uuml;bersicht</LANG_EM2020_TPL_SHOWUSERTIPPS_3:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_4>Username</LANG_EM2020_TPL_SHOWUSERTIPPS_4:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_5>Abgegebene Tipps</LANG_EM2020_TPL_SHOWUSERTIPPS_5:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_6>Richtige Tipps</LANG_EM2020_TPL_SHOWUSERTIPPS_6:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_7>Falsche Tipps</LANG_EM2020_TPL_SHOWUSERTIPPS_7:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_8>Tendenz richtig</LANG_EM2020_TPL_SHOWUSERTIPPS_8:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_9>Weltmeister-Tipp</LANG_EM2020_TPL_SHOWUSERTIPPS_9:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_10>Vize-Weltmeister-Tipp</LANG_EM2020_TPL_SHOWUSERTIPPS_10:text>
+<text:LANG_EM2020_TPL_SHOWUSERTIPPS_11>Punkte</LANG_EM2020_TPL_SHOWUSERTIPPS_11:text>
+<text:LANG_EM2020_TPL_TIPOK_1>Erfolgreiche Tipabgabe</LANG_EM2020_TPL_TIPOK_1:text>
+<text:LANG_EM2020_TPL_TIPOK_2>Dein Tip wurde erfolgreich angenommen.</LANG_EM2020_TPL_TIPOK_2:text>
+<text:LANG_EM2020_TPL_TIPOK_3>Klicke hier, um zum Tipspiel zur&uuml;ckzukehren.</LANG_EM2020_TPL_TIPOK_3:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_1>EM2020-Tippspiel-Tippabgabe</LANG_EM2020_TPL_TIPPABGABE_1:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_TIPPABGABE_2:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_3>Tippabgabe</LANG_EM2020_TPL_TIPPABGABE_3:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_4>Tippabgabe</LANG_EM2020_TPL_TIPPABGABE_4:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_5>Hier kannst Du nun Deinen Tipp f&uuml;r das Spiel<br /><b>$name1</b> gegen <b>$name2</b> am <b>$date</b> um <b>$time</b> Uhr in <b>$result_game[stadion]</b><br />abgeben.</LANG_EM2020_TPL_TIPPABGABE_5:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_ELFER_1>Elfmeter</LANG_EM2020_TPL_TIPPABGABE_ELFER_1:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_ELFER_2>Wird es Elfmeter im Spiel geben?</LANG_EM2020_TPL_TIPPABGABE_ELFER_2:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_GK_1>Gelbe Karten</LANG_EM2020_TPL_TIPPABGABE_GK_1:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_GK_2>Wird es gelbe Karten im Spiel geben?</LANG_EM2020_TPL_TIPPABGABE_GK_2:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_RK_1>Rote Karten</LANG_EM2020_TPL_TIPPABGABE_RK_1:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_RK_2>Wird es gelb-rote / rote Karten im Spiel geben?</LANG_EM2020_TPL_TIPPABGABE_RK_2:text>
+<text:LANG_EM2020_TPL_tippabgabe_vwm_1>Vize-Weltmeister</LANG_EM2020_TPL_tippabgabe_vwm_1:text>
+<text:LANG_EM2020_TPL_tippabgabe_vwm_2>(optionaler Tipp, tippbar bis $lastgamedate, $lastgametime Uhr)</LANG_EM2020_TPL_tippabgabe_vwm_2:text>
+<text:LANG_EM2020_TPL_tippabgabe_vwm_3>Welche Mannschaft wird Vize-Weltmeister 2018?</LANG_EM2020_TPL_tippabgabe_vwm_3:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_WM_1>Weltmeister</LANG_EM2020_TPL_TIPPABGABE_WM_1:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_WM_2>(optionaler Tipp, tippbar bis $lastgamedate, $lastgametime Uhr)</LANG_EM2020_TPL_TIPPABGABE_WM_2:text>
+<text:LANG_EM2020_TPL_TIPPABGABE_WM_3>Welche Mannschaft wird Weltmeister 2018?</LANG_EM2020_TPL_TIPPABGABE_WM_3:text>
+<text:LANG_EM2020_TPL_TIPPEDIT_1>Tipp editieren</LANG_EM2020_TPL_TIPPEDIT_1:text>
+<text:LANG_EM2020_TPL_TIPPEDIT_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_TIPPEDIT_2:text>
+<text:LANG_EM2020_TPL_TIPPEDIT_3>Tipp editieren</LANG_EM2020_TPL_TIPPEDIT_3:text>
+<text:LANG_EM2020_TPL_TIPPEDIT_4>Tipp editieren</LANG_EM2020_TPL_TIPPEDIT_4:text>
+<text:LANG_EM2020_TPL_TIPPEDIT_5>Hier kannst Du Deinen Tipp f&uuml;r das Spiel</LANG_EM2020_TPL_TIPPEDIT_5:text>
+<text:LANG_EM2020_TPL_TIPPEDIT_6>gegen</LANG_EM2020_TPL_TIPPEDIT_6:text>
+<text:LANG_EM2020_TPL_TIPPEDIT_7>editieren.</LANG_EM2020_TPL_TIPPEDIT_7:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_1>EM2020-Tippspiel | Tipps pro Spiel</LANG_EM2020_TPL_TIPPSPROGAME_1:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_2>EM2020-Tippspiel-Startseite</LANG_EM2020_TPL_TIPPSPROGAME_2:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_3>Tipps pro Spiel</LANG_EM2020_TPL_TIPPSPROGAME_3:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_4>Username</LANG_EM2020_TPL_TIPPSPROGAME_4:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_5>Getipptes Ergebnis</LANG_EM2020_TPL_TIPPSPROGAME_5:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_6>Tipp Gelbe Karten</LANG_EM2020_TPL_TIPPSPROGAME_6:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_7>Tipp Rote Karten</LANG_EM2020_TPL_TIPPSPROGAME_7:text>
+<text:LANG_EM2020_TPL_TIPPSPROGAME_8>Tipp Elfmeter</LANG_EM2020_TPL_TIPPSPROGAME_8:text>
+<text:LANG_EM2020_TPL_TOPUSER_1>Punkte</LANG_EM2020_TPL_TOPUSER_1:text>
+<text:LANG_EM2020_TPL_TOPUSER_2>Tipps</LANG_EM2020_TPL_TOPUSER_2:text>
+<text:LANG_EM2020_TPL_INDEX_40>Weltmeister Quote</LANG_EM2020_TPL_INDEX_40:text>
+<text:LANG_EM2020_TPL_INDEX_41><b>Land</b></LANG_EM2020_TPL_INDEX_41:text>
+<text:LANG_EM2020_TPL_INDEX_42><b>Flagge</b></LANG_EM2020_TPL_INDEX_42:text>
+<text:LANG_EM2020_TPL_INDEX_43><b>Tipps</b></LANG_EM2020_TPL_INDEX_43:text>
+<text:LANG_EM2020_TPL_INDEX_44><b>Quote</b></LANG_EM2020_TPL_INDEX_44:text>
+<text:LANG_EM2020_TPL_WMTIPPONLY_1>Weltmeister / Vizeweltmeister tippen</LANG_EM2020_TPL_WMTIPPONLY_1:text>
+<text:LANG_EM2020_TPL_WMTIPPONLY_2>Hier kannst Du den Weltmeister / Vizeweltmeister tippen.</LANG_EM2020_TPL_WMTIPPONLY_2:text>
+<text:LANG_EM2020_TPL_WMTIPPONLY_3>Vize-/Weltmeister tippen</LANG_EM2020_TPL_WMTIPPONLY_3:text>
+<text:LANG_EM2020_TPL_WMTIPPONLY_4><span class="smallfont"><b><h2>Wichtig!</h2><br />Es z&auml;hlen immer alle Tore, auch die in der Verl&auml;ngerung und im Elfmeterschie&szlig;en!</b></span></LANG_EM2020_TPL_WMTIPPONLY_4:text>
 
 
 [global]
 
-<text:LANG_GLOBAL_WM2018_HEADER>WM2018-Tippspiel</LANG_GLOBAL_WM2018_HEADER:text>
-<text:LANG_GLOBAL_WM2018_HEADER_DESC>Zum WM2018-Tippspiel</LANG_GLOBAL_WM2018_HEADER_DESC:text>
+<text:LANG_GLOBAL_EM2020_HEADER>EM2020-Tippspiel</LANG_GLOBAL_EM2020_HEADER:text>
+<text:LANG_GLOBAL_EM2020_HEADER_DESC>Zum EM2020-Tippspiel</LANG_GLOBAL_EM2020_HEADER_DESC:text>
 
 [wiw]
 
-<text:LANG_WIW_FILE_WM2018><a href="em2020.php$SID_ARG_1ST" target="_blank">WM2018-Tippspiel</a></LANG_WIW_FILE_WM2018:text>
+<text:LANG_WIW_FILE_EM2020><a href="em2020.php$SID_ARG_1ST" target="_blank">EM2020-Tippspiel</a></LANG_WIW_FILE_EM2020:text>
 
 [thread]
 
-<text:LANG_THREAD_WM2018_ANZEIGE_1><br /><b>Teilnehmer des WM-Tippspiels 2018</b><br /><br />Tipps: $em2020_thread_tipps<br />Punkte: $em2020_thread_userpunkte<br />Tippspiel-Ranking: $em2020_userrank</LANG_THREAD_WM2018_ANZEIGE_1:text>
+<text:LANG_THREAD_EM2020_ANZEIGE_1><br /><b>Teilnehmer des WM-Tippspiels 2018</b><br /><br />Tipps: $em2020_thread_tipps<br />Punkte: $em2020_thread_userpunkte<br />Tippspiel-Ranking: $em2020_userrank</LANG_THREAD_EM2020_ANZEIGE_1:text>

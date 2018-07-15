@@ -5,12 +5,12 @@
  *    copyright            : WM2006-Tippspiel © 2006 batida444
  *    copyright            : WM2014-Tippspiel © 2014 Viktor
  *    copyright            : EM2016-Tippspiel © 2016 @ kill0rz
- *    copyright            : WM2018-Tippspiel © 2018 @ kill0rz
+ *    copyright            : EM2020-Tippspiel © 2018 @ kill0rz
  *    web                  : www.v-gn.de
  *    Boardversion         : Burning Board wBB 2.3
  */
 
-$lang->load("WM2018");
+$lang->load("EM2020");
 
 $userwmtipp = 0;
 $uservwmtipp = 0;
