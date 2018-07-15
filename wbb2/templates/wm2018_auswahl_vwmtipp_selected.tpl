@@ -1,0 +1,1 @@
+<option value="$allids2[$j]" selected>$allnames2[$j]</option>

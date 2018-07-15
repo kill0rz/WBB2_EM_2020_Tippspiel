@@ -1,0 +1,32 @@
+Version: v1.2
+
+
+De-Installations-Anleitung für das WM2018-Tippspiel
+***************************************************
+
+Um das WM2018-Tippspiel zu deinstallieren, lade einfach die Datei
+wm2018_uninstall.php
+ins ACP-Verzeichnis und führe sie aus.
+
+Damit werden folgende Dinge des WM-Tippspiels aus deinem Forum gelöscht:
+- Gruppenrechte und Gruppenvariablen
+- ACP-Menueinträge
+- Board-Templates
+- Tabellen in der Datenbank
+- Sprachvariablen
+
+Nach dem Ausführen der wm2018_uninstall.php musst du nun noch folgende Dinge von Hand machen:
+
+- Löschen des Verzeichnisses wm2018/ inklusive aller Dateien und Unterverzeichnisse im /images/-Ordner
+- Löschen aller ACP-Templates aus dem Verzeichnis /acp/templates/, die mit wm2018_ beginnen
+- Löschen der Dateien wm2018.php und wm2018_global.php aus dem Hauptverzeichnis
+- Löschen der Datei wm2018_admin.php aus dem ACP-Verzeichnis /acp/
+- Löschen der Datei wm2018_uninstall.php aus dem ACP-Verzeichnis /acp/
+
+Dann ist das Tippspiel komplett deinstalliert.
+
+Bei Fragen und/oder Problemen (die hoffentlich nicht vorkommen), schreibe bitte in den entsprechenden Support-Thread
+für das Tippspiel.
+
+Greetz
+Günni, Viktor und kill0rz

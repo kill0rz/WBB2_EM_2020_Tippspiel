@@ -1,0 +1,1 @@
+Editiere die Sprachvariable LANG_ACP_WM2018_TPL_INFO_3 im ACP.

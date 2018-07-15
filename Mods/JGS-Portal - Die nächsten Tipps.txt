@@ -1,0 +1,186 @@
+Die Datei "jgs_portal_meincode.php" bearbeiten.
+
+SUCHE
+  ##                                            ##
+ ####                                          ####
+######                                        ######
+  ##                                            ##
+  ################################################
+  ## Bitte zwischen diese Markierungen einfügen ##
+  ##     // Eigene Erweiterungen Ende //        ##
+  ################################################
+
+
+
+Füge darüber ein:
+
+/* WM2018 - Die nächsten Spiele */
+if ($seiteninfos['seiten_text'] == "[wmtippnext5]") {
+	require_once "./wm2018_global.php";
+	$lang->load("WM2018");
+
+	$akttime = time();
+
+	$result_nextgames = $db->query("SELECT * FROM bb" . $n . "_wm2018_spiele WHERE datetime > '" . intval($akttime) . "' ORDER BY datetime ASC Limit 0,{$wm2018_options['nextxgames']}");
+	while ($row_nextgames = $db->fetch_array($result_nextgames)) {
+		$rowclass = getone($count++, "tablea", "tableb");
+		$gamedate = formatdate($wbbuserdata['dateformat'], $row_nextgames['datetime'], 1);
+		$gametime = formatdate($wbbuserdata['timeformat'], $row_nextgames['datetime']);
+
+		$checkgame1 = $row_nextgames['team_1_id']{0};
+		$checkgame2 = $row_nextgames['team_2_id']{0};
+		if ($checkgame1 == "W" || $checkgame1 == "S" || $checkgame1 == "V") {
+			$check1 = explode('-', $row_nextgames['team_1_id']);
+			if ($check1[1] == "A" || $check1[1] == "B" || $check1[1] == "C" || $check1[1] == "D" || $check1[1] == "E" || $check1[1] == "F" || $check1[1] == "G" || $check1[1] == "H") {
+				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+			} else {
+				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+			}
+
+			if ($check1[0] == "W") {
+				$teamname1 = $lang->items['LANG_WM2018_PHP_11'];
+			}
+
+			if ($check1[0] == "S") {
+				$teamname1 = $lang->items['LANG_WM2018_PHP_12'];
+			}
+
+			if ($check1[0] == "V") {
+				$teamname1 = $lang->items['LANG_WM2018_PHP_13'];
+			}
+
+			$teamname1 .= "&nbsp;{$tabelle}&nbsp;{$check1[1]}";
+			$name1 = $teamname1;
+			$flagge1 = "spacer.gif";
+		}
+		if ($checkgame2 == "W" || $checkgame2 == "S" || $checkgame2 == "V") {
+			$check2 = explode('-', $row_nextgames['team_2_id']);
+			if ($check2[1] == "A" || $check2[1] == "B" || $check2[1] == "C" || $check2[1] == "D" || $check2[1] == "E" || $check2[1] == "F") {
+				$tabelle = $lang->items['LANG_WM2018_PHP_5'];
+			} else {
+				$tabelle = $lang->items['LANG_WM2018_PHP_7'];
+			}
+
+			if ($check2[0] == "W") {
+				$teamname2 = $lang->items['LANG_WM2018_PHP_11'];
+			}
+
+			if ($check2[0] == "S") {
+				$teamname2 = $lang->items['LANG_WM2018_PHP_12'];
+			}
+
+			if ($check2[0] == "V") {
+				$teamname2 = $lang->items['LANG_WM2018_PHP_13'];
+			}
+
+			$teamname2 .= "&nbsp;{$tabelle}&nbsp;{$check2[1]}";
+			$name2 = $teamname2;
+			$flagge2 = "spacer.gif";
+		}
+
+		for ($i = 0; $i < count($allids2); $i++) {
+			if ($row_nextgames['team_1_id'] == $allids2[$i]) {
+				$teamname1 = $allnames2[$i];
+				$name1 = "<a href=\"wm2018.php?action=showallgames&amp;teamid={$row_nextgames['team_1_id']}{$SID_ARG_2ND}\">$teamname1</a>";
+				$flagge1 = $allflags2[$i];
+			}
+			if ($row_nextgames['team_2_id'] == $allids2[$i]) {
+				$teamname2 = $allnames2[$i];
+				$name2 = "<a href=\"wm2018.php?action=showallgames&amp;teamid={$row_nextgames['team_2_id']}{$SID_ARG_2ND}\">$teamname2</a>";
+				$flagge2 = $allflags2[$i];
+			}
+		}
+		eval("\$wm2018_nextgames .= \"" . $tpl->get("wm2018_nextgames") . "\";");
+	}
+
+	eval("\$seiteninfos['seiten_text']=\"" . $tpl->get("wm108_sponsor_portalboxen_wmtippnext5") . "\";");
+}
+/* WM2018 - Die nächsten Spiele */
+
+
+Gehe nun ins ACP und erstelle eine neue Box unter dem Menü-Punkt Box hinzufügen.
+
+Titel der Box: "WM2018 - Die nächsten Spiele" oder was du möchtest.
+Inhalt der Box: [wmtippnext5]
+Gruppenrechte und Design der Boxen an eure Wünsche anpassen.
+Die Box dann an gewünschter Stelle im Portal einfügen.
+
+Gehe nun in das ACP und erstelle ein neues Template unter dem Menuepunkt Template erstellen.
+
+Templatename: wm108_sponsor_portalboxen_wmtippnext5
+Inhalt:
+
+<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
+	<tr>
+		<td class="tabletitle" align="center" colspan="5"><span class="smallfont"><b><u>{$lang->items['LANG_WM2018_TPL_INDEX_8']}</u></b></span></td>
+	</tr>
+	$wm2018_nextgames
+</table>
+
+
+Suche in der Datei "jgs_portal_meincode.php" nach:
+eval ("\$wm2018_nextgames .= \"".$tpl->get("wm2018_nextgames")."\";");
+
+
+Füge darüber ein:
+
+		//mf Quote
+		$quote1 = 0;
+		$quote2 = 0;
+		$minusanzahl = 0;
+
+		$result_q = $db->query("SELECT * FROM bb" . $n . "_wm2018_usertipps WHERE gameid = " . $row_nextgames['gameid']);
+		while ($row = $db->fetch_array($result_q)) {
+			if ($row['goals_1'] > $row['goals_2']) {
+				$quote1++;
+			} elseif ($row['goals_2'] > $row['goals_1']) {
+				$quote2++;
+			} else {
+				$minusanzahl++;
+			}
+
+		}
+
+		list($anzahl) = $db->query_first("SELECT count(*) FROM bb" . $n . "_wm2018_usertipps WHERE gameid = " . $row_nextgames['gameid']);
+
+		$anzahl -= $minusanzahl;
+		if ($anzahl > 0) {
+			$quote1 = round(($quote1 / $anzahl) * 100, 0);
+			$quote2 = round(($quote2 / $anzahl) * 100, 0);
+		}
+		//!mf Quote
+
+
+
+Suche in der Datei "jgs_portal_meincode.php" nach:
+eval ("\$wm2018_topuser .= \"".$tpl->get("wm2018_topuser")."\";");
+
+
+Füge darüber ein:
+
+$richtig = $row_topuser['tipps_richtig'] + $row_topuser['tipps_tendenz'];
+if (($richtig + $row_topuser['tipps_falsch']) > 0) {
+	$quote = round($richtig * 100 / ($richtig + $row_topuser['tipps_falsch']));
+} else {
+	$quote = 0;
+}
+
+$vortag = $db->query_first("SELECT userid,pos,punkte FROM bb" . $n . "_wm2018_vortag WHERE userid = '" . intval($row_topuser['userid']) . "'");
+
+$tagerg = $row_topuser['punkte'] - $vortag['punkte'];
+if ($tagerg >= 0) {
+	$tagerg = "+" . $tagerg;
+}
+if (!isset($vortag['pos']) || $vortag['pos'] > $wm2018_rank) {
+	$tagtendenz = "<img src=\"images/wm2018/hoch.jpg\">";
+} elseif ($vortag['pos'] == $wm2018_rank) {
+	$tagtendenz = "<img src=\"images/wm2018/gleich.gif\">";
+} else {
+	$tagtendenz = "<img src=\"images/wm2018/runter.jpg\">";
+}
+
+if ($wm2018_rank == 1) {
+	$krone = "<img src=\"images/wm2018/krone.gif\" alt='krone'>";
+} else {
+	$krone = "";
+}

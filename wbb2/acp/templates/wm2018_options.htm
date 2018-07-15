@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="{$lang->items['LANG_GLOBAL_ENCODING']}"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
+
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset={$lang->items['LANG_GLOBAL_ENCODING']}" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript">
+<!--
+tag_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT']}";
+img_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT_IMG']}";
+font_formatter_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT_FONT']}";
+link_text_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT_URL_TITLE']}";
+link_url_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT_URL']}";
+link_email_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT_EMAIL']}";
+list_type_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT_LIST_TYPE']}";
+list_item_prompt = "{$lang->items['LANG_POSTINGS_JS_PROMPT_LIST_ITEM']}";
+
+function getMessageLength(theform) {
+	return theform.message.value.length;
+}
+
+var postmaxchars = $postmaxchars;
+function validate(theform) {
+ getAppletText(theform);
+ if (theform.message.value=="") {
+  alert("{$lang->items['LANG_POSTINGS_JS_ERROR2']}");
+  return false;
+ }
+ return messagetolong(theform);
+}
+
+function checklength(theform) {
+ if (postmaxchars != 0) message = " {$lang->items['LANG_POSTINGS_JS_MESSAGE_MAXLENGTH']}";
+ else message = "";
+
+ var messageLength = getMessageLength(theform);
+ alert("{$lang->items['LANG_POSTINGS_JS_MESSAGE_CHECKLENGTH']}" + message);
+}
+
+function messagetolong(theform) {
+ 	if (postmaxchars != 0) {
+  		var messageLength = getMessageLength(theform);
+  		if (messageLength > postmaxchars) {
+   			alert("{$lang->items['LANG_POSTINGS_JS_MESSAGE_TOLONG']}");
+   			return false;
+  		}
+  		else {
+  			return true;
+  		}
+ 	}
+ 	else {
+ 		return true;
+ 	}
+}
+
+function changeEditor(theForm, editorID) {
+	getAppletText(theForm);
+	theForm.change_editor.value = editorID;
+	theForm.submit();
+}
+
+
+activeMenu = false;
+menuTimerRunning = false;
+function toggleMenu(id, toggle) {
+	if(document.getElementById) {
+		if(id && toggle) {
+			element = document.getElementById(id);
+			status = element.style.display;
+			if (!status || status == 'undefined' || status == 'none') {
+				posLeft = getObjectPosLeft(toggle) + 10;
+				element.style.left = posLeft + 'px';
+				element.style.top = '0px';
+				element.style.display = 'block';
+				<if($wbbuserdata['usewysiwyg'] == 1)><then>
+				posTop = getObjectPosTop(toggle) + toggle.offsetHeight + 10;
+				</then><else>
+				posTop = getObjectPosTop(toggle) - element.offsetHeight - 10;
+				</else></if>
+				element.style.top = posTop + 'px';
+				element.onmouseover = checkMenuTimer;
+				element.onmouseout = startMenuTimer;
+				activeMenu = id;
+			}
+			else {
+				element.style.display = 'none';
+				activeMenu = false;
+			}
+		}
+		else if(activeMenu) {
+			checkMenuTimer();
+  			document.getElementById(activeMenu).style.display = 'none';
+			activeMenu = false;
+  		}
+	}
+}
+
+function getObjectPosLeft(element) {
+	var left = element.offsetLeft;
+	while((element = element.offsetParent) != null)	{
+		left += element.offsetLeft;
+	}
+	return left;
+}
+function getObjectPosTop(element) {
+	var top = element.offsetTop;
+	while((element = element.offsetParent) != null)	{
+		top += element.offsetTop;
+	}
+	return top;
+}
+function checkMenuTimer() {
+	if(menuTimerRunning)  {
+		clearTimeout(menuTimerRunning);
+		menuTimerRunning = false;
+	}
+}
+function startMenuTimer() {
+	menuTimerRunning = setTimeout("toggleMenu();", 500);
+}
+
+function changeKat(theForm, katID) {
+	getAppletText(theForm);
+	theForm.change_katid.value = katID;
+	theForm.submit();
+}
+function getAppletText(theForm) {
+
+}
+
+//-->
+	</script>
+	<script type="text/javascript">
+<!--
+var imageMaxWidth = $picmaxwidth;
+var imageMaxHeight = $picmaxheight;
+//-->
+	</script>
+	<script type="text/javascript" src="../js/bbcode.js"></script>
+	<script type="text/javascript" src="../js/images.js"></script>
+</head>
+
+<body onload="resizeImages();">
+	<form method="post" action="wm2018_admin.php" name="bbform">
+		<input type="hidden" name="send" value="send">
+		<input type="hidden" name="action" value="$action">
+		<input type="hidden" name="sid" value="$session[hash]">
+		<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+			<tr class="tblhead">
+				<td colspan=2>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_1']}</td>
+			</tr>
+			<tr class="tblsection">
+				<td colspan="2">
+					<u>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_2']}</u>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_3']}</b>
+				</td>
+				<td>
+					<select name="wm2018_aktiv_jn">
+						<option value="1" $sel_wm2018aktiv[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_wm2018aktiv[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_4']}</b>
+				</td>
+				<td>
+					<select name="showrssnews">
+						<option value="1" $sel_showrss[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_showrss[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_5']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="rssnews" maxLength="15" size="10" value="$wm2018_options[rssnews]" />
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_36']}<br />{$curl_exists_lng}
+				</td>
+				<td>
+					<select name="showrssnews_method">
+						<option value="0" $sel_showrssnews_method[0]>file_get_contents</option>
+						<option value="1" $sel_showrssnews_method[1]>cURL</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_39']}
+				</td>
+				<td>
+					<select name="rssnews_showfeed">
+						<option value="fifa" $sel_rssnews_showfeed[0]>FIFA</option>
+						<option value="uefa" $sel_rssnews_showfeed[1]>UEFA</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_7']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="wmticker_width" maxLength="15" size="10" value="$wm2018_options[wmticker_width]" /> {$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_8']}</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_9']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="nextxgames" maxLength="15" size="10" value="$wm2018_options[nextxgames]" />
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_37']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="nonaddedgamescount" maxLength="15" size="10" value="$wm2018_options[nonaddedgamescount]" />
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_38']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="currentgamescount" maxLength="15" size="10" value="$wm2018_options[currentgamescount]" />
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_10']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" max="{$maxnutzer[0]}" name="topuser" maxLength="15" value="$wm2018_options[topuser]" />
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_11']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="tipptime" maxLength="15" size="10" value="$tipptime" /> {$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_12']}</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_35']}</b>
+				</td>
+				<td>
+					<select name="diskussionsthreadid">
+						$diskussionsthreadid_options
+					</select>
+			</tr>
+
+			<!-- Forenindexoptionen Anfang -->
+			<tr class="tblsection">
+				<td colspan="2">
+					<u>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_40']}</u>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td colspan="2">
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_42']}</b>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_41']}</b>
+				</td>
+				<td>
+					<select name="showtableonindex_nontippedgames">
+						<option value="1" $sel_showtableonindex_nontippedgames[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_showtableonindex_nontippedgames[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_43']}</b>
+				</td>
+				<td>
+					<select name="showtableonindex_donegames">
+						<option value="1" $sel_showtableonindex_donegames[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_showtableonindex_donegames[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_44']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="showtableonindex_donegamescount" maxLength="15" size="10" value="$wm2018_options[showtableonindex_donegamescount]" />
+				</td>
+			</tr>
+			<!-- Forenindexoptionen Anfang -->
+
+			<tr class="tblsection">
+				<td colspan="2">
+					<u>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_13']}</u>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_14']}</b>
+				</td>
+				<td>
+					<select name="tendenz">
+						<option value="1" $sel_tendenz[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_tendenz[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_15']}</b>
+				</td>
+				<td>
+					<select name="gk_jn">
+						<option value="1" $sel_gk_jn[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_gk_jn[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_16']}</b>
+				</td>
+				<td>
+					<select name="rk_jn">
+						<option value="1" $sel_rk_jn[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_rk_jn[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_17']}</b>
+				</td>
+				<td>
+					<select name="elfer_jn">
+						<option value="1" $sel_elfer_jn[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_elfer_jn[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_18']}</b>
+				</td>
+				<td>
+					<select name="winnertipp_jn">
+						<option value="1" $sel_winnertipp_jn[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_winnertipp_jn[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_19']}</b>
+					<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_20']}</td>
+				<td>
+					<input type="number" min="0" name="lastgame4wmtipp" maxLength="15" size="10" value="$wm2018_options[lastgame4wmtipp]" />
+				</td>
+			</tr>
+			<tr class="tblsection">
+				<td colspan="2">
+					<u>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_21']}</u>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_22']}</b>
+				</td>
+				<td>
+					<select name="gh_aktiv">
+						<option value="1" $sel_gh_aktiv[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_gh_aktiv[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_23']}</b>
+				</td>
+				<td>
+					<select name="gh_infos">
+						<option value="1" $sel_gh_infos[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_gh_infos[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_24']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="gh_ab_normtipp" maxLength="15" size="10" value="$wm2018_options[gh_ab_normtipp]" />
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_25']}</td>
+				<td>
+					<input type="number" min="0" name="gh_ab_wmtipp" maxLength="15" size="10" value="$wm2018_options[gh_ab_wmtipp]" />
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_26']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="gh_gut_normtipp_richtig" maxLength="15" size="10" value="$wm2018_options[gh_gut_normtipp_richtig]" />
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_27']}</td>
+				<td>
+					<input type="number" min="0" name="gh_gut_normtipp_tendenz" maxLength="15" size="10" value="$wm2018_options[gh_gut_normtipp_tendenz]" />
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_28']}</td>
+				<td>
+					<input type="number" min="0" name="gh_gut_wmtipp_richtig" maxLength="15" size="10" value="$wm2018_options[gh_gut_wmtipp_richtig]" />
+				</td>
+			</tr>
+			<tr class="tblsection">
+				<td colspan="2">
+					<u>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_29']}</u>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_30']}</b>
+				</td>
+				<td>
+					<select name="ebay_rel_aktiv">
+						<option value="1" $sel_ebay_rel_aktiv[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_ebay_rel_aktiv[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_31']}</b>
+					<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_32']}</td>
+				<td>
+					<input type="number" min="0" name="ebay_pub_id" maxLength="11" size="10" value="$wm2018_options[ebay_pub_id]" />
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_33']}
+						<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_34']}</td>
+				<td>
+					<input type="number" min="0" name="ebay_cat" maxLength="11" size="10" value="$wm2018_options[ebay_cat]" />
+				</td>
+			</tr>
+			<tr class="tblsection">
+				<td colspan="2">
+					<u>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V50']}</u>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V51']}</b>
+				</td>
+				<td>
+					<select name="po_aktiv">
+						<option value="1" $sel_po_aktiv[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_po_aktiv[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<span class="normalfont">
+						<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V60']}</b>
+					</span>
+				</td>
+				<td>
+					<select name="vboardid">
+						$vglboard_options
+					</select>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V52']}</b>
+					<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V61']}</td>
+				<td>
+					<input type="number" min="0" name="vgposttid" maxLength="11" size="10" value="$wm2018_options[vgposttid]" />&nbsp;&nbsp;
+					<b>$vgthreadtopic</b>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V53']}</b>
+				</td>
+				<td>
+					<input type="number" min="0" name="vgpostuid" maxLength="11" size="10" value="$wm2018_options[vgpostuid]" />&nbsp;&nbsp;
+					<b>$vgusername</b>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td valign="top">
+					<span class="normalfont">
+						<b>{$lang->items['LANG_POSTINGS_ICON']}</b>
+						<br />
+						<input type="radio" name="viconid" id="vradio_icon_0" value="0" $vICONselected[0] />
+						<label for="vradio_icon_0">&nbsp;&nbsp;{$lang->items['LANG_POSTINGS_NOICON']}</label>
+					</span>
+				</td>
+				<td class="firstrow">
+					<span class="normalfont">$vchoice_posticons</span>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td>
+					<span class="normalfont">{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V62']}</span>
+				</td>
+				<td>
+					<input class="post" type="text" name="vprefix" maxLength="50" size="25" value="$wm2018_options[vprefix]" />
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<span class="normalfont">
+						<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V57']}</b>
+						<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V56']}</span>
+				</td>
+				<td>
+					<input class="post" type="text" name="vgthema" maxLength="90" size="100" value="$wm2018_options[vgthema]" />
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td valign="top">
+					<span class="normalfont">
+						<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V58']}</b>$bbcode_smilies
+						<br />
+						<span class="smallfont">{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V59']}</span>
+						<br />
+				</td>
+				<td valign="top" align="center">$bbcode_buttons
+					<br />
+					<textarea rows="21" cols="115" name="message">$message</textarea>
+				</td>
+			</tr>
+			<tr class="firstrow">
+				<td>
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V63']}</b>
+				</td>
+				<td>
+					<select name="vgposthtml">
+						<option value="1" $sel_vgposthtml[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_vgposthtml[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td colspan=2 align="center">
+					<input type="submit" value="{$lang->items['LANG_ACP_GLOBAL_SUBMITFORM']}">
+					<input type="reset" value="{$lang->items['LANG_ACP_GLOBAL_RESETFORM']}">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

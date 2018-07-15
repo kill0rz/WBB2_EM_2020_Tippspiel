@@ -1,0 +1,35 @@
+Bugtracker und Featurewünsche aus WM 2018:
+------------------------------------------
++ Demo aktualisieren
++ Ranggrafiken aktualisieren
++ Tabelle im Tippspiel: Die letzten 4 Spiele
++ Indextabelle:
+	+ die nächsten 4 Spiele
++ Editfunktion
+	+ nochmal checken, ob alles beachtet wird
+	+ Gruppentabelle ab Achtelfinale nicht mehr updaten
+
+
+USERWÜNSCHE
+-----------
+- Tipp für Verlängerung und Elfmeterschießen einbauen (wobei Elfmeter im Grunde schon existiert)
+- Jeder Spieler bekommt eine Anzahl Joker, zum Verdoppeln der Punkte
+- Wenn man bei Tippabgabe Felder vergessen hat, nur die Felder anmeckern, die vergessen wurde. Im Moment muss man alles neu eintragen.
+- Punkte für korrektes Torverhältnis (z.B. Wer bei 1:0 ein 2:1 oder 3:2 getippt hat, bekommt mehr Punkte als jemand der 5:0 getippt hat.)
+- Nach Vorunde: Schöne grafische Übersicht
+	+ https://www.v-gn.de/wbb/thread.php?postid=132239#post132239
+	+ https://cloudikon.de/wp-content/uploads/2016/06/Turnierbaum.jpg
+* ab Achtelfinale weitere Tippoptionen: Gibt es Verlängerung? Elfmeterschießen?
+* immer Zusatzbelohnung: Korrekte Tordiffere
+
+
+ToDo für die EM 2020:
+---------------------
++ Spielereihenfolde beim Eintragen beachten
+	+ Bestedritte Berechnung folgt nicht der Spielenummerierung
++ SQL: Datentypen von team_1_id und team_2_id in bb1_em2020_spiele in INT ändern (ggf. in SQL-Queries ebenfalls bearbeiten)
++ addslashes durch mysqli_real_escape_string ersetzen?
++ Autofocus in erstes Feld bei ?action=tippabgabe
++ rm: Fix Gruppe B Sortierung in wm2018.php:292
++ rm: Fix Falsche Spielreihenfolge in wm2018_admin.php:372
++ Footer updaten: Unnötige Copyright-Verweise entfernen, das gehört ausführlich ins ACP und in die Readme, aber auf dem Tippspiel selber muss das nicht mehr sein, wird mit den Jahren einfach viel zu groß.

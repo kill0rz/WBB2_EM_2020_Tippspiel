@@ -1,0 +1,29 @@
+Original by Mr.Fisch; Anpassungen by kill0rz
+
+Demo:
++ So schaut es nach dem Einbau aus: http://cball.de
+
+Was ist zu tun?
++ Im HM-Portal sogenannte php-Boxen einrichten.
+
+Zur Erinnerung:
+Wie werden HM-Boxen eingerichtet?
+
+- Eine neue Box im ACP im HM-Boxen-Konfigurator erstellen und den gewünschten Namen vergeben, z.B. WM Barometer (oder WM Tipper, WM Quote, etc.).
+
+- Die neue Box müssen wir jetzt noch so modifizieren, daß eine PHP-Box daraus wird.
+
+Das macht man z.B. mit phpmyadmin. Öffne die DB-Tabelle --> bb?_hm_portal_boxen <--
+
+Darin die richtige Zeile suchen (nach dem neuen Boxnamen) und auf "Ändern" gehen.
+
+Folgende Spalteneinträge müssen geändert werden:
+
+h_boxincl: Hier muß der Name und relative Pfad zur wm2018_hmportal.php rein. Am Ende wird nur die action ausgetauscht, also z.B.
+	wm2018_hmportal.php?action=meister
+	wm2018_hmportal.php?action=quote
+	wm2018_hmportal.php?action=rangliste
+
+- Jetzt noch die Box im Boxenkonfigurator an die richtige Stelle rücken und die gewünschten Einstellungen machen.
+
+- Testen und fertig!

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="{$lang->items['LANG_GLOBAL_ENCODING']}"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{$lang->items['LANG_GLOBAL_DIRECTION']}" lang="{$lang->items['LANG_GLOBAL_LANGCODE']}" xml:lang="{$lang->items['LANG_GLOBAL_LANGCODE']}">
+
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset={$lang->items['LANG_GLOBAL_ENCODING']}" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<form method="post" action="wm2018_admin.php">
+		<input type="hidden" name="send" value="send">
+		<input type="hidden" name="mode" value="confirm">
+		<input type="hidden" name="gameid" value="$_REQUEST[gameid]">
+		<input type="hidden" name="action" value="result_save">
+		<input type="hidden" name="sid" value="$session[hash]">
+		<input type="hidden" name="team1" value="$result[team_1_id]">
+		<input type="hidden" name="team2" value="$result[team_2_id]">
+		<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+			<tr class="tblhead">
+				<td colspan=2>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_1']}</td>
+			</tr>
+			<tr class="firstrow">
+				<td width="50%">
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_2']} $result_1[name]</b>
+				</td>
+				<td width="50%">
+					<input type="number" min="0" size="2" name="game_goals_1" value="" autofocus>
+				</td>
+			</tr>
+			<tr class="secondrow">
+				<td width="50%">
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_2']} $result_2[name]</b>
+				</td>
+				<td width="50%">
+					<input type="number" min="0" size="2" name="game_goals_2" value="">
+				</td>
+			</tr>
+		</table>
+		<if($wm2018_options['gk_jn']==1)>
+			<then>
+				<br />
+				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+					<tr class="firstrow">
+						<td width="50%">
+							<b>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_3']}</b>
+						</td>
+						<td width="50%">
+							<select name="game_gk_jn">
+								<option value="-1" selected="selected">{$lang->items['LANG_ACP_WM2018_CHOICE']}</option>
+								<option value="1">{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+								<option value="0">{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</then>
+		</if>
+		<if($wm2018_options['rk_jn']==1)>
+			<then>
+				<br />
+				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+					<tr class="firstrow">
+						<td width="50%">
+							<b>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_4']}</b>
+						</td>
+						<td width="50%">
+							<select name="game_rk_jn">
+								<option value="-1" selected="selected">{$lang->items['LANG_ACP_WM2018_CHOICE']}</option>
+								<option value="1">{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+								<option value="0">{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</then>
+		</if>
+		<if($wm2018_options['elfer_jn']==1)>
+			<then>
+				<br />
+				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+					<tr class="firstrow">
+						<td width="50%">
+							<b>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_5']}</b>
+						</td>
+						<td width="50%">
+							<select name="game_elfer_jn">
+								<option value="-1" selected="selected">{$lang->items['LANG_ACP_WM2018_CHOICE']}</option>
+								<option value="1">{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+								<option value="0">{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</then>
+		</if>
+		<br />
+		<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+			<tr class="secondrow">
+				<td width="50%">
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_6']}</b>
+				</td>
+				<td width="50%">
+					<input type="text" name="gamelink" value="" maxlength="250" size="54">
+				</td>
+			</tr>
+		</table>
+		<br />
+		<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+			<tr class="firstrow">
+				<td width="50%">
+					<b>{$lang->items['LANG_ACP_WM2018_TPL_RESULT_ADD_7']}</b>
+				</td>
+				<td width="50%">
+					<textarea rows="6" cols="55" name="gamecomment"></textarea>
+				</td>
+			</tr>
+		</table>
+		<br />
+		<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
+			<tr class="secondrow">
+				<td colspan=2 align="center">
+					<input type="submit" value="{$lang->items['LANG_ACP_GLOBAL_SUBMITFORM']}">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+Version: v1.2
+
+
+Installations-Anleitung für das WM2018-Tippspiel
+************************************************
+
+Bitte vor der Installation einmal komplett lesen und falls dann schon Fragen aufkommen,
+diese bitte im entsprechenden Supportthread stellen.
+
+1) Lade alle Dateien im Verzeichnis /wbb/ auf den Server.
+
+2) Rufe nun die Datei /acp/wm2018_setup.php auf und folge den Installationsschritten.
+
+Sollte es während der Installation zu Fehlermeldungen kommen, führe die Installation bis zum Ende aus
+und melde dich bei https://v-gn.de/wbb/ im entsprechenden Thread.
+
+Nach der Installation kannst du folgende Dateien wieder vom Server löschen:
+/acp/wm2018.sql
+/acp/wm2018.wbb
+/acp/wm2018_de.lng
+/acp/wm2018_setup.php
+
+Gehe in das ACP, importiere und cache die neuen Templates.
+
+Öffne die Datei /acp/users.php.
+
+Suche
+-----
+$db->unbuffered_query("DELETE FROM bb" . $n . "_boardvisit WHERE userid IN ($userids)", 1);
+
+Füge darunter ein
+-----------------
+// WM 2018 Tippspiel
+$wm2018_options = $db->query_first("SELECT * FROM bb" . $n . "_wm2018_options");
+if ($wm2018_options['1st'] == 0) {
+	$db->unbuffered_query("DELETE FROM bb" . $n . "_wm2018_usertipps WHERE userid IN ($userids)", 1);
+	$db->unbuffered_query("DELETE FROM bb" . $n . "_wm2018_userpunkte WHERE userid IN ($userids)", 1);
+	$db->unbuffered_query("DELETE FROM bb" . $n . "_wm2018_vortag WHERE userid IN ($userids)", 1);
+}
+
+
+3) Schaue dir die anderen Textdateien im Ordner /Mods/ an und entscheide, ob du die zusätzlichen Mods einbauen möchtest.
+
+########################################
+Vorbereitung für den Betrieb
+########################################
+
+Als nächstes musst du erstmal im ACP die Gruppenrechte für den Admin und die User einstellen.
+Vorher sind die neuen Menupunkte nicht im ACP-Menu zu sehen.
+Bei den Gruppenrechten für Gäste muss der Wert bei "Dürfen Mitglieder dieser Gruppe am WM2018-Tippspiel teilnehmen?"
+auf NEIN stehen. Ansonsten kann es zu Fehlermeldungen kommen.
+
+Nachdem du die Gruppenrechte eingestellt hast, logge dich neu ins ACP ein. Jetzt solltest du die neuen ACP-Menüpunkte sehen.
+
+Stelle nun die Optionen und die zu vergebenen Punkte für die einzelnen Tipps nach deinen Wünschen ein.
+
+Das wars dann auch schon.
+
+Bei Fragen und/oder Problemen (die hoffentlich nicht vorkommen), schreibe bitte in den entsprechenden Support-Thread
+für das Tippspiel.
+
+##########################################################################################
+##########################################################################################
+##########################                 Wichtig:               ########################
+##########################################################################################
+##########################################################################################
+
+Weder Batida444, Viktor noch ich (kill0rz) übernehmen Haftung für eventuelle Schäden, Fehler o.ä.,
+die beim Einbau oder mit der Benutzung dieses Hacks entstehen könnten.
+Ich weise ausdrücklich darauf hin, dass der Einbau auf eigene Gefahr geschieht.
+Deshalb gilt: Vor dem Einbau auf alle Fälle ein Backup der Datenbank und der Dateien machen!!!!!
+Es gibt keinen Anspruch auf Gewährleistung oder Ersatz.
+
+Ich wünsche dir und deinen Usern viel Spaß bei der EM :-)
+
+Greetz
+Günni, Viktor und kill0rz
