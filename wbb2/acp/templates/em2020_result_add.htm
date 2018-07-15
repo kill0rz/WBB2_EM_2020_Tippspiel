@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<form method="post" action="wm2018_admin.php">
+	<form method="post" action="em2020_admin.php">
 		<input type="hidden" name="send" value="send">
 		<input type="hidden" name="mode" value="confirm">
 		<input type="hidden" name="gameid" value="$_REQUEST[gameid]">
@@ -38,7 +38,7 @@
 				</td>
 			</tr>
 		</table>
-		<if($wm2018_options['gk_jn']==1)>
+		<if($em2020_options['gk_jn']==1)>
 			<then>
 				<br />
 				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
@@ -57,7 +57,7 @@
 				</table>
 			</then>
 		</if>
-		<if($wm2018_options['rk_jn']==1)>
+		<if($em2020_options['rk_jn']==1)>
 			<then>
 				<br />
 				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
@@ -76,7 +76,7 @@
 				</table>
 			</then>
 		</if>
-		<if($wm2018_options['elfer_jn']==1)>
+		<if($em2020_options['elfer_jn']==1)>
 			<then>
 				<br />
 				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">

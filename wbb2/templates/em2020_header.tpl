@@ -2,15 +2,15 @@
 	<tr class="tabletitle_fc">
 		<td align="center" style="background-image:url(images/back.gif)">
 			<span>
-				<b><a href="wm2018.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_HEADER_1']}</a></b> |
-				<if($wbbuserdata['can_wm2018_use']==1)>
+				<b><a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_HEADER_1']}</a></b> |
+				<if($wbbuserdata['can_em2020_use']==1)>
 					<then>
-						<b><a href="wm2018.php?action=maketipp{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_2']}</a></b> | </then>
+						<b><a href="em2020.php?action=maketipp{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_2']}</a></b> | </then>
 					</if>
-					<b><a href="wm2018.php?action=showresults{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_3']}</a></b> |
-					<b><a href="board.php?boardid={$wm2018_options['diskussionsthreadid']}" target="_blank">{$lang->items['LANG_WM2018_TPL_HEADER_5']}</a></b> |
-					<b><a href="wm2018.php?action=showusertippsdetail&amp;userid=$wbbuserdata[userid]{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_6']}</a></b> |
-					<b><a href="wm2018.php?action=showusertipps{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_4']}</a></b>
+					<b><a href="em2020.php?action=showresults{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_3']}</a></b> |
+					<b><a href="board.php?boardid={$em2020_options['diskussionsthreadid']}" target="_blank">{$lang->items['LANG_WM2018_TPL_HEADER_5']}</a></b> |
+					<b><a href="em2020.php?action=showusertippsdetail&amp;userid=$wbbuserdata[userid]{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_6']}</a></b> |
+					<b><a href="em2020.php?action=showusertipps{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_HEADER_4']}</a></b>
 			</span>
 		</td>
 	</tr>
@@ -73,8 +73,8 @@
 		</td>
 	</tr>
 </table>
-<if($wm2018_options['ebay_rel_aktiv']==1)>
+<if($em2020_options['ebay_rel_aktiv']==1)>
 	<then>
-		$wm2018_ebay
+		$em2020_ebay
 	</then>
 </if>

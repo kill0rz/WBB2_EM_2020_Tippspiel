@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_MAKETIPP_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_EDITVWMTIPP_2']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_MAKETIPP_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_EDITVWMTIPP_2']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -29,7 +29,7 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 		<tr>
@@ -51,7 +51,7 @@
 		</tr>
 	</table>
 	<br />
-	<form method="post" action="wm2018.php?action=editvwmtipp">
+	<form method="post" action="em2020.php?action=editvwmtipp">
 		<input type="hidden" name="send" value="send" />
 		<input type="hidden" name="sid" value="$session[hash]" />
 		<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
@@ -62,14 +62,14 @@
 				<td class="tablea" align="center" width="50%">
 					<select name="tipp_vwm">
 						<option value="-1">{$lang->items['LANG_WM2018_GLOBAL_CHOICE']}</option>
-						$wm2018_auswahl_vwmtipp
+						$em2020_auswahl_vwmtipp
 					</select>&nbsp;
 					<input type="submit" value="{$lang->items['LANG_WM2018_GLOBAL_SAVE']}" />
 				</td>
 			</tr>
 		</table>
 	</form>
-	<br /> $wm2018_footer $footer
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

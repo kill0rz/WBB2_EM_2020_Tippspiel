@@ -29,11 +29,11 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 
 	<!-- Spiele, die noch nicht im ACP eingetragen wurden -->
-	<if($wm2018_nonaddedgameresults)>
+	<if($em2020_nonaddedgameresults)>
 		<then>
 			<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 				<tr>
@@ -44,7 +44,7 @@
 					</td>
 				</tr>
 				<tr>
-					$wm2018_nonaddedgames
+					$em2020_nonaddedgames
 				</tr>
 			</table>
 			<br />
@@ -52,7 +52,7 @@
 	</if><br />
 
 	<!-- Spiele, die noch nicht im ACP eingetragen wurden -->
-	<if($wm2018_currentgameplaying)>
+	<if($em2020_currentgameplaying)>
 		<then>
 			<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 				<tr>
@@ -63,7 +63,7 @@
 					</td>
 				</tr>
 				<tr>
-					$wm2018_currentgames
+					$em2020_currentgames
 				</tr>
 			</table>
 			<br />
@@ -93,7 +93,7 @@
 										<br />
 										<br /> {$lang->items['LANG_WM2018_TPL_INDEX_4']}
 										<br />
-										<if($wm2018_options['gh_aktiv']==1)>
+										<if($em2020_options['gh_aktiv']==1)>
 											<then>{$lang->items['LANG_WM2018_TPL_INDEX_5']}
 												<b>$wbbuserdata[guthaben]</b> $waehrung
 												<br />
@@ -126,14 +126,14 @@
 				</table>
 			</td>
 			<td align="right" width="50%" valign="top">
-				<if($wm2018_options['showrssnews']==1)>
+				<if($em2020_options['showrssnews']==1)>
 					<then>
 						<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 							<tr>
 								<td class="tabletitle" align="center">
 									<span class="smallfont">
 										<b>
-											<if($wm2018_options['rssnews_showfeed']=="fifa")>
+											<if($em2020_options['rssnews_showfeed']=="fifa")>
 												<then>
 													<u>{$lang->items['LANG_WM2018_TPL_INDEX_7']}</u>
 												</then>
@@ -148,7 +148,7 @@
 							<tr>
 								<td class="tableb" align="left">
 									<span class="smallfont">
-										<b>$newswm2018total</b>
+										<b>$newsem2020total</b>
 									</span>
 								</td>
 							</tr>
@@ -159,7 +159,7 @@
 		</tr>
 	</table>
 	<br />
-	<if($wm2018_options['1st']==0)>
+	<if($em2020_options['1st']==0)>
 		<then>
 			<table cellpadding="4" cellspacing="1" border="0" style="width:{$style['tableinwidth']}">
 				<tr>
@@ -174,7 +174,7 @@
 									</span>
 								</td>
 							</tr>
-							$wm2018_nextgames
+							$em2020_nextgames
 						</table>
 					</td>
 					<td align="right" width="50%" valign="top">
@@ -182,28 +182,28 @@
 							<tr>
 								<td class="tabletitle" align="center" colspan="8">
 									<span class="smallfont">
-										<a href="wm2018.php?gruppensort=A{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=A{$SID_ARG_2ND}">
 											<b>A</b>
 										</a> |
-										<a href="wm2018.php?gruppensort=B{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=B{$SID_ARG_2ND}">
 											<b>B</b>
 										</a> |
-										<a href="wm2018.php?gruppensort=C{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=C{$SID_ARG_2ND}">
 											<b>C</b>
 										</a> |
-										<a href="wm2018.php?gruppensort=D{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=D{$SID_ARG_2ND}">
 											<b>D</b>
 										</a> |
-										<a href="wm2018.php?gruppensort=E{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=E{$SID_ARG_2ND}">
 											<b>E</b>
 										</a> |
-										<a href="wm2018.php?gruppensort=F{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=F{$SID_ARG_2ND}">
 											<b>F</b>
 										</a> |
-										<a href="wm2018.php?gruppensort=G{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=G{$SID_ARG_2ND}">
 											<b>G</b>
 										</a> |
-										<a href="wm2018.php?gruppensort=H{$SID_ARG_2ND}">
+										<a href="em2020.php?gruppensort=H{$SID_ARG_2ND}">
 											<b>H</b>
 										</a>
 										</b>
@@ -271,7 +271,7 @@
 									</span>
 								</td>
 							</tr>
-							$wm2018_gruppentabelle
+							$em2020_gruppentabelle
 						</table>
 					</td>
 				</tr>
@@ -289,10 +289,10 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="tablea" align="center" width="25%"><img src="images/wm2018/trophy.png" alt="{$lang->items['LANG_WM2018_TPL_INDEX_23']}" title="{$lang->items['LANG_WM2018_TPL_INDEX_23']}" /></td>
+					<td class="tablea" align="center" width="25%"><img src="images/em2020/trophy.png" alt="{$lang->items['LANG_WM2018_TPL_INDEX_23']}" title="{$lang->items['LANG_WM2018_TPL_INDEX_23']}" /></td>
 					<td class="tablea" align="center" width="75%">
 						<span class="normalfont">
-							<b><img src="images/wm2018/flaggen/$result_1st[flagge]" alt="$result_1st[name]" title="$result_1st[name]" />&nbsp;$result_1st[name]&nbsp;<img src="images/wm2018/flaggen/$result_1st[flagge]" alt="$result_1st[name]" title="$result_1st[name]" /></b>
+							<b><img src="images/em2020/flaggen/$result_1st[flagge]" alt="$result_1st[name]" title="$result_1st[name]" />&nbsp;$result_1st[name]&nbsp;<img src="images/em2020/flaggen/$result_1st[flagge]" alt="$result_1st[name]" title="$result_1st[name]" /></b>
 						</span>
 					</td>
 				</tr>
@@ -301,7 +301,7 @@
 						<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_24']}</span>
 					</td>
 					<td class="tablea" align="center" width="75%">
-						<span class="smallfont">$result_2nd[name]&nbsp;<img src="images/wm2018/flaggen/$result_2nd[flagge]" alt="$result_2nd[name]" title="$result_2nd[name]" /></span>
+						<span class="smallfont">$result_2nd[name]&nbsp;<img src="images/em2020/flaggen/$result_2nd[flagge]" alt="$result_2nd[name]" title="$result_2nd[name]" /></span>
 					</td>
 				</tr>
 			</table>
@@ -321,7 +321,7 @@
 							</span>
 						</td>
 					</tr>
-					$wm2018_punkte
+					$em2020_punkte
 				</table>
 				<br />
 			</td>
@@ -336,7 +336,7 @@
 							</span>
 						</td>
 					</tr>
-					$wm2018_topuser
+					$em2020_topuser
 				</table>
 			</td>
 			<td align="center" width="25%" valign="top">
@@ -364,11 +364,11 @@
 							<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_44']}</span>
 						</td>
 					</tr>
-					$wm2018_meisterquote
+					$em2020_meisterquote
 				</table>
 			</td>
 			<br/>
-			<if($wm2018_options['gh_aktiv']==1 && $wm2018_options['gh_infos']==1)>
+			<if($em2020_options['gh_aktiv']==1 && $em2020_options['gh_infos']==1)>
 				<then>
 					<td align="center" width="50%" valign="top">
 						<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
@@ -386,7 +386,7 @@
 									<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_27']}</span>
 								</td>
 								<td class="tableb" align="center">
-									<span class="smallfont">$wm2018_options[gh_ab_normtipp] $waehrung</span>
+									<span class="smallfont">$em2020_options[gh_ab_normtipp] $waehrung</span>
 								</td>
 							</tr>
 							<tr>
@@ -394,7 +394,7 @@
 									<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_28']}</span>
 								</td>
 								<td class="tableb" align="center">
-									<span class="smallfont">$wm2018_options[gh_ab_wmtipp] $waehrung</span>
+									<span class="smallfont">$em2020_options[gh_ab_wmtipp] $waehrung</span>
 								</td>
 							</tr>
 							<tr>
@@ -402,29 +402,29 @@
 									<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_29']}</span>
 								</td>
 								<td class="tablea" align="center">
-									<span class="smallfont">$wm2018_options[gh_gut_normtipp_richtig] $waehrung</span>
+									<span class="smallfont">$em2020_options[gh_gut_normtipp_richtig] $waehrung</span>
 								</td>
 							</tr>
-							<if($wm2018_options['tendenz']==1)>
+							<if($em2020_options['tendenz']==1)>
 								<then>
 									<tr>
 										<td class="tablea" align="center">
 											<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_30']}</span>
 										</td>
 										<td class="tablea" align="center">
-											<span class="smallfont">$wm2018_options[gh_gut_normtipp_tendenz] $waehrung</span>
+											<span class="smallfont">$em2020_options[gh_gut_normtipp_tendenz] $waehrung</span>
 										</td>
 									</tr>
 								</then>
 								</if>
-								<if($wm2018_options['winnertipp_jn']==1)>
+								<if($em2020_options['winnertipp_jn']==1)>
 									<then>
 										<tr>
 											<td class="tablea" align="center">
 												<span class="smallfont">{$lang->items['LANG_WM2018_TPL_INDEX_31']}</span>
 											</td>
 											<td class="tablea" align="center">
-												<span class="smallfont">$wm2018_options[gh_gut_wmtipp_richtig] $waehrung</span>
+												<span class="smallfont">$em2020_options[gh_gut_wmtipp_richtig] $waehrung</span>
 											</td>
 										</tr>
 									</then>
@@ -436,7 +436,7 @@
 		</tr>
 	</table>
 	<br />
-	<br /> $wm2018_footer $footer
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

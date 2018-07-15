@@ -15,7 +15,7 @@
 				</b>
 			</span>
 		</td>
-		<if($wm2018_options['gk_jn']==1)>
+		<if($em2020_options['gk_jn']==1)>
 			<then>
 				<td class="tabletitle" align="center">
 					<span class="smallfont">
@@ -26,7 +26,7 @@
 				</td>
 			</then>
 		</if>
-		<if($wm2018_options['rk_jn']==1)>
+		<if($em2020_options['rk_jn']==1)>
 			<then>
 				<td class="tabletitle" align="center">
 					<span class="smallfont">
@@ -37,7 +37,7 @@
 				</td>
 			</then>
 		</if>
-		<if($wm2018_options['elfer_jn']==1)>
+		<if($em2020_options['elfer_jn']==1)>
 			<then>
 				<td class="tabletitle" align="center">
 					<span class="smallfont">
@@ -49,5 +49,5 @@
 			</then>
 		</if>
 	</tr>
-	$wm2018_tippsprogame_bit
+	$em2020_tippsprogame_bit
 </table>

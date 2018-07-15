@@ -5,7 +5,7 @@
 <head>
 	<title>$master_board_name</title>
 	$headinclude
-	<meta http-equiv="refresh" content="1;URL=./wm2018.php?action=maketipp{$SID_ARG_2ND}#maketipptabelle" />
+	<meta http-equiv="refresh" content="1;URL=./em2020.php?action=maketipp{$SID_ARG_2ND}#maketipptabelle" />
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 				<br />
 				<span class="smallfont">{$lang->items['LANG_WM2018_TPL_TIPOK_2']}
 					<br />
-					<br /><a href="wm2018.php?action=maketipp{$SID_ARG_2ND}#maketipptabelle" autofocus>{$lang->items['LANG_WM2018_TPL_TIPOK_3']}</a></span>
+					<br /><a href="em2020.php?action=maketipp{$SID_ARG_2ND}#maketipptabelle" autofocus>{$lang->items['LANG_WM2018_TPL_TIPOK_3']}</a></span>
 			</td>
 		</tr>
 	</table>

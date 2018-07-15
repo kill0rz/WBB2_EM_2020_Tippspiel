@@ -5,7 +5,7 @@
 
 
 
-[acp_wm2018]
+[acp_em2020]
 
 <text:LANG_ACP_WM2018_CHOICE>Bitte w&auml;hlen</LANG_ACP_WM2018_CHOICE:text>
 <text:LANG_ACP_WM2018_PHP_1>Gutschrift WM2018-Tippspiel (SpielLANG_WM2018_TPL_INDEX_8LANG_WM2018_TPL_INDEX_8</LANG_ACP_WM2018_PHP_1:text>
@@ -185,7 +185,7 @@
 <text:LANG_ACP_WM2018_CORRECT8_11>erfolgreich geupdated!</LANG_ACP_WM2018_CORRECT8_11:text>
 
 
-[wm2018]
+[em2020]
 
 <text:LANG_WM2018_GLOBAL_CHOICE>- Bitte w&auml;hlen -</LANG_WM2018_GLOBAL_CHOICE:text>
 <text:LANG_WM2018_GLOBAL_NO>Nein</LANG_WM2018_GLOBAL_NO:text>
@@ -311,18 +311,18 @@
 <text:LANG_WM2018_TPL_INDEX_3>Hallo</LANG_WM2018_TPL_INDEX_3:text>
 <text:LANG_WM2018_TPL_INDEX_30>Gewinn f&uuml;r einen Tipp mit richtiger Tendenz</LANG_WM2018_TPL_INDEX_30:text>
 <text:LANG_WM2018_TPL_INDEX_31>Gewinn f&uuml;r einen richtigen Weltmeister/Vizeweltmeister-Tipp</LANG_WM2018_TPL_INDEX_31:text>
-<text:LANG_WM2018_TPL_INDEX_32>Top $wm2018_options[topuser] -User</LANG_WM2018_TPL_INDEX_32:text>
+<text:LANG_WM2018_TPL_INDEX_32>Top $em2020_options[topuser] -User</LANG_WM2018_TPL_INDEX_32:text>
 <text:LANG_WM2018_TPL_INDEX_33>Hallo <b>Gast</b></LANG_WM2018_TPL_INDEX_33:text>
 <text:LANG_WM2018_TPL_INDEX_34>Noch nicht eingetragene Spiele</LANG_WM2018_TPL_INDEX_34:text>
 <text:LANG_WM2018_TPL_INDEX_35>Es spielt gerade:</LANG_WM2018_TPL_INDEX_35:text>
 <text:LANG_WM2018_TPL_INDEX_36>Neueste News der UEFA</LANG_WM2018_TPL_INDEX_36:text>
 <text:LANG_WM2018_TPL_INDEX_37>In den folgenden 24h finden diese Spiele statt, f&uuml;r die du noch keine Tipps abgegeben hast:</LANG_WM2018_TPL_INDEX_37:text>
-<text:LANG_WM2018_TPL_INDEX_38>Die letzten $wm2018_showtableonindex_maxdonegames Spiele der WM 2018:</LANG_WM2018_TPL_INDEX_38:text>
+<text:LANG_WM2018_TPL_INDEX_38>Die letzten $em2020_showtableonindex_maxdonegames Spiele der WM 2018:</LANG_WM2018_TPL_INDEX_38:text>
 <text:LANG_WM2018_TPL_INDEX_4>Du hast bis jetzt $tippsgesamt Tipps abgegeben.</LANG_WM2018_TPL_INDEX_4:text>
 <text:LANG_WM2018_TPL_INDEX_5>Dein verf&uuml;gbares Tippguthaben betr&auml;gt noch</LANG_WM2018_TPL_INDEX_5:text>
 <text:LANG_WM2018_TPL_INDEX_6>Du musst registriert sein, um selber Tipps abgeben zu k&ouml;nnen.<br />Als unregistrierter User kannst Du Dir aber alles ansehen.</LANG_WM2018_TPL_INDEX_6:text>
 <text:LANG_WM2018_TPL_INDEX_7>Neueste News der FIFA</LANG_WM2018_TPL_INDEX_7:text>
-<text:LANG_WM2018_TPL_INDEX_8>Die n&auml;chsten $wm2018_options[nextxgames] Spiele</LANG_WM2018_TPL_INDEX_8:text>
+<text:LANG_WM2018_TPL_INDEX_8>Die n&auml;chsten $em2020_options[nextxgames] Spiele</LANG_WM2018_TPL_INDEX_8:text>
 <text:LANG_WM2018_TPL_INDEX_9>Gruppe</LANG_WM2018_TPL_INDEX_9:text>
 <text:LANG_WM2018_TPL_MAKETIPP_1>WM2018-Tippspiel-Tippabgabe</LANG_WM2018_TPL_MAKETIPP_1:text>
 <text:LANG_WM2018_TPL_MAKETIPP_10>alle m&ouml;glichen Spiele</LANG_WM2018_TPL_MAKETIPP_10:text>
@@ -455,8 +455,8 @@
 
 [wiw]
 
-<text:LANG_WIW_FILE_WM2018><a href="wm2018.php$SID_ARG_1ST" target="_blank">WM2018-Tippspiel</a></LANG_WIW_FILE_WM2018:text>
+<text:LANG_WIW_FILE_WM2018><a href="em2020.php$SID_ARG_1ST" target="_blank">WM2018-Tippspiel</a></LANG_WIW_FILE_WM2018:text>
 
 [thread]
 
-<text:LANG_THREAD_WM2018_ANZEIGE_1><br /><b>Teilnehmer des WM-Tippspiels 2018</b><br /><br />Tipps: $wm2018_thread_tipps<br />Punkte: $wm2018_thread_userpunkte<br />Tippspiel-Ranking: $wm2018_userrank</LANG_THREAD_WM2018_ANZEIGE_1:text>
+<text:LANG_THREAD_WM2018_ANZEIGE_1><br /><b>Teilnehmer des WM-Tippspiels 2018</b><br /><br />Tipps: $em2020_thread_tipps<br />Punkte: $em2020_thread_userpunkte<br />Tippspiel-Ranking: $em2020_userrank</LANG_THREAD_WM2018_ANZEIGE_1:text>

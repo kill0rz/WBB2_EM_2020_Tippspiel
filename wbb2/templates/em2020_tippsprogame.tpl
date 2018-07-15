@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_TIPPSPROGAME_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -29,7 +29,7 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 		<tr>
@@ -47,7 +47,7 @@
 					</b>
 				</span>
 			</td>
-			<if($wm2018_options['gk_jn']==1)>
+			<if($em2020_options['gk_jn']==1)>
 				<then>
 					<td class="tabletitle" align="center">
 						<span class="smallfont">
@@ -58,7 +58,7 @@
 					</td>
 				</then>
 			</if>
-			<if($wm2018_options['rk_jn']==1)>
+			<if($em2020_options['rk_jn']==1)>
 				<then>
 					<td class="tabletitle" align="center">
 						<span class="smallfont">
@@ -69,7 +69,7 @@
 					</td>
 				</then>
 			</if>
-			<if($wm2018_options['elfer_jn']==1)>
+			<if($em2020_options['elfer_jn']==1)>
 				<then>
 					<td class="tabletitle" align="center">
 						<span class="smallfont">
@@ -81,9 +81,9 @@
 				</then>
 			</if>
 		</tr>
-		$wm2018_tippsprogame_bit
+		$em2020_tippsprogame_bit
 	</table>
-	<br /> $wm2018_footer $footer
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

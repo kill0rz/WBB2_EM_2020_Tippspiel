@@ -65,7 +65,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_MAKETIPP_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_MAKETIPP_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_MAKETIPP_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_MAKETIPP_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -78,9 +78,9 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
-	<br /> $wm2018_maketipp_bit_bit
-	<br /> $wm2018_maketipp_bit_bit_bit
+	<br /> $em2020_header
+	<br /> $em2020_maketipp_bit_bit
+	<br /> $em2020_maketipp_bit_bit_bit
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 		<tr>
@@ -111,10 +111,10 @@
 			<td class="tablea" align="center" colspan="2">
 				<span class="smallfont">
 					<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_8']}</b>
-					<a href="wm2018.php?action=maketipp&amp;games_art=1{$SID_ARG_2ND}">
+					<a href="em2020.php?action=maketipp&amp;games_art=1{$SID_ARG_2ND}">
 						<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_9']}</b>
 					</a> |
-					<a href="wm2018.php?action=maketipp&amp;games_art=2{$SID_ARG_2ND}">
+					<a href="em2020.php?action=maketipp&amp;games_art=2{$SID_ARG_2ND}">
 						<b>{$lang->items['LANG_WM2018_TPL_MAKETIPP_10']}</b>
 					</a>
 				</span>
@@ -161,9 +161,9 @@
 			</td>
 			<td class="tabletitle" align="center"></td>
 		</tr>
-		$wm2018_maketipp_bit
+		$em2020_maketipp_bit
 	</table>
-	<br /> $wm2018_footer $footer
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

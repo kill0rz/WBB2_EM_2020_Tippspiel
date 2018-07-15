@@ -1,6 +1,6 @@
 <tr class="$rowclass">
 	<td align="center">
-		<b><a href="../wm2018.php?action=gamedetails&amp;gameid=$row_games[gameid]" target="_blank">$row_games[gameid]</a></b>
+		<b><a href="../em2020.php?action=gamedetails&amp;gameid=$row_games[gameid]" target="_blank">$row_games[gameid]</a></b>
 	</td>
 	<td align="center">
 		<b>$date, $time {$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_1']}</b>
@@ -13,14 +13,14 @@
 						<b>$name1</b>
 					</font>
 				</td>
-				<td align="right"><img src="../images/wm2018/flaggen/$flagge1" alt="$name1" title="$name1" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td align="right"><img src="../images/em2020/flaggen/$flagge1" alt="$name1" title="$name1" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			</tr>
 		</table>
 	</td>
 	<td>
 		<table width="100%">
 			<tr>
-				<td align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/wm2018/flaggen/$flagge2" alt="$name2" title="$name2" /></td>
+				<td align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/em2020/flaggen/$flagge2" alt="$name2" title="$name2" /></td>
 				<td align="right">
 					<font color="black">
 						<b>$name2</b>
@@ -33,8 +33,8 @@
 	</td>
 	<td align="center">
 		<if($row_games['game_goals_1']=='' && $row_games['game_goals_2']=='' )>
-			<then><a href="wm2018_admin.php?action=result_add&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_2']}</a></then>
-			<else><a href="wm2018_admin.php?action=result_edit&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_3']}</a></else>
+			<then><a href="em2020_admin.php?action=result_add&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_2']}</a></then>
+			<else><a href="em2020_admin.php?action=result_edit&amp;gameid=$row_games[gameid]&amp;sid=$session[hash]">{$lang->items['LANG_ACP_WM2018_TPL_RESULTS_VIEWBIT_3']}</a></else>
 			</if>
 	</td>
 </tr>

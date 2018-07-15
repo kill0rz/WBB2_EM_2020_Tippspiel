@@ -2,7 +2,7 @@
 /***************************************************************************
  *
  *   MOD                  : WM-2006/2014/EM-2016/WM-2018 Tippspiel
- *   file                 : wm2018_uninstall.php
+ *   file                 : em2020_uninstall.php
  *   copyright            : WM2006-Tippspiel © 2006 @ batida444
  *   copyright            : WM2014-Tippspiel © 2014 @ Viktor
  *   copyright            : EM2016-Tippspiel © 2016 @ kill0rz
@@ -11,11 +11,11 @@
  *   Boardversion         : Burning Board wBB 2.3
  ***************************************************************************/
 
-if (file_exists("./lib/wm2018_install.lock")) {
-	die("Bitte l&ouml;schen Sie die Datei acp/lib/wm2018_install.lock, um die De-Installation ausf&uuml;hren zu k&ouml;nnen!");
+if (file_exists("./lib/em2020_install.lock")) {
+	die("Bitte l&ouml;schen Sie die Datei acp/lib/em2020_install.lock, um die De-Installation ausf&uuml;hren zu k&ouml;nnen!");
 }
 
-$filename = "wm2018_uninstall.php";
+$filename = "em2020_uninstall.php";
 
 @error_reporting(7);
 @set_time_limit(0);
@@ -102,7 +102,7 @@ if (!$step) {
 if ($step == "delete") {
 	informationPage('<b>De-Installation l&auml;uft... Bitte warten...</b>');
 	print "<br /><b>Board-Templates werden gel&ouml;scht...</b>";
-	$result = $db->query("SELECT * FROM bb" . $n . "_templates WHERE templatename LIKE 'wm2018_%'");
+	$result = $db->query("SELECT * FROM bb" . $n . "_templates WHERE templatename LIKE 'em2020_%'");
 	while ($row = $db->fetch_array($result)) {
 		$db->query("DELETE FROM bb" . $n . "_templates WHERE templateid = '" . $row['templateid'] . "'");
 	}
@@ -113,9 +113,9 @@ if ($step == "delete") {
 	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='ADMIN_WM2018'");
 	print "<br/ >Gruppenrechte erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>Gruppenvariablen werden gel&ouml;scht...</b>";
-	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_wm2018_see'");
-	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_wm2018_use'");
-	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='a_can_wm2018_edit'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_em2020_see'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_em2020_use'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='a_can_em2020_edit'");
 	print "<br/ >Gruppenvariablen erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>ACP-Menueintr&auml;ge werden gel&ouml;scht...</b>";
 	@$db->query("DELETE FROM bb" . $n . "_acpmenuitemgroups WHERE title='WM2018'");
@@ -128,20 +128,20 @@ if ($step == "delete") {
 	print "<br/ >ACP-Menueintr&auml;ge erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>Sprachvariablen werden gel&ouml;scht...</b>";
 	@$db->query("DELETE FROM bb" . $n . "_languages WHERE itemname like '%_WM2018_%'");
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'wm2018'");
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'acp_wm2018'");
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'wm2018_de'");
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'wm2018_en'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'acp_em2020'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020_de'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020_en'");
 	print "<br/ >Sprachvariablen erfolgreich gel&ouml;scht...";
 	print "<br /><br /><b>Tabellen werden aus der Datenbank entfernt...</b>";
-	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_options");
-	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_punkte");
-	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_spiele");
-	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_teams");
-	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_userpunkte");
-	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_usertipps");
-	//@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_bestedrittetmp");
-	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_wm2018_vortag");
+	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_options");
+	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_punkte");
+	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_spiele");
+	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_teams");
+	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_userpunkte");
+	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_usertipps");
+	//@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_bestedrittetmp");
+	@$db->query("DROP TABLE IF EXISTS bb" . $n . "_em2020_vortag");
 	print "<br />Tabellen erfolgreich aus der Datenbank entfernt...";
 
 	print "<br /><br />Wenn auf dieser Seite keine Fehlermeldungen erschienen sind, wurde das WM2018-Tippspiel ";
@@ -157,58 +157,58 @@ if ($step == "delete") {
 if ($step == "delete2") {
 	informationPage('<b>Letzte T&auml;tigkeiten f&uuml;r die komplette De-Installation</b>');
 
-	if (@unlink("./templates/wm2018_*")) {
+	if (@unlink("./templates/em2020_*")) {
 		print "ACP Templates wurden erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>ACP Templates konnten nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/templates/wm2018_*)</font><br />";
+		print "<font color='lightred'>ACP Templates konnten nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/templates/em2020_*)</font><br />";
 	}
 
-	if (@unlink("../wm2018.php")) {
-		print "/wbb2/wm2018.php wurde erfolgreich entfernt!<br />";
+	if (@unlink("../em2020.php")) {
+		print "/wbb2/em2020.php wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>/wbb2/wm2018.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/wm2018.php)</font><br />";
+		print "<font color='lightred'>/wbb2/em2020.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/em2020.php)</font><br />";
 	}
 
-	if (@unlink("../wm2018_global.php")) {
-		print "/wbb2/wm2018_global.php wurde erfolgreich entfernt!<br />";
+	if (@unlink("../em2020_global.php")) {
+		print "/wbb2/em2020_global.php wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>/wbb2/wm2018_global.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/wm2018_global.php)</font><br />";
+		print "<font color='lightred'>/wbb2/em2020_global.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/em2020_global.php)</font><br />";
 	}
 
-	if (@unlink("../wm2018_hmportal.php.php")) {
-		print "/wbb2/wm2018_hmportal.php.php wurde erfolgreich entfernt!<br />";
+	if (@unlink("../em2020_hmportal.php.php")) {
+		print "/wbb2/em2020_hmportal.php.php wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>/wbb2/wm2018_hmportal.php.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/wm2018_hmportal.php.php)</font><br />";
+		print "<font color='lightred'>/wbb2/em2020_hmportal.php.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/em2020_hmportal.php.php)</font><br />";
 	}
 
-	if (@unlink("./wm2018_admin.php")) {
-		print "/wbb2/acp/wm2018_admin.php wurde erfolgreich entfernt!<br />";
+	if (@unlink("./em2020_admin.php")) {
+		print "/wbb2/acp/em2020_admin.php wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>/wbb2/acp/wm2018_admin.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/wm2018_admin.php)</font><br />";
+		print "<font color='lightred'>/wbb2/acp/em2020_admin.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/em2020_admin.php)</font><br />";
 	}
 
-	if (@unlink("./wm2018_gameids.php")) {
-		print "/wbb2/acp/wm2018_gameids.php wurde erfolgreich entfernt!<br />";
+	if (@unlink("./em2020_gameids.php")) {
+		print "/wbb2/acp/em2020_gameids.php wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>/wbb2/acp/wm2018_gameids.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/wm2018_gameids.php)</font><br />";
+		print "<font color='lightred'>/wbb2/acp/em2020_gameids.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/em2020_gameids.php)</font><br />";
 	}
 
-	if (@unlink("./wm2018_uninstall.php")) {
-		print "/wbb2/acp/wm2018_uninstall.php wurde erfolgreich entfernt!<br />";
+	if (@unlink("./em2020_uninstall.php")) {
+		print "/wbb2/acp/em2020_uninstall.php wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>/wbb2/acp/wm2018_uninstall.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/wm2018_uninstall.php)</font><br />";
+		print "<font color='lightred'>/wbb2/acp/em2020_uninstall.php konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/acp/em2020_uninstall.php)</font><br />";
 	}
 
-	if (@unlink("../images/top_wm2018.gif")) {
-		print "/wbb2/images/top_wm2018.gif wurde erfolgreich entfernt!<br />";
+	if (@unlink("../images/top_em2020.gif")) {
+		print "/wbb2/images/top_em2020.gif wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>/wbb2/images/top_wm2018.gif konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/images/top_wm2018.gif)</font><br />";
+		print "<font color='lightred'>/wbb2/images/top_em2020.gif konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/images/top_em2020.gif)</font><br />";
 	}
 
-	if (@rmdir("../images/wm2018/")) {
+	if (@rmdir("../images/em2020/")) {
 		print "Bilderordner wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='lightred'>Bilderordner konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/images/wm2018/)</font><br />";
+		print "<font color='lightred'>Bilderordner konnte nicht gel&ouml;scht werden. Bitte manuell entfernen! (/wbb2/images/em2020/)</font><br />";
 	}
 
 	print "<br /><br />Jetzt ist das WM2018-Tippspiel komplett und sauber aus Deinem Forum entfernt.";

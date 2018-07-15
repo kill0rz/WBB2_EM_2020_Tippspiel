@@ -5,7 +5,7 @@
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset={$lang->items['LANG_GLOBAL_ENCODING']}" />
-	<meta http-equiv="refresh" content="0;URL=./wm2018.php" />
+	<meta http-equiv="refresh" content="0;URL=./em2020.php" />
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 

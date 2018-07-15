@@ -60,5 +60,5 @@
 			</span>
 		</td>
 	</tr>
-	$wm2018_showresult_bit_bit
+	$em2020_showresult_bit_bit
 </table>

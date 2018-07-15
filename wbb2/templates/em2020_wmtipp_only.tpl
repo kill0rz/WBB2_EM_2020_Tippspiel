@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_1']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_WMTIPPONLY_1']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_1']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_WMTIPPONLY_1']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -29,7 +29,7 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 		<tr>
@@ -47,8 +47,8 @@
 			</td>
 		</tr>
 	</table>
-	$wm2018_tippabgabe_wm $wm2018_tippabgabe_vwm
-	<br /> $wm2018_footer $footer
+	$em2020_tippabgabe_wm $em2020_tippabgabe_vwm
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

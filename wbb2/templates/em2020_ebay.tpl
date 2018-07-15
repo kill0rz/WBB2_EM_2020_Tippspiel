@@ -10,7 +10,7 @@
 	<tr>
 		<td class="tableb" align="center">
 			<script language="JavaScript" type="text/javascript">
-			document.write('<iframe src="http://banners.webmasterplan.com/view.asp?site=1382&ref=$wm2018_options[ebay_pub_id]&type=text&tnb=32&showjs=0&template=1321&textcolor=$fontcolor&titlecolor=$titlecolor&bordercolor=$bordercolorebay&bgcolor=$bgcolor&linkcolor=$fontcolor$ebay_cat&query=(wm2018|weltmeisterschaft|fussballweltmeisterschaft|fußballweltmeisterschaft|)&refurl=' + escape(document.location.href) + '" width="728" height="90" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"></iframe>')
+			document.write('<iframe src="http://banners.webmasterplan.com/view.asp?site=1382&ref=$em2020_options[ebay_pub_id]&type=text&tnb=32&showjs=0&template=1321&textcolor=$fontcolor&titlecolor=$titlecolor&bordercolor=$bordercolorebay&bgcolor=$bgcolor&linkcolor=$fontcolor$ebay_cat&query=(em2020|weltmeisterschaft|fussballweltmeisterschaft|fußballweltmeisterschaft|)&refurl=' + escape(document.location.href) + '" width="728" height="90" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"></iframe>')
 			</script>
 		</td>
 	</tr>

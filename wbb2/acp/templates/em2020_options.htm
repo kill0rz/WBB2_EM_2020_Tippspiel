@@ -143,7 +143,7 @@ var imageMaxHeight = $picmaxheight;
 </head>
 
 <body onload="resizeImages();">
-	<form method="post" action="wm2018_admin.php" name="bbform">
+	<form method="post" action="em2020_admin.php" name="bbform">
 		<input type="hidden" name="send" value="send">
 		<input type="hidden" name="action" value="$action">
 		<input type="hidden" name="sid" value="$session[hash]">
@@ -161,9 +161,9 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_3']}</b>
 				</td>
 				<td>
-					<select name="wm2018_aktiv_jn">
-						<option value="1" $sel_wm2018aktiv[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
-						<option value="0" $sel_wm2018aktiv[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
+					<select name="em2020_aktiv_jn">
+						<option value="1" $sel_em2020aktiv[1]>{$lang->items['LANG_ACP_GLOBAL_YES']}</option>
+						<option value="0" $sel_em2020aktiv[0]>{$lang->items['LANG_ACP_GLOBAL_NO']}</option>
 					</select>
 				</td>
 			</tr>
@@ -183,7 +183,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_5']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="rssnews" maxLength="15" size="10" value="$wm2018_options[rssnews]" />
+					<input type="number" min="0" name="rssnews" maxLength="15" size="10" value="$em2020_options[rssnews]" />
 				</td>
 			</tr>
 			<tr class="secondrow">
@@ -213,14 +213,14 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_7']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="wmticker_width" maxLength="15" size="10" value="$wm2018_options[wmticker_width]" /> {$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_8']}</td>
+					<input type="number" min="0" name="wmticker_width" maxLength="15" size="10" value="$em2020_options[wmticker_width]" /> {$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_8']}</td>
 			</tr>
 			<tr class="firstrow">
 				<td>
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_9']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="nextxgames" maxLength="15" size="10" value="$wm2018_options[nextxgames]" />
+					<input type="number" min="0" name="nextxgames" maxLength="15" size="10" value="$em2020_options[nextxgames]" />
 				</td>
 			</tr>
 			<tr class="secondrow">
@@ -228,7 +228,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_37']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="nonaddedgamescount" maxLength="15" size="10" value="$wm2018_options[nonaddedgamescount]" />
+					<input type="number" min="0" name="nonaddedgamescount" maxLength="15" size="10" value="$em2020_options[nonaddedgamescount]" />
 				</td>
 			</tr>
 			<tr class="firstrow">
@@ -236,7 +236,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_38']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="currentgamescount" maxLength="15" size="10" value="$wm2018_options[currentgamescount]" />
+					<input type="number" min="0" name="currentgamescount" maxLength="15" size="10" value="$em2020_options[currentgamescount]" />
 				</td>
 			</tr>
 			<tr class="secondrow">
@@ -244,7 +244,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_10']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" max="{$maxnutzer[0]}" name="topuser" maxLength="15" value="$wm2018_options[topuser]" />
+					<input type="number" min="0" max="{$maxnutzer[0]}" name="topuser" maxLength="15" value="$em2020_options[topuser]" />
 				</td>
 			</tr>
 			<tr class="firstrow">
@@ -302,7 +302,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_44']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="showtableonindex_donegamescount" maxLength="15" size="10" value="$wm2018_options[showtableonindex_donegamescount]" />
+					<input type="number" min="0" name="showtableonindex_donegamescount" maxLength="15" size="10" value="$em2020_options[showtableonindex_donegamescount]" />
 				</td>
 			</tr>
 			<!-- Forenindexoptionen Anfang -->
@@ -372,7 +372,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_19']}</b>
 					<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_20']}</td>
 				<td>
-					<input type="number" min="0" name="lastgame4wmtipp" maxLength="15" size="10" value="$wm2018_options[lastgame4wmtipp]" />
+					<input type="number" min="0" name="lastgame4wmtipp" maxLength="15" size="10" value="$em2020_options[lastgame4wmtipp]" />
 				</td>
 			</tr>
 			<tr class="tblsection">
@@ -407,14 +407,14 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_24']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="gh_ab_normtipp" maxLength="15" size="10" value="$wm2018_options[gh_ab_normtipp]" />
+					<input type="number" min="0" name="gh_ab_normtipp" maxLength="15" size="10" value="$em2020_options[gh_ab_normtipp]" />
 				</td>
 			</tr>
 			<tr class="secondrow">
 				<td>
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_25']}</td>
 				<td>
-					<input type="number" min="0" name="gh_ab_wmtipp" maxLength="15" size="10" value="$wm2018_options[gh_ab_wmtipp]" />
+					<input type="number" min="0" name="gh_ab_wmtipp" maxLength="15" size="10" value="$em2020_options[gh_ab_wmtipp]" />
 				</td>
 			</tr>
 			<tr class="firstrow">
@@ -422,21 +422,21 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_26']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="gh_gut_normtipp_richtig" maxLength="15" size="10" value="$wm2018_options[gh_gut_normtipp_richtig]" />
+					<input type="number" min="0" name="gh_gut_normtipp_richtig" maxLength="15" size="10" value="$em2020_options[gh_gut_normtipp_richtig]" />
 				</td>
 			</tr>
 			<tr class="secondrow">
 				<td>
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_27']}</td>
 				<td>
-					<input type="number" min="0" name="gh_gut_normtipp_tendenz" maxLength="15" size="10" value="$wm2018_options[gh_gut_normtipp_tendenz]" />
+					<input type="number" min="0" name="gh_gut_normtipp_tendenz" maxLength="15" size="10" value="$em2020_options[gh_gut_normtipp_tendenz]" />
 				</td>
 			</tr>
 			<tr class="firstrow">
 				<td>
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_28']}</td>
 				<td>
-					<input type="number" min="0" name="gh_gut_wmtipp_richtig" maxLength="15" size="10" value="$wm2018_options[gh_gut_wmtipp_richtig]" />
+					<input type="number" min="0" name="gh_gut_wmtipp_richtig" maxLength="15" size="10" value="$em2020_options[gh_gut_wmtipp_richtig]" />
 				</td>
 			</tr>
 			<tr class="tblsection">
@@ -460,7 +460,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_31']}</b>
 					<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_32']}</td>
 				<td>
-					<input type="number" min="0" name="ebay_pub_id" maxLength="11" size="10" value="$wm2018_options[ebay_pub_id]" />
+					<input type="number" min="0" name="ebay_pub_id" maxLength="11" size="10" value="$em2020_options[ebay_pub_id]" />
 				</td>
 			</tr>
 			<tr class="firstrow">
@@ -468,7 +468,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_33']}
 						<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_34']}</td>
 				<td>
-					<input type="number" min="0" name="ebay_cat" maxLength="11" size="10" value="$wm2018_options[ebay_cat]" />
+					<input type="number" min="0" name="ebay_cat" maxLength="11" size="10" value="$em2020_options[ebay_cat]" />
 				</td>
 			</tr>
 			<tr class="tblsection">
@@ -504,7 +504,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V52']}</b>
 					<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V61']}</td>
 				<td>
-					<input type="number" min="0" name="vgposttid" maxLength="11" size="10" value="$wm2018_options[vgposttid]" />&nbsp;&nbsp;
+					<input type="number" min="0" name="vgposttid" maxLength="11" size="10" value="$em2020_options[vgposttid]" />&nbsp;&nbsp;
 					<b>$vgthreadtopic</b>
 				</td>
 			</tr>
@@ -513,7 +513,7 @@ var imageMaxHeight = $picmaxheight;
 					<b>{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V53']}</b>
 				</td>
 				<td>
-					<input type="number" min="0" name="vgpostuid" maxLength="11" size="10" value="$wm2018_options[vgpostuid]" />&nbsp;&nbsp;
+					<input type="number" min="0" name="vgpostuid" maxLength="11" size="10" value="$em2020_options[vgpostuid]" />&nbsp;&nbsp;
 					<b>$vgusername</b>
 				</td>
 			</tr>
@@ -535,7 +535,7 @@ var imageMaxHeight = $picmaxheight;
 					<span class="normalfont">{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V62']}</span>
 				</td>
 				<td>
-					<input class="post" type="text" name="vprefix" maxLength="50" size="25" value="$wm2018_options[vprefix]" />
+					<input class="post" type="text" name="vprefix" maxLength="50" size="25" value="$em2020_options[vprefix]" />
 				</td>
 			</tr>
 			<tr class="firstrow">
@@ -545,7 +545,7 @@ var imageMaxHeight = $picmaxheight;
 						<br />{$lang->items['LANG_ACP_WM2018_TPL_OPTIONS_V56']}</span>
 				</td>
 				<td>
-					<input class="post" type="text" name="vgthema" maxLength="90" size="100" value="$wm2018_options[vgthema]" />
+					<input class="post" type="text" name="vgthema" maxLength="90" size="100" value="$em2020_options[vgthema]" />
 				</td>
 			</tr>
 			<tr class="secondrow">

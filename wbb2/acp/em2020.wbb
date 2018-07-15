@@ -7,7 +7,7 @@
 </wBBgroupvariablegroup>
 
 <wBBgroupvariable>
-	<name>can_wm2018_see</name>
+	<name>can_em2020_see</name>
 	<type>truefalse</type>
 	<defaultvalue>0</defaultvalue>
 	<title>D&uuml;rfen Mitglieder dieser Gruppe das WM2018-Tippspiel sehen?</title>
@@ -17,7 +17,7 @@
 </wBBgroupvariable>
 
 <wBBgroupvariable>
-	<name>can_wm2018_use</name>
+	<name>can_em2020_use</name>
 	<type>truefalse</type>
 	<defaultvalue>0</defaultvalue>
 	<title>D&uuml;rfen Mitglieder dieser Gruppe am WM2018-Tippspiel teilnehmen?</title>
@@ -35,7 +35,7 @@
 </wBBgroupvariablegroup>
 
 <wBBgroupvariable>
-	<name>a_can_wm2018_edit</name>
+	<name>a_can_em2020_edit</name>
 	<type>truefalse</type>
 	<defaultvalue>0</defaultvalue>
 	<title>WM2018-Tippspiel</title>
@@ -55,11 +55,11 @@
 	<name>WM2018_INDEX</name>
 	<title>WM2018-Tippspiel</title>
 	<group>WM2018</group>
-	<link>wm2018_admin.php?action=info</link>
+	<link>em2020_admin.php?action=info</link>
 	<linkformat>
 		<b>%s</b>
 	</linkformat>
-	<condition>a_can_wm2018_edit</condition>
+	<condition>a_can_em2020_edit</condition>
 	<conditiontype>OR</conditiontype>
 	<acpmode>2</acpmode>
 </wBBacpmenuitem>
@@ -68,9 +68,9 @@
 	<name>WM2018_OPTIONS</name>
 	<title>Optionen</title>
 	<group>WM2018</group>
-	<link>wm2018_admin.php?action=options</link>
+	<link>em2020_admin.php?action=options</link>
 	<linkformat></linkformat>
-	<condition>a_can_wm2018_edit</condition>
+	<condition>a_can_em2020_edit</condition>
 	<conditiontype>OR</conditiontype>
 	<acpmode>2</acpmode>
 </wBBacpmenuitem>
@@ -79,9 +79,9 @@
 	<name>WM2018_PUNKTE</name>
 	<title>Punkte bearbeiten</title>
 	<group>WM2018</group>
-	<link>wm2018_admin.php?action=punkte</link>
+	<link>em2020_admin.php?action=punkte</link>
 	<linkformat></linkformat>
-	<condition>a_can_wm2018_edit</condition>
+	<condition>a_can_em2020_edit</condition>
 	<conditiontype>OR</conditiontype>
 	<acpmode>2</acpmode>
 </wBBacpmenuitem>
@@ -90,9 +90,9 @@
 	<name>WM2018_RESULTS</name>
 	<title>Spielergebnisse eintragen</title>
 	<group>WM2018</group>
-	<link>wm2018_admin.php?action=results</link>
+	<link>em2020_admin.php?action=results</link>
 	<linkformat></linkformat>
-	<condition>a_can_wm2018_edit</condition>
+	<condition>a_can_em2020_edit</condition>
 	<conditiontype>OR</conditiontype>
 	<acpmode>2</acpmode>
 </wBBacpmenuitem>

@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_SHOWRESULTS_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_SHOWRESULTS_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -29,24 +29,24 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 		<tr class="tabletitle_fc">
 			<td class="tabletitle" align="center">
 				<span class="smallfont">
-					<b><a href="wm2018.php?action=showresults&amp;auswahl=1{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_4']}</a></b> |
-					<b><a href="wm2018.php?action=showresults&amp;auswahl=2{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_5']}</a></b> |
-					<b><a href="wm2018.php?action=showresults&amp;auswahl=3{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_6']}</a></b> |
-					<b><a href="wm2018.php?action=showresults&amp;auswahl=4{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_7']}</a></b> |
-					<b><a href="wm2018.php?action=showresults&amp;auswahl=5{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_8']}</a></b> |
-					<b><a href="wm2018.php?action=showresults&amp;auswahl=6{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_9']}</a></b>
+					<b><a href="em2020.php?action=showresults&amp;auswahl=1{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_4']}</a></b> |
+					<b><a href="em2020.php?action=showresults&amp;auswahl=2{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_5']}</a></b> |
+					<b><a href="em2020.php?action=showresults&amp;auswahl=3{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_6']}</a></b> |
+					<b><a href="em2020.php?action=showresults&amp;auswahl=4{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_7']}</a></b> |
+					<b><a href="em2020.php?action=showresults&amp;auswahl=5{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_8']}</a></b> |
+					<b><a href="em2020.php?action=showresults&amp;auswahl=6{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_SHOWRESULTS_9']}</a></b>
 				</span>
 			</td>
 		</tr>
 	</table>
-	$wm2018_showresult_bit
-	<br /> $wm2018_footer $footer
+	$em2020_showresult_bit
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

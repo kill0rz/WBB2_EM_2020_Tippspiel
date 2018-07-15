@@ -2,7 +2,7 @@
 /***************************************************************************
  *
  *   MOD                  : WM-2006/2014/EM-2016/WM-2018 Tippspiel
- *   file                 : wm2018_setup.php
+ *   file                 : em2020_setup.php
  *   copyright            : WM2006-Tippspiel © 2006 @ batida444
  *   copyright            : WM2014-Tippspiel © 2014 @ Viktor
  *   copyright            : EM2016-Tippspiel © 2016 @ kill0rz
@@ -12,11 +12,11 @@
  *   Rev                  : v1.2
  ***************************************************************************/
 
-if (file_exists("./lib/wm2018_install.lock")) {
-	die("Bitte l&ouml;schen Sie die Datei acp/lib/wm2018_install.lock, um die Installation erneut ausf&uuml;hren zu k&ouml;nnen!");
+if (file_exists("./lib/em2020_install.lock")) {
+	die("Bitte l&ouml;schen Sie die Datei acp/lib/em2020_install.lock, um die Installation erneut ausf&uuml;hren zu k&ouml;nnen!");
 }
 
-$filename = "wm2018_setup.php";
+$filename = "em2020_setup.php";
 
 $version = "v1.2";
 
@@ -98,34 +98,34 @@ if (!$step) {
    <td><span style="color: ' . ((version_compare($phpversion, $requiredphpversion) == -1) ? ('red') : ('lime')) . '">' . $phpversion . '</span></td>
   </tr>
   <tr>
-   <td>Sprachdatei "/acp/wm2018_de.lng"</td>
+   <td>Sprachdatei "/acp/em2020_de.lng"</td>
    <td>Ja</td>
-   <td><span style="color: ' . ((!is_file("../acp/wm2018_de.lng")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/wm2018_de.lng")) ? ('Ja') : ('Nein')) . '</span></td>
+   <td><span style="color: ' . ((!is_file("../acp/em2020_de.lng")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/em2020_de.lng")) ? ('Ja') : ('Nein')) . '</span></td>
   </tr>
   <tr>
-   <td>Variablendatei "/acp/wm2018.wbb"</td>
+   <td>Variablendatei "/acp/em2020.wbb"</td>
    <td>Ja</td>
-   <td><span style="color: ' . ((!is_file("../acp/wm2018.wbb")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/wm2018.wbb")) ? ('Ja') : ('Nein')) . '</span></td>
+   <td><span style="color: ' . ((!is_file("../acp/em2020.wbb")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/em2020.wbb")) ? ('Ja') : ('Nein')) . '</span></td>
   </tr>
   <tr>
-   <td>SQL-Datei "/acp/wm2018.sql"</td>
+   <td>SQL-Datei "/acp/em2020.sql"</td>
    <td>Ja</td>
-   <td><span style="color: ' . ((!is_file("../acp/wm2018.sql")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/wm2018.sql")) ? ('Ja') : ('Nein')) . '</span></td>
+   <td><span style="color: ' . ((!is_file("../acp/em2020.sql")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/em2020.sql")) ? ('Ja') : ('Nein')) . '</span></td>
   </tr>
   <tr>
-   <td>Haupt-Datei "/wm2018.php"</td>
+   <td>Haupt-Datei "/em2020.php"</td>
    <td>Ja</td>
-   <td><span style="color: ' . ((!is_file("../wm2018.php")) ? ('red') : ('lime')) . '">' . ((is_file("../wm2018.php")) ? ('Ja') : ('Nein')) . '</span></td>
+   <td><span style="color: ' . ((!is_file("../em2020.php")) ? ('red') : ('lime')) . '">' . ((is_file("../em2020.php")) ? ('Ja') : ('Nein')) . '</span></td>
   </tr>
   <tr>
-   <td>ACP-Datei "/acp/wm2018_admin.php"</td>
+   <td>ACP-Datei "/acp/em2020_admin.php"</td>
    <td>Ja</td>
-   <td><span style="color: ' . ((!is_file("../acp/wm2018_admin.php")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/wm2018_admin.php")) ? ('Ja') : ('Nein')) . '</span></td>
+   <td><span style="color: ' . ((!is_file("../acp/em2020_admin.php")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/em2020_admin.php")) ? ('Ja') : ('Nein')) . '</span></td>
   </tr>
   <tr>
-   <td>ACP-Template "/acp/templates/wm2018_info.htm"</td>
+   <td>ACP-Template "/acp/templates/em2020_info.htm"</td>
    <td>Ja</td>
-   <td><span style="color: ' . ((!is_file("../acp/templates/wm2018_info.htm")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/templates/wm2018_info.htm")) ? ('Ja') : ('Nein')) . '</span></td>
+   <td><span style="color: ' . ((!is_file("../acp/templates/em2020_info.htm")) ? ('red') : ('lime')) . '">' . ((is_file("../acp/templates/em2020_info.htm")) ? ('Ja') : ('Nein')) . '</span></td>
   </tr>
 </table>
  <p><i>Sollten eine oder mehrere Voraussetzungen nicht erf&uuml;llt sein, kann ein einwandfreier Betrieb des WM2018-Tippspiels nicht gew&auml;hrleistet werden.</i></p>
@@ -149,24 +149,24 @@ if (!$step) {
 	// und die Installationsfiles
 	$filefehlt = 0;
 	$filefehlta = '';
-	if (!is_file("./wm2018_de.lng")) {
+	if (!is_file("./em2020_de.lng")) {
 		$filefehlt = 1;
-		$filefehlta .= "<li>Sprachdatei \"/acp/wm2018_de.lng\" nicht gefunden</li>";}
-	if (!is_file("./wm2018.wbb")) {
+		$filefehlta .= "<li>Sprachdatei \"/acp/em2020_de.lng\" nicht gefunden</li>";}
+	if (!is_file("./em2020.wbb")) {
 		$filefehlt = 2;
-		$filefehlta .= "<li>Rechtedatei \"/acp/wm2018.wbb\" nicht gefunden</li>";}
-	if (!is_file("./wm2018.sql")) {
+		$filefehlta .= "<li>Rechtedatei \"/acp/em2020.wbb\" nicht gefunden</li>";}
+	if (!is_file("./em2020.sql")) {
 		$filefehlt = 3;
-		$filefehlta .= "<li>SQL-Datei \"/acp/wm2018.sql\" nicht gefunden</li>";}
-	if (!is_file("../wm2018.php")) {
+		$filefehlta .= "<li>SQL-Datei \"/acp/em2020.sql\" nicht gefunden</li>";}
+	if (!is_file("../em2020.php")) {
 		$filefehlt = 4;
-		$filefehlta .= "<li>Haupt-Datei \"/wm2018.php\" nicht gefunden</li>";}
-	if (!is_file("./wm2018_admin.php")) {
+		$filefehlta .= "<li>Haupt-Datei \"/em2020.php\" nicht gefunden</li>";}
+	if (!is_file("./em2020_admin.php")) {
 		$filefehlt = 5;
-		$filefehlta .= "<li>ACP-Datei \"acp/wm2018_admin.php\" nicht gefunden</li>";}
-	if (!is_file("./templates/wm2018_info.htm")) {
+		$filefehlta .= "<li>ACP-Datei \"acp/em2020_admin.php\" nicht gefunden</li>";}
+	if (!is_file("./templates/em2020_info.htm")) {
 		$filefehlt = 6;
-		$filefehlta .= "<li>ACP-Template \"/acp/templates/wm2018_info.htm\" nicht gefunden</li>";}
+		$filefehlta .= "<li>ACP-Template \"/acp/templates/em2020_info.htm\" nicht gefunden</li>";}
 
 	if ($filefehlt > 0) {
 		print "<br />\n";
@@ -198,9 +198,9 @@ if ($step == "acptemplates") {
 	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='USER_WM2018'");
 	@$db->query("DELETE FROM bb" . $n . "_groupvariablegroups WHERE title='ADMIN_WM2018'");
 
-	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_wm2018_see'");
-	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_wm2018_use'");
-	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='a_can_wm2018_edit'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_em2020_see'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='can_em2020_use'");
+	@$db->query("DELETE FROM bb" . $n . "_groupvariables WHERE variablename='a_can_em2020_edit'");
 
 	@$db->query("DELETE FROM bb" . $n . "_acpmenuitemgroups WHERE title='WM2018'");
 
@@ -211,10 +211,10 @@ if ($step == "acptemplates") {
 
 	@$db->query("DELETE FROM bb" . $n . "_languages WHERE itemname like '%_WM2018_%'");
 
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'wm2018'");
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'acp_wm2018'");
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'wm2018_de'");
-	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'wm2018_en'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'acp_em2020'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020_de'");
+	@$db->query("DELETE FROM bb" . $n . "_languagecats WHERE catname = 'em2020_en'");
 
 	informationPage('<b>Die ACP-Templates des WM2018-Tippspiels werden nun vorbereitet.</b>');
 
@@ -345,7 +345,7 @@ if ($step == "langinst") {
 		//
 		// Using Code from Troublegum / Woltlab
 		//
-		$lngfile = "wm2018_de.lng";
+		$lngfile = "em2020_de.lng";
 
 		// read language file
 		$lngdata = readlngfile($lngfile);
@@ -416,7 +416,7 @@ if ($step == "groups") {
 
 	require "./lib/class_variableimport.php";
 
-	$variableimport = new variableimport("./wm2018.wbb");
+	$variableimport = new variableimport("./em2020.wbb");
 	if ($variableimport->errors()) {
 		informationPage('Es sind Fehler beim lesen der Variabelndatei aufgetreten: <br />' . $variableimport->getErrors() . '<br />');
 	} else {
@@ -445,7 +445,7 @@ if ($step == "database") {
 
 	informationPage('<b>Die Datenbanktabellen werden angelegt.</b>');
 
-	$sqlfname = "wm2018.sql";
+	$sqlfname = "em2020.sql";
 	$query = implode(" ", file($sqlfname));
 
 	if ($query != "") {
@@ -472,7 +472,7 @@ if ($step == "database") {
 	// ####################################################################
 	// FERTIG !!!
 	// ####################################################################
-	$fp = @fopen("./lib/wm2018_install.lock", "w+");
+	$fp = @fopen("./lib/em2020_install.lock", "w+");
 	fclose($fp);
 
 	print "<b><h3>Installation erfolgreich!</h3></b>";
@@ -482,28 +482,28 @@ if ($step == "database") {
 	print "Sie k&ouml;nnen das WM2018-Tippspiel {$version} jetzt benutzen.<p>";
 	print "Bitte richten Sie es noch im <a href=\"./index.php\">ACP</a> ein.<br />";
 
-	if (@unlink("./wm2018_setup.php")) {
-		print "<pre>wm2018_setup.php</pre> wurde erfolgreich entfernt!<br />";
+	if (@unlink("./em2020_setup.php")) {
+		print "<pre>em2020_setup.php</pre> wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='red'><pre>wm2018_setup.php</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
+		print "<font color='red'><pre>em2020_setup.php</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
 	}
 	
-	if (@unlink("./wm2018_de.lng")) {
-		print "<pre>wm2018_de.lng</pre> wurde erfolgreich entfernt!<br />";
+	if (@unlink("./em2020_de.lng")) {
+		print "<pre>em2020_de.lng</pre> wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='red'><pre>wm2018_de.lng</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
+		print "<font color='red'><pre>em2020_de.lng</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
 	}
 	
-	if (@unlink("./wm2018.wbb")) {
-		print "<pre>wm2018.wbb</pre> wurde erfolgreich entfernt!<br />";
+	if (@unlink("./em2020.wbb")) {
+		print "<pre>em2020.wbb</pre> wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='red'><pre>wm2018.wbb</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
+		print "<font color='red'><pre>em2020.wbb</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
 	}
 
-	if (@unlink("./wm2018.sql")) {
-		print "<pre>wm2018.sql</pre> wurde erfolgreich entfernt!<br />";
+	if (@unlink("./em2020.sql")) {
+		print "<pre>em2020.sql</pre> wurde erfolgreich entfernt!<br />";
 	} else {
-		print "<font color='red'><pre>wm2018.sql</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
+		print "<font color='red'><pre>em2020.sql</pre> konnte nicht gel&ooml;scht werden. Bitte manuell entfernen!</font><br />";
 	}
 
 	print "<b>Viel Spa&szlig;! :)</b></td></tr></table></body></html>";

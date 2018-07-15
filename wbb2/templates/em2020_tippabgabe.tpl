@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_TIPPABGABE_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php?action=index{$SID_ARG_2ND}">{$lang->items['LANG_WM2018_TPL_TIPPABGABE_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_TIPPABGABE_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -29,7 +29,7 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder" id="tippabgabetable">
 		<tr>
@@ -47,10 +47,10 @@
 			</td>
 		</tr>
 	</table>
-	$wm2018_tippabgabe_wm $wm2018_tippabgabe_vwm
+	$em2020_tippabgabe_wm $em2020_tippabgabe_vwm
 	<hr />
 	<center>$error</center>
-	<form method="post" action="wm2018.php?action=tippabgabe">
+	<form method="post" action="em2020.php?action=tippabgabe">
 		<input type="hidden" name="send" value="send" />
 		<input type="hidden" name="gameid" value="$_REQUEST[gameid]" />
 		<input type="hidden" name="name1" value="$name1" />
@@ -60,24 +60,24 @@
 			<tr align="center">
 				<td class="tablea" align="right" width="50%">
 					<span class="normalfont">
-						<b>$name1</b>&nbsp;<img src="images/wm2018/flaggen/$flagge1" alt="$name1" title="$name1" /></span>&nbsp;&nbsp;
+						<b>$name1</b>&nbsp;<img src="images/em2020/flaggen/$flagge1" alt="$name1" title="$name1" /></span>&nbsp;&nbsp;
 					<input type="number" min="0" class="input" name="tipp_1" size="5"/>
 				</td>
 				<td class="tablea" align="left" width="50%">
-					<input type="number" min="0" class="input" name="tipp_2" size="5"/>&nbsp;&nbsp;<img src="images/wm2018/flaggen/$flagge2" alt="$name2" title="$name2" />&nbsp;
+					<input type="number" min="0" class="input" name="tipp_2" size="5"/>&nbsp;&nbsp;<img src="images/em2020/flaggen/$flagge2" alt="$name2" title="$name2" />&nbsp;
 					<span class="normalfont">
 						<b>$name2</b>
 					</span>
 				</td>
 			</tr>
 		</table>
-		$wm2018_tippabgabe_gk $wm2018_tippabgabe_rk $wm2018_tippabgabe_elfer
+		$em2020_tippabgabe_gk $em2020_tippabgabe_rk $em2020_tippabgabe_elfer
 		<p align="center">
 			<input class="input" type="submit" value="{$lang->items['LANG_WM2018_GLOBAL_SAVE']}" />
 			<input class="input" type="reset" value="{$lang->items['LANG_WM2018_GLOBAL_RESET']}" />
 		</p>
 	</form>
-	<br /> $wm2018_footer $footer
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

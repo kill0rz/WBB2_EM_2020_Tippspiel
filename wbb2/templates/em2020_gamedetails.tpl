@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_GAMEDETAILS_3']}</b>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_GAMEDETAILS_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_GAMEDETAILS_3']}</b>
 							</span>
 						</td>
 						<td align="right">
@@ -29,7 +29,7 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:60%" class="tableinborder">
 		<tr>
@@ -104,21 +104,21 @@
 		<tr>
 			<td class="tablea" align="center" width="40%">
 				<span class="normalfont">
-					<b>$name1</b>&nbsp;<img src="images/wm2018/flaggen/$flagge1" alt="name1" title="name1" /></span>&nbsp;&nbsp;</td>
+					<b>$name1</b>&nbsp;<img src="images/em2020/flaggen/$flagge1" alt="name1" title="name1" /></span>&nbsp;&nbsp;</td>
 			<td class="tablea" align="center" width="5%">
 				<span class="normalfont">$result[game_goals_1]</span>
 			</td>
 			<td class="tablea" align="center" width="5%">
 				<span class="normalfont">$result[game_goals_2]</span>
 			</td>
-			<td class="tablea" align="center" width="40%">&nbsp;&nbsp;<img src="images/wm2018/flaggen/$flagge2" alt="name2" title="name2" />&nbsp;
+			<td class="tablea" align="center" width="40%">&nbsp;&nbsp;<img src="images/em2020/flaggen/$flagge2" alt="name2" title="name2" />&nbsp;
 				<span class="normalfont">
 					<b>$name2</b>
 				</span>
 			</td>
 		</tr>
 	</table>
-	<if($wm2018_options[ 'gk_jn']==1 || $wm2018_options[ 'rk_jn']==1 || $wm2018_options[ 'elfer_jn']==1)>
+	<if($em2020_options[ 'gk_jn']==1 || $em2020_options[ 'rk_jn']==1 || $em2020_options[ 'elfer_jn']==1)>
 		<then>
 			<br />
 			<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:60%" class="tableinborder">
@@ -173,8 +173,8 @@
 		</then>
 	</if>
 
-	$wm2018_tippsprogame_include
-	$wm2018_footer $footer
+	$em2020_tippsprogame_include
+	$em2020_footer $footer
 </body>
 
 </html>

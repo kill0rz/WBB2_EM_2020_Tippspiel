@@ -16,7 +16,7 @@
 					<tr class="tablea_fc">
 						<td align="left">
 							<span class="smallfont">
-								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="wm2018.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_SHOWALLGAMES_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_SHOWALLGAMES_3']} <img src="images/wm2018/flaggen/$flagge" alt="$name" title="$name" />&nbsp;$name&nbsp;</b><img src="images/wm2018/flaggen/$flagge" alt="$name" title="$name" /></span>
+								<b><a href="index.php{$SID_ARG_1ST}">$master_board_name</a> &raquo; <a href="em2020.php{$SID_ARG_1ST}">{$lang->items['LANG_WM2018_TPL_SHOWALLGAMES_2']}</a> &raquo; {$lang->items['LANG_WM2018_TPL_SHOWALLGAMES_3']} <img src="images/em2020/flaggen/$flagge" alt="$name" title="$name" />&nbsp;$name&nbsp;</b><img src="images/em2020/flaggen/$flagge" alt="$name" title="$name" /></span>
 						</td>
 						<td align="right">
 							<span class="smallfont">
@@ -28,7 +28,7 @@
 			</td>
 		</tr>
 	</table>
-	<br /> $wm2018_header
+	<br /> $em2020_header
 	<br />
 	<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
 		<tr>
@@ -83,9 +83,9 @@
 			</td>
 			<td class="tabletitle" align="center"></td>
 		</tr>
-		$wm2018_showallgames_bit
+		$em2020_showallgames_bit
 	</table>
-	<br /> $wm2018_footer $footer
+	<br /> $em2020_footer $footer
 </body>
 
 </html>

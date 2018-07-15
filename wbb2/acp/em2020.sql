@@ -1,12 +1,12 @@
 ﻿--------------------------------------------------------
 
 -- 
--- Tabellenstruktur für Tabelle `bb1_wm2018_options`
+-- Tabellenstruktur für Tabelle `bb1_em2020_options`
 -- 
 
-DROP TABLE IF EXISTS `bb1_wm2018_options`;
-CREATE TABLE `bb1_wm2018_options` (
-  `wm2018aktiv` int(1) NOT NULL default '1',
+DROP TABLE IF EXISTS `bb1_em2020_options`;
+CREATE TABLE `bb1_em2020_options` (
+  `em2020aktiv` int(1) NOT NULL default '1',
   `showrssnews` int(1) NOT NULL default '1',
   `rssnews` int(5) NOT NULL default '5',
   `rssnews_showfeed` varchar(10) NOT NULL default 'fifa',
@@ -54,19 +54,19 @@ CREATE TABLE `bb1_wm2018_options` (
 ) ENGINE=MyISAM;
 
 -- 
--- Daten für Tabelle `bb1_wm2018_options`
+-- Daten für Tabelle `bb1_em2020_options`
 -- 
 
-INSERT INTO `bb1_wm2018_options` (`message`) VALUES ('Hallo,\r\n\r\nhier das Ergebnis von Spiel [B]{vgp_gameid}[/B] der Gruppe [B]{vgp_gruppe}[/B].\r\n\r\nDas Spiel fand in {vgp_stadion}, am {vgp_datum} um {vgp_zeit} Uhr statt.\r\n\r\n[CENTER][B]{vgp_name1}[/B] {vgp_flagge1} - [B]{vgp_name2}[/B] {vgp_flagge2}[/CENTER]\r\n[CENTER][SIZE=16][B]{vgp_tore1}[/B] - [B]{vgp_tore2}[/B][/SIZE][/CENTER]\r\n\r\nGelbe-Karten: [B]{vgp_gk}[/B]\r\nRote-Karten: [B]{vgp_rk}[/B]\r\nElfmeter: [B]{vgp_elfer} [/B]\r\n\r\nEs haben [B]{vgp_anztipp}[/B] User am Tipp für das Spiel teilgenommen.\r\n\r\nHier mehr zum Spiel: {vgp_glink}\r\n\r\nMein Kommentar zum Spiel:\r\n {vgp_comment}\r\n\r\n[B][SIZE=16][CENTER]Aktuelles Top-User-Ranking:[/CENTER][/SIZE][/B]\r\n[CENTER]{vgp_user_ranking_01} [/CENTER]\r\n[CENTER]{vgp_user_ranking_02} [/CENTER]\r\n[CENTER]{vgp_user_ranking_03} [/CENTER]\r\n[CENTER]{vgp_user_ranking_04} [/CENTER]\r\n[CENTER]{vgp_user_ranking_05} [/CENTER]\r\n[CENTER]{vgp_user_ranking_06} [/CENTER]\r\n[CENTER]{vgp_user_ranking_07} [/CENTER]\r\n[CENTER]{vgp_user_ranking_08} [/CENTER]\r\n[CENTER]{vgp_user_ranking_09} [/CENTER]\r\n[CENTER]{vgp_user_ranking_10} [/CENTER]');
+INSERT INTO `bb1_em2020_options` (`message`) VALUES ('Hallo,\r\n\r\nhier das Ergebnis von Spiel [B]{vgp_gameid}[/B] der Gruppe [B]{vgp_gruppe}[/B].\r\n\r\nDas Spiel fand in {vgp_stadion}, am {vgp_datum} um {vgp_zeit} Uhr statt.\r\n\r\n[CENTER][B]{vgp_name1}[/B] {vgp_flagge1} - [B]{vgp_name2}[/B] {vgp_flagge2}[/CENTER]\r\n[CENTER][SIZE=16][B]{vgp_tore1}[/B] - [B]{vgp_tore2}[/B][/SIZE][/CENTER]\r\n\r\nGelbe-Karten: [B]{vgp_gk}[/B]\r\nRote-Karten: [B]{vgp_rk}[/B]\r\nElfmeter: [B]{vgp_elfer} [/B]\r\n\r\nEs haben [B]{vgp_anztipp}[/B] User am Tipp für das Spiel teilgenommen.\r\n\r\nHier mehr zum Spiel: {vgp_glink}\r\n\r\nMein Kommentar zum Spiel:\r\n {vgp_comment}\r\n\r\n[B][SIZE=16][CENTER]Aktuelles Top-User-Ranking:[/CENTER][/SIZE][/B]\r\n[CENTER]{vgp_user_ranking_01} [/CENTER]\r\n[CENTER]{vgp_user_ranking_02} [/CENTER]\r\n[CENTER]{vgp_user_ranking_03} [/CENTER]\r\n[CENTER]{vgp_user_ranking_04} [/CENTER]\r\n[CENTER]{vgp_user_ranking_05} [/CENTER]\r\n[CENTER]{vgp_user_ranking_06} [/CENTER]\r\n[CENTER]{vgp_user_ranking_07} [/CENTER]\r\n[CENTER]{vgp_user_ranking_08} [/CENTER]\r\n[CENTER]{vgp_user_ranking_09} [/CENTER]\r\n[CENTER]{vgp_user_ranking_10} [/CENTER]');
 
 -- --------------------------------------------------------
 
 -- 
--- Tabellenstruktur für Tabelle `bb1_wm2018_punkte`
+-- Tabellenstruktur für Tabelle `bb1_em2020_punkte`
 -- 
 
-DROP TABLE IF EXISTS `bb1_wm2018_punkte`;
-CREATE TABLE `bb1_wm2018_punkte` (
+DROP TABLE IF EXISTS `bb1_em2020_punkte`;
+CREATE TABLE `bb1_em2020_punkte` (
   `punkteid` int(2) unsigned NOT NULL auto_increment,
   `desc` varchar(100) NOT NULL default '',
   `wert` int(5) NOT NULL default '0',
@@ -74,25 +74,25 @@ CREATE TABLE `bb1_wm2018_punkte` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 ;
 
 -- 
--- Daten für Tabelle `bb1_wm2018_punkte`
+-- Daten für Tabelle `bb1_em2020_punkte`
 -- 
 
-INSERT INTO `bb1_wm2018_punkte` (`punkteid`, `desc`, `wert`) VALUES (1, 'Exaktes Ergebnis', 10);
-INSERT INTO `bb1_wm2018_punkte` (`punkteid`, `desc`, `wert`) VALUES (2, 'Tendenz richtig', 5);
-INSERT INTO `bb1_wm2018_punkte` (`punkteid`, `desc`, `wert`) VALUES (3, 'Gelbe Karten', 3);
-INSERT INTO `bb1_wm2018_punkte` (`punkteid`, `desc`, `wert`) VALUES (4, 'Rote Karten', 3);
-INSERT INTO `bb1_wm2018_punkte` (`punkteid`, `desc`, `wert`) VALUES (5, 'Elfmeter', 3);
-INSERT INTO `bb1_wm2018_punkte` (`punkteid`, `desc`, `wert`) VALUES (6, 'Weltmeister', 100);
-INSERT INTO `bb1_wm2018_punkte` (`punkteid`, `desc`, `wert`) VALUES (7, 'Vize-Weltmeister', 100);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (1, 'Exaktes Ergebnis', 10);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (2, 'Tendenz richtig', 5);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (3, 'Gelbe Karten', 3);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (4, 'Rote Karten', 3);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (5, 'Elfmeter', 3);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (6, 'Weltmeister', 100);
+INSERT INTO `bb1_em2020_punkte` (`punkteid`, `desc`, `wert`) VALUES (7, 'Vize-Weltmeister', 100);
 
 -- --------------------------------------------------------
 
 -- 
--- Tabellenstruktur für Tabelle `bb1_wm2018_spiele`
+-- Tabellenstruktur für Tabelle `bb1_em2020_spiele`
 -- 
 
-DROP TABLE IF EXISTS `bb1_wm2018_spiele`;
-CREATE TABLE `bb1_wm2018_spiele` (
+DROP TABLE IF EXISTS `bb1_em2020_spiele`;
+CREATE TABLE `bb1_em2020_spiele` (
   `gameid` int(5) unsigned NOT NULL auto_increment,
   `gruppe` varchar(5) NOT NULL default '',
   `datetime` int(11) NOT NULL default '0',
@@ -112,10 +112,10 @@ CREATE TABLE `bb1_wm2018_spiele` (
 ) ENGINE=MyISAM AUTO_INCREMENT=52 ;
 
 -- 
--- Daten für Tabelle `bb1_wm2018_spiele`
+-- Daten für Tabelle `bb1_em2020_spiele`
 -- 
 
-INSERT INTO `bb1_wm2018_spiele` (`gameid`, `gruppe`, `datetime`, `stadion`, `team_1_id`, `team_2_id`, `game_gk`, `game_rk`, `game_elfer`, `game_goals_1`, `game_goals_2`, `gamelink`, `gamecomment`, `tipps`) VALUES
+INSERT INTO `bb1_em2020_spiele` (`gameid`, `gruppe`, `datetime`, `stadion`, `team_1_id`, `team_2_id`, `game_gk`, `game_rk`, `game_elfer`, `game_goals_1`, `game_goals_2`, `gamelink`, `gamecomment`, `tipps`) VALUES
 (1, 'A',  1528992000, 'Moskau',  '1',  '2',  0,  0,  0,  '', '', '', '', 0),
 (2, 'A',  1529067600, 'Jekaterinburg',  '3',  '4',  0,  0,  0,  '', '', '', '', 0),
 (3, 'B',  1529078400, 'Sotschi',  '7',  '8',  0,  0,  0,  '', '', '', '', 0),
@@ -184,11 +184,11 @@ INSERT INTO `bb1_wm2018_spiele` (`gameid`, `gruppe`, `datetime`, `stadion`, `tea
 -- --------------------------------------------------------
 
 -- 
--- Tabellenstruktur für Tabelle `bb1_wm2018_teams`
+-- Tabellenstruktur für Tabelle `bb1_em2020_teams`
 -- 
 
-DROP TABLE IF EXISTS `bb1_wm2018_teams`;
-CREATE TABLE `bb1_wm2018_teams` (
+DROP TABLE IF EXISTS `bb1_em2020_teams`;
+CREATE TABLE `bb1_em2020_teams` (
   `teamid` int(5) unsigned NOT NULL auto_increment,
   `name` varchar(50) NOT NULL default '',
   `gruppe` varchar(10) NOT NULL default '',
@@ -203,10 +203,10 @@ CREATE TABLE `bb1_wm2018_teams` (
 ) ENGINE=MyISAM AUTO_INCREMENT=33 ;
 
 -- 
--- Daten für Tabelle `bb1_wm2018_teams`
+-- Daten für Tabelle `bb1_em2020_teams`
 -- 
 
-INSERT INTO `bb1_wm2018_teams` (`teamid`, `name`, `gruppe`, `flagge`, `spiele`, `g`, `v`, `u`, `td`, `punkte`) VALUES
+INSERT INTO `bb1_em2020_teams` (`teamid`, `name`, `gruppe`, `flagge`, `spiele`, `g`, `v`, `u`, `td`, `punkte`) VALUES
 (1, 'Russland', 'A',  'ru.png', 0,  0,  0,  0,  0,  0),
 (2, 'Saudi-Arabien',  'A',  'sa.png',  0,  0,  0,  0,  0,  0),
 (3, '&Auml;gypten',  'A',  'eg.png',  0,  0,  0,  0,  0,  0),
@@ -243,11 +243,11 @@ INSERT INTO `bb1_wm2018_teams` (`teamid`, `name`, `gruppe`, `flagge`, `spiele`, 
 -- --------------------------------------------------------
 
 -- 
--- Tabellenstruktur für Tabelle `bb1_wm2018_userpunkte`
+-- Tabellenstruktur für Tabelle `bb1_em2020_userpunkte`
 -- 
 
-DROP TABLE IF EXISTS `bb1_wm2018_userpunkte`;
-CREATE TABLE `bb1_wm2018_userpunkte` (
+DROP TABLE IF EXISTS `bb1_em2020_userpunkte`;
+CREATE TABLE `bb1_em2020_userpunkte` (
   `userid` int(5) NOT NULL default '0',
   `punkte` int(10) NOT NULL default '0',
   `tipps_gesamt` int(5) NOT NULL default '0',
@@ -259,18 +259,18 @@ CREATE TABLE `bb1_wm2018_userpunkte` (
 ) ENGINE=MyISAM;
 
 -- 
--- Daten für Tabelle `bb1_wm2018_userpunkte`
+-- Daten für Tabelle `bb1_em2020_userpunkte`
 -- 
 
 
 -- --------------------------------------------------------
 
 -- 
--- Tabellenstruktur für Tabelle `bb1_wm2018_usertipps`
+-- Tabellenstruktur für Tabelle `bb1_em2020_usertipps`
 -- 
 
-DROP TABLE IF EXISTS `bb1_wm2018_usertipps`;
-CREATE TABLE `bb1_wm2018_usertipps` (
+DROP TABLE IF EXISTS `bb1_em2020_usertipps`;
+CREATE TABLE `bb1_em2020_usertipps` (
   `userid` int(11) NOT NULL default '0',
   `gameid` int(5) NOT NULL default '0',
   `goals_1` int(2) NOT NULL default '0',
@@ -281,11 +281,11 @@ CREATE TABLE `bb1_wm2018_usertipps` (
 ) ENGINE=MyISAM;
 
 -- 
--- Daten für Tabelle `bb1_wm2018_usertipps`
+-- Daten für Tabelle `bb1_em2020_usertipps`
 -- 
 
--- DROP TABLE IF EXISTS `bb1_wm2018_bestedrittetmp`;
--- CREATE TABLE `bb1_wm2018_bestedrittetmp` (
+-- DROP TABLE IF EXISTS `bb1_em2020_bestedrittetmp`;
+-- CREATE TABLE `bb1_em2020_bestedrittetmp` (
 --  `ID` int(11) NOT NULL AUTO_INCREMENT,
 --  `teamid` int(11) NOT NULL,
 --  `punkte` int(11) NOT NULL,
@@ -294,8 +294,8 @@ CREATE TABLE `bb1_wm2018_usertipps` (
 --  PRIMARY KEY (`ID`)
 -- ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-DROP TABLE IF EXISTS `bb1_wm2018_vortag`;
-CREATE TABLE `bb1_wm2018_vortag` (
+DROP TABLE IF EXISTS `bb1_em2020_vortag`;
+CREATE TABLE `bb1_em2020_vortag` (
   `pos` int(3) NOT NULL AUTO_INCREMENT,
   `userid` int(5) DEFAULT NULL,
   `punkte` int(10) DEFAULT NULL,
@@ -303,40 +303,40 @@ CREATE TABLE `bb1_wm2018_vortag` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- UNIQUE für Tabelle `bb1_wm2018_userpunkte` setzen
+-- UNIQUE für Tabelle `bb1_em2020_userpunkte` setzen
 -- 
 
-ALTER TABLE `bb1_wm2018_userpunkte` ADD UNIQUE(`userid`);
-ALTER TABLE `bb1_wm2018_vortag` ADD `id` int(5) NULL AUTO_INCREMENT UNIQUE FIRST, CHANGE `userid` `userid` int(10) NULL AFTER `id`, CHANGE `pos` `pos` int(10) NOT NULL AFTER `punkte`;
-ALTER TABLE `bb1_wm2018_vortag` ADD PRIMARY KEY `id` (`id`), DROP INDEX `PRIMARY`;
+ALTER TABLE `bb1_em2020_userpunkte` ADD UNIQUE(`userid`);
+ALTER TABLE `bb1_em2020_vortag` ADD `id` int(5) NULL AUTO_INCREMENT UNIQUE FIRST, CHANGE `userid` `userid` int(10) NULL AFTER `id`, CHANGE `pos` `pos` int(10) NOT NULL AFTER `punkte`;
+ALTER TABLE `bb1_em2020_vortag` ADD PRIMARY KEY `id` (`id`), DROP INDEX `PRIMARY`;
 
 -- 03.06.2018: Fix falscher Spiele in Gruppen
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'E' WHERE `gameid` = '41';
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'E' WHERE `gameid` = '42';
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'F' WHERE `gameid` = '43';
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'F' WHERE `gameid` = '44';
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'G' WHERE `gameid` = '45';
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'G' WHERE `gameid` = '46';
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'H' WHERE `gameid` = '47';
-UPDATE `bb1_wm2018_spiele` SET `gruppe` = 'H' WHERE `gameid` = '48';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'E' WHERE `gameid` = '41';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'E' WHERE `gameid` = '42';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'F' WHERE `gameid` = '43';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'F' WHERE `gameid` = '44';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'G' WHERE `gameid` = '45';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'G' WHERE `gameid` = '46';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'H' WHERE `gameid` = '47';
+UPDATE `bb1_em2020_spiele` SET `gruppe` = 'H' WHERE `gameid` = '48';
 
 -- 10.06.2018: Fix falsche Spielzeiten wegen Sommerzeit
-UPDATE `bb1_wm2018_spiele` SET `datetime` = `datetime`-3600;
+UPDATE `bb1_em2020_spiele` SET `datetime` = `datetime`-3600;
 
 -- 24.06.2018: Fix falsche eingetragene Spieldaten
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530108000' WHERE `gameid` = '43';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530108000' WHERE `gameid` = '44';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530122400' WHERE `gameid` = '41';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530122400' WHERE `gameid` = '42';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530194400' WHERE `gameid` = '48';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530194400', `team_1_id` = '32', `team_2_id` = '29' WHERE `gameid` = '47';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530208800' WHERE `gameid` = '45';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530208800' WHERE `gameid` = '46';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530540000' WHERE `gameid` = '54';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530554400' WHERE `gameid` = '53';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530626400' WHERE `gameid` = '56';
-UPDATE `bb1_wm2018_spiele` SET `datetime` = '1530640800' WHERE `gameid` = '55';
-UPDATE `bb1_wm2018_spiele` SET `team_1_id` = 'W-53', `team_2_id` = 'W-54' WHERE `gameid` = '58';
-UPDATE `bb1_wm2018_spiele` SET `team_1_id` = 'W-55', `team_2_id` = 'W-56' WHERE `gameid` = '59';
-UPDATE `bb1_wm2018_spiele` SET `team_1_id` = 'W-59', `team_2_id` = 'W-60' WHERE `gameid` = '62';
-UPDATE `bb1_wm2018_spiele` SET `team_1_id` = 'W-57', `team_2_id` = 'W-58' WHERE `gameid` = '61';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530108000' WHERE `gameid` = '43';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530108000' WHERE `gameid` = '44';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530122400' WHERE `gameid` = '41';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530122400' WHERE `gameid` = '42';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530194400' WHERE `gameid` = '48';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530194400', `team_1_id` = '32', `team_2_id` = '29' WHERE `gameid` = '47';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530208800' WHERE `gameid` = '45';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530208800' WHERE `gameid` = '46';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530540000' WHERE `gameid` = '54';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530554400' WHERE `gameid` = '53';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530626400' WHERE `gameid` = '56';
+UPDATE `bb1_em2020_spiele` SET `datetime` = '1530640800' WHERE `gameid` = '55';
+UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-53', `team_2_id` = 'W-54' WHERE `gameid` = '58';
+UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-55', `team_2_id` = 'W-56' WHERE `gameid` = '59';
+UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-59', `team_2_id` = 'W-60' WHERE `gameid` = '62';
+UPDATE `bb1_em2020_spiele` SET `team_1_id` = 'W-57', `team_2_id` = 'W-58' WHERE `gameid` = '61';

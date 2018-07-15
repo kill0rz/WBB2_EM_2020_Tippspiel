@@ -1,10 +1,10 @@
 <?php
 
-include "./wm2018_global.php";
+include "./em2020_global.php";
 $lang->load("WM2018");
 
 $akttime = time();
-$wm2018_meister = "";
+$em2020_meister = "";
 $points = 0;
 $meister = array();
 $krone = '';
@@ -16,7 +16,7 @@ eval("print(\"" . $hm_boxhead_tpl . "\");");
 switch (trim($_GET['action'])) {
 	case 'meister':
 		// alle Tipps durchgehen
-		$result_m = $db->query("SELECT tipp_wm,tipp_vwm FROM bb" . $n . "_wm2018_userpunkte");
+		$result_m = $db->query("SELECT tipp_wm,tipp_vwm FROM bb" . $n . "_em2020_userpunkte");
 
 		while ($row = $db->fetch_array($result_m)) {
 			if ($row['tipp_wm'] > 0) {
@@ -43,7 +43,7 @@ switch (trim($_GET['action'])) {
 			// Teamnamen einfügen
 			$count = 0;
 			foreach (array_keys($meister) as $einzel) {
-				list($teamname) = $db->query_first("SELECT name FROM bb" . $n . "_wm2018_teams WHERE teamid = " . $einzel);
+				list($teamname) = $db->query_first("SELECT name FROM bb" . $n . "_em2020_teams WHERE teamid = " . $einzel);
 
 				$sort[$count][0] = $teamname;
 				$sort[$count][1] = $meister[$einzel];
@@ -60,34 +60,34 @@ switch (trim($_GET['action'])) {
 			for ($lauf = 0; ($lauf < $count) && ($lauf < 3);) {
 				$lauf++;
 
-				$wm2018_meister .= "<tr><td class=\"tableb\"><font size=2>" . $lauf . "</font></td>";
+				$em2020_meister .= "<tr><td class=\"tableb\"><font size=2>" . $lauf . "</font></td>";
 
-				$wm2018_meister .= "<td class=\"tablea\"><font size=2><a href=\"wm2018.php?action=showusertipps\" alt='showusertipps'>";
+				$em2020_meister .= "<td class=\"tablea\"><font size=2><a href=\"em2020.php?action=showusertipps\" alt='showusertipps'>";
 				if ($lauf == 1) {
-					$wm2018_meister .= "<b>" . $sort[$lauf - 1][0] . "</b>";
+					$em2020_meister .= "<b>" . $sort[$lauf - 1][0] . "</b>";
 				} else {
-					$wm2018_meister .= $sort[$lauf - 1][0];
+					$em2020_meister .= $sort[$lauf - 1][0];
 				}
-				$wm2018_meister .= "</a></font></td>";
+				$em2020_meister .= "</a></font></td>";
 
-				$wm2018_meister .= "<td class=\"tableb\"><img src=\"images/wm2018/";
+				$em2020_meister .= "<td class=\"tableb\"><img src=\"images/em2020/";
 				if (0 == 1) {
-					$wm2018_meister .= "t_u.gif\" alt=\"t_u.gif";
+					$em2020_meister .= "t_u.gif\" alt=\"t_u.gif";
 				} else {
-					$wm2018_meister .= "t_m.gif\" alt=\"t_m.gif";
+					$em2020_meister .= "t_m.gif\" alt=\"t_m.gif";
 				}
-				$wm2018_meister .= "\"></td>";
+				$em2020_meister .= "\"></td>";
 
-				$wm2018_meister .= "<td class=\"tablea\"><font size=2 color=green>" . round(($sort[$lauf - 1][1] / $points) * 100, 0) . " %</font></td>";
+				$em2020_meister .= "<td class=\"tablea\"><font size=2 color=green>" . round(($sort[$lauf - 1][1] / $points) * 100, 0) . " %</font></td>";
 
-				$wm2018_meister .= "</tr>";
+				$em2020_meister .= "</tr>";
 			}
-			eval("print(\"" . $tpl->get("wm2018_sponsor_portalboxen_wmmeister") . "\");");
+			eval("print(\"" . $tpl->get("em2020_sponsor_portalboxen_wmmeister") . "\");");
 		} // (point>0)
 		break;
 
 	case 'quote':
-		$result_nextgames = $db->query("SELECT * FROM bb" . $n . "_wm2018_spiele WHERE datetime > '" . intval($akttime) . "' ORDER BY datetime ASC Limit 0,5");
+		$result_nextgames = $db->query("SELECT * FROM bb" . $n . "_em2020_spiele WHERE datetime > '" . intval($akttime) . "' ORDER BY datetime ASC Limit 0,5");
 
 		while ($row_nextgames = $db->fetch_array($result_nextgames)) {
 			$rowclass = getone($count++, "tablea", "tableb");
@@ -148,12 +148,12 @@ switch (trim($_GET['action'])) {
 			for ($i = 0; $i < count($allids2); $i++) {
 				if ($row_nextgames['team_1_id'] == $allids2[$i]) {
 					$teamname1 = $allnames2[$i];
-					$name1 = "<a href=\"wm2018.php?action=showallgames&amp;teamid={$row_nextgames['team_1_id']}{$SID_ARG_2ND}\">{$teamname1}</a>";
+					$name1 = "<a href=\"em2020.php?action=showallgames&amp;teamid={$row_nextgames['team_1_id']}{$SID_ARG_2ND}\">{$teamname1}</a>";
 					$flagge1 = $allflags2[$i];
 				}
 				if ($row_nextgames['team_2_id'] == $allids2[$i]) {
 					$teamname2 = $allnames2[$i];
-					$name2 = "<a href=\"wm2018.php?action=showallgames&amp;teamid={$row_nextgames['team_2_id']}{$SID_ARG_2ND}\">{$teamname2}</a>";
+					$name2 = "<a href=\"em2020.php?action=showallgames&amp;teamid={$row_nextgames['team_2_id']}{$SID_ARG_2ND}\">{$teamname2}</a>";
 					$flagge2 = $allflags2[$i];
 				}
 			}
@@ -162,24 +162,24 @@ switch (trim($_GET['action'])) {
 			getQuote($row['gameid']);
 			//!mf Quote
 
-			eval("\$wm2018_nextgames .= \"" . $tpl->get("wm2018_sponsor_wm2018_nextgames") . "\";");
+			eval("\$em2020_nextgames .= \"" . $tpl->get("em2020_sponsor_em2020_nextgames") . "\";");
 		}
-		eval("print(\"" . $tpl->get("wm2018_sponsor_portalboxen_wmtippnext5") . "\");");
+		eval("print(\"" . $tpl->get("em2020_sponsor_portalboxen_wmtippnext5") . "\");");
 		break;
 
 	case 'rangliste':
-		$result_topuser = $db->query('SELECT u.username,p.* FROM bb' . $n . '_wm2018_userpunkte p LEFT JOIN bb' . $n . "_users u USING (userid) ORDER BY punkte DESC, tipps_gesamt DESC Limit 0,{$wm2018_options['topuser']}");
+		$result_topuser = $db->query('SELECT u.username,p.* FROM bb' . $n . '_em2020_userpunkte p LEFT JOIN bb' . $n . "_users u USING (userid) ORDER BY punkte DESC, tipps_gesamt DESC Limit 0,{$em2020_options['topuser']}");
 		while ($row_topuser = $db->fetch_array($result_topuser)) {
 			$rowclass = getone($count++, 'tablea', 'tableb');
 			if ($count == 1) {
-				$krone = '<img src="images/wm2018/krone.gif" alt="krone.gif"><br>';
+				$krone = '<img src="images/em2020/krone.gif" alt="krone.gif"><br>';
 			} else {
 				$krone = '';
 			}
-			eval('$wm2018_topuser .= "' . $tpl->get('wm2018_sponsor_wm2018_topuser') . '";');
+			eval('$em2020_topuser .= "' . $tpl->get('em2020_sponsor_em2020_topuser') . '";');
 		}
 
-		eval('print("' . $tpl->get('wm2018_sponsor_portalboxen_wmtippbest5') . '");');
+		eval('print("' . $tpl->get('em2020_sponsor_portalboxen_wmtippbest5') . '");');
 		break;
 }
 

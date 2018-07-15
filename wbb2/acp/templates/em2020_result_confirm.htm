@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<form method="post" action="wm2018_admin.php">
+	<form method="post" action="em2020_admin.php">
 		<input type="hidden" name="send" value="send">
 		<input type="hidden" name="mode" value="save">
 		<input type="hidden" name="action" value="result_save">
@@ -35,19 +35,19 @@
 		<br />
 		<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
 			<tr class="firstrow">
-				<td width="50%">{$lang->items['LANG_ACP_WM2018_TPL_RESULT_CONFIRM_3']} $result_1[name] <img src="../images/wm2018/flaggen/$result_1[flagge]" alt="$result_1[name]" title="$result_1[name]" /></td>
+				<td width="50%">{$lang->items['LANG_ACP_WM2018_TPL_RESULT_CONFIRM_3']} $result_1[name] <img src="../images/em2020/flaggen/$result_1[flagge]" alt="$result_1[name]" title="$result_1[name]" /></td>
 				<td width="50%">
 					<b>$tore1</b>
 				</td>
 			</tr>
 			<tr class="secondrow">
-				<td width="50%">{$lang->items['LANG_ACP_WM2018_TPL_RESULT_CONFIRM_3']} $result_2[name] <img src="../images/wm2018/flaggen/$result_2[flagge]" alt="$result_2[name]" title="$result_2[name]" /></td>
+				<td width="50%">{$lang->items['LANG_ACP_WM2018_TPL_RESULT_CONFIRM_3']} $result_2[name] <img src="../images/em2020/flaggen/$result_2[flagge]" alt="$result_2[name]" title="$result_2[name]" /></td>
 				<td width="50%">
 					<b>$tore2</b>
 				</td>
 			</tr>
 		</table>
-		<if($wm2018_options['gk_jn']==1)>
+		<if($em2020_options['gk_jn']==1)>
 			<then>
 				<br />
 				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
@@ -60,7 +60,7 @@
 				</table>
 			</then>
 		</if>
-		<if($wm2018_options['rk_jn']==1)>
+		<if($em2020_options['rk_jn']==1)>
 			<then>
 				<br />
 				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">
@@ -73,7 +73,7 @@
 				</table>
 			</then>
 		</if>
-		<if($wm2018_options['elfer_jn']==1)>
+		<if($em2020_options['elfer_jn']==1)>
 			<then>
 				<br />
 				<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="100%" align="center">

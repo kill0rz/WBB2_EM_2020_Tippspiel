@@ -1,5 +1,5 @@
 <br />
-<form method="post" action="wm2018.php?action=tippabgabe_vwm">
+<form method="post" action="em2020.php?action=tippabgabe_vwm">
 	<input type="hidden" name="send" value="send" />
 	<input type="hidden" name="gameid" value="$_REQUEST[gameid]" />
 	<input type="hidden" name="sid" value="$session[hash]" />
@@ -20,7 +20,7 @@
 			<td class="tableb" align="center" width="30%">
 				<select name="tipp_vwm">
 					<option value="-1">{$lang->items['LANG_WM2018_GLOBAL_CHOICE']}</option>
-					$wm2018_auswahl_vwmtipp
+					$em2020_auswahl_vwmtipp
 				</select>
 			</td>
 			<td align="center" class="tableb">
