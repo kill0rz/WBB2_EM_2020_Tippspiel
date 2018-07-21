@@ -8,6 +8,11 @@ Bugtracker und Featurewünsche aus WM 2018:
 + Editfunktion
 	+ nochmal checken, ob alles beachtet wird
 	+ Gruppentabelle ab Achtelfinale nicht mehr updaten
++ Spieldaten selber korrigieren können
+	+ Mannschaft ändern per Spiel
+	+ Rumdrehen - dazu auch die Usertipps beachten, s. Schnipsel von mir aus der WM 2018
+	+ Gruppentabellen sortieren können (erstmal gucken, was man da sortieren können muss)
+		+ Weil wenn Punktegleichstand, dann muss das gedreht werden, ne?
 
 
 USERWÜNSCHE
