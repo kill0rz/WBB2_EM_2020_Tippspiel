@@ -19,7 +19,7 @@
 			<font size="3" color="yellow">
 				<div id=counter1 style="visibility: visible; position: relative" align=center></div>
 				<script language=JavaScript type=text/javascript>
-					var wm = new Date("July 15, 2018 17:00:00"); //todo
+					var wm = new Date("July 12, 2020 21:00:00");
 					var goal1 = new Date(wm.getTime());
 					var jetzta = new Date();
 					var servernow1 = new Date(jetzta.getTime());
