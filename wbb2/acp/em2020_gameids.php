@@ -3,38 +3,36 @@
 // Konfiguration für die EM2020
 
 $gameids = array(
-	'lastgroupgame_a' => 34,
-	'lastgroupgame_b' => 36,
-	'lastgroupgame_c' => 38,
-	'lastgroupgame_d' => 40,
-	'lastgroupgame_e' => 42,
-	'lastgroupgame_f' => 44,
-	'lastgroupgame_g' => 46,
-	'lastgroupgame_h' => 48,
-	'vorrundenspiel' => 48,
-	'achtelfinal1' => 49,
-	'achtelfinal2' => 50,
-	'achtelfinal3' => 51,
-	'achtelfinal4' => 52,
-	'achtelfinal5' => 53,
-	'achtelfinal6' => 54,
-	'achtelfinal7' => 55,
-	'achtelfinal8' => 56,
-	'viertelfinal1' => 57,
-	'viertelfinal2' => 58,
-	'viertelfinal3' => 59,
-	'viertelfinal4' => 60,
-	'halbfinal1' => 61,
-	'halbfinal2' => 62,
-	'spielumplatzdrei' => 63,
-	'finale' => 64,
+	'lastgroupgame_a' => 34, #todo
+	'lastgroupgame_b' => 36, #todo
+	'lastgroupgame_c' => 38, #todo
+	'lastgroupgame_d' => 40, #todo
+	'lastgroupgame_e' => 42, #todo
+	'lastgroupgame_f' => 44, #todo
+	'vorrundenspiel' => 36, #todo
+	'achtelfinal1' => 37,
+	'achtelfinal2' => 38,
+	'achtelfinal3' => 39,
+	'achtelfinal4' => 40,
+	'achtelfinal5' => 41,
+	'achtelfinal6' => 42,
+	'achtelfinal7' => 43,
+	'achtelfinal8' => 44,
+	'viertelfinal1' => 45,
+	'viertelfinal2' => 46,
+	'viertelfinal3' => 47,
+	'viertelfinal4' => 48,
+	'halbfinal1' => 49,
+	'halbfinal2' => 50,
+	// 'spielumplatzdrei' => 50,
+	'finale' => 51,
 );
 
 // Erklärung: für jedes Spiel werden die nächsten, direkt beeinflussten Spiele angegeben
 // Diese Funktionalität wird für das Editieren der Spiele benötigt.
 // Hier treten nur die Spiele auf, die kritisch sind (letzte Vorrundenspiele pro Gruppe + alles ab 8.Finale)
 // Aufbau: {Gewinner/Verlier des Ausgangsspiels}-{Nummer des neuen Spiels}-{Team 1 oder 2 des neuen Spiels}
-$gameids_kette = array(
+$gameids_kette = array( #todo
 	34 => array('W-50-1', 'W-51-2'),
 	36 => array('W-50-1', 'W-51-2'),
 	38 => array('W-49-1', 'W-52-2'),
@@ -59,7 +57,7 @@ $gameids_kette = array(
 	62 => array('W-64-2', 'L-63-2'),
 );
 
-$gruppenids = array("A", "B", "C", "D", "E", "F", "G", "H");
+$gruppenids = array("A", "B", "C", "D", "E", "F");
 
 // Nur EM: Beste Dritte-Regelung
 $spiele_mit_dritten = array(38, 39, 40, 41);

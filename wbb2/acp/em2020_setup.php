@@ -28,7 +28,7 @@ if (get_magic_quotes_runtime()) {
 	set_magic_quotes_runtime(0);
 }
 $phpversion = phpversion();
-$requiredphpversion = "5.6";
+$requiredphpversion = "7.2";
 
 /* page output function */
 function informationPage($content, $title = '') {
