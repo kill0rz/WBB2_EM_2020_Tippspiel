@@ -36,4 +36,3 @@ ToDo für die EM 2020:
 + Spielereihenfolde beim Eintragen beachten
 	+ Bestedritte Berechnung folgt nicht der Spielenummerierung
 + addslashes durch mysqli_real_escape_string ersetzen?
-+ Footer updaten: Unnötige Copyright-Verweise entfernen, das gehört ausführlich ins ACP und in die Readme, aber auf dem Tippspiel selber muss das nicht mehr sein, wird mit den Jahren einfach viel zu groß.
