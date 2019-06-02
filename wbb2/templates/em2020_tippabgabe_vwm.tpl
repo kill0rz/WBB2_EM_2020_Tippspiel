@@ -18,7 +18,7 @@
 				<span class="smallfont">{$lang->items['LANG_EM2020_TPL_tippabgabe_vwm_3']}</span>
 			</td>
 			<td class="tableb" align="center" width="30%">
-				<select name="tipp_vem">
+				<select name="tipp_vem" autofocus>
 					<option value="-1">{$lang->items['LANG_EM2020_GLOBAL_CHOICE']}</option>
 					$em2020_auswahl_vwmtipp
 				</select>

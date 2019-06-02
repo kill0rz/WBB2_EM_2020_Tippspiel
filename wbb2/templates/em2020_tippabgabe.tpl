@@ -61,7 +61,7 @@
 				<td class="tablea" align="right" width="50%">
 					<span class="normalfont">
 						<b>$name1</b>&nbsp;<img src="images/em2020/flaggen/$flagge1" alt="$name1" title="$name1" /></span>&nbsp;&nbsp;
-					<input type="number" min="0" class="input" name="tipp_1" size="5"/>
+					<input type="number" min="0" class="input" name="tipp_1" size="5" autofocus/>
 				</td>
 				<td class="tablea" align="left" width="50%">
 					<input type="number" min="0" class="input" name="tipp_2" size="5"/>&nbsp;&nbsp;<img src="images/em2020/flaggen/$flagge2" alt="$name2" title="$name2" />&nbsp;
