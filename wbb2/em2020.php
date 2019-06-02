@@ -5,7 +5,8 @@
  *    copyright            : WM2006-Tippspiel © 2006 batida444
  *    copyright            : WM2014-Tippspiel © 2014 Viktor
  *    copyright            : EM2016-Tippspiel © 2016 @ kill0rz
- *    copyright            : EM2020-Tippspiel © 2018 @ kill0rz
+ *    copyright            : WM2018-Tippspiel © 2018 @ kill0rz
+ *    copyright            : EM2020-Tippspiel © 2020 @ kill0rz
  *    web                  : www.v-gn.de
  *    Boardversion         : Burning Board wBB 2.3
  */
@@ -13,7 +14,7 @@
 $filename = "em2020.php";
 
 require "./global.php";
-include "./em2020_global.php";
+require_once "./em2020_global.php";
 include "./acp/em2020_gameids.php";
 $lang->load("EM2020");
 
@@ -48,10 +49,12 @@ if ($em2020_options['gh_aktiv'] == 1) {
 $lastgame4emtipp = $db->query_first("SELECT datetime FROM bb" . $n . "_em2020_spiele WHERE gameid = '" . intval($em2020_options['lastgame4emtipp']) . "'");
 $lastgamedate = formatdate($wbbuserdata['dateformat'], $lastgame4emtipp['datetime']);
 $lastgametime = formatdate($wbbuserdata['timeformat'], $lastgame4emtipp['datetime']);
+
 // ++++++++++++++++++
 // +++ Startseite +++
 // ++++++++++++++++++
 if ($action == "index") {
+	require_once "./em2020_modcode.php";
 	// FIFA/UEFA News Anfang
 	if ($em2020_options['showrssnews'] == 1) {
 		if ($em2020_options['rssnews_showfeed'] == "fifa") {

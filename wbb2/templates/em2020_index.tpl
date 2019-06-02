@@ -51,7 +51,7 @@
 		</then>
 	</if><br />
 
-	<!-- Spiele, die noch nicht im ACP eingetragen wurden -->
+	<!-- Spiele, die gerade laufen -->
 	<if($em2020_currentgameplaying)>
 		<then>
 			<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
@@ -69,6 +69,26 @@
 			<br />
 		</then>
 	</if><br />
+
+	<!-- die letzten X Spiele -->
+	<!-- EM2020 Spieletabelle Anfang -->
+	<if($em2020_options['1st']==0 and $em2020_options['showtableonindex_donegames']==1 and $wbbuserdata['userid']!=0 and $em2020_showtableonindex_donegames)>
+		<then>
+			<table cellpadding="{$style['tableincellpadding']}" cellspacing="{$style['tableincellspacing']}" border="{$style['tableinborder']}" style="width:{$style['tableinwidth']}" class="tableinborder">
+				<tr class="tablecat">
+					<td colspan="5" class="tabletitle">
+						<span class="normalfont">
+							<b>{$lang->items['LANG_EM2020_TPL_INDEX_38']}</b>
+						</span>
+					</td>
+				</tr>
+				$em2020_tableonindex_lower_bit
+			</table>
+			<br />
+		</then>
+	</if>
+	<!-- EM2020 Spieletabelle Ende -->
+	<br />
 
 	<table cellpadding="4" cellspacing="1" border="0" style="width:{$style['tableinwidth']}">
 		<tr>
